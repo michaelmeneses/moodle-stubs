@@ -94,6 +94,8 @@ class process
     protected $manualcache = [];
     /** @var array officially supported plugins that are enabled */
     protected $supportedauths = [];
+    /** @var array Track unique profile field values within the current import */
+    protected $profilefieldvaluesinfile = [];
     /**
      * process constructor.
      *

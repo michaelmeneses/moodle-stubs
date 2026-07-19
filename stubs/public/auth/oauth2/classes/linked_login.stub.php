@@ -29,7 +29,10 @@
  */
 namespace auth_oauth2;
 
+use core\clock;
+use core\di;
 use core\persistent;
+use dml_exception;
 /**
  * Class for loading/storing issuer from the DB
  *
@@ -64,6 +67,27 @@ class linked_login extends persistent
      * @return boolean
      */
     public static function delete_orphaned($issuerid = false)
+    {
+    }
+    /**
+     * Delete expired confirmation tokens.
+     *
+     * @return void
+     * @throws dml_exception
+     */
+    public static function delete_expired_confirmation_tokens(): void
+    {
+    }
+    /**
+     * Delete an expired pending linked login record for a specific user, issuer, and username.
+     *
+     * @param \core\oauth2\issuer $issuer The issuer the pending record belongs to.
+     * @param string $username The external username of the pending record.
+     * @param int $userid The Moodle user ID the pending record belongs to.
+     * @return void
+     * @throws dml_exception
+     */
+    public static function delete_expired_pending(\core\oauth2\issuer $issuer, string $username, int $userid): void
     {
     }
 }

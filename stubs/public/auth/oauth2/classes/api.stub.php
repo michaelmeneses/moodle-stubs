@@ -30,6 +30,8 @@
 namespace auth_oauth2;
 
 use context_user;
+use core\clock;
+use core\di;
 use stdClass;
 use moodle_exception;
 use moodle_url;
@@ -42,6 +44,11 @@ use moodle_url;
  */
 class api
 {
+    /**
+     * @var string Interval string of the expiration duration
+     * @see https://www.php.net/manual/en/dateinterval.construct.php
+     */
+    public const CONFIRMTOKEN_EXPIRES = 'PT30M';
     /**
      * Remove all linked logins that are using issuers that have been deleted.
      *

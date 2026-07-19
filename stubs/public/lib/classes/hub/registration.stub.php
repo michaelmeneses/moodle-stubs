@@ -362,8 +362,24 @@ class registration
      * Measure the size of the dataroot directory.
      *
      * @return float MB to 3 decimal places.
+     * @deprecated since Moodle 5.3.
+     * @todo Final deprecation in Moodle 7.0. See MDL-88818.
      */
+    #[\core\attribute\deprecated(replacement: 'get_filepool_usage', since: '5.3', mdl: 'MDL-88805')]
     public static function get_dataroot_size(): float
+    {
+    }
+    /**
+     * Measure file pool usage by summing unique file sizes from the database.
+     *
+     * Files are deduplicated by contenthash, as Moodle's content-addressable file store only
+     * keeps one physical copy per unique file. The result is approximate and preferred over
+     * scanning the dataroot directory for performance reasons. This excludes caches, sessions,
+     * temporary files, and other non-filepool storage.
+     *
+     * @return float MB to 3 decimal places.
+     */
+    public static function get_filepool_usage(): float
     {
     }
     /**

@@ -560,6 +560,16 @@ class core_admin_renderer extends plugin_renderer_base
     {
     }
     /**
+     * Render a simple page for providing the upgrade key, providing validation for failed attempts
+     *
+     * @param moodle_url $url
+     * @param bool $upgradekeyerror
+     * @return string
+     */
+    public function upgradekey_form_page_with_validation(moodle_url $url, bool $upgradekeyerror): string
+    {
+    }
+    /**
      * Display message about the benefits of registering on Moodle.org
      *
      * @return string
