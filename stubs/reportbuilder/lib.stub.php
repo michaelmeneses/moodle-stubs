@@ -9,8 +9,11 @@
 use core\output\inplace_editable;
 use core_reportbuilder\form\audience;
 use core_reportbuilder\form\filter;
+use core_reportbuilder\local\audiences\base as audience_base;
 use core_reportbuilder\local\helpers\audience as audience_helper;
 use core_reportbuilder\local\models\report;
+use core_reportbuilder\local\report\base as report_base;
+use core_reportbuilder\{manager, permission};
 use core_tag\output\{tagfeed, tagindex};
 /**
  * Return the filters form fragment
