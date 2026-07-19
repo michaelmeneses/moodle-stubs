@@ -20,100 +20,113 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output;
-
-/**
- * Component representing a paging bar.
- *
- * @copyright 2009 Nicolas Connault
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @since Moodle 2.0
- * @package core
- * @category output
- */
-class paging_bar implements renderable, templatable
-{
+namespace core\output {
+    use core\exception\coding_exception;
+    use moodle_page;
+    use moodle_url;
+    use stdClass;
     /**
-     * @var int The maximum number of pagelinks to display.
-     */
-    public $maxdisplay = 18;
-    /**
-     * @var int The total number of entries to be pages through..
-     */
-    public $totalcount;
-    /**
-     * @var int The page you are currently viewing.
-     */
-    public $page;
-    /**
-     * @var int The number of entries that should be shown per page.
-     */
-    public $perpage;
-    /**
-     * @var string|moodle_url If this  is a string then it is the url which will be appended with $pagevar,
-     * an equals sign and the page number.
-     * If this is a moodle_url object then the pagevar param will be replaced by
-     * the page no, for each page.
-     */
-    public $baseurl;
-    /**
-     * @var string This is the variable name that you use for the pagenumber in your
-     * code (ie. 'tablepage', 'blogpage', etc)
-     */
-    public $pagevar;
-    /**
-     * @var string A HTML link representing the "previous" page.
-     */
-    public $previouslink = null;
-    /**
-     * @var string A HTML link representing the "next" page.
-     */
-    public $nextlink = null;
-    /**
-     * @var string A HTML link representing the first page.
-     */
-    public $firstlink = null;
-    /**
-     * @var string A HTML link representing the last page.
-     */
-    public $lastlink = null;
-    /**
-     * @var array An array of strings. One of them is just a string: the current page
-     */
-    public $pagelinks = [];
-    /**
-     * Constructor paging_bar with only the required params.
+     * Component representing a paging bar.
      *
-     * @param int $totalcount The total number of entries available to be paged through
-     * @param int $page The page you are currently viewing
-     * @param int $perpage The number of entries that should be shown per page
-     * @param string|moodle_url $baseurl url of the current page, the $pagevar parameter is added
-     * @param string $pagevar name of page parameter that holds the page number
+     * @copyright 2009 Nicolas Connault
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @since Moodle 2.0
+     * @package core
+     * @category output
      */
-    public function __construct($totalcount, $page, $perpage, $baseurl, $pagevar = 'page')
+    class paging_bar implements renderable, templatable
     {
+        /**
+         * @var int The maximum number of pagelinks to display.
+         */
+        public $maxdisplay = 18;
+        /**
+         * @var int The total number of entries to be pages through..
+         */
+        public $totalcount;
+        /**
+         * @var int The page you are currently viewing.
+         */
+        public $page;
+        /**
+         * @var int The number of entries that should be shown per page.
+         */
+        public $perpage;
+        /**
+         * @var string|moodle_url If this  is a string then it is the url which will be appended with $pagevar,
+         * an equals sign and the page number.
+         * If this is a moodle_url object then the pagevar param will be replaced by
+         * the page no, for each page.
+         */
+        public $baseurl;
+        /**
+         * @var string This is the variable name that you use for the pagenumber in your
+         * code (ie. 'tablepage', 'blogpage', etc)
+         */
+        public $pagevar;
+        /**
+         * @var string A HTML link representing the "previous" page.
+         */
+        public $previouslink = null;
+        /**
+         * @var string A HTML link representing the "next" page.
+         */
+        public $nextlink = null;
+        /**
+         * @var string A HTML link representing the first page.
+         */
+        public $firstlink = null;
+        /**
+         * @var string A HTML link representing the last page.
+         */
+        public $lastlink = null;
+        /**
+         * @var array An array of strings. One of them is just a string: the current page
+         */
+        public $pagelinks = [];
+        /**
+         * Constructor paging_bar with only the required params.
+         *
+         * @param int $totalcount The total number of entries available to be paged through
+         * @param int $page The page you are currently viewing
+         * @param int $perpage The number of entries that should be shown per page
+         * @param string|moodle_url $baseurl url of the current page, the $pagevar parameter is added
+         * @param string $pagevar name of page parameter that holds the page number
+         */
+        public function __construct($totalcount, $page, $perpage, $baseurl, $pagevar = 'page')
+        {
+        }
+        /**
+         * Prepares the paging bar for output.
+         *
+         * This method validates the arguments set up for the paging bar and then
+         * produces fragments of HTML to assist display later on.
+         *
+         * @param renderer_base $output
+         * @param moodle_page $page
+         * @param string $target
+         * @throws coding_exception
+         */
+        public function prepare(renderer_base $output, moodle_page $page, $target)
+        {
+        }
+        /**
+         * Export for template.
+         *
+         * @param renderer_base $output The renderer.
+         * @return stdClass
+         */
+        public function export_for_template(renderer_base $output)
+        {
+        }
     }
+}
+namespace {
     /**
-     * Prepares the paging bar for output.
-     *
-     * This method validates the arguments set up for the paging bar and then
-     * produces fragments of HTML to assist display later on.
-     *
-     * @param renderer_base $output
-     * @param moodle_page $page
-     * @param string $target
-     * @throws coding_exception
+     * Runtime class alias of \core\output\paging_bar registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function prepare(renderer_base $output, moodle_page $page, $target)
-    {
-    }
-    /**
-     * Export for template.
-     *
-     * @param renderer_base $output The renderer.
-     * @return stdClass
-     */
-    public function export_for_template(renderer_base $output)
+    class paging_bar extends \core\output\paging_bar
     {
     }
 }

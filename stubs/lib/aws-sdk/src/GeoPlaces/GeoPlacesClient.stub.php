@@ -8,6 +8,7 @@
  */
 namespace Aws\GeoPlaces;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Location Service Places V2** service.
  * @method \Aws\Result autocomplete(array $args = [])

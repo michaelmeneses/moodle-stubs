@@ -8,6 +8,7 @@
  */
 namespace Aws\S3Outposts;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon S3 on Outposts** service.
  * @method \Aws\Result createEndpoint(array $args = [])

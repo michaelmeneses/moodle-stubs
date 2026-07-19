@@ -29,6 +29,11 @@
  */
 namespace tool_dataprivacy\output;
 
+use moodle_url;
+use renderable;
+use renderer_base;
+use stdClass;
+use templatable;
 /**
  * Class containing the filter options data for rendering the autocomplete element for the data requests page.
  *

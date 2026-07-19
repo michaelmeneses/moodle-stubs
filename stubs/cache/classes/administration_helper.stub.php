@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_cache;
 
+use core_component;
+use core\output\pix_icon;
+use lang_string;
 /**
  * Administration helper base class.
  *

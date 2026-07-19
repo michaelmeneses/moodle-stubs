@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_statistics\columns;
 
+use core_question\local\bank\column_base;
+use qbank_statistics\helper;
 /**
  * This column show the average facility index for this question.
  *

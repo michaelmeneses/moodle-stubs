@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_wiki\output;
 
+use moodle_url;
+use templatable;
+use renderable;
 /**
  * Renderable class for the action bar elements in the wiki activity pages.
  *

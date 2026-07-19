@@ -29,6 +29,8 @@
  */
 namespace core\event;
 
+use core\event\base;
+use core_competency\user_evidence;
 /**
  * Evidence of prior learning deleted event class.
  *

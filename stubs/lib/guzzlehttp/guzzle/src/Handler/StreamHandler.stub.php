@@ -8,6 +8,18 @@
  */
 namespace GuzzleHttp\Handler;
 
+use GuzzleHttp\Exception\ConnectException;
+use GuzzleHttp\Exception\RequestException;
+use GuzzleHttp\Promise as P;
+use GuzzleHttp\Promise\FulfilledPromise;
+use GuzzleHttp\Promise\PromiseInterface;
+use GuzzleHttp\Psr7;
+use GuzzleHttp\TransferStats;
+use GuzzleHttp\Utils;
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\StreamInterface;
+use Psr\Http\Message\UriInterface;
 /**
  * HTTP handler that uses PHP's HTTP stream wrapper.
  *

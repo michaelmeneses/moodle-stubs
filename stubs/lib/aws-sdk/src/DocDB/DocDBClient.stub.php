@@ -8,6 +8,8 @@
  */
 namespace Aws\DocDB;
 
+use Aws\AwsClient;
+use Aws\PresignUrlMiddleware;
 /**
  * This client is used to interact with the **Amazon DocumentDB with MongoDB compatibility** service.
  * @method \Aws\Result addSourceIdentifierToSubscription(array $args = [])

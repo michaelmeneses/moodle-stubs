@@ -47,146 +47,155 @@
  * @link http://simplepie.org/ SimplePie
  * @license http://www.opensource.org/licenses/bsd-license.php BSD License
  */
-namespace SimplePie\XML\Declaration;
-
-/**
- * Parses the XML Declaration
- *
- * @package SimplePie
- * @subpackage Parsing
- */
-class Parser
-{
+namespace SimplePie\XML\Declaration {
     /**
-     * XML Version
+     * Parses the XML Declaration
      *
-     * @access public
-     * @var string
+     * @package SimplePie
+     * @subpackage Parsing
      */
-    public $version = '1.0';
+    class Parser
+    {
+        /**
+         * XML Version
+         *
+         * @access public
+         * @var string
+         */
+        public $version = '1.0';
+        /**
+         * Encoding
+         *
+         * @access public
+         * @var string
+         */
+        public $encoding = 'UTF-8';
+        /**
+         * Standalone
+         *
+         * @access public
+         * @var bool
+         */
+        public $standalone = false;
+        private const STATE_BEFORE_VERSION_NAME = 'before_version_name';
+        private const STATE_VERSION_NAME = 'version_name';
+        private const STATE_VERSION_EQUALS = 'version_equals';
+        private const STATE_VERSION_VALUE = 'version_value';
+        private const STATE_ENCODING_NAME = 'encoding_name';
+        private const STATE_EMIT = 'emit';
+        private const STATE_ENCODING_EQUALS = 'encoding_equals';
+        private const STATE_STANDALONE_NAME = 'standalone_name';
+        private const STATE_ENCODING_VALUE = 'encoding_value';
+        private const STATE_STANDALONE_EQUALS = 'standalone_equals';
+        private const STATE_STANDALONE_VALUE = 'standalone_value';
+        private const STATE_ERROR = false;
+        /**
+         * Current state of the state machine
+         *
+         * @access private
+         * @var self::STATE_*
+         */
+        public $state = self::STATE_BEFORE_VERSION_NAME;
+        /**
+         * Input data
+         *
+         * @access private
+         * @var string
+         */
+        public $data = '';
+        /**
+         * Input data length (to avoid calling strlen() everytime this is needed)
+         *
+         * @access private
+         * @var int
+         */
+        public $data_length = 0;
+        /**
+         * Current position of the pointer
+         *
+         * @var int
+         * @access private
+         */
+        public $position = 0;
+        /**
+         * Create an instance of the class with the input data
+         *
+         * @access public
+         * @param string $data Input data
+         */
+        public function __construct($data)
+        {
+        }
+        /**
+         * Parse the input data
+         *
+         * @access public
+         * @return bool true on success, false on failure
+         */
+        public function parse()
+        {
+        }
+        /**
+         * Check whether there is data beyond the pointer
+         *
+         * @access private
+         * @return bool true if there is further data, false if not
+         */
+        public function has_data()
+        {
+        }
+        /**
+         * Advance past any whitespace
+         *
+         * @return int Number of whitespace characters passed
+         */
+        public function skip_whitespace()
+        {
+        }
+        /**
+         * Read value
+         */
+        public function get_value()
+        {
+        }
+        public function before_version_name()
+        {
+        }
+        public function version_name()
+        {
+        }
+        public function version_equals()
+        {
+        }
+        public function version_value()
+        {
+        }
+        public function encoding_name()
+        {
+        }
+        public function encoding_equals()
+        {
+        }
+        public function encoding_value()
+        {
+        }
+        public function standalone_name()
+        {
+        }
+        public function standalone_equals()
+        {
+        }
+        public function standalone_value()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * Encoding
-     *
-     * @access public
-     * @var string
+     * Runtime class alias of \SimplePie\XML\Declaration\Parser registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public $encoding = 'UTF-8';
-    /**
-     * Standalone
-     *
-     * @access public
-     * @var bool
-     */
-    public $standalone = false;
-    private const STATE_BEFORE_VERSION_NAME = 'before_version_name';
-    private const STATE_VERSION_NAME = 'version_name';
-    private const STATE_VERSION_EQUALS = 'version_equals';
-    private const STATE_VERSION_VALUE = 'version_value';
-    private const STATE_ENCODING_NAME = 'encoding_name';
-    private const STATE_EMIT = 'emit';
-    private const STATE_ENCODING_EQUALS = 'encoding_equals';
-    private const STATE_STANDALONE_NAME = 'standalone_name';
-    private const STATE_ENCODING_VALUE = 'encoding_value';
-    private const STATE_STANDALONE_EQUALS = 'standalone_equals';
-    private const STATE_STANDALONE_VALUE = 'standalone_value';
-    private const STATE_ERROR = false;
-    /**
-     * Current state of the state machine
-     *
-     * @access private
-     * @var self::STATE_*
-     */
-    public $state = self::STATE_BEFORE_VERSION_NAME;
-    /**
-     * Input data
-     *
-     * @access private
-     * @var string
-     */
-    public $data = '';
-    /**
-     * Input data length (to avoid calling strlen() everytime this is needed)
-     *
-     * @access private
-     * @var int
-     */
-    public $data_length = 0;
-    /**
-     * Current position of the pointer
-     *
-     * @var int
-     * @access private
-     */
-    public $position = 0;
-    /**
-     * Create an instance of the class with the input data
-     *
-     * @access public
-     * @param string $data Input data
-     */
-    public function __construct($data)
-    {
-    }
-    /**
-     * Parse the input data
-     *
-     * @access public
-     * @return bool true on success, false on failure
-     */
-    public function parse()
-    {
-    }
-    /**
-     * Check whether there is data beyond the pointer
-     *
-     * @access private
-     * @return bool true if there is further data, false if not
-     */
-    public function has_data()
-    {
-    }
-    /**
-     * Advance past any whitespace
-     *
-     * @return int Number of whitespace characters passed
-     */
-    public function skip_whitespace()
-    {
-    }
-    /**
-     * Read value
-     */
-    public function get_value()
-    {
-    }
-    public function before_version_name()
-    {
-    }
-    public function version_name()
-    {
-    }
-    public function version_equals()
-    {
-    }
-    public function version_value()
-    {
-    }
-    public function encoding_name()
-    {
-    }
-    public function encoding_equals()
-    {
-    }
-    public function encoding_value()
-    {
-    }
-    public function standalone_name()
-    {
-    }
-    public function standalone_equals()
-    {
-    }
-    public function standalone_value()
+    class SimplePie_XML_Declaration_Parser extends \SimplePie\XML\Declaration\Parser
     {
     }
 }

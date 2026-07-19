@@ -30,6 +30,7 @@
  */
 namespace assignfeedback_editpdf\task;
 
+use core\task\adhoc_task;
 /**
  * Adhoc task to bump the submission timemodified associated with a stale conversion.
  *

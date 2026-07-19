@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 namespace core_ai\hook;
 
+use core_ai\provider;
+use core\hook\stoppable_trait;
 /**
  * Hook before AI provider is deleted.
  *

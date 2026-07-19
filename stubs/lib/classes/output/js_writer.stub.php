@@ -20,75 +20,84 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output;
-
-/**
- * Simple javascript output class
- *
- * @copyright 2010 Petr Skoda
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @since Moodle 2.0
- * @package core
- * @category output
- */
-class js_writer
-{
+namespace core\output {
     /**
-     * Returns javascript code calling the function
+     * Simple javascript output class
      *
-     * @param string $function function name, can be complex like Y.Event.purgeElement
-     * @param null|array $arguments parameters
-     * @param int $delay execution delay in seconds
-     * @return string JS code fragment
+     * @copyright 2010 Petr Skoda
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @since Moodle 2.0
+     * @package core
+     * @category output
      */
-    public static function function_call($function, ?array $arguments = null, $delay = 0)
+    class js_writer
     {
+        /**
+         * Returns javascript code calling the function
+         *
+         * @param string $function function name, can be complex like Y.Event.purgeElement
+         * @param null|array $arguments parameters
+         * @param int $delay execution delay in seconds
+         * @return string JS code fragment
+         */
+        public static function function_call($function, ?array $arguments = null, $delay = 0)
+        {
+        }
+        /**
+         * Special function which adds Y as first argument of function call.
+         *
+         * @param string $function The function to call
+         * @param null|array $extraarguments Any arguments to pass to it
+         * @return string Some JS code
+         */
+        public static function function_call_with_y($function, ?array $extraarguments = null)
+        {
+        }
+        /**
+         * Returns JavaScript code to initialise a new object
+         *
+         * @param string $var If it is null then no var is assigned the new object.
+         * @param string $class The class to initialise an object for.
+         * @param null|array $arguments An array of args to pass to the init method.
+         * @param null|array $requirements Any modules required for this class.
+         * @param int $delay The delay before initialisation. 0 = no delay.
+         * @return string Some JS code
+         */
+        public static function object_init($var, $class, ?array $arguments = null, ?array $requirements = null, $delay = 0)
+        {
+        }
+        /**
+         * Returns code setting value to variable
+         *
+         * @param string $name
+         * @param mixed $value json serialised value
+         * @param bool $usevar add var definition, ignored for nested properties
+         * @return string JS code fragment
+         */
+        public static function set_variable($name, $value, $usevar = true)
+        {
+        }
+        /**
+         * Writes event handler attaching code
+         *
+         * @param array|string $selector standard YUI selector for elements, may be
+         *     array or string, element id is in the form "#idvalue"
+         * @param string $event A valid DOM event (click, mousedown, change etc.)
+         * @param string $function The name of the function to call
+         * @param null|array $arguments An optional array of argument parameters to pass to the function
+         * @return string JS code fragment
+         */
+        public static function event_handler($selector, $event, $function, ?array $arguments = null)
+        {
+        }
     }
+}
+namespace {
     /**
-     * Special function which adds Y as first argument of function call.
-     *
-     * @param string $function The function to call
-     * @param null|array $extraarguments Any arguments to pass to it
-     * @return string Some JS code
+     * Runtime class alias of \core\output\js_writer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public static function function_call_with_y($function, ?array $extraarguments = null)
-    {
-    }
-    /**
-     * Returns JavaScript code to initialise a new object
-     *
-     * @param string $var If it is null then no var is assigned the new object.
-     * @param string $class The class to initialise an object for.
-     * @param null|array $arguments An array of args to pass to the init method.
-     * @param null|array $requirements Any modules required for this class.
-     * @param int $delay The delay before initialisation. 0 = no delay.
-     * @return string Some JS code
-     */
-    public static function object_init($var, $class, ?array $arguments = null, ?array $requirements = null, $delay = 0)
-    {
-    }
-    /**
-     * Returns code setting value to variable
-     *
-     * @param string $name
-     * @param mixed $value json serialised value
-     * @param bool $usevar add var definition, ignored for nested properties
-     * @return string JS code fragment
-     */
-    public static function set_variable($name, $value, $usevar = true)
-    {
-    }
-    /**
-     * Writes event handler attaching code
-     *
-     * @param array|string $selector standard YUI selector for elements, may be
-     *     array or string, element id is in the form "#idvalue"
-     * @param string $event A valid DOM event (click, mousedown, change etc.)
-     * @param string $function The name of the function to call
-     * @param null|array $arguments An optional array of argument parameters to pass to the function
-     * @return string JS code fragment
-     */
-    public static function event_handler($selector, $event, $function, ?array $arguments = null)
+    class js_writer extends \core\output\js_writer
     {
     }
 }

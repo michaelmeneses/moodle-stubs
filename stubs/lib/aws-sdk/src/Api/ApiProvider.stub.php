@@ -8,6 +8,7 @@
  */
 namespace Aws\Api;
 
+use Aws\Exception\UnresolvedApiException;
 /**
  * API providers.
  *

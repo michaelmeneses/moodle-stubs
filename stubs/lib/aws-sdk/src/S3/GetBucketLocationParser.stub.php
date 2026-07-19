@@ -8,6 +8,11 @@
  */
 namespace Aws\S3;
 
+use Aws\Api\Parser\AbstractParser;
+use Aws\Api\StructureShape;
+use Aws\CommandInterface;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\StreamInterface;
 /**
  * @internal Decorates a parser for the S3 service to correctly handle the
  *           GetBucketLocation operation.

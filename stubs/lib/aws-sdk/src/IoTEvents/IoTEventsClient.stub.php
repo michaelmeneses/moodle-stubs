@@ -8,6 +8,7 @@
  */
 namespace Aws\IoTEvents;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS IoT Events** service.
  * @method \Aws\Result createAlarmModel(array $args = [])

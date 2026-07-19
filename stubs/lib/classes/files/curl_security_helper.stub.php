@@ -30,6 +30,7 @@
  */
 namespace core\files;
 
+use core\ip_utils;
 /**
  * Host and port checking for curl.
  *

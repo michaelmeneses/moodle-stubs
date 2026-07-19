@@ -8,6 +8,10 @@
  */
 namespace core_reportbuilder\output;
 
+use core\output\inplace_editable;
+use core_external\external_api;
+use core_reportbuilder\permission;
+use core_reportbuilder\local\models\schedule;
 /**
  * Schedule name editable component
  *

@@ -8,6 +8,7 @@
  */
 namespace Aws\MigrationHub;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Migration Hub** service.
  * @method \Aws\Result associateCreatedArtifact(array $args = [])

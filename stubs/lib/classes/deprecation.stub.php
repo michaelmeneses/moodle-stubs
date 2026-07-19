@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core;
 
+use core\attribute\deprecated;
+use core\attribute\deprecated_with_reference;
 /**
  * Deprecation utility.
  *

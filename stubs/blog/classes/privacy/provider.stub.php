@@ -30,6 +30,16 @@
  */
 namespace core_blog\privacy;
 
+use blog_entry;
+use context;
+use context_helper;
+use context_user;
+use context_system;
+use core_tag_tag;
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\approved_contextlist;
+use core_privacy\local\request\transform;
+use core_privacy\local\request\writer;
 /**
  * Data provider class.
  *

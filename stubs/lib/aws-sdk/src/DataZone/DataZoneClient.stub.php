@@ -8,6 +8,7 @@
  */
 namespace Aws\DataZone;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon DataZone** service.
  * @method \Aws\Result acceptPredictions(array $args = [])

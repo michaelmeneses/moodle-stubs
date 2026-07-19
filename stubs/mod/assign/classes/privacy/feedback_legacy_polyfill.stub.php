@@ -29,6 +29,7 @@
  */
 namespace mod_assign\privacy;
 
+use core_privacy\local\request\contextlist;
 /**
  * The trait used to provide backwards compatability for third-party plugins.
  *

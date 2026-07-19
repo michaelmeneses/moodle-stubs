@@ -8,6 +8,7 @@
  */
 namespace mod_workshop;
 
+use core\activity_dates;
 /**
  * Class for fetching the important dates in mod_workshop for a given module instance and a user.
  *

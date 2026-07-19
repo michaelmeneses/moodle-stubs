@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 namespace tool_generator\local\testscenario;
 
+use stdClass;
 /**
  * Class with a scenario feature parsed.
  *

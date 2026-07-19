@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_backup\hook;
 
+use restore_root_task;
 /**
  * Hook to allow extra settings to be defined for the course restore process.
  *

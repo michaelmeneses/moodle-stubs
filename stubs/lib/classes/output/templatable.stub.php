@@ -20,27 +20,36 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output;
-
-/**
- * Interface marking other classes having the ability to export their data for use by templates.
- *
- * @copyright 2015 Damyon Wiese
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @package core
- * @category output
- * @since 2.9
- */
-interface templatable
-{
+namespace core\output {
     /**
-     * Function to export the renderer data in a format that is suitable for a
-     * mustache template. This means:
-     * 1. No complex types - only stdClass, array, int, string, float, bool
-     * 2. Any additional info that is required for the template is pre-calculated (e.g. capability checks).
+     * Interface marking other classes having the ability to export their data for use by templates.
      *
-     * @param renderer_base $output Used to do a final render of any components that need to be rendered for export.
-     * @return \stdClass|array
+     * @copyright 2015 Damyon Wiese
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @package core
+     * @category output
+     * @since 2.9
      */
-    public function export_for_template(renderer_base $output);
+    interface templatable
+    {
+        /**
+         * Function to export the renderer data in a format that is suitable for a
+         * mustache template. This means:
+         * 1. No complex types - only stdClass, array, int, string, float, bool
+         * 2. Any additional info that is required for the template is pre-calculated (e.g. capability checks).
+         *
+         * @param renderer_base $output Used to do a final render of any components that need to be rendered for export.
+         * @return \stdClass|array
+         */
+        public function export_for_template(renderer_base $output);
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \core\output\templatable registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    interface templatable extends \core\output\templatable
+    {
+    }
 }

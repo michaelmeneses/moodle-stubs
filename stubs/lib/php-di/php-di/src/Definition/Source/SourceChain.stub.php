@@ -8,6 +8,8 @@
  */
 namespace DI\Definition\Source;
 
+use DI\Definition\Definition;
+use DI\Definition\ExtendsPreviousDefinition;
 /**
  * Manages a chain of other definition sources.
  *

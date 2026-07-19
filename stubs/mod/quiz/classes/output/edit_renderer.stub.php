@@ -29,6 +29,12 @@
  */
 namespace mod_quiz\output;
 
+use core_question\local\bank\question_version_status;
+use mod_quiz\structure;
+use html_writer;
+use qbank_previewquestion\question_preview_options;
+use question_bank;
+use renderable;
 /**
  * Renderer outputting the quiz editing UI.
  *

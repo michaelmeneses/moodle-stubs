@@ -8,6 +8,8 @@
  */
 namespace PhpOffice\PhpSpreadsheet\RichText;
 
+use PhpOffice\PhpSpreadsheet\Exception as SpreadsheetException;
+use PhpOffice\PhpSpreadsheet\Style\Font;
 class Run extends TextElement implements ITextElement
 {
     /**

@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\oauth2\service;
 
+use core\oauth2\issuer;
+use core\oauth2\discovery\openidconnect;
+use core\oauth2\user_field_mapping;
 /**
  * Class for Clever OAuth service, with the specific methods related to it.
  *

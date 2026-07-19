@@ -8,6 +8,13 @@
  */
 namespace core_reportbuilder\output;
 
+use html_writer;
+use moodle_url;
+use plugin_renderer_base;
+use core_reportbuilder\table\custom_report_table;
+use core_reportbuilder\table\custom_report_table_view;
+use core_reportbuilder\table\system_report_table;
+use core_reportbuilder\local\models\report;
 /**
  * Report renderer class
  *

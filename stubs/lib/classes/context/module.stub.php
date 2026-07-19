@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 namespace core\context;
 
+use core\context;
+use stdClass;
+use coding_exception, moodle_url;
 /**
  * Course module context class
  *

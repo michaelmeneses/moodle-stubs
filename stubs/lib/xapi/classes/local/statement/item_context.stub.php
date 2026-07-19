@@ -29,6 +29,7 @@
  */
 namespace core_xapi\local\statement;
 
+use stdClass;
 /**
  * Abstract xAPI context class.
  *

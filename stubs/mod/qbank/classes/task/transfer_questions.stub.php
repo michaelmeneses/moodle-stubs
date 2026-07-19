@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_qbank\task;
 
+use core\context;
+use core\task\adhoc_task;
 /**
  * Move all the question files and tags under a given question category to a new context.
  *

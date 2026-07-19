@@ -29,6 +29,8 @@
  */
 namespace core_calendar\external;
 
+use core_calendar\local\event\container;
+use renderer_base;
 /**
  * Class for displaying a calendar event.
  *

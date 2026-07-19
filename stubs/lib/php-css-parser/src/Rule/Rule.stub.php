@@ -8,6 +8,15 @@
  */
 namespace Sabberworm\CSS\Rule;
 
+use Sabberworm\CSS\Comment\Comment;
+use Sabberworm\CSS\Comment\Commentable;
+use Sabberworm\CSS\OutputFormat;
+use Sabberworm\CSS\Parsing\ParserState;
+use Sabberworm\CSS\Parsing\UnexpectedEOFException;
+use Sabberworm\CSS\Parsing\UnexpectedTokenException;
+use Sabberworm\CSS\Renderable;
+use Sabberworm\CSS\Value\RuleValueList;
+use Sabberworm\CSS\Value\Value;
 /**
  * `Rule`s just have a string key (the rule) and a 'Value'.
  *

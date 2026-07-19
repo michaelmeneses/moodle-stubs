@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\router;
 
+use Slim\Routing\RouteResolver;
+use Slim\Routing\RoutingResults;
 /**
  * Route Resolver that supports routing via r.php.
  *

@@ -8,6 +8,15 @@
  */
 namespace Composer\Pcre\PHPStan;
 
+use Composer\Pcre\Preg;
+use PhpParser\Node\Expr\StaticCall;
+use PHPStan\Analyser\Scope;
+use PHPStan\Reflection\MethodReflection;
+use PHPStan\Reflection\ParameterReflection;
+use PHPStan\TrinaryLogic;
+use PHPStan\Type\Php\RegexArrayShapeMatcher;
+use PHPStan\Type\StaticMethodParameterOutTypeExtension;
+use PHPStan\Type\Type;
 final class PregMatchParameterOutTypeExtension implements StaticMethodParameterOutTypeExtension
 {
     /**

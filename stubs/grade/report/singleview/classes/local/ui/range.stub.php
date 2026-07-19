@@ -29,6 +29,7 @@
  */
 namespace gradereport_singleview\local\ui;
 
+use grade_item;
 /**
  * UI element that generates a grade_item min/max range (text only).
  *

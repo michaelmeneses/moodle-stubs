@@ -8,6 +8,10 @@
  */
 namespace core_reportbuilder\external;
 
+use core\context\system;
+use core\external\exporter;
+use core\output\renderer_base;
+use core_reportbuilder\output\report_action;
 /**
  * Encapsulate a report action
  *

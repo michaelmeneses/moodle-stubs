@@ -29,6 +29,13 @@
  */
 namespace tool_lp\output;
 
+use renderable;
+use renderer_base;
+use templatable;
+use context_course;
+use core_competency\external\competency_exporter;
+use core_competency\external\performance_helper;
+use stdClass;
 /**
  * User competency plan navigation class.
  *

@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_usertours;
 
+use tool_usertours\local\forms;
+use tool_usertours\local\table;
+use core\notification;
 /**
  * Tour manager.
  *

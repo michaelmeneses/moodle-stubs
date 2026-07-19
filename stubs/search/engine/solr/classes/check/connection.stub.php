@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace search_solr\check;
 
+use core\check\check;
+use core\check\result;
+use core\output\html_writer;
 /**
  * Check that the connection to Solr works.
  *

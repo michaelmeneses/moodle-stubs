@@ -22,6 +22,17 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tiny_aiplacement;
 
+use aiplacement_editor\utils;
+use core\context;
+use core_ai\aiactions\generate_image;
+use core_ai\aiactions\generate_text;
+use core_ai\manager;
+use editor_tiny\editor;
+use editor_tiny\plugin;
+use editor_tiny\plugin_with_buttons;
+use editor_tiny\plugin_with_configuration;
+use editor_tiny\plugin_with_configuration_for_external;
+use editor_tiny\plugin_with_menuitems;
 /**
  * Tiny AI placement plugin.
  *

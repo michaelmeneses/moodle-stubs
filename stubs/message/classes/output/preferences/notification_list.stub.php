@@ -29,6 +29,9 @@
  */
 namespace core_message\output\preferences;
 
+use renderable;
+use templatable;
+use context_user;
 /**
  * Class to create context for the list of notifications on the message preferences page.
  *

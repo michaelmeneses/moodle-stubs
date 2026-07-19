@@ -8,6 +8,7 @@
  */
 namespace Aws\DSQL;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Aurora DSQL** service.
  * @method \Aws\Result createCluster(array $args = [])

@@ -22,6 +22,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_course\output;
 
+use core\component;
+use core\exception\coding_exception;
+use core\output\local\properties\iconsize;
+use core\output\renderable;
+use core\output\renderer_base;
+use core\output\templatable;
+use core\url;
+use cm_info;
 /**
  * Class activity_icon
  *

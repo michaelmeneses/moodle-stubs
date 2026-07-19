@@ -20,44 +20,53 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core_cache;
-
-/**
- * A wrapper class used to handle ttl when the cache store doesn't natively support it.
- *
- * This class is exactly why you should use event driving invalidation of cache data rather than relying on ttl.
- *
- * @package    core_cache
- * @category   cache
- * @copyright  2012 Sam Hemelryk
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class ttl_wrapper
-{
+namespace core_cache {
     /**
-     * The data being stored.
-     * @var mixed
-     */
-    public $data;
-    /**
-     * When the cache data expires as a timestamp.
-     * @var int
-     */
-    public $expires;
-    /**
-     * Constructs a ttl cache wrapper.
+     * A wrapper class used to handle ttl when the cache store doesn't natively support it.
      *
-     * @param mixed $data
-     * @param int $ttl The time to live in seconds.
+     * This class is exactly why you should use event driving invalidation of cache data rather than relying on ttl.
+     *
+     * @package    core_cache
+     * @category   cache
+     * @copyright  2012 Sam Hemelryk
+     * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function __construct($data, $ttl)
+    class ttl_wrapper
     {
+        /**
+         * The data being stored.
+         * @var mixed
+         */
+        public $data;
+        /**
+         * When the cache data expires as a timestamp.
+         * @var int
+         */
+        public $expires;
+        /**
+         * Constructs a ttl cache wrapper.
+         *
+         * @param mixed $data
+         * @param int $ttl The time to live in seconds.
+         */
+        public function __construct($data, $ttl)
+        {
+        }
+        /**
+         * Returns true if the data has expired.
+         * @return int
+         */
+        public function has_expired()
+        {
+        }
     }
+}
+namespace {
     /**
-     * Returns true if the data has expired.
-     * @return int
+     * Runtime class alias of \core_cache\ttl_wrapper registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function has_expired()
+    class cache_ttl_wrapper extends \core_cache\ttl_wrapper
     {
     }
 }

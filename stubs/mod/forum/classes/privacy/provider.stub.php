@@ -29,6 +29,16 @@
  */
 namespace mod_forum\privacy;
 
+use core_grades\component_gradeitem as gradeitem;
+use core_privacy\local\request\userlist;
+use core_privacy\local\request\approved_contextlist;
+use core_privacy\local\request\approved_userlist;
+use core_privacy\local\request\deletion_criteria;
+use core_privacy\local\request\writer;
+use core_privacy\local\request\helper as request_helper;
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\transform;
+use tool_dataprivacy\context_instance;
 /**
  * Implementation of the privacy subsystem plugin provider for the forum activity module.
  *

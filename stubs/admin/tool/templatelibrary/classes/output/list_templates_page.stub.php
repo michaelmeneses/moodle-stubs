@@ -29,6 +29,14 @@
  */
 namespace tool_templatelibrary\output;
 
+use renderable;
+use templatable;
+use renderer_base;
+use stdClass;
+use core_collator;
+use core_component;
+use core_plugin_manager;
+use tool_templatelibrary\api;
 /**
  * Class containing data for list_templates page
  *

@@ -8,6 +8,8 @@
  */
 namespace mod_quiz\cache;
 
+use core_cache\data_source_interface;
+use core_cache\definition;
 /**
  * Class quiz_overrides
  *

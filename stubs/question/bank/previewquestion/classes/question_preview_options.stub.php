@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_previewquestion;
 
+use question_display_options;
 /**
  * Displays question preview options as default and set the options.
  *

@@ -8,6 +8,11 @@
  */
 namespace Aws\S3\RegionalEndpoint;
 
+use Aws\AbstractConfigurationProvider;
+use Aws\CacheInterface;
+use Aws\ConfigurationProviderInterface;
+use Aws\S3\RegionalEndpoint\Exception\ConfigurationException;
+use GuzzleHttp\Promise;
 /**
  * A configuration provider is a function that returns a promise that is
  * fulfilled with a {@see \Aws\S3\RegionalEndpoint\ConfigurationInterface}

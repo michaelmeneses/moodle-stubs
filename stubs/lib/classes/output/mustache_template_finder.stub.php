@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output;
 
+use core\exception\coding_exception;
+use core\exception\moodle_exception;
+use core_component;
 /**
  * Get information about valid locations for mustache templates.
  *

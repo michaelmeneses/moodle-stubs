@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_admin_presets\local\action;
 
+use tool_admin_presets\form\export_form;
+use moodle_exception;
 /**
  * This class extends base class and handles export function.
  *

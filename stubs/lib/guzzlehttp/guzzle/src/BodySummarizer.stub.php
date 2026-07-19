@@ -8,6 +8,7 @@
  */
 namespace GuzzleHttp;
 
+use Psr\Http\Message\MessageInterface;
 final class BodySummarizer implements BodySummarizerInterface
 {
     /**

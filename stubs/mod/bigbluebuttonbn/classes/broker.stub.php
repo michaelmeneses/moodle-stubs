@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn;
 
+use Exception;
+use Firebase\JWT\JWT;
+use Firebase\JWT\Key;
+use mod_bigbluebuttonbn\local\config;
 /**
  * The broker routines
  *

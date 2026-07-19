@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_admin\table;
 
+use context_system;
+use core_plugin_manager;
+use core_table\dynamic as dynamic_table;
+use flexible_table;
+use html_writer;
+use moodle_url;
+use stdClass;
 /**
  * Plugin Management table.
  *

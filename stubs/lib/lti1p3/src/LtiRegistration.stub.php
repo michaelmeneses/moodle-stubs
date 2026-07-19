@@ -8,6 +8,7 @@
  */
 namespace Packback\Lti1p3;
 
+use Packback\Lti1p3\Interfaces\ILtiRegistration;
 class LtiRegistration implements ILtiRegistration
 {
     private ?string $issuer;

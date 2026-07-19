@@ -8,6 +8,9 @@
  */
 namespace OpenSpout\Common\Helper;
 
+use OpenSpout\Common\Exception\IOException;
+use RecursiveDirectoryIterator;
+use RecursiveIteratorIterator;
 /**
  * @internal
  */

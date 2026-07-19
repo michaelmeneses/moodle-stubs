@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_monitor;
 
+use core_collator;
+use core_component;
+use core_plugin_manager;
+use ReflectionClass;
 /**
  * Class for returning event information.
  *

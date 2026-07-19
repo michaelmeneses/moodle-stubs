@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\plugininfo;
 
+use admin_settingpage;
+use core_communication\processor;
+use core_plugin_manager;
+use moodle_url;
 /**
  * Class for communication provider.
  *

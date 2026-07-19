@@ -29,6 +29,8 @@
  */
 namespace core\event;
 
+use core\event\base;
+use core_competency\user_competency;
 /**
  * User competency review started event class.
  *

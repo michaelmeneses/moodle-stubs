@@ -29,6 +29,38 @@
  */
 namespace tool_lp;
 
+use context_course;
+use context_system;
+use context_user;
+use core_competency\api;
+use core_competency\external\competency_exporter;
+use core_competency\external\competency_framework_exporter;
+use core_competency\external\course_competency_exporter;
+use core_competency\external\course_competency_settings_exporter;
+use core_competency\external\plan_exporter;
+use core_competency\external\template_exporter;
+use core_competency\external\user_competency_course_exporter;
+use core_competency\external\user_competency_exporter;
+use core_competency\external\user_competency_plan_exporter;
+use core_course\external\course_module_summary_exporter;
+use core_course\external\course_summary_exporter;
+use core_external\external_api;
+use core_external\external_description;
+use core_external\external_function_parameters;
+use core_external\external_multiple_structure;
+use core_external\external_single_structure;
+use core_external\external_value;
+use core_user\external\user_summary_exporter;
+use tool_lp\external\competency_path_exporter;
+use tool_lp\external\competency_summary_exporter;
+use tool_lp\external\course_competency_statistics_exporter;
+use tool_lp\external\template_statistics_exporter;
+use tool_lp\external\user_competency_summary_exporter;
+use tool_lp\external\user_competency_summary_in_course_exporter;
+use tool_lp\external\user_competency_summary_in_plan_exporter;
+use tool_lp\external\user_evidence_summary_exporter;
+use tool_lp\output\user_competency_summary_in_course;
+use tool_lp\output\user_competency_summary_in_plan;
 /**
  * This is the external API for this tool.
  *

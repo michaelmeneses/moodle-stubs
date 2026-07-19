@@ -20,27 +20,39 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output\action_menu;
-
-/**
- * An action menu filler
- *
- * @package core
- * @category output
- * @copyright 2013 Andrew Nicols
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class filler extends action_link implements renderable
-{
+namespace core\output\action_menu {
+    use core\output\action_link;
+    use core\output\html_writer;
+    use core\output\renderable;
     /**
-     * True if this is a primary action. False if not.
-     * @var bool
+     * An action menu filler
+     *
+     * @package core
+     * @category output
+     * @copyright 2013 Andrew Nicols
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public $primary = true;
+    class filler extends action_link implements renderable
+    {
+        /**
+         * True if this is a primary action. False if not.
+         * @var bool
+         */
+        public $primary = true;
+        /**
+         * Constructs the object.
+         */
+        public function __construct()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * Constructs the object.
+     * Runtime class alias of \core\output\action_menu\filler registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function __construct()
+    class action_menu_filler extends \core\output\action_menu\filler
     {
     }
 }

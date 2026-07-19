@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qtype_multianswer\task;
 
+use context_system;
+use core\task\stored_progress_task_trait;
+use core_question\local\bank\question_version_status;
+use question_bank;
+use question_engine_data_mapper;
 /**
  * Cleanup duplicate subquestions
  *

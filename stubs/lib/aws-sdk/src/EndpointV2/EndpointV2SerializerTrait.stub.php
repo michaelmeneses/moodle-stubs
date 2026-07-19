@@ -8,6 +8,9 @@
  */
 namespace Aws\EndpointV2;
 
+use Aws\Api\Serializer\RestSerializer;
+use Aws\EndpointV2\Ruleset\RulesetEndpoint;
+use GuzzleHttp\Psr7\Uri;
 /**
  * Set of helper functions used to set endpoints and endpoint
  * properties derived from dynamic endpoint resolution.

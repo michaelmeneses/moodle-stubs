@@ -29,6 +29,8 @@
  */
 namespace core_rating\privacy;
 
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\userlist;
 /**
  * Privacy Subsystem implementation for core_ratings.
  *

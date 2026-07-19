@@ -32,6 +32,7 @@
  */
 namespace qbank_exportquestions;
 
+use core_question\local\bank\navigation_node_base;
 /**
  * Class plugin_feature.
  *

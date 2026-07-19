@@ -8,6 +8,10 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Worksheet;
 
+use Iterator as NativeIterator;
+use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
+use PhpOffice\PhpSpreadsheet\Exception;
+use PhpOffice\PhpSpreadsheet\Exception as PhpSpreadsheetException;
 /**
  * @implements NativeIterator<string, Column>
  */

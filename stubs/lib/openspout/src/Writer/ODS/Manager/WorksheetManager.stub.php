@@ -8,6 +8,20 @@
  */
 namespace OpenSpout\Writer\ODS\Manager;
 
+use DateTimeImmutable;
+use DateTimeInterface;
+use OpenSpout\Common\Entity\Cell;
+use OpenSpout\Common\Entity\Row;
+use OpenSpout\Common\Entity\Style\Style;
+use OpenSpout\Common\Exception\InvalidArgumentException;
+use OpenSpout\Common\Exception\IOException;
+use OpenSpout\Common\Helper\Escaper\ODS as ODSEscaper;
+use OpenSpout\Writer\Common\Entity\Worksheet;
+use OpenSpout\Writer\Common\Helper\CellHelper;
+use OpenSpout\Writer\Common\Manager\RegisteredStyle;
+use OpenSpout\Writer\Common\Manager\Style\StyleMerger;
+use OpenSpout\Writer\Common\Manager\WorksheetManagerInterface;
+use OpenSpout\Writer\ODS\Manager\Style\StyleManager;
 /**
  * @internal
  */

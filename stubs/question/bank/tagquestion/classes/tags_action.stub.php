@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_tagquestion;
 
+use core_question\local\bank\question_action_base;
 /**
  * Action to add and remove tags to questions.
  *

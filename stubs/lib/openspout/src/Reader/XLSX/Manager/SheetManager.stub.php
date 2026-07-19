@@ -8,6 +8,16 @@
  */
 namespace OpenSpout\Reader\XLSX\Manager;
 
+use OpenSpout\Common\Helper\Escaper\XLSX;
+use OpenSpout\Reader\Common\Manager\RowManager;
+use OpenSpout\Reader\Common\XMLProcessor;
+use OpenSpout\Reader\Wrapper\XMLReader;
+use OpenSpout\Reader\XLSX\Helper\CellValueFormatter;
+use OpenSpout\Reader\XLSX\Options;
+use OpenSpout\Reader\XLSX\RowIterator;
+use OpenSpout\Reader\XLSX\Sheet;
+use OpenSpout\Reader\XLSX\SheetHeaderReader;
+use OpenSpout\Reader\XLSX\SheetMergeCellsReader;
 /**
  * @internal
  */

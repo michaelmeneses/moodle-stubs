@@ -8,6 +8,8 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Style\NumberFormat\Wizard;
 
+use NumberFormatter;
+use PhpOffice\PhpSpreadsheet\Exception;
 final class Locale
 {
     /**

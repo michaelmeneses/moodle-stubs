@@ -22,6 +22,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace assignfeedback_editpdf\task;
 
+use core\task\adhoc_task;
+use core\task\manager;
+use assignfeedback_editpdf\document_services;
+use assignfeedback_editpdf\combined_document;
+use assignfeedback_editpdf\pdf;
+use context_module;
+use moodle_exception;
+use assign;
 /**
  * An adhoc task to convert submissions to pdf in the background.
  *

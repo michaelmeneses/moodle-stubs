@@ -30,6 +30,13 @@
  */
 namespace core_completion;
 
+use core\context;
+use core\output\local\properties\iconsize;
+use core_course\output\activity_icon;
+use stdClass;
+use context_course;
+use cm_info;
+use moodle_url;
 /**
  * Bulk activity completion manager class
  *

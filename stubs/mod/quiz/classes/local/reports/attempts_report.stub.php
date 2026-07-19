@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\local\reports;
 
+use coding_exception;
+use context_module;
+use mod_quiz\quiz_settings;
+use moodle_url;
+use stdClass;
+use table_sql;
 /**
  * Base class for quiz reports that are basically a table with one row for each attempt.
  *

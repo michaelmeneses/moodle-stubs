@@ -8,6 +8,7 @@
  */
 namespace core_reportbuilder\external;
 
+use core\external\exporter;
 /**
  * Custom report menu cards exporter abstract class
  *

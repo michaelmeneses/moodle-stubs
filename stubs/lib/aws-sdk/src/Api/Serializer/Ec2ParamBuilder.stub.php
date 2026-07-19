@@ -8,6 +8,8 @@
  */
 namespace Aws\Api\Serializer;
 
+use Aws\Api\Shape;
+use Aws\Api\ListShape;
 /**
  * @internal
  */

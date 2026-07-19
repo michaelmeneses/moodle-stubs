@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Worksheet;
 
+use PhpOffice\PhpSpreadsheet\Shared\PasswordHasher;
 class Protection
 {
     const ALGORITHM_MD2 = 'MD2';

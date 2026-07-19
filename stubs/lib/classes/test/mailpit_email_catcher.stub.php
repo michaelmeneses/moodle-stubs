@@ -30,6 +30,8 @@
  */
 namespace core\test;
 
+use core\http_client;
+use stdClass;
 /**
  * Mailpit email handling class.
  *

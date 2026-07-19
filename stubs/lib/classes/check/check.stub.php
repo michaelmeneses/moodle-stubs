@@ -30,6 +30,7 @@
  */
 namespace core\check;
 
+use coding_exception;
 /**
  * Base class for checks
  *

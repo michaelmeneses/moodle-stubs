@@ -8,6 +8,7 @@
  */
 namespace Aws\KafkaConnect;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Managed Streaming for Kafka Connect** service.
  * @method \Aws\Result createConnector(array $args = [])

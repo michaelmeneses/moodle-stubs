@@ -29,6 +29,13 @@
  */
 namespace core_courseformat\output\local\content\cm;
 
+use core_courseformat\output\local\content\section\availability as section_avalability;
+use cm_info;
+use core_courseformat\base as course_format;
+use section_info;
+use stdClass;
+use core_availability\info_module;
+use core_availability\info;
 /**
  * Base class to render a course module availability inside a course format.
  *

@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\router;
 
+use Slim\App;
+use Slim\Interfaces\RouteGroupInterface;
+use Slim\Interfaces\RouteInterface;
+use Slim\Routing\RouteCollectorProxy;
 /**
  * Route Loader and Discovery agent.
  *

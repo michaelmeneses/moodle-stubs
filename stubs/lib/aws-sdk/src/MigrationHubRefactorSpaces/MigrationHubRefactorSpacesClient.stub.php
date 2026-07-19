@@ -8,6 +8,7 @@
  */
 namespace Aws\MigrationHubRefactorSpaces;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Migration Hub Refactor Spaces** service.
  * @method \Aws\Result createApplication(array $args = [])

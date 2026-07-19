@@ -22,6 +22,15 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_managecategories\form;
 
+use context;
+use context_module;
+use context_course;
+use qbank_managecategories\helper;
+use moodle_exception;
+use moodle_url;
+use core_question\local\bank\question_edit_contexts;
+use qbank_managecategories\output\category;
+use core_question\category_manager;
 /**
  * Defines the form for editing question categories.
  *

@@ -8,6 +8,7 @@
  */
 namespace Aws\Artifact;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Artifact** service.
  * @method \Aws\Result getAccountSettings(array $args = [])

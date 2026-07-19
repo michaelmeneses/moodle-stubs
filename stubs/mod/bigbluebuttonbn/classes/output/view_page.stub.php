@@ -22,6 +22,17 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn\output;
 
+use core\check\result;
+use core\output\notification;
+use mod_bigbluebuttonbn\instance;
+use mod_bigbluebuttonbn\local\config;
+use mod_bigbluebuttonbn\local\proxy\bigbluebutton_proxy;
+use mod_bigbluebuttonbn\meeting;
+use renderable;
+use renderer_base;
+use stdClass;
+use templatable;
+use tool_task\check\cronrunning;
 /**
  * View Page template renderable.
  *

@@ -17,6 +17,8 @@
  */
 namespace ScssPhp\ScssPhp\Block;
 
+use ScssPhp\ScssPhp\Block;
+use ScssPhp\ScssPhp\Type;
 /**
  * @internal
  */

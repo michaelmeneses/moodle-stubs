@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_feedback\output;
 
+use context_module;
+use renderable;
+use renderer_base;
+use templatable;
 /**
  * Class base_action_bar
  *

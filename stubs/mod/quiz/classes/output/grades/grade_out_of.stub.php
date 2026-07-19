@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\output\grades;
 
+use html_writer;
+use renderable;
+use stdClass;
 /**
  * Represents a grade out of a give total, that wants to be output in a particular way.
  *

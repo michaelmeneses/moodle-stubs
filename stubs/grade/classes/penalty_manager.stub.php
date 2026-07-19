@@ -22,6 +22,16 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_grades;
 
+use core\context;
+use core\plugininfo\gradepenalty;
+use core_plugin_manager;
+use grade_grade;
+use grade_item;
+use moodle_url;
+use navigation_node;
+use pix_icon;
+use settings_navigation;
+use stdClass;
 /**
  * Manager class for grade penalty.
  *

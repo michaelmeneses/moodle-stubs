@@ -29,6 +29,11 @@
  */
 namespace format_topics\output\courseformat\content\section;
 
+use core\output\action_menu\link as action_menu_link;
+use core\output\action_menu\link_secondary as action_menu_link_secondary;
+use core\output\pix_icon;
+use core_courseformat\output\local\content\section\controlmenu as controlmenu_base;
+use core\url;
 /**
  * Base class to render a course section menu.
  *

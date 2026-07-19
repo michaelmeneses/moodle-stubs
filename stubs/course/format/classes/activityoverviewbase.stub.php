@@ -22,6 +22,15 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_courseformat;
 
+use cm_info;
+use core\context\module as module_context;
+use core_completion\cm_completion_details;
+use core_courseformat\local\overview\overviewitem;
+use core_courseformat\output\local\overview\activityname;
+use core_courseformat\output\local\overview\overviewpage;
+use core_courseformat\base as courseformat;
+use grade_item;
+use grade_grade;
 /**
  * Base class for activity overview.
  *

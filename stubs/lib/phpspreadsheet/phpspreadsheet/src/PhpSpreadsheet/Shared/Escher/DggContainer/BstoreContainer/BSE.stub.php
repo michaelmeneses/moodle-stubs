@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Shared\Escher\DggContainer\BstoreContainer;
 
+use PhpOffice\PhpSpreadsheet\Shared\Escher\DggContainer\BstoreContainer;
 class BSE
 {
     const BLIPTYPE_ERROR = 0x0;

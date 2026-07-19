@@ -8,6 +8,7 @@
  */
 namespace Aws\ManagedGrafana;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Managed Grafana** service.
  * @method \Aws\Result associateLicense(array $args = [])

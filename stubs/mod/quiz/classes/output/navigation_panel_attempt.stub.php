@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\output;
 
+use html_writer;
 /**
  * Specialisation of {@see navigation_panel_base} for the attempt quiz page.
  *

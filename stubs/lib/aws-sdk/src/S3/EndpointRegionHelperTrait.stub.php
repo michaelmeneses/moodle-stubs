@@ -8,6 +8,11 @@
  */
 namespace Aws\S3;
 
+use Aws\Api\Service;
+use Aws\Arn\ArnInterface;
+use Aws\Arn\S3\OutpostsArnInterface;
+use Aws\Endpoint\PartitionEndpointProvider;
+use Aws\Exception\InvalidRegionException;
 /**
  * @internal
  */

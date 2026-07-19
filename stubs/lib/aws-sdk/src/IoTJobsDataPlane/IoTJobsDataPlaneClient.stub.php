@@ -8,6 +8,7 @@
  */
 namespace Aws\IoTJobsDataPlane;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS IoT Jobs Data Plane** service.
  * @method \Aws\Result describeJobExecution(array $args = [])

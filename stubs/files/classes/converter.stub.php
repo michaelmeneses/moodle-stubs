@@ -29,6 +29,7 @@
  */
 namespace core_files;
 
+use stored_file;
 /**
  * Class for converting files between different formats using unoconv.
  *

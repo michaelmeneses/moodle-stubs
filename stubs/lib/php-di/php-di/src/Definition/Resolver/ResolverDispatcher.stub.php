@@ -8,6 +8,17 @@
  */
 namespace DI\Definition\Resolver;
 
+use DI\Definition\ArrayDefinition;
+use DI\Definition\DecoratorDefinition;
+use DI\Definition\Definition;
+use DI\Definition\EnvironmentVariableDefinition;
+use DI\Definition\Exception\InvalidDefinition;
+use DI\Definition\FactoryDefinition;
+use DI\Definition\InstanceDefinition;
+use DI\Definition\ObjectDefinition;
+use DI\Definition\SelfResolvingDefinition;
+use DI\Proxy\ProxyFactory;
+use Psr\Container\ContainerInterface;
 /**
  * Dispatches to more specific resolvers.
  *

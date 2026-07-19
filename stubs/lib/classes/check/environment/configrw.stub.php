@@ -31,6 +31,8 @@
  */
 namespace core\check\environment;
 
+use core\check\check;
+use core\check\result;
 /**
  * Verifies config.php is not writable anymore after installation
  *

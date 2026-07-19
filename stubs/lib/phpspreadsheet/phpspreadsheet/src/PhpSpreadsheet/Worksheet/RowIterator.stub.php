@@ -8,6 +8,8 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Worksheet;
 
+use Iterator as NativeIterator;
+use PhpOffice\PhpSpreadsheet\Exception as PhpSpreadsheetException;
 /**
  * @implements NativeIterator<int, Row>
  */

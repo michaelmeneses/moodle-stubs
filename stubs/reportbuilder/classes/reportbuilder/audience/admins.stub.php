@@ -8,6 +8,9 @@
  */
 namespace core_reportbuilder\reportbuilder\audience;
 
+use MoodleQuickForm;
+use core_reportbuilder\local\audiences\base;
+use core_reportbuilder\local\helpers\database;
 /**
  * Administrators audience type
  *

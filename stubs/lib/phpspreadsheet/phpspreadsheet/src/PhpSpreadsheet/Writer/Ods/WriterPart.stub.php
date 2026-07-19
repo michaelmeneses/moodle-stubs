@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Writer\Ods;
 
+use PhpOffice\PhpSpreadsheet\Writer\Ods;
 abstract class WriterPart
 {
     /**

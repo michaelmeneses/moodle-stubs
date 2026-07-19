@@ -8,6 +8,7 @@
  */
 namespace Aws\Connect;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Connect Service** service.
  * @method \Aws\Result activateEvaluationForm(array $args = [])

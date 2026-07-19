@@ -29,6 +29,14 @@
  */
 namespace core\external;
 
+use stdClass;
+use renderer_base;
+use context;
+use coding_exception;
+use core_external\external_format_value;
+use core_external\external_multiple_structure;
+use core_external\external_single_structure;
+use core_external\external_value;
 /**
  * Generic exporter to take a stdClass and prepare it for return by webservice, or as the context for a template.
  *

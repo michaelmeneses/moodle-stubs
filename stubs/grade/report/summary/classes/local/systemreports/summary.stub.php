@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace gradereport_summary\local\systemreports;
 
+use gradereport_summary\local\entities\grade_items;
+use core_reportbuilder\local\helpers\database;
+use core_reportbuilder\system_report;
 /**
  * Grade summary system report class implementation
  *

@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_subsection\courseformat;
 
+use action_menu;
+use core_courseformat\base as course_format;
+use core_courseformat\output\local\content\section\controlmenu;
+use core_courseformat\sectiondelegatemodule;
+use mod_subsection\manager;
+use renderer_base;
 /**
  * Subsection plugin section delegate class.
  *

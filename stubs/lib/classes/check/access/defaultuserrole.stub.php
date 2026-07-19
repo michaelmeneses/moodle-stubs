@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\check\access;
 
+use core\check\check;
+use core\check\result;
 /**
  * Verifies sanity of default user role.
  *

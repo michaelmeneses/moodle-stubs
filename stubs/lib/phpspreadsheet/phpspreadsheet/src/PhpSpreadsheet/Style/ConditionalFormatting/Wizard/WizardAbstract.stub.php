@@ -8,6 +8,10 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Style\ConditionalFormatting\Wizard;
 
+use PhpOffice\PhpSpreadsheet\Calculation\Calculation;
+use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
+use PhpOffice\PhpSpreadsheet\Style\ConditionalFormatting\Wizard;
+use PhpOffice\PhpSpreadsheet\Style\Style;
 abstract class WizardAbstract
 {
     protected ?Style $style = null;

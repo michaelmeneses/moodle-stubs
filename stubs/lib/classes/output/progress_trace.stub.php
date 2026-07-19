@@ -20,31 +20,40 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output;
-
-/**
- * Progress trace class.
- *
- * Use this class from long operations where you want to output occasional information about
- * what is going on, but don't know if, or in what format, the output should be.
- *
- * @copyright 2009 Tim Hunt
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @package core
- */
-abstract class progress_trace
-{
+namespace core\output {
     /**
-     * Output an progress message in whatever format.
+     * Progress trace class.
      *
-     * @param string $message the message to output.
-     * @param int $depth indent depth for this message.
+     * Use this class from long operations where you want to output occasional information about
+     * what is going on, but don't know if, or in what format, the output should be.
+     *
+     * @copyright 2009 Tim Hunt
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @package core
      */
-    abstract public function output(string $message, int $depth = 0);
+    abstract class progress_trace
+    {
+        /**
+         * Output an progress message in whatever format.
+         *
+         * @param string $message the message to output.
+         * @param int $depth indent depth for this message.
+         */
+        abstract public function output(string $message, int $depth = 0);
+        /**
+         * Called when the processing is finished.
+         */
+        public function finished()
+        {
+        }
+    }
+}
+namespace {
     /**
-     * Called when the processing is finished.
+     * Runtime class alias of \core\output\progress_trace registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function finished()
+    abstract class progress_trace extends \core\output\progress_trace
     {
     }
 }

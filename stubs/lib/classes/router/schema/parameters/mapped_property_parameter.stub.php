@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\router\schema\parameters;
 
+use Psr\Http\Message\ServerRequestInterface;
 /**
  * An OpenAPI Parameter which supports validation.
  *

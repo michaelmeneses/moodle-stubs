@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_grades\privacy;
 
+use grade_grade;
 /**
  * A grade_item which has a reference to its historical content.
  *

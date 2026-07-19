@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_data\local\importer;
 
+use core\notification;
+use mod_data\manager;
+use mod_data\preset;
+use stdClass;
+use html_writer;
 /**
  * Abstract class used for data preset importers
  *

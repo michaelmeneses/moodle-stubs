@@ -8,6 +8,9 @@
  */
 namespace tool_componentlibrary\local\examples\dynamictabs;
 
+use core\output\dynamic_tabs\base;
+use renderer_base;
+use stdClass;
 /**
  * Example tab class
  *

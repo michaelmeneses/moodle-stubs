@@ -29,6 +29,9 @@
  */
 namespace tool_policy;
 
+use core\external\exporter;
+use renderer_base;
+use tool_policy\api;
 /**
  * Exporter of a single policy document version.
  *

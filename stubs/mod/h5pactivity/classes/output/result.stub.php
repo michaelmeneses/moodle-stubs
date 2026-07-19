@@ -29,6 +29,10 @@
  */
 namespace mod_h5pactivity\output;
 
+use renderable;
+use templatable;
+use renderer_base;
+use stdClass;
 /**
  * Class to display an attempt tesult in mod_h5pactivity.
  *

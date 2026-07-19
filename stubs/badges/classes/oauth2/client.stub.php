@@ -31,6 +31,9 @@
  */
 namespace core_badges\oauth2;
 
+use moodle_url;
+use moodle_exception;
+use stdClass;
 define('BACKPACK_CHALLENGE_METHOD', 'S256');
 define('BACKPACK_CODE_VERIFIER_TIME', 60);
 /**

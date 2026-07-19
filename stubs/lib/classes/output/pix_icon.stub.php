@@ -20,58 +20,67 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output;
-
-/**
- * Data structure representing an icon.
- *
- * @copyright 2010 Petr Skoda
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @since Moodle 2.0
- * @package core
- * @category output
- */
-class pix_icon implements renderable, templatable
-{
+namespace core\output {
     /**
-     * @var string The icon name
-     */
-    public $pix;
-    /**
-     * @var string The component the icon belongs to.
-     */
-    public $component;
-    /**
-     * @var array An array of attributes to use on the icon
-     */
-    public $attributes = [];
-    /**
-     * Constructor
+     * Data structure representing an icon.
      *
-     * @param string $pix short icon name
-     * @param string $alt The alt text to use for the icon
-     * @param string $component component name
-     * @param null|array $attributes html attributes
+     * @copyright 2010 Petr Skoda
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @since Moodle 2.0
+     * @package core
+     * @category output
      */
-    public function __construct($pix, $alt, $component = 'moodle', ?array $attributes = null)
+    class pix_icon implements renderable, templatable
     {
+        /**
+         * @var string The icon name
+         */
+        public $pix;
+        /**
+         * @var string The component the icon belongs to.
+         */
+        public $component;
+        /**
+         * @var array An array of attributes to use on the icon
+         */
+        public $attributes = [];
+        /**
+         * Constructor
+         *
+         * @param string $pix short icon name
+         * @param string $alt The alt text to use for the icon
+         * @param string $component component name
+         * @param null|array $attributes html attributes
+         */
+        public function __construct($pix, $alt, $component = 'moodle', ?array $attributes = null)
+        {
+        }
+        /**
+         * Export this data so it can be used as the context for a mustache template.
+         *
+         * @param renderer_base $output Used to do a final render of any components that need to be rendered for export.
+         * @return array
+         */
+        public function export_for_template(renderer_base $output)
+        {
+        }
+        /**
+         * Much simpler version of export that will produce the data required to render this pix with the
+         * pix helper in a mustache tag.
+         *
+         * @return array
+         */
+        public function export_for_pix()
+        {
+        }
     }
+}
+namespace {
     /**
-     * Export this data so it can be used as the context for a mustache template.
-     *
-     * @param renderer_base $output Used to do a final render of any components that need to be rendered for export.
-     * @return array
+     * Runtime class alias of \core\output\pix_icon registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function export_for_template(renderer_base $output)
-    {
-    }
-    /**
-     * Much simpler version of export that will produce the data required to render this pix with the
-     * pix helper in a mustache tag.
-     *
-     * @return array
-     */
-    public function export_for_pix()
+    class pix_icon extends \core\output\pix_icon
     {
     }
 }

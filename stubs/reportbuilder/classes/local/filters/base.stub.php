@@ -8,6 +8,9 @@
  */
 namespace core_reportbuilder\local\filters;
 
+use MoodleQuickForm;
+use core_reportbuilder\local\report\filter;
+use core_reportbuilder\local\models\filter as filter_model;
 /**
  * Base class for all report filters
  *

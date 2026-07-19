@@ -30,6 +30,7 @@
  */
 namespace format_weeks\output;
 
+use core_courseformat\output\section_renderer;
 /**
  * Basic renderer for weeks format.
  *

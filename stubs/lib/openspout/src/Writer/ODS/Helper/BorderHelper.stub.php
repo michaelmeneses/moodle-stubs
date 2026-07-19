@@ -8,6 +8,8 @@
  */
 namespace OpenSpout\Writer\ODS\Helper;
 
+use OpenSpout\Common\Entity\Style\Border;
+use OpenSpout\Common\Entity\Style\BorderPart;
 /**
  * The fo:border, fo:border-top, fo:border-bottom, fo:border-left and fo:border-right attributes
  * specify border properties

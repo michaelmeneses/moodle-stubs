@@ -22,6 +22,23 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace Moodle\BehatExtension\EventDispatcher\Tester;
 
+use Behat\Behat\EventDispatcher\Event\AfterStepSetup;
+use Behat\Behat\EventDispatcher\Event\AfterStepTested;
+use Behat\Behat\EventDispatcher\Event\BeforeStepTeardown;
+use Behat\Behat\EventDispatcher\Event\BeforeStepTested;
+use Behat\Behat\Tester\Result\ExecutedStepResult;
+use Behat\Behat\Tester\Result\SkippedStepResult;
+use Behat\Behat\Tester\Result\StepResult;
+use Behat\Behat\Tester\Result\UndefinedStepResult;
+use Behat\Behat\Tester\StepTester;
+use Behat\Gherkin\Node\FeatureNode;
+use Behat\Gherkin\Node\StepNode;
+use Behat\Testwork\Call\CallResult;
+use Behat\Testwork\Environment\Environment;
+use Behat\Testwork\EventDispatcher\TestworkEventDispatcher;
+use Moodle\BehatExtension\Context\Step\ChainedStep;
+use Moodle\BehatExtension\Exception\SkippedException;
+use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 // phpcs:disable moodle.NamingConventions.ValidFunctionName.LowercaseMethod
 /**
  * Override step tester to ensure chained steps gets executed.

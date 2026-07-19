@@ -29,6 +29,12 @@
  */
 namespace core\content\export\exporters;
 
+use context_course;
+use context_module;
+use core\content\export\exported_item;
+use core\content\export\zipwriter;
+use section_info;
+use stdClass;
 /**
  * The course exporter.
  *

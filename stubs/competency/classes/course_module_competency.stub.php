@@ -29,6 +29,8 @@
  */
 namespace core_competency;
 
+use stdClass;
+use lang_string;
 /**
  * Class for loading/storing course_module_competencies from the DB.
  *

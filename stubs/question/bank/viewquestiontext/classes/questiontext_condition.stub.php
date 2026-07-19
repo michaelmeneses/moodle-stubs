@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_viewquestiontext;
 
+use core\output\datafilter;
+use core_question\local\bank\condition;
 /**
  * Filter for question text and question feedback text.
  *

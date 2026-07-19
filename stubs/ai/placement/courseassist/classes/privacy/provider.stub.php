@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace aiplacement_courseassist\privacy;
 
+use core_privacy\local\metadata\null_provider;
 /**
  * Privacy Subsystem for course assistance placement implementing null_provider.
  *

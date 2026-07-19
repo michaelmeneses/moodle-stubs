@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_brickfield\local\htmlchecker\guidelines;
 
+use tool_brickfield\local\htmlchecker\brickfield_accessibility_guideline;
 /**
  * Brickfield Education Labs Guideline
  *

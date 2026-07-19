@@ -8,6 +8,7 @@
  */
 namespace core;
 
+use cm_info;
 /**
  * Class for fetching the  important dates of an activity module for a given module instance and a user.
  *

@@ -29,6 +29,9 @@
  */
 namespace tool_dataprivacy\task;
 
+use coding_exception;
+use core\task\scheduled_task;
+use tool_dataprivacy\api;
 /**
  * Scheduled task to delete files and update request statuses once they expire.
  *

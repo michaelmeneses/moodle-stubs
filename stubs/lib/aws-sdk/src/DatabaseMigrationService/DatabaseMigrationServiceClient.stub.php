@@ -8,6 +8,7 @@
  */
 namespace Aws\DatabaseMigrationService;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Database Migration Service** service.
  * @method \Aws\Result addTagsToResource(array $args = [])

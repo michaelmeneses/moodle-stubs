@@ -8,6 +8,7 @@
  */
 namespace Aws\AppTest;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Mainframe Modernization Application Testing** service.
  * @method \Aws\Result createTestCase(array $args = [])

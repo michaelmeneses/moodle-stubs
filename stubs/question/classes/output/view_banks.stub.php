@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_question\output;
 
+use context_course;
+use core_question\local\bank\question_bank_helper;
+use renderer_base;
+use single_button;
+use stdClass;
 /**
  * Create the management view of shared and non-shared banks.
  *

@@ -8,6 +8,19 @@
  */
 namespace GeoIp2\Database;
 
+use GeoIp2\Exception\AddressNotFoundException;
+use GeoIp2\Model\AnonymousIp;
+use GeoIp2\Model\Asn;
+use GeoIp2\Model\City;
+use GeoIp2\Model\ConnectionType;
+use GeoIp2\Model\Country;
+use GeoIp2\Model\Domain;
+use GeoIp2\Model\Enterprise;
+use GeoIp2\Model\Isp;
+use GeoIp2\ProviderInterface;
+use MaxMind\Db\Reader as DbReader;
+use MaxMind\Db\Reader\InvalidDatabaseException;
+use MaxMind\Db\Reader\Metadata;
 /**
  * Instances of this class provide a reader for the GeoIP2 database format.
  * IP addresses can be looked up using the database specific methods.

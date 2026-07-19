@@ -47,90 +47,100 @@
  * @link http://simplepie.org/ SimplePie
  * @license http://www.opensource.org/licenses/bsd-license.php BSD License
  */
-namespace SimplePie\Cache;
-
-/**
- * Caches data to memcached
- *
- * Registered for URLs with the "memcached" protocol
- *
- * For example, `memcached://localhost:11211/?timeout=3600&prefix=sp_` will
- * connect to memcached on `localhost` on port 11211. All tables will be
- * prefixed with `sp_` and data will expire after 3600 seconds
- *
- * @package    SimplePie
- * @subpackage Caching
- * @author     Paul L. McNeely
- * @uses       Memcached
- * @deprecated since SimplePie 1.8.0, use implementation of "Psr\SimpleCache\CacheInterface" instead
- */
-class Memcached implements Base
-{
+namespace SimplePie\Cache {
+    use Memcached as NativeMemcached;
     /**
-     * NativeMemcached instance
-     * @var NativeMemcached
+     * Caches data to memcached
+     *
+     * Registered for URLs with the "memcached" protocol
+     *
+     * For example, `memcached://localhost:11211/?timeout=3600&prefix=sp_` will
+     * connect to memcached on `localhost` on port 11211. All tables will be
+     * prefixed with `sp_` and data will expire after 3600 seconds
+     *
+     * @package    SimplePie
+     * @subpackage Caching
+     * @author     Paul L. McNeely
+     * @uses       Memcached
+     * @deprecated since SimplePie 1.8.0, use implementation of "Psr\SimpleCache\CacheInterface" instead
      */
-    protected $cache;
-    /**
-     * Options
-     * @var array
-     */
-    protected $options;
-    /**
-     * Cache name
-     * @var string
-     */
-    protected $name;
-    /**
-     * Create a new cache object
-     * @param string $location Location string (from SimplePie::$cache_location)
-     * @param string $name Unique ID for the cache
-     * @param Base::TYPE_FEED|Base::TYPE_IMAGE $type Either TYPE_FEED for SimplePie data, or TYPE_IMAGE for image data
-     */
-    public function __construct($location, $name, $type)
+    class Memcached implements Base
     {
+        /**
+         * NativeMemcached instance
+         * @var NativeMemcached
+         */
+        protected $cache;
+        /**
+         * Options
+         * @var array
+         */
+        protected $options;
+        /**
+         * Cache name
+         * @var string
+         */
+        protected $name;
+        /**
+         * Create a new cache object
+         * @param string $location Location string (from SimplePie::$cache_location)
+         * @param string $name Unique ID for the cache
+         * @param Base::TYPE_FEED|Base::TYPE_IMAGE $type Either TYPE_FEED for SimplePie data, or TYPE_IMAGE for image data
+         */
+        public function __construct($location, $name, $type)
+        {
+        }
+        /**
+         * Save data to the cache
+         * @param array|\SimplePie\SimplePie $data Data to store in the cache. If passed a SimplePie object, only cache the $data property
+         * @return bool Successfulness
+         */
+        public function save($data)
+        {
+        }
+        /**
+         * Retrieve the data saved to the cache
+         * @return array Data for SimplePie::$data
+         */
+        public function load()
+        {
+        }
+        /**
+         * Retrieve the last modified time for the cache
+         * @return int Timestamp
+         */
+        public function mtime()
+        {
+        }
+        /**
+         * Set the last modified time to the current time
+         * @return bool Success status
+         */
+        public function touch()
+        {
+        }
+        /**
+         * Remove the cache
+         * @return bool Success status
+         */
+        public function unlink()
+        {
+        }
+        /**
+         * Set the last modified time and data to NativeMemcached
+         * @return bool Success status
+         */
+        private function setData($data)
+        {
+        }
     }
+}
+namespace {
     /**
-     * Save data to the cache
-     * @param array|\SimplePie\SimplePie $data Data to store in the cache. If passed a SimplePie object, only cache the $data property
-     * @return bool Successfulness
+     * Runtime class alias of \SimplePie\Cache\Memcached registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function save($data)
-    {
-    }
-    /**
-     * Retrieve the data saved to the cache
-     * @return array Data for SimplePie::$data
-     */
-    public function load()
-    {
-    }
-    /**
-     * Retrieve the last modified time for the cache
-     * @return int Timestamp
-     */
-    public function mtime()
-    {
-    }
-    /**
-     * Set the last modified time to the current time
-     * @return bool Success status
-     */
-    public function touch()
-    {
-    }
-    /**
-     * Remove the cache
-     * @return bool Success status
-     */
-    public function unlink()
-    {
-    }
-    /**
-     * Set the last modified time and data to NativeMemcached
-     * @return bool Success status
-     */
-    private function setData($data)
+    class SimplePie_Cache_Memcached extends \SimplePie\Cache\Memcached
     {
     }
 }

@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace aiprovider_openai\aimodel;
 
+use MoodleQuickForm;
 /**
  * O1 AI model.
  *

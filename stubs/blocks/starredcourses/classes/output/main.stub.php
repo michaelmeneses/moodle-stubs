@@ -29,6 +29,10 @@
  */
 namespace block_starredcourses\output;
 
+use renderable;
+use renderer_base;
+use templatable;
+use core_course\external\course_summary_exporter;
 /**
  * Class containing data for starred courses block.
  *

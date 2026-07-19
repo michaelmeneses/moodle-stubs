@@ -31,6 +31,7 @@
  */
 namespace core_badges\output;
 
+use renderable;
 /**
  * Badge recipients rendering class
  *

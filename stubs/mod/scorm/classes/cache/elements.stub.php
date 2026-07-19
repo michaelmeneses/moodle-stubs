@@ -8,6 +8,8 @@
  */
 namespace mod_scorm\cache;
 
+use core_cache\data_source_interface;
+use core_cache\definition;
 /**
  * Cache data source for the scorm elements.
  *

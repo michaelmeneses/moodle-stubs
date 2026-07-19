@@ -8,6 +8,7 @@
  */
 namespace Aws\TimestreamQuery;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Timestream Query** service.
  * @method \Aws\Result cancelQuery(array $args = [])

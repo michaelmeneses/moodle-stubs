@@ -8,6 +8,9 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Worksheet;
 
+use PhpOffice\PhpSpreadsheet\Cell\CellAddress;
+use PhpOffice\PhpSpreadsheet\Cell\CellRange;
+use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
 class AutoFit
 {
     protected Worksheet $worksheet;

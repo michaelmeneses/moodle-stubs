@@ -8,6 +8,8 @@
  */
 namespace Aws\CognitoIdentity;
 
+use Aws\Credentials\Credentials;
+use GuzzleHttp\Promise;
 class CognitoIdentityProvider
 {
     /** @var CognitoIdentityClient */

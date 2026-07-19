@@ -8,6 +8,12 @@
  */
 namespace core_reportbuilder\local\report;
 
+use action_menu_link;
+use lang_string;
+use moodle_url;
+use pix_icon;
+use popup_action;
+use stdClass;
 /**
  * Class to represent a report action
  *

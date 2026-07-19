@@ -8,6 +8,8 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column;
 
+use PhpOffice\PhpSpreadsheet\Exception as PhpSpreadsheetException;
+use PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column;
 class Rule
 {
     const AUTOFILTER_RULETYPE_FILTER = 'filter';

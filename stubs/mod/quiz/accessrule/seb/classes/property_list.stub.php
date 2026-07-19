@@ -30,6 +30,17 @@
  */
 namespace quizaccess_seb;
 
+use CFPropertyList\CFArray;
+use CFPropertyList\CFBoolean;
+use CFPropertyList\CFData;
+use CFPropertyList\CFDate;
+use CFPropertyList\CFDictionary;
+use CFPropertyList\CFNumber;
+use CFPropertyList\CFPropertyList;
+use CFPropertyList\CFString;
+use CFPropertyList\CFType;
+use Collator;
+use DateTime;
 /**
  * Wrapper for CFPropertyList to handle low level iteration.
  *

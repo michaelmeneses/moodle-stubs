@@ -29,6 +29,8 @@
  */
 namespace core_calendar\local\event\factories;
 
+use core_calendar\local\event\exceptions\invalid_callback_exception;
+use core_calendar\local\event\entities\event_interface;
 /**
  * Event factory class.
  *

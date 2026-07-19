@@ -15,6 +15,8 @@
  */
 namespace setasign\Fpdi\PdfParser\Type;
 
+use setasign\Fpdi\PdfParser\StreamReader;
+use setasign\Fpdi\PdfParser\Tokenizer;
 /**
  * Class representing a PDF name object
  */

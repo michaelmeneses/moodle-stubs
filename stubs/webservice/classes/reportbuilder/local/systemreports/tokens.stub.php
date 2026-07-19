@@ -8,6 +8,14 @@
  */
 namespace core_webservice\reportbuilder\local\systemreports;
 
+use context_system;
+use core_reportbuilder\local\entities\user;
+use core_reportbuilder\local\report\{action, column};
+use core_reportbuilder\system_report;
+use core_webservice\reportbuilder\local\entities\{token, service};
+use lang_string;
+use moodle_url;
+use pix_icon;
 /**
  * Tokens system report
  *

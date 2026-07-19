@@ -29,6 +29,8 @@
  */
 namespace tool_usertours\local\forms;
 
+use tool_usertours\helper;
+use tool_usertours\tour;
 /**
  * Form for editing tours.
  *

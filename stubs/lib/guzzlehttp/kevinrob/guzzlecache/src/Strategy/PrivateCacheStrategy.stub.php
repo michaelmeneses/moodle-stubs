@@ -8,6 +8,12 @@
  */
 namespace Kevinrob\GuzzleCache\Strategy;
 
+use Kevinrob\GuzzleCache\CacheEntry;
+use Kevinrob\GuzzleCache\KeyValueHttpHeader;
+use Kevinrob\GuzzleCache\Storage\CacheStorageInterface;
+use Kevinrob\GuzzleCache\Storage\VolatileRuntimeStorage;
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
 /**
  * This strategy represents a "private" HTTP client.
  * Pay attention to share storage between application with caution!

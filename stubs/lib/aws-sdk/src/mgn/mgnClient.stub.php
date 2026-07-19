@@ -8,6 +8,7 @@
  */
 namespace Aws\mgn;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Application Migration Service** service.
  * @method \Aws\Result archiveApplication(array $args = [])

@@ -8,6 +8,7 @@
  */
 namespace OpenSpout\Reader\XLSX;
 
+use OpenSpout\Common\TempFolderOptionTrait;
 final class Options
 {
     use TempFolderOptionTrait;

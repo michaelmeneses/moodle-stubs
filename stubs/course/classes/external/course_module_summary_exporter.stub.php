@@ -29,6 +29,7 @@
  */
 namespace core_course\external;
 
+use renderer_base;
 /**
  * Class for exporting a course module summary from a cm_info class.
  *

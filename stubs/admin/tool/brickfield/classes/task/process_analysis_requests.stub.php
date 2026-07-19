@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_brickfield\task;
 
+use tool_brickfield\accessibility;
+use tool_brickfield\manager;
+use tool_brickfield\scheduler;
 /**
  * Task function to bulk process caches for accessibility checks.
  *

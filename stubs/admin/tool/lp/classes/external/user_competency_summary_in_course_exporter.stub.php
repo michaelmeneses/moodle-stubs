@@ -29,6 +29,15 @@
  */
 namespace tool_lp\external;
 
+use core_competency\api;
+use core_competency\user_competency;
+use core_competency\external\plan_exporter;
+use core_course\external\course_module_summary_exporter;
+use core_course\external\course_summary_exporter;
+use context_course;
+use renderer_base;
+use stdClass;
+use moodle_url;
 /**
  * Class for exporting user competency data with additional related data in a plan.
  *

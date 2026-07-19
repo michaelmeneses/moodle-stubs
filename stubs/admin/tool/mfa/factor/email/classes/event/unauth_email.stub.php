@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace factor_email\event;
 
+use stdClass;
 /**
  * Event for when a user receives an unauthorised email from MFA.
  *

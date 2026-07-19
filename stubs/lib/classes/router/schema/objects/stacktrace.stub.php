@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\router\schema\objects;
 
+use core\param;
+use core\router\schema\example;
+use core\router\schema\referenced_object;
+use core\router\schema\specification;
 /**
  * A standard response for user preferences.
  *

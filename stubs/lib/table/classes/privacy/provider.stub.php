@@ -8,6 +8,7 @@
  */
 namespace core_table\privacy;
 
+use core_privacy\local\metadata\null_provider;
 /**
  * Privacy Subsystem for core_table API.
  *

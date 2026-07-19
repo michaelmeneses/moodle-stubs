@@ -29,6 +29,21 @@
  */
 namespace tool_dataprivacy\privacy;
 
+use coding_exception;
+use context;
+use context_user;
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\approved_contextlist;
+use core_privacy\local\request\approved_userlist;
+use core_privacy\local\request\contextlist;
+use core_privacy\local\request\helper;
+use core_privacy\local\request\transform;
+use core_privacy\local\request\userlist;
+use core_privacy\local\request\writer;
+use dml_exception;
+use stdClass;
+use tool_dataprivacy\api;
+use tool_dataprivacy\local\helper as tool_helper;
 /**
  * Privacy class for requesting user data.
  *

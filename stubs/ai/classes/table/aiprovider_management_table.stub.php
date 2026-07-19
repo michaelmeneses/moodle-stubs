@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_ai\table;
 
+use context_system;
+use core_table\dynamic as dynamic_table;
+use flexible_table;
+use moodle_url;
+use html_writer;
 /**
  * Table to manage AI provider plugins.
  *

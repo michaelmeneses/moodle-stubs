@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_subsection\local\callbacks;
 
+use core_course\hook\before_activitychooserbutton_exported;
+use action_link;
+use moodle_url;
+use mod_subsection\permission;
+use pix_icon;
+use section_info;
 /**
  * Class before activity choooser button export handler.
  *

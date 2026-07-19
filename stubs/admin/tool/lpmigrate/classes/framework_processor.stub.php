@@ -29,6 +29,12 @@
  */
 namespace tool_lpmigrate;
 
+use coding_exception;
+use moodle_exception;
+use core_competency\api;
+use core_competency\competency;
+use core_competency\course_competency;
+use core_competency\course_module_competency;
 /**
  * Processor class.
  *

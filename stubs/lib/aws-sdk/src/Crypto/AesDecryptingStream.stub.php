@@ -8,6 +8,10 @@
  */
 namespace Aws\Crypto;
 
+use GuzzleHttp\Psr7\StreamDecoratorTrait;
+use LogicException;
+use Psr\Http\Message\StreamInterface;
+use Aws\Crypto\Cipher\CipherMethod;
 /**
  * @internal Represents a stream of data to be decrypted with passed cipher.
  */

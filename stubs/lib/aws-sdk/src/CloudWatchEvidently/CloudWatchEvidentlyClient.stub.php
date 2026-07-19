@@ -8,6 +8,7 @@
  */
 namespace Aws\CloudWatchEvidently;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon CloudWatch Evidently** service.
  * @method \Aws\Result batchEvaluateFeature(array $args = [])

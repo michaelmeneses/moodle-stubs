@@ -8,6 +8,11 @@
  */
 namespace core_tag\reportbuilder\datasource;
 
+use lang_string;
+use core\reportbuilder\local\entities\context;
+use core_reportbuilder\datasource;
+use core_reportbuilder\local\entities\user;
+use core_tag\reportbuilder\local\entities\{collection, tag, instance};
 /**
  * Tags datasource
  *

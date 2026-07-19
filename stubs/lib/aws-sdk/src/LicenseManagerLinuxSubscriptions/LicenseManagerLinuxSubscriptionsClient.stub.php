@@ -8,6 +8,7 @@
  */
 namespace Aws\LicenseManagerLinuxSubscriptions;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS License Manager Linux Subscriptions** service.
  * @method \Aws\Result deregisterSubscriptionProvider(array $args = [])

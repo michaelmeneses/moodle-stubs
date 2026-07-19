@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_viewcreator;
 
+use core\exception\moodle_exception;
+use core\plugininfo\filter;
+use core_question\local\bank\condition;
 /**
  * Filter condition for date/time modified
  *

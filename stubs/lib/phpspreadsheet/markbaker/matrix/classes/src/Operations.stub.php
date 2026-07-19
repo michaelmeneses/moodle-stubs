@@ -8,6 +8,11 @@
  */
 namespace Matrix;
 
+use Matrix\Operators\Addition;
+use Matrix\Operators\DirectSum;
+use Matrix\Operators\Division;
+use Matrix\Operators\Multiplication;
+use Matrix\Operators\Subtraction;
 class Operations
 {
     public static function add(...$matrixValues): Matrix

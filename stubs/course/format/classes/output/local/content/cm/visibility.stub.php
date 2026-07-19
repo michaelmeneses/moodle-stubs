@@ -29,6 +29,18 @@
  */
 namespace core_courseformat\output\local\content\cm;
 
+use action_menu_link_secondary;
+use core\output\local\action_menu\subpanel as action_menu_subpanel;
+use cm_info;
+use core_courseformat\base as course_format;
+use core_courseformat\output\local\courseformat_named_templatable;
+use core\output\choicelist;
+use core\output\local\dropdown\status;
+use core\output\named_templatable;
+use pix_icon;
+use renderable;
+use section_info;
+use stdClass;
 /**
  * Base class to render a course module availability inside a course format.
  *

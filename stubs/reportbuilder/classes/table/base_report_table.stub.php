@@ -8,6 +8,18 @@
  */
 namespace core_reportbuilder\table;
 
+use context;
+use moodle_url;
+use renderable;
+use table_sql;
+use html_writer;
+use core_table\dynamic;
+use core_reportbuilder\local\helpers\database;
+use core_reportbuilder\local\filters\base;
+use core_reportbuilder\local\models\report;
+use core_reportbuilder\local\report\base as base_report;
+use core_reportbuilder\local\report\filter;
+use core\output\notification;
 /**
  * Base report dynamic table class
  *

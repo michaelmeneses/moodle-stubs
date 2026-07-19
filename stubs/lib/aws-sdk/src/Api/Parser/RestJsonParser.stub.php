@@ -8,6 +8,10 @@
  */
 namespace Aws\Api\Parser;
 
+use Aws\Api\Service;
+use Aws\Api\StructureShape;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\StreamInterface;
 /**
  * @internal Implements REST-JSON parsing (e.g., Glacier, Elastic Transcoder)
  */

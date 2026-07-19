@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace filter_activitynames;
 
+use cache;
+use cache_store;
+use core\output\html_writer;
+use core_collator;
+use course_modinfo;
+use filterobject;
 /**
  * This filter provides automatic linking to
  * activities when its name (title) is found inside every Moodle text

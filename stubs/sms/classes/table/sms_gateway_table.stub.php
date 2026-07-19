@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_sms\table;
 
+use context_system;
+use core_table\dynamic as dynamic_table;
+use flexible_table;
+use moodle_url;
+use stdClass;
 /**
  * List sms gateway instances in a table.
  *

@@ -29,6 +29,8 @@
  */
 namespace datafield_menu\privacy;
 
+use core_privacy\local\request\writer;
+use mod_data\privacy\datafield_provider;
 /**
  * Privacy Subsystem for datafield_menu implementing null_provider.
  *

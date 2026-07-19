@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_enrol\hook;
 
+use stdClass;
 /**
  * Hook after a user is enrolled in a course for an enrolment instance.
  *

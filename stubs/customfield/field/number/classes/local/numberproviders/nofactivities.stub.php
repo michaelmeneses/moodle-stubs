@@ -8,6 +8,11 @@
  */
 namespace customfield_number\local\numberproviders;
 
+use context_course;
+use core_plugin_manager;
+use customfield_number\data_controller;
+use customfield_number\provider_base;
+use MoodleQuickForm;
 /**
  * Class nofactivities to calculate number of activities in the course.
  *

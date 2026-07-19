@@ -30,6 +30,8 @@
  */
 namespace workshopallocation_manual\privacy;
 
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\writer;
 /**
  * Privacy API implementation for the Manual allocation method.
  *

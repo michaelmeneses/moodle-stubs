@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace communication_matrix\local;
 
+use communication_matrix\matrix_client;
+use GuzzleHttp\Psr7\Request;
+use OutOfRangeException;
 /**
  * A command to be sent to the Matrix server.
  *

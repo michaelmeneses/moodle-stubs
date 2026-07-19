@@ -29,6 +29,11 @@
  */
 namespace mod_forum\local\vaults;
 
+use mod_forum\local\entities\forum as forum_entity;
+use mod_forum\local\vaults\preprocessors\extract_context as extract_context_preprocessor;
+use mod_forum\local\vaults\preprocessors\extract_record as extract_record_preprocessor;
+use core\dml\table as dml_table;
+use context_helper;
 /**
  * Forum vault class.
  *

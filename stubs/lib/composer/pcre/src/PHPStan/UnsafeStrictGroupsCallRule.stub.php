@@ -8,6 +8,21 @@
  */
 namespace Composer\Pcre\PHPStan;
 
+use Composer\Pcre\Preg;
+use Composer\Pcre\Regex;
+use PhpParser\Node;
+use PhpParser\Node\Expr\StaticCall;
+use PhpParser\Node\Name\FullyQualified;
+use PHPStan\Analyser\Scope;
+use PHPStan\Analyser\SpecifiedTypes;
+use PHPStan\Rules\Rule;
+use PHPStan\Rules\RuleErrorBuilder;
+use PHPStan\TrinaryLogic;
+use PHPStan\Type\ObjectType;
+use PHPStan\Type\Type;
+use PHPStan\Type\TypeCombinator;
+use PHPStan\Type\Php\RegexArrayShapeMatcher;
+use function sprintf;
 /**
  * @implements Rule<StaticCall>
  */

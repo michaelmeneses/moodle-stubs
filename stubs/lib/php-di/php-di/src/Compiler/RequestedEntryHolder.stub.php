@@ -8,6 +8,7 @@
  */
 namespace DI\Compiler;
 
+use DI\Factory\RequestedEntry;
 /**
  * @author Matthieu Napoli <matthieu@mnapoli.fr>
  */

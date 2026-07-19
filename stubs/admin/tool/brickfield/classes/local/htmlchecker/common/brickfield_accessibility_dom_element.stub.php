@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_brickfield\local\htmlchecker\common;
 
+use DOMElement;
 /**
  * Brickfield accessibility HTML checker library.
  *

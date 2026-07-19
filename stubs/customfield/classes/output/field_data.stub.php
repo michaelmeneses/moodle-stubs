@@ -29,6 +29,7 @@
  */
 namespace core_customfield\output;
 
+use core_customfield\data_controller;
 /**
  * core_customfield field value renderable class.
  *

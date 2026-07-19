@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn\local\extension;
 
+use stdClass;
 /**
  * A class for the main mod form extension
  *

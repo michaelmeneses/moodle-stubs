@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_feedback\courseformat;
 
+use core_courseformat\local\overview\overviewitem;
+use core\output\action_link;
+use core\output\local\properties\button;
+use core\output\local\properties\text_align;
+use core\url;
+use core\output\pix_icon;
 /**
  * Class overview
  *

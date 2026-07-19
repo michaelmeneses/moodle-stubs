@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Shared;
 
+use SimpleXMLElement;
 class Drawing
 {
     /**

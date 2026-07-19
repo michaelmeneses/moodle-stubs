@@ -8,6 +8,8 @@
  */
 namespace IMSGlobal\LTI\ToolProvider\Service;
 
+use IMSGlobal\LTI\ToolProvider;
+use IMSGlobal\LTI\HTTPMessage;
 /**
  * Class to implement a service
  *

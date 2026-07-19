@@ -29,6 +29,7 @@
  */
 namespace core_admin\local\settings;
 
+use moodle_url;
 interface linkable_settings_page
 {
     /**

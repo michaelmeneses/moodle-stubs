@@ -8,6 +8,7 @@
  */
 namespace Aws\ObservabilityAdmin;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **CloudWatch Observability Admin Service** service.
  * @method \Aws\Result getTelemetryEvaluationStatus(array $args = [])

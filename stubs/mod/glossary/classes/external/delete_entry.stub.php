@@ -30,6 +30,11 @@
  */
 namespace mod_glossary\external;
 
+use core_external\external_api;
+use core_external\external_function_parameters;
+use core_external\external_single_structure;
+use core_external\external_value;
+use core_external\external_warnings;
 /**
  * This is the external method for deleting a content.
  *

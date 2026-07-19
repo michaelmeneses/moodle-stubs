@@ -8,6 +8,7 @@
  */
 namespace Aws\WorkSpacesThinClient;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon WorkSpaces Thin Client** service.
  * @method \Aws\Result createEnvironment(array $args = [])

@@ -29,6 +29,11 @@
  */
 namespace core_rating\external;
 
+use core_external\external_multiple_structure;
+use core_external\external_single_structure;
+use core_external\external_value;
+use rating_manager;
+use stdClass;
 /**
  * Rating external functions utility class.
  *

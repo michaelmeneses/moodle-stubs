@@ -22,6 +22,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace Moodle\BehatExtension\Output\Formatter;
 
+use Behat\Testwork\Exception\ServiceContainer\ExceptionExtension;
+use Behat\Testwork\Output\ServiceContainer\Formatter\FormatterFactory;
+use Behat\Testwork\Output\ServiceContainer\OutputExtension;
+use Behat\Testwork\ServiceContainer\ServiceProcessor;
+use Behat\Testwork\Translator\ServiceContainer\TranslatorExtension;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\DependencyInjection\Definition;
+use Symfony\Component\DependencyInjection\Reference;
 // phpcs:disable moodle.NamingConventions.ValidFunctionName.LowercaseMethod
 /**
  * Moodle behat context class resolver.

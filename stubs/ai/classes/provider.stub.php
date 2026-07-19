@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_ai;
 
+use core_ai\form\action_settings_form;
+use Psr\Http\Message\RequestInterface;
+use Spatie\Cloneable\Cloneable;
 /**
  * Class provider.
  *
