@@ -8,6 +8,10 @@
  */
 namespace Phpml\NeuralNetwork\Node;
 
+use Phpml\NeuralNetwork\ActivationFunction;
+use Phpml\NeuralNetwork\ActivationFunction\Sigmoid;
+use Phpml\NeuralNetwork\Node;
+use Phpml\NeuralNetwork\Node\Neuron\Synapse;
 class Neuron implements Node
 {
     /**

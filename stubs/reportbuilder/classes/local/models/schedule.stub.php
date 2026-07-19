@@ -8,6 +8,12 @@
  */
 namespace core_reportbuilder\local\models;
 
+use context;
+use core_reportbuilder\event\schedule_created;
+use core_reportbuilder\event\schedule_deleted;
+use core_reportbuilder\event\schedule_updated;
+use lang_string;
+use core\persistent;
 /**
  * Persistent class to represent a report schedule
  *

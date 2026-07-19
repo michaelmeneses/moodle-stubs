@@ -8,6 +8,7 @@
  */
 namespace Packback\Lti1p3;
 
+use Packback\Lti1p3\Helpers\Helpers;
 class LtiNamesRolesProvisioningService extends LtiAbstractService
 {
     public const CONTENTTYPE_MEMBERSHIPCONTAINER = 'application/vnd.ims.lti-nrps.v2.membershipcontainer+json';

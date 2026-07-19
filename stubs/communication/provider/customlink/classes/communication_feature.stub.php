@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace communication_customlink;
 
+use core_communication\processor;
 /**
  * class communication_feature to handle custom link specific actions.
  *

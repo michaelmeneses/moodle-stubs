@@ -8,6 +8,11 @@
  */
 namespace Aws;
 
+use Aws\Exception\AwsException;
+use GuzzleHttp\Promise\Coroutine;
+use GuzzleHttp\Promise\PromiseInterface;
+use GuzzleHttp\Promise\PromisorInterface;
+use GuzzleHttp\Promise\RejectedPromise;
 /**
  * "Waiters" are associated with an AWS resource (e.g., EC2 instance), and poll
  * that resource and until it is in a particular state.

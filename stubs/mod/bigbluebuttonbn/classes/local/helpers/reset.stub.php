@@ -30,6 +30,10 @@
  */
 namespace mod_bigbluebuttonbn\local\helpers;
 
+use context_module;
+use core_tag_tag;
+use mod_bigbluebuttonbn\local\config;
+use mod_bigbluebuttonbn\recording;
 /**
  * Utility class for resetting instance routines helper
  *

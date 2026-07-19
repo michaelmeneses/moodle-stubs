@@ -29,6 +29,7 @@
  */
 namespace message_email\output;
 
+use plugin_renderer_base;
 /**
  * Renderer class.
  *

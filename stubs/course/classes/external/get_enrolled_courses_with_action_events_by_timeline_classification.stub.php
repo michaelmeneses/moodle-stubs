@@ -22,6 +22,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_course\external;
 
+use context_user;
+use core_calendar_external;
+use core_course_external;
+use core_external\external_api;
+use core_external\external_function_parameters;
+use core_external\external_multiple_structure;
+use core_external\external_single_structure;
+use core_external\external_value;
 /**
  * Class for fetching courses which have action event(s) and match given filter parameters.
  *

@@ -8,6 +8,7 @@
  */
 namespace lbuchs\WebAuthn;
 
+use lbuchs\WebAuthn\Binary\ByteBuffer;
 /**
  * WebAuthn
  * @author Lukas Buchs

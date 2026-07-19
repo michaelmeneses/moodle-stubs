@@ -8,6 +8,7 @@
  */
 namespace Aws\WellArchitected;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Well-Architected Tool** service.
  * @method \Aws\Result associateLenses(array $args = [])

@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_forum\event;
 
+use coding_exception;
+use moodle_url;
 /**
  * The mod_forum subscription mode updated event.
  *

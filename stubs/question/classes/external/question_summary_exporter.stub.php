@@ -29,6 +29,7 @@
  */
 namespace core_question\external;
 
+use renderer_base;
 /**
  * Class for exporting a question summary from an stdClass.
  *

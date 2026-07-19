@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\moodlenet;
 
+use core\event\moodlenet_resource_exported;
+use core\oauth2\client;
+use moodle_exception;
 /**
  * API for sharing a number of Moodle LMS activities as a course backup to MoodleNet instances.
  *

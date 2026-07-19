@@ -8,6 +8,12 @@
  */
 namespace core_reportbuilder\output;
 
+use core\output\inplace_editable;
+use core_external\external_api;
+use core_reportbuilder\manager;
+use core_reportbuilder\permission;
+use core_reportbuilder\local\helpers\aggregation;
+use core_reportbuilder\local\models\column;
 /**
  * Column aggregation editable component
  *

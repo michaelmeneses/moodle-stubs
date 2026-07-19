@@ -29,6 +29,8 @@
  */
 namespace core_favourites\local\service;
 
+use core_favourites\local\entity\favourite;
+use core_favourites\local\repository\favourite_repository_interface;
 /**
  * Class service, providing an single API for interacting with the favourites subsystem for a SINGLE USER.
  *

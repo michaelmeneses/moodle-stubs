@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\adminpresets;
 
+use core_adminpresets\local\setting\adminpresets_admin_setting_configselect_with_advanced;
 /**
  * Admin settings class for the quiz browser security option.
  *

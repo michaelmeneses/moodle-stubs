@@ -22,6 +22,39 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_competency\privacy;
 
+use context;
+use context_course;
+use context_helper;
+use context_module;
+use context_system;
+use context_user;
+use moodle_recordset;
+use core_competency\api;
+use core_competency\competency;
+use core_competency\competency_framework;
+use core_competency\course_competency;
+use core_competency\course_competency_settings;
+use core_competency\course_module_competency;
+use core_competency\evidence;
+use core_competency\plan;
+use core_competency\plan_competency;
+use core_competency\related_competency;
+use core_competency\template;
+use core_competency\template_cohort;
+use core_competency\template_competency;
+use core_competency\user_competency;
+use core_competency\user_competency_course;
+use core_competency\user_competency_plan;
+use core_competency\user_evidence;
+use core_competency\user_evidence_competency;
+use core_competency\external\performance_helper;
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\approved_userlist;
+use core_privacy\local\request\contextlist;
+use core_privacy\local\request\approved_contextlist;
+use core_privacy\local\request\transform;
+use core_privacy\local\request\userlist;
+use core_privacy\local\request\writer;
 /**
  * Data provider class.
  *

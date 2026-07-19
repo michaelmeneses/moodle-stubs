@@ -22,6 +22,16 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\external;
 
+use context_course;
+use core\moodlenet\moodlenet_client;
+use core\moodlenet\utilities;
+use core\oauth2\api;
+use core_external\external_api;
+use core_external\external_function_parameters;
+use core_external\external_single_structure;
+use core_external\external_value;
+use core_external\external_warnings;
+use moodle_url;
 /**
  * The external API to check whether a user has authorized for a given MoodleNet OAuth 2 issuer.
  *

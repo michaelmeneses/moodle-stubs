@@ -8,6 +8,11 @@
  */
 namespace Aws\Signature;
 
+use Aws\Credentials\CredentialsInterface;
+use AWS\CRT\Auth\SignatureType;
+use AWS\CRT\Auth\SigningAlgorithm;
+use AWS\CRT\Auth\SigningConfigAWS;
+use Psr\Http\Message\RequestInterface;
 /**
  * Amazon S3 signature version 4 support.
  */

@@ -8,6 +8,10 @@
  */
 namespace Firebase\JWT;
 
+use InvalidArgumentException;
+use OpenSSLAsymmetricKey;
+use OpenSSLCertificate;
+use TypeError;
 class Key
 {
     /** @var string|resource|OpenSSLAsymmetricKey|OpenSSLCertificate */

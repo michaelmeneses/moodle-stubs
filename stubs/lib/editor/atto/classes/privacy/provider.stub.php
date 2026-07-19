@@ -29,6 +29,13 @@
  */
 namespace editor_atto\privacy;
 
+use core_privacy\local\request\approved_contextlist;
+use core_privacy\local\request\writer;
+use core_privacy\local\request\helper;
+use core_privacy\local\request\deletion_criteria;
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\userlist;
+use core_privacy\local\request\approved_userlist;
 /**
  * Privacy Subsystem implementation for editor_atto.
  *

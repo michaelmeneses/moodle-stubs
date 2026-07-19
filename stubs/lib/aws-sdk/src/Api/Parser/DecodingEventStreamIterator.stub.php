@@ -8,6 +8,11 @@
  */
 namespace Aws\Api\Parser;
 
+use Iterator;
+use Aws\Api\DateTimeResult;
+use GuzzleHttp\Psr7;
+use Psr\Http\Message\StreamInterface;
+use Aws\Api\Parser\Exception\ParserException;
 /**
  * @internal Implements a decoder for a binary encoded event stream that will
  * decode, validate, and provide individual events from the stream.

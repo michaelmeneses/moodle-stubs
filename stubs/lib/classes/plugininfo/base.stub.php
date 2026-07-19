@@ -29,6 +29,10 @@
  */
 namespace core\plugininfo;
 
+use coding_exception;
+use core_component;
+use core_plugin_manager;
+use moodle_url;
 /**
  * Base class providing access to the information about a plugin
  */

@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_mfa\local;
 
+use tool_mfa\local\factor\object_factor_base;
 /**
  * Admin setting for MFA.
  *

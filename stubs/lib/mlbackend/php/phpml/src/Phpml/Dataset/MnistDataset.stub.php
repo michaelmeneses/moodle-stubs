@@ -8,6 +8,7 @@
  */
 namespace Phpml\Dataset;
 
+use Phpml\Exception\InvalidArgumentException;
 /**
  * MNIST dataset: http://yann.lecun.com/exdb/mnist/
  * original mnist dataset reader: https://github.com/AndrewCarterUK/mnist-neural-network-plain-php

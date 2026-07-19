@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_cohortroles\form;
 
+use moodleform;
+use context_system;
 /**
  * Assign role to cohort form.
  *

@@ -29,6 +29,17 @@
  */
 namespace core_badges;
 
+use cache;
+use coding_exception;
+use context_system;
+use moodle_url;
+use core_badges\backpack_api2p1_mapping;
+use core_badges\oauth2\client;
+use curl;
+use stdClass;
+use core\oauth2\issuer;
+use core\oauth2\endpoint;
+use core\oauth2\discovery\imsbadgeconnect;
 /**
  * To process badges with backpack and control api request and this class using for Open Badge API v2.1 methods.
  *

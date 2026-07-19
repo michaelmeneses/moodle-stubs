@@ -8,6 +8,7 @@
  */
 namespace Packback\Lti1p3;
 
+use Packback\Lti1p3\Concerns\JsonStringable;
 class LtiGrade
 {
     use JsonStringable;

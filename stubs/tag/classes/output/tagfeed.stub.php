@@ -29,6 +29,9 @@
  */
 namespace core_tag\output;
 
+use templatable;
+use renderer_base;
+use stdClass;
 /**
  * Class to display feed of tagged items
  *

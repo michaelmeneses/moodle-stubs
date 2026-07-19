@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace enrol_lti\local\ltiadvantage\service;
 
+use enrol_lti\local\ltiadvantage\entity\application_registration;
+use enrol_lti\local\ltiadvantage\repository\application_registration_repository;
+use enrol_lti\local\ltiadvantage\repository\context_repository;
+use enrol_lti\local\ltiadvantage\repository\deployment_repository;
+use enrol_lti\local\ltiadvantage\repository\resource_link_repository;
+use enrol_lti\local\ltiadvantage\repository\user_repository;
 /**
  * Class application_registration_service.
  *

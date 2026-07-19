@@ -29,6 +29,7 @@
  */
 namespace mod_scorm\plugininfo;
 
+use core\plugininfo\base;
 class scormreport extends base
 {
     public function is_uninstall_allowed()

@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tiny_premium\local;
 
+use tiny_premium\manager;
 /**
  * Admin setting for managing Tiny Premium plugins.
  *

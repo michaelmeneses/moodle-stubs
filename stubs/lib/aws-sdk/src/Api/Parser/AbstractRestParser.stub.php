@@ -8,6 +8,12 @@
  */
 namespace Aws\Api\Parser;
 
+use Aws\Api\DateTimeResult;
+use Aws\Api\Shape;
+use Aws\Api\StructureShape;
+use Aws\Result;
+use Aws\CommandInterface;
+use Psr\Http\Message\ResponseInterface;
 /**
  * @internal
  */

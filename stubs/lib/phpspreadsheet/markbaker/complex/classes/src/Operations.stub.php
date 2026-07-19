@@ -8,6 +8,7 @@
  */
 namespace Complex;
 
+use InvalidArgumentException;
 class Operations
 {
     /**

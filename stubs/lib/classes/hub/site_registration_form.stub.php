@@ -29,6 +29,8 @@
  */
 namespace core\hub;
 
+use context_course;
+use stdClass;
 /**
  * The site registration form. Information will be sent to the sites directory.
  *

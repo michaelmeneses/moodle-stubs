@@ -8,6 +8,8 @@
  */
 namespace IMSGlobal\LTI\ToolProvider\MediaType;
 
+use IMSGlobal\LTI\ToolProvider\ToolProvider;
+use IMSGlobal\LTI\Profile\ResourceHandler as ProfileResourceHandler;
 /**
  * Class to represent an LTI Resource Handler
  *

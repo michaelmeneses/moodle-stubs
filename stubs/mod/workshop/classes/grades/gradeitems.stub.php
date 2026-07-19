@@ -8,6 +8,9 @@
  */
 namespace mod_workshop\grades;
 
+use core_grades\component_gradeitems;
+use core_grades\local\gradeitem\fieldname_mapping;
+use core_grades\local\gradeitem\itemnumber_mapping;
 /**
  * Grade item mappings for the activity.
  *

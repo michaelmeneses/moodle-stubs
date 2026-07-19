@@ -22,6 +22,15 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace Moodle\BehatExtension\Definition\Cli;
 
+use Behat\Behat\Definition\DefinitionWriter;
+use Behat\Behat\Definition\Printer\ConsoleDefinitionListPrinter;
+use Behat\Testwork\Cli\Controller;
+use Behat\Testwork\Suite\SuiteRepository;
+use Moodle\BehatExtension\Definition\Printer\ConsoleDefinitionInformationPrinter;
+use Symfony\Component\Console\Command\Command;
+use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Input\InputOption;
+use Symfony\Component\Console\Output\OutputInterface;
 /**
  * Available definition controller, for calling moodle information printer.
  *

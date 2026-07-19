@@ -8,6 +8,9 @@
  */
 namespace Aws\CloudWatchLogs;
 
+use Aws\AwsClient;
+use Aws\CommandInterface;
+use Generator;
 /**
  * This client is used to interact with the **Amazon CloudWatch Logs** service.
  *

@@ -20,132 +20,146 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output;
-
-/**
- * Data structure representing a user picture.
- *
- * @copyright 2009 Nicolas Connault, 2010 Petr Skoda
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @since Modle 2.0
- * @package core
- * @category output
- */
-class user_picture implements renderable
-{
+namespace core\output {
+    use core\context\user as context_user;
+    use core\exception\coding_exception;
+    use moodle_page;
+    use moodle_url;
+    use stdClass;
     /**
-     * @var stdClass A user object with at least fields all columns specified
-     * in $fields array constant set.
-     */
-    public $user;
-    /**
-     * @var int The course id. Used when constructing the link to the user's
-     * profile, page course id used if not specified.
-     */
-    public $courseid;
-    /**
-     * @var bool Add course profile link to image
-     */
-    public $link = true;
-    /**
-     * @var int Size in pixels. Special values are (true/1 = 100px) and (false/0 = 35px) for backward compatibility.
-     * Recommended values (supporting user initials too): 16, 35, 64 and 100.
-     */
-    public $size = 35;
-    /**
-     * @var bool Add non-blank alt-text to the image.
-     * Default true, set to false when image alt just duplicates text in screenreaders.
-     */
-    public $alttext = true;
-    /**
-     * @var bool Whether or not to open the link in a popup window.
-     */
-    public $popup = false;
-    /**
-     * @var string Image class attribute
-     */
-    public $class = 'userpicture';
-    /**
-     * @var bool Whether to be visible to screen readers.
-     */
-    public $visibletoscreenreaders = true;
-    /**
-     * @var bool Whether to include the fullname in the user picture link.
-     */
-    public $includefullname = false;
-    /**
-     * @var mixed Include user authentication token. True indicates to generate a token for current user, and integer value
-     * indicates to generate a token for the user whose id is the value indicated.
-     */
-    public $includetoken = false;
-    /**
-     * User picture constructor.
+     * Data structure representing a user picture.
      *
-     * @param stdClass $user user record with at least id, picture, imagealt, firstname and lastname set.
-     *                 It is recommended to add also contextid of the user for performance reasons.
+     * @copyright 2009 Nicolas Connault, 2010 Petr Skoda
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @since Modle 2.0
+     * @package core
+     * @category output
      */
-    public function __construct(stdClass $user)
+    class user_picture implements renderable
     {
+        /**
+         * @var stdClass A user object with at least fields all columns specified
+         * in $fields array constant set.
+         */
+        public $user;
+        /**
+         * @var int The course id. Used when constructing the link to the user's
+         * profile, page course id used if not specified.
+         */
+        public $courseid;
+        /**
+         * @var bool Add course profile link to image
+         */
+        public $link = true;
+        /**
+         * @var int Size in pixels. Special values are (true/1 = 100px) and (false/0 = 35px) for backward compatibility.
+         * Recommended values (supporting user initials too): 16, 35, 64 and 100.
+         */
+        public $size = 35;
+        /**
+         * @var bool Add non-blank alt-text to the image.
+         * Default true, set to false when image alt just duplicates text in screenreaders.
+         */
+        public $alttext = true;
+        /**
+         * @var bool Whether or not to open the link in a popup window.
+         */
+        public $popup = false;
+        /**
+         * @var string Image class attribute
+         */
+        public $class = 'userpicture';
+        /**
+         * @var bool Whether to be visible to screen readers.
+         */
+        public $visibletoscreenreaders = true;
+        /**
+         * @var bool Whether to include the fullname in the user picture link.
+         */
+        public $includefullname = false;
+        /**
+         * @var mixed Include user authentication token. True indicates to generate a token for current user, and integer value
+         * indicates to generate a token for the user whose id is the value indicated.
+         */
+        public $includetoken = false;
+        /**
+         * User picture constructor.
+         *
+         * @param stdClass $user user record with at least id, picture, imagealt, firstname and lastname set.
+         *                 It is recommended to add also contextid of the user for performance reasons.
+         */
+        public function __construct(stdClass $user)
+        {
+        }
+        /**
+         * Returns a list of required user fields, useful when fetching required user info from db.
+         *
+         * In some cases we have to fetch the user data together with some other information,
+         * the idalias is useful there because the id would otherwise override the main
+         * id of the result record. Please note it has to be converted back to id before rendering.
+         *
+         * @param string $tableprefix name of database table prefix in query
+         * @param null|array $extrafields extra fields to be included in result
+         *      Do not include TEXT columns because it would break SELECT DISTINCT in MSSQL and ORACLE.
+         * @param string $idalias alias of id field
+         * @param string $fieldprefix prefix to add to all columns in their aliases, does not apply to 'id'
+         * @return string
+         * @deprecated since Moodle 3.11 MDL-45242
+         * @see \core_user\fields
+         */
+        public static function fields($tableprefix = '', ?array $extrafields = null, $idalias = 'id', $fieldprefix = '')
+        {
+        }
+        /**
+         * Extract the aliased user fields from a given record
+         *
+         * Given a record that was previously obtained using {@see self::fields()} with aliases,
+         * this method extracts user related unaliased fields.
+         *
+         * @param stdClass $record containing user picture fields
+         * @param null|array $extrafields extra fields included in the $record
+         * @param string $idalias alias of the id field
+         * @param string $fieldprefix prefix added to all columns in their aliases, does not apply to 'id'
+         * @return stdClass object with unaliased user fields
+         */
+        public static function unalias(stdClass $record, ?array $extrafields = null, $idalias = 'id', $fieldprefix = '')
+        {
+        }
+        /**
+         * Checks if the current user is permitted to view user profile images.
+         *
+         * This is based on the forcelogin and forceloginforprofileimage config settings, and the
+         * moodle/user:viewprofilepictures capability.
+         *
+         * Logged-in users are allowed to view their own profile image regardless of capability.
+         *
+         * @param int $imageuserid User id of profile image being viewed
+         * @return bool True if current user can view profile images
+         */
+        public static function allow_view(int $imageuserid): bool
+        {
+        }
+        /**
+         * Works out the URL for the users picture.
+         *
+         * This method is recommended as it avoids costly redirects of user pictures
+         * if requests are made for non-existent files etc.
+         *
+         * @param moodle_page $page
+         * @param null|renderer_base $renderer
+         * @return moodle_url
+         */
+        public function get_url(moodle_page $page, ?renderer_base $renderer = null)
+        {
+        }
     }
+}
+namespace {
     /**
-     * Returns a list of required user fields, useful when fetching required user info from db.
-     *
-     * In some cases we have to fetch the user data together with some other information,
-     * the idalias is useful there because the id would otherwise override the main
-     * id of the result record. Please note it has to be converted back to id before rendering.
-     *
-     * @param string $tableprefix name of database table prefix in query
-     * @param null|array $extrafields extra fields to be included in result
-     *      Do not include TEXT columns because it would break SELECT DISTINCT in MSSQL and ORACLE.
-     * @param string $idalias alias of id field
-     * @param string $fieldprefix prefix to add to all columns in their aliases, does not apply to 'id'
-     * @return string
-     * @deprecated since Moodle 3.11 MDL-45242
-     * @see \core_user\fields
+     * Runtime class alias of \core\output\user_picture registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public static function fields($tableprefix = '', ?array $extrafields = null, $idalias = 'id', $fieldprefix = '')
-    {
-    }
-    /**
-     * Extract the aliased user fields from a given record
-     *
-     * Given a record that was previously obtained using {@see self::fields()} with aliases,
-     * this method extracts user related unaliased fields.
-     *
-     * @param stdClass $record containing user picture fields
-     * @param null|array $extrafields extra fields included in the $record
-     * @param string $idalias alias of the id field
-     * @param string $fieldprefix prefix added to all columns in their aliases, does not apply to 'id'
-     * @return stdClass object with unaliased user fields
-     */
-    public static function unalias(stdClass $record, ?array $extrafields = null, $idalias = 'id', $fieldprefix = '')
-    {
-    }
-    /**
-     * Checks if the current user is permitted to view user profile images.
-     *
-     * This is based on the forcelogin and forceloginforprofileimage config settings, and the
-     * moodle/user:viewprofilepictures capability.
-     *
-     * Logged-in users are allowed to view their own profile image regardless of capability.
-     *
-     * @param int $imageuserid User id of profile image being viewed
-     * @return bool True if current user can view profile images
-     */
-    public static function allow_view(int $imageuserid): bool
-    {
-    }
-    /**
-     * Works out the URL for the users picture.
-     *
-     * This method is recommended as it avoids costly redirects of user pictures
-     * if requests are made for non-existent files etc.
-     *
-     * @param moodle_page $page
-     * @param null|renderer_base $renderer
-     * @return moodle_url
-     */
-    public function get_url(moodle_page $page, ?renderer_base $renderer = null)
+    class user_picture extends \core\output\user_picture
     {
     }
 }

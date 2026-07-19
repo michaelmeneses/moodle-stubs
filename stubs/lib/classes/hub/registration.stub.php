@@ -29,6 +29,12 @@
  */
 namespace core\hub;
 
+use moodle_exception;
+use moodle_url;
+use context_system;
+use stdClass;
+use html_writer;
+use core_plugin_manager;
 /**
  * Methods to use when registering the site at the moodle sites directory.
  *

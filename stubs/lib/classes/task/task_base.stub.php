@@ -30,6 +30,9 @@
  */
 namespace core\task;
 
+use core_component;
+use core_plugin_manager;
+use core\check\result;
 /**
  * Abstract class for common properties of scheduled_task and adhoc_task.
  *

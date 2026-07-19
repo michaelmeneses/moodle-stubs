@@ -8,6 +8,11 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Calculation\Statistical\Distributions;
 
+use PhpOffice\PhpSpreadsheet\Calculation\ArrayEnabled;
+use PhpOffice\PhpSpreadsheet\Calculation\Exception;
+use PhpOffice\PhpSpreadsheet\Calculation\Functions;
+use PhpOffice\PhpSpreadsheet\Calculation\Information\ExcelError;
+use PhpOffice\PhpSpreadsheet\Calculation\MathTrig\Combinations;
 class Binomial
 {
     use ArrayEnabled;

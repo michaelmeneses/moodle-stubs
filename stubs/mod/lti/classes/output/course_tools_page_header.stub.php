@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_lti\output;
 
+use core\output\notification;
+use renderer_base;
 /**
  * Course tools page header renderable, containing the data for the page zero state and 'add tool' button.
  *

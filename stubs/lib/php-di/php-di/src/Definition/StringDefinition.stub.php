@@ -8,6 +8,9 @@
  */
 namespace DI\Definition;
 
+use DI\DependencyException;
+use Psr\Container\ContainerInterface;
+use Psr\Container\NotFoundExceptionInterface;
 /**
  * Definition of a string composed of other strings.
  *

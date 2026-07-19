@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_feedback\form;
 
+use core_form\dynamic_form;
+use moodle_url;
+use context;
+use context_module;
 /**
  * Prints the confirm use template form
  *

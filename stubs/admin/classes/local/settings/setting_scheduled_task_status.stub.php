@@ -30,6 +30,13 @@
  */
 namespace core_admin\local\settings;
 
+use admin_setting_description;
+use core\task\manager;
+use core\task\scheduled_task;
+use html_writer;
+use lang_string;
+use moodle_url;
+use stdClass;
 /**
  * This admin setting tells whether a given scheduled task is enabled, providing a link to its configuration page.
  *

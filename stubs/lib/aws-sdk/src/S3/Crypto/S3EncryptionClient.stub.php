@@ -8,6 +8,18 @@
  */
 namespace Aws\S3\Crypto;
 
+use Aws\Crypto\DecryptionTrait;
+use Aws\HashingStream;
+use Aws\PhpHash;
+use Aws\Crypto\AbstractCryptoClient;
+use Aws\Crypto\EncryptionTrait;
+use Aws\Crypto\MetadataEnvelope;
+use Aws\Crypto\MaterialsProvider;
+use Aws\Crypto\Cipher\CipherBuilderTrait;
+use Aws\S3\S3Client;
+use GuzzleHttp\Promise;
+use GuzzleHttp\Promise\PromiseInterface;
+use GuzzleHttp\Psr7;
 /**
  * Provides a wrapper for an S3Client that supplies functionality to encrypt
  * data on putObject[Async] calls and decrypt data on getObject[Async] calls.

@@ -8,6 +8,9 @@
  */
 namespace Aws\Token;
 
+use Aws\Exception\TokenException;
+use Aws\SSOOIDC\SSOOIDCClient;
+use GuzzleHttp\Promise;
 /**
  * Token that comes from the SSO provider
  */

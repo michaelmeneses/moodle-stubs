@@ -8,6 +8,8 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Calculation\Engine;
 
+use PhpOffice\PhpSpreadsheet\Calculation\Calculation;
+use PhpOffice\PhpSpreadsheet\Shared\StringHelper;
 class FormattedNumber
 {
     /**    Constants                */

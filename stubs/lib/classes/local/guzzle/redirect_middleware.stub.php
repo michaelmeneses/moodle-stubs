@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\local\guzzle;
 
+use core\files\curl_security_helper_base;
+use GuzzleHttp\Exception\RequestException;
+use GuzzleHttp\RedirectMiddleware;
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
+use GuzzleHttp\Promise\PromiseInterface;
 /**
  * Class to check that each URL is valid in a redirect.
  *

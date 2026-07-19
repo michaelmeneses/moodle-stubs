@@ -8,6 +8,8 @@
  */
 namespace Phpml\FeatureExtraction;
 
+use Phpml\Tokenization\Tokenizer;
+use Phpml\Transformer;
 class TokenCountVectorizer implements Transformer
 {
     /**

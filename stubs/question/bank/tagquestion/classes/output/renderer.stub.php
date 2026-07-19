@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_tagquestion\output;
 
+use plugin_renderer_base;
 /**
  * Class renderer for qbank_tagquestion.
  *

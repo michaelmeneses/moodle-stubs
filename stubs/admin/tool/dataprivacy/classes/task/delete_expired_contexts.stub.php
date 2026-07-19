@@ -29,6 +29,9 @@
  */
 namespace tool_dataprivacy\task;
 
+use coding_exception;
+use core\task\scheduled_task;
+use tool_dataprivacy\api;
 /**
  * Scheduled task to delete expired context instances once they are approved for deletion.
  *

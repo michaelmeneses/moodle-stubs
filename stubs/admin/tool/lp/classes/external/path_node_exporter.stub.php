@@ -29,6 +29,7 @@
  */
 namespace tool_lp\external;
 
+use context_system;
 /**
  * Class for exporting path_node data.
  *

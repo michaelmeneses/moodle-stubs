@@ -29,6 +29,7 @@
  */
 namespace core\event;
 
+use moodle_url;
 /**
  * Event class for when an admin config log is created.
  *

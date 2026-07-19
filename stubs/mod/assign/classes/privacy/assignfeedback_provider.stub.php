@@ -32,6 +32,7 @@
  */
 namespace mod_assign\privacy;
 
+use core_privacy\local\request\contextlist;
 interface assignfeedback_provider extends \core_privacy\local\request\plugin\subplugin_provider
 {
     /**

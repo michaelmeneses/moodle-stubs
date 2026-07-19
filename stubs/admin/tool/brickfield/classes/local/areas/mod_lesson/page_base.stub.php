@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_brickfield\local\areas\mod_lesson;
 
+use tool_brickfield\area_base;
 /**
  * Lesson page base.
  *

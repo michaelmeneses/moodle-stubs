@@ -22,6 +22,15 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core;
 
+use core\local\guzzle\cache_handler;
+use core\local\guzzle\cache_storage;
+use core\local\guzzle\check_request;
+use core\local\guzzle\redirect_middleware;
+use GuzzleHttp\Client;
+use GuzzleHttp\HandlerStack;
+use GuzzleHttp\RequestOptions;
+use Kevinrob\GuzzleCache\CacheMiddleware;
+use Kevinrob\GuzzleCache\Strategy\PrivateCacheStrategy;
 /**
  * Guzzle Integration for Moodle.
  *

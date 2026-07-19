@@ -8,6 +8,8 @@
  */
 namespace Matrix\Operators;
 
+use Matrix\Matrix;
+use Matrix\Exception;
 abstract class Operator
 {
     /**

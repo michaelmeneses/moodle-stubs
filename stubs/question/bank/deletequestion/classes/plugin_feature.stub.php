@@ -30,6 +30,9 @@
  */
 namespace qbank_deletequestion;
 
+use core_question\local\bank\bulk_action_base;
+use core_question\local\bank\plugin_features_base;
+use core_question\local\bank\view;
 /**
  * Class columns is the entrypoint for the columns.
  *

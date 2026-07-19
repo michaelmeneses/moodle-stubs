@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_course\hook;
 
+use cm_info;
+use section_info;
+use core\hook\described_hook;
+use core_course\output\activitychooserbutton;
 /**
  * Hook before activity chooser button export.
  *

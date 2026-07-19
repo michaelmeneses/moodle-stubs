@@ -20,32 +20,42 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core_block\output;
-
-/**
- * This class represents a target for where a block can go when it is being moved.
- *
- * This needs to be rendered as a form with the given hidden from fields, and
- * clicking anywhere in the form should submit it. The form action should be
- * $PAGE->url.
- *
- * @copyright 2009 Tim Hunt
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @since Moodle 2.0
- * @package core_block
- * @category output
- */
-class block_move_target
-{
+namespace core_block\output {
+    use moodle_url;
     /**
-     * Constructor.
+     * This class represents a target for where a block can go when it is being moved.
      *
-     * @param moodle_url $url
+     * This needs to be rendered as a form with the given hidden from fields, and
+     * clicking anywhere in the form should submit it. The form action should be
+     * $PAGE->url.
+     *
+     * @copyright 2009 Tim Hunt
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @since Moodle 2.0
+     * @package core_block
+     * @category output
      */
-    public function __construct(
-        /** @var moodle_url Move url */
-        public moodle_url $url
-    )
+    class block_move_target
+    {
+        /**
+         * Constructor.
+         *
+         * @param moodle_url $url
+         */
+        public function __construct(
+            /** @var moodle_url Move url */
+            public moodle_url $url
+        )
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \core_block\output\block_move_target registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class block_move_target extends \core_block\output\block_move_target
     {
     }
 }

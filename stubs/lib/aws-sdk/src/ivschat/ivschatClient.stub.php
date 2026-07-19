@@ -8,6 +8,7 @@
  */
 namespace Aws\ivschat;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Interactive Video Service Chat** service.
  * @method \Aws\Result createChatToken(array $args = [])

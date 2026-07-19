@@ -8,6 +8,8 @@
  */
 namespace Aws\Api\Serializer;
 
+use Aws\Api\StructureShape;
+use Aws\Api\Service;
 /**
  * @internal
  */

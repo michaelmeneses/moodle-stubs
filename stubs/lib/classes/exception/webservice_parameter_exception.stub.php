@@ -20,29 +20,38 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\exception;
-
-/**
- * Web service parameter exception class.
- *
- * @deprecated since Moodle 2.2 - use moodle exception instead
- * This exception must be thrown to the web service client when a web service parameter is invalid
- * The error string is gotten from webservice.php
- * @package    core
- * @subpackage exception
- * @copyright  Jerome Mouneyrac
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class webservice_parameter_exception extends moodle_exception
-{
+namespace core\exception {
     /**
-     * Constructor.
+     * Web service parameter exception class.
      *
-     * @param string $errorcode The name of the string from webservice.php to print
-     * @param string $a The name of the parameter
-     * @param string $debuginfo Optional information to aid debugging
+     * @deprecated since Moodle 2.2 - use moodle exception instead
+     * This exception must be thrown to the web service client when a web service parameter is invalid
+     * The error string is gotten from webservice.php
+     * @package    core
+     * @subpackage exception
+     * @copyright  Jerome Mouneyrac
+     * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function __construct($errorcode = null, $a = '', $debuginfo = null)
+    class webservice_parameter_exception extends moodle_exception
+    {
+        /**
+         * Constructor.
+         *
+         * @param string $errorcode The name of the string from webservice.php to print
+         * @param string $a The name of the parameter
+         * @param string $debuginfo Optional information to aid debugging
+         */
+        public function __construct($errorcode = null, $a = '', $debuginfo = null)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \core\exception\webservice_parameter_exception registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class webservice_parameter_exception extends \core\exception\webservice_parameter_exception
     {
     }
 }

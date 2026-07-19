@@ -8,6 +8,16 @@
  */
 namespace Aws\S3\Crypto;
 
+use Aws\Crypto\AbstractCryptoClientV3;
+use Aws\Crypto\EncryptionTraitV3;
+use Aws\Crypto\AlgorithmSuite;
+use Aws\Crypto\MaterialsProviderInterfaceV3;
+use Aws\Crypto\MetadataEnvelope;
+use Aws\Crypto\Cipher\CipherBuilderTrait;
+use Aws\Exception\CryptoException;
+use Aws\S3\MultipartUploader;
+use Aws\S3\S3ClientInterface;
+use GuzzleHttp\Promise;
 //= ../specification/s3-encryption/client.md#optional-api-operations
 //= type=implication
 //# - CreateMultipartUpload MAY be implemented by the S3EC.

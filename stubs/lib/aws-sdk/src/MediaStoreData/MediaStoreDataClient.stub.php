@@ -8,6 +8,7 @@
  */
 namespace Aws\MediaStoreData;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Elemental MediaStore Data Plane** service.
  * @method \Aws\Result deleteObject(array $args = [])

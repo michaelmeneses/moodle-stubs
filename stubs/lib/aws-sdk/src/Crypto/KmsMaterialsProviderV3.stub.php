@@ -8,6 +8,8 @@
  */
 namespace Aws\Crypto;
 
+use Aws\Exception\CryptoException;
+use Aws\Kms\KmsClient;
 /**
  * Uses KMS to supply materials for encrypting and decrypting data. This
  * V2 implementation should be used with the V2 encryption clients (i.e.

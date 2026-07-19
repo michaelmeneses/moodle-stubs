@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_files\hook;
 
+use core\exception\coding_exception;
+use core\attribute;
 /**
  * A hook which is fired before a file is created in the file storage API.
  *

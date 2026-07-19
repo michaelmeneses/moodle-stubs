@@ -8,6 +8,7 @@
  */
 namespace Aws;
 
+use JmesPath\Env as JmesPath;
 /**
  * AWS result.
  */

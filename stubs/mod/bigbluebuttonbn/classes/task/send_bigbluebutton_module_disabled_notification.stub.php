@@ -8,6 +8,9 @@
  */
 namespace mod_bigbluebuttonbn\task;
 
+use core\task\adhoc_task;
+use core\message\message;
+use mod_bigbluebuttonbn\local\config;
 /**
  * Deprecated Ad-hoc task to send a notification related to the disabling of the BigBlueButton activity module.
  *

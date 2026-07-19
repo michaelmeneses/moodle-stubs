@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_previewquestion;
 
+use core_question\local\bank\question_action_base;
 /**
  * Question bank columns for the preview action icon.
  *

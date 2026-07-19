@@ -22,6 +22,17 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn\local\proxy;
 
+use cache;
+use completion_info;
+use Exception;
+use mod_bigbluebuttonbn\completion\custom_completion;
+use mod_bigbluebuttonbn\instance;
+use mod_bigbluebuttonbn\local\config;
+use mod_bigbluebuttonbn\local\exceptions\bigbluebutton_exception;
+use mod_bigbluebuttonbn\local\exceptions\server_not_available_exception;
+use moodle_url;
+use stdClass;
+use user_picture;
 /**
  * The bigbluebutton proxy class.
  *

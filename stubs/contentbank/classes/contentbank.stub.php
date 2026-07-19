@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_contentbank;
 
+use core_plugin_manager;
+use stored_file;
+use context;
 /**
  * Content bank class
  *

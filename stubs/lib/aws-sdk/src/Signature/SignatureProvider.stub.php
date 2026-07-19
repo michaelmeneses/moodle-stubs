@@ -8,6 +8,8 @@
  */
 namespace Aws\Signature;
 
+use Aws\Exception\UnresolvedSignatureException;
+use Aws\Token\BearerTokenAuthorization;
 /**
  * Signature providers.
  *

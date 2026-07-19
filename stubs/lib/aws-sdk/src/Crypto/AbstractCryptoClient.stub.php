@@ -8,6 +8,9 @@
  */
 namespace Aws\Crypto;
 
+use Aws\Crypto\Cipher\CipherMethod;
+use Aws\Crypto\Cipher\Cbc;
+use GuzzleHttp\Psr7\Stream;
 /**
  * Legacy abstract encryption client. New workflows should use
  * AbstractCryptoClientV2.

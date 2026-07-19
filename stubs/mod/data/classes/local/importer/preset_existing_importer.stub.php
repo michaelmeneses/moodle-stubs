@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_data\local\importer;
 
+use mod_data\manager;
 /**
  * Data preset importer for existing presets
  * @package    mod_data

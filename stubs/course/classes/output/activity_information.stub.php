@@ -29,6 +29,18 @@
  */
 namespace core_course\output;
 
+use cm_info;
+use completion_info;
+use context;
+use core\activity_dates;
+use core_availability\info;
+use core_completion\cm_completion_details;
+use core_user;
+use core_user\fields;
+use renderable;
+use renderer_base;
+use stdClass;
+use templatable;
 /**
  * The activity information renderable class.
  *

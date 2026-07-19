@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\moodlenet;
 
+use backup_activity_task;
+use backup_controller;
+use stdClass;
+use stored_file;
 /**
  * Packager to prepare appropriate backup of a number of activities in a course to share to MoodleNet.
  *

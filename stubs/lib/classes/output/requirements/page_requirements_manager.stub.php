@@ -20,775 +20,795 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output\requirements;
-
-/**
- * This class tracks all the things that are needed by the current page.
- *
- * Normally, the only instance of this  class you will need to work with is the
- * one accessible via $PAGE->requires.
- *
- * Typical usage would be
- * <pre>
- *     $PAGE->requires->js_call_amd('mod_forum/view', 'init');
- * </pre>
- *
- * It also supports obsoleted coding style with/without YUI3 modules.
- * <pre>
- *     $PAGE->requires->js_init_call('M.mod_forum.init_view');
- *     $PAGE->requires->css('/mod/mymod/userstyles.php?id='.$id); // not overridable via themes!
- *     $PAGE->requires->js('/mod/mymod/script.js');
- *     $PAGE->requires->js('/mod/mymod/small_but_urgent.js', true);
- *     $PAGE->requires->js_function_call('init_mymod', array($data), true);
- * </pre>
- *
- * There are some natural restrictions on some methods. For example, {@see css()}
- * can only be called before the <head> tag is output. See the comments on the
- * individual methods for details.
- *
- * @copyright 2009 Tim Hunt, 2010 Petr Skoda
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @since Moodle 2.0
- * @package core
- * @category output
- */
-class page_requirements_manager
-{
+namespace core\output\requirements {
+    use core_component;
+    use core\context\course as context_course;
+    use core\exception\coding_exception;
+    use core\output\core_renderer;
+    use core\output\js_writer;
+    use core\output\html_writer;
+    use core\output\renderer_base;
+    use lang_string;
+    use moodle_page;
+    use moodle_url;
+    use stdClass;
     /**
-     * @var array List of string available from JS
-     */
-    protected $stringsforjs = [];
-    /**
-     * @var array List of get_string $a parameters - used for validation only.
-     */
-    protected $stringsforjs_as = [];
-    // phpcs:ignore moodle.NamingConventions.ValidVariableName.MemberNameUnderscore
-    /**
-     * @var array List of JS variables to be initialised
-     */
-    protected $jsinitvariables = ['head' => [], 'footer' => []];
-    /**
-     * @var array Included JS scripts
-     */
-    protected $jsincludes = ['head' => [], 'footer' => []];
-    /**
-     * @var array Inline scripts using RequireJS module loading.
-     */
-    protected $amdjscode = [''];
-    /**
-     * @var array List of needed function calls
-     */
-    protected $jscalls = ['normal' => [], 'ondomready' => []];
-    /**
-     * @var array List of skip links, those are needed for accessibility reasons
-     */
-    protected $skiplinks = [];
-    /**
-     * @var array Javascript code used for initialisation of page, it should
-     * be relatively small
-     */
-    protected $jsinitcode = [];
-    /**
-     * @var array of moodle_url Theme sheets, initialised only from core_renderer
-     */
-    protected $cssthemeurls = [];
-    /**
-     * @var array of moodle_url List of custom theme sheets, these are strongly discouraged!
-     * Useful mostly only for CSS submitted by teachers that is not part of the theme.
-     */
-    protected $cssurls = [];
-    /**
-     * @var array List of requested event handlers
-     */
-    protected $eventhandlers = [];
-    /**
-     * @var array Extra modules
-     */
-    protected $extramodules = [];
-    /**
-     * @var array trackes the names of bits of HTML that are only required once
-     * per page. See {@see has_one_time_item_been_created()},
-     * {@see set_one_time_item_created()} and {@see should_create_one_time_item_now()}.
-     */
-    protected $onetimeitemsoutput = [];
-    /**
-     * @var bool Flag indicated head stuff already printed
-     */
-    protected $headdone = false;
-    /**
-     * @var bool Flag indicating top of body already printed
-     */
-    protected $topofbodydone = false;
-    /**
-     * @var stdClass YUI PHPLoader instance responsible for YUI3 loading from PHP only
-     */
-    protected $yui3loader;
-    /**
-     * @var yui default YUI loader configuration
-     */
-    protected $YUI_config;
-    // phpcs:ignore moodle.NamingConventions.ValidVariableName.MemberNameUnderscore
-    /**
-     * @var array $yuicssmodules
-     */
-    protected $yuicssmodules = [];
-    /**
-     * @var array Some config vars exposed in JS, please no secret stuff there
-     */
-    protected $M_cfg;
-    // phpcs:ignore moodle.NamingConventions.ValidVariableName.MemberNameUnderscore
-    /**
-     * @var array list of requested jQuery plugins
-     */
-    protected $jqueryplugins = [];
-    /**
-     * @var array list of jQuery plugin overrides
-     */
-    protected $jquerypluginoverrides = [];
-    /**
-     * Page requirements constructor.
-     */
-    public function __construct()
-    {
-    }
-    /**
-     * Return the safe config values that get set for javascript in "M.cfg".
+     * This class tracks all the things that are needed by the current page.
      *
-     * @since 2.9
-     * @param moodle_page $page The page to add JS to
-     * @param renderer_base $renderer The renderer to use
-     * @return array List of safe config values that are available to javascript.
-     */
-    public function get_config_for_javascript(moodle_page $page, renderer_base $renderer)
-    {
-    }
-    /**
-     * Return the base URL for the API.
+     * Normally, the only instance of this  class you will need to work with is the
+     * one accessible via $PAGE->requires.
      *
-     * If the router has been fully configured on the web server then we can use the shortened route, otherwise the r.php.
-     *
-     * @return string
-     */
-    protected function get_api_base(): string
-    {
-    }
-    /**
-     * Initialise with the bits of JavaScript that every Moodle page should have.
-     *
-     * @param moodle_page $page
-     * @param core_renderer $renderer
-     */
-    protected function init_requirements_data(moodle_page $page, core_renderer $renderer)
-    {
-    }
-    /**
-     * Determine the correct JS Revision to use for this load.
-     *
-     * @return int the jsrev to use.
-     */
-    public function get_jsrev()
-    {
-    }
-    /**
-     * Determine the correct Template revision to use for this load.
-     *
-     * @return int the templaterev to use.
-     */
-    protected function get_templaterev()
-    {
-    }
-    /**
-     * Ensure that the specified JavaScript file is linked to from this page.
-     *
-     * NOTE: This function is to be used in RARE CASES ONLY, please store your JS in module.js file
-     * and use $PAGE->requires->js_init_call() instead or use /yui/ subdirectories for YUI modules.
-     *
-     * By default the link is put at the end of the page, since this gives best page-load performance.
-     *
-     * Even if a particular script is requested more than once, it will only be linked
-     * to once.
-     *
-     * @param string|moodle_url $url The path to the .js file, relative to $CFG->dirroot / $CFG->wwwroot.
-     *      For example '/mod/mymod/customscripts.js'; use moodle_url for external scripts
-     * @param bool $inhead initialise in head
-     */
-    public function js($url, $inhead = false)
-    {
-    }
-    /**
-     * Request inclusion of jQuery library in the page.
-     *
-     * NOTE: this should not be used in official Moodle distribution!
-     *
-     * @link https://moodledev.io/docs/guides/javascript/jquery
-     */
-    public function jquery()
-    {
-    }
-    /**
-     * Request inclusion of jQuery plugin.
-     *
-     * NOTE: this should not be used in official Moodle distribution!
-     *
-     * jQuery plugins are located in plugin/jquery/* subdirectory,
-     * plugin/jquery/plugins.php lists all available plugins.
-     *
-     * Included core plugins:
-     *   - jQuery UI
-     *
-     * Add-ons may include extra jQuery plugins in jquery/ directory,
-     * plugins.php file defines the mapping between plugin names and
-     * necessary page includes.
-     *
-     * Examples:
-     * <code>
-     *   // file: mod/xxx/view.php
-     *   $PAGE->requires->jquery();
-     *   $PAGE->requires->jquery_plugin('ui');
-     *   $PAGE->requires->jquery_plugin('ui-css');
-     * </code>
-     *
-     * <code>
-     *   // file: theme/yyy/lib.php
-     *   function theme_yyy_page_init(moodle_page $page) {
-     *       $page->requires->jquery();
-     *       $page->requires->jquery_plugin('ui');
-     *       $page->requires->jquery_plugin('ui-css');
-     *   }
-     * </code>
-     *
-     * <code>
-     *   // file: blocks/zzz/block_zzz.php
-     *   public function get_required_javascript() {
-     *       parent::get_required_javascript();
-     *       $this->page->requires->jquery();
-     *       $page->requires->jquery_plugin('ui');
-     *       $page->requires->jquery_plugin('ui-css');
-     *   }
-     * </code>
-     *
-     * {@link https://moodledev.io/docs/guides/javascript/jquery}
-     *
-     * @param string $plugin name of the jQuery plugin as defined in jquery/plugins.php
-     * @param string $component name of the component
-     * @return bool success
-     */
-    public function jquery_plugin($plugin, $component = 'core')
-    {
-    }
-    /**
-     * Request replacement of one jQuery plugin by another.
-     *
-     * This is useful when themes want to replace the jQuery UI theme,
-     * the problem is that theme can not prevent others from including the core ui-css plugin.
-     *
-     * Example:
-     *  1/ generate new jQuery UI theme and place it into theme/yourtheme/jquery/
-     *  2/ write theme/yourtheme/jquery/plugins.php
-     *  3/ init jQuery from theme
-     *
-     * <code>
-     *   // file theme/yourtheme/lib.php
-     *   function theme_yourtheme_page_init($page) {
-     *       $page->requires->jquery_plugin('yourtheme-ui-css', 'theme_yourtheme');
-     *       $page->requires->jquery_override_plugin('ui-css', 'yourtheme-ui-css');
-     *   }
-     * </code>
-     *
-     * This code prevents loading of standard 'ui-css' which my be requested by other plugins,
-     * the 'yourtheme-ui-css' gets loaded only if some other code requires jquery.
-     *
-     * @link https://moodledev.io/docs/guides/javascript/jquery
-     *
-     * @param string $oldplugin original plugin
-     * @param string $newplugin the replacement
-     */
-    public function jquery_override_plugin($oldplugin, $newplugin)
-    {
-    }
-    /**
-     * Return jQuery related markup for page start.
-     * @return string
-     */
-    protected function get_jquery_headcode()
-    {
-    }
-    /**
-     * Returns the actual url through which a JavaScript file is served.
-     *
-     * @param moodle_url|string $url full moodle url, or shortened path to script.
-     * @throws coding_exception if the given $url isn't a shortened url starting with / or a moodle_url instance.
-     * @return moodle_url
-     */
-    protected function js_fix_url($url)
-    {
-    }
-    /**
-     * Find out if JS module present and return details.
-     *
-     * @param string $component name of component in frankenstyle, ex: core_group, mod_forum
-     * @return array description of module or null if not found
-     */
-    protected function find_module($component)
-    {
-    }
-    /**
-     * Append YUI3 module to default YUI3 JS loader.
-     * The structure of module array is described at {@link http://developer.yahoo.com/yui/3/yui/}
-     *
-     * @param string|array $module name of module (details are autodetected), or full module specification as array
-     * @return void
-     */
-    public function js_module($module)
-    {
-    }
-    /**
-     * Returns true if the module has already been loaded.
-     *
-     * @param string|array $module
-     * @return bool True if the module has already been loaded
-     */
-    protected function js_module_loaded($module)
-    {
-    }
-    /**
-     * Ensure that the specified CSS file is linked to from this page.
-     *
-     * Because stylesheet links must go in the <head> part of the HTML, you must call
-     * this function before {@see get_head_code()} is called. That normally means before
-     * the call to print_header. If you call it when it is too late, an exception
-     * will be thrown.
-     *
-     * Even if a particular style sheet is requested more than once, it will only
-     * be linked to once.
-     *
-     * Please note use of this feature is strongly discouraged,
-     * it is suitable only for places where CSS is submitted directly by teachers.
-     * (Students must not be allowed to submit any external CSS because it may
-     * contain embedded javascript!). Example of correct use is mod/data.
-     *
-     * @param string $stylesheet The path to the .css file, relative to $CFG->wwwroot.
-     *   For example:
-     *      $PAGE->requires->css('mod/data/css.php?d='.$data->id);
-     */
-    public function css($stylesheet)
-    {
-    }
-    /**
-     * Add theme stylesheet to page - do not use from plugin code,
-     * this should be called only from the core renderer!
-     *
-     * @param moodle_url $stylesheet
-     * @return void
-     */
-    public function css_theme(moodle_url $stylesheet)
-    {
-    }
-    /**
-     * Ensure that a skip link to a given target is printed at the top of the <body>.
-     *
-     * You must call this function before {@see get_top_of_body_code()}, (if not, an exception
-     * will be thrown). That normally means you must call this before the call to print_header.
-     *
-     * If you ask for a particular skip link to be printed, it is then your responsibility
-     * to ensure that the appropriate <a name="..."> tag is printed in the body of the
-     * page, so that the skip link goes somewhere.
-     *
-     * Even if a particular skip link is requested more than once, only one copy of it will be output.
-     *
-     * @param string $target the name of anchor this link should go to. For example 'maincontent'.
-     * @param string $linktext The text to use for the skip link. Normally get_string('skipto', 'access', ...);
-     */
-    public function skip_link_to($target, $linktext)
-    {
-    }
-    /**
-     * !!!DEPRECATED!!! please use js_init_call() if possible
-     * Ensure that the specified JavaScript function is called from an inline script
-     * somewhere on this page.
-     *
-     * By default the call will be put in a script tag at the
-     * end of the page after initialising Y instance, since this gives best page-load
-     * performance and allows you to use YUI3 library.
-     *
-     * If you request that a particular function is called several times, then
-     * that is what will happen (unlike linking to a CSS or JS file, where only
-     * one link will be output).
-     *
-     * The main benefit of the method is the automatic encoding of all function parameters.
-     *
-     * @deprecated
-     *
-     * @param string $function the name of the JavaScritp function to call. Can
-     *      be a compound name like 'Y.Event.purgeElement'. Can also be
-     *      used to create and object by using a 'function name' like 'new user_selector'.
-     * @param null|array $arguments and array of arguments to be passed to the function.
-     *      When generating the function call, this will be escaped using json_encode,
-     *      so passing objects and arrays should work.
-     * @param bool $ondomready If tru the function is only called when the dom is
-     *      ready for manipulation.
-     * @param int $delay The delay before the function is called.
-     */
-    public function js_function_call($function, ?array $arguments = null, $ondomready = false, $delay = 0)
-    {
-    }
-    /**
-     * This function appends a block of code to the AMD specific javascript block executed
-     * in the page footer, just after loading the requirejs library.
-     *
-     * The code passed here can rely on AMD module loading, e.g. require('jquery', function($) {...});
-     *
-     * @param string $code The JS code to append.
-     */
-    public function js_amd_inline($code)
-    {
-    }
-    /**
-     * Load an AMD module and eventually call its method.
-     *
-     * This function creates a minimal inline JS snippet that requires an AMD module and eventually calls a single
-     * function from the module with given arguments. If it is called multiple times, it will be create multiple
-     * snippets.
-     *
-     * @param string $fullmodule The name of the AMD module to load, formatted as <component name>/<module name>.
-     * @param string $func Optional function from the module to call, defaults to just loading the AMD module.
-     * @param array $params The params to pass to the function (will be serialized into JSON).
-     */
-    public function js_call_amd($fullmodule, $func = null, $params = [])
-    {
-    }
-    /**
-     * Creates a JavaScript function call that requires one or more modules to be loaded.
-     *
-     * This function can be used to include all of the standard YUI module types within JavaScript:
-     *     - YUI3 modules    [node, event, io]
-     *     - YUI2 modules    [yui2-*]
-     *     - Moodle modules  [moodle-*]
-     *     - Gallery modules [gallery-*]
-     *
-     * Before writing new code that makes extensive use of YUI, you should consider it's replacement AMD/JQuery.
-     * @see js_call_amd()
-     *
-     * @param array|string $modules One or more modules
-     * @param string $function The function to call once modules have been loaded
-     * @param null|array $arguments An array of arguments to pass to the function
-     * @param null|string $galleryversion Deprecated: The gallery version to use
-     * @param bool $ondomready
-     */
-    public function yui_module($modules, $function, ?array $arguments = null, $galleryversion = null, $ondomready = false)
-    {
-    }
-    /**
-     * Set the CSS Modules to be included from YUI.
-     *
-     * @param array $modules The list of YUI CSS Modules to include.
-     */
-    public function set_yuicssmodules(array $modules = [])
-    {
-    }
-    /**
-     * Ensure that the specified JavaScript function is called from an inline script
-     * from page footer.
-     *
-     * @param string $function the name of the JavaScritp function to with init code,
-     *      usually something like 'M.mod_mymodule.init'
-     * @param null|array $extraarguments and array of arguments to be passed to the function.
-     *      The first argument is always the YUI3 Y instance with all required dependencies
-     *      already loaded.
-     * @param bool $ondomready wait for dom ready (helps with some IE problems when modifying DOM)
-     * @param null|array $module JS module specification array
-     */
-    public function js_init_call($function, ?array $extraarguments = null, $ondomready = false, ?array $module = null)
-    {
-    }
-    /**
-     * Add short static javascript code fragment to page footer.
-     * This is intended primarily for loading of js modules and initialising page layout.
-     * Ideally the JS code fragment should be stored in plugin renderer so that themes
-     * may override it.
-     *
-     * @param string $jscode
-     * @param bool $ondomready wait for dom ready (helps with some IE problems when modifying DOM)
-     * @param null|array $module JS module specification array
-     */
-    public function js_init_code($jscode, $ondomready = false, ?array $module = null)
-    {
-    }
-    /**
-     * Make a language string available to JavaScript.
-     *
-     * All the strings will be available in a M.str object in the global namespace.
-     * So, for example, after a call to $PAGE->requires->string_for_js('course', 'moodle');
-     * then the JavaScript variable M.str.moodle.course will be 'Course', or the
-     * equivalent in the current language.
-     *
-     * The arguments to this function are just like the arguments to get_string
-     * except that $component is not optional, and there are some aspects to consider
-     * when the string contains {$a} placeholder.
-     *
-     * If the string does not contain any {$a} placeholder, you can simply use
-     * M.str.component.identifier to obtain it. If you prefer, you can call
-     * M.util.get_string(identifier, component) to get the same result.
-     *
-     * If you need to use {$a} placeholders, there are two options. Either the
-     * placeholder should be substituted in PHP on server side or it should
-     * be substituted in Javascript at client side.
-     *
-     * To substitute the placeholder at server side, just provide the required
-     * value for the placeholder when you require the string. Because each string
-     * is only stored once in the JavaScript (based on $identifier and $module)
-     * you cannot get the same string with two different values of $a. If you try,
-     * an exception will be thrown. Once the placeholder is substituted, you can
-     * use M.str or M.util.get_string() as shown above:
-     *
-     *     // Require the string in PHP and replace the placeholder.
-     *     $PAGE->requires->string_for_js('fullnamedisplay', 'moodle', $USER);
-     *     // Use the result of the substitution in Javascript.
-     *     alert(M.str.moodle.fullnamedisplay);
-     *
-     * To substitute the placeholder at client side, use M.util.get_string()
-     * function. It implements the same logic as {@see get_string()}:
-     *
-     *     // Require the string in PHP but keep {$a} as it is.
-     *     $PAGE->requires->string_for_js('fullnamedisplay', 'moodle');
-     *     // Provide the values on the fly in Javascript.
-     *     user = { firstname : 'Harry', lastname : 'Potter' }
-     *     alert(M.util.get_string('fullnamedisplay', 'moodle', user);
-     *
-     * If you do need the same string expanded with different $a values in PHP
-     * on server side, then the solution is to put them in your own data structure
-     * (e.g. and array) that you pass to JavaScript with {@see data_for_js()}.
-     *
-     * @param string $identifier the desired string.
-     * @param string $component the language file to look in.
-     * @param mixed $a any extra data to add into the string (optional).
-     */
-    public function string_for_js($identifier, $component, $a = null)
-    {
-    }
-    /**
-     * Make an array of language strings available for JS.
-     *
-     * This function calls the above function {@see string_for_js()} for each requested
-     * string in the $identifiers array that is passed to the argument for a single module
-     * passed in $module.
-     *
-     * <code>
-     * $PAGE->requires->strings_for_js(array('one', 'two', 'three'), 'mymod', array('a', null, 3));
-     *
-     * // The above is identical to calling:
-     *
-     * $PAGE->requires->string_for_js('one', 'mymod', 'a');
-     * $PAGE->requires->string_for_js('two', 'mymod');
-     * $PAGE->requires->string_for_js('three', 'mymod', 3);
-     * </code>
-     *
-     * @param array $identifiers An array of desired strings
-     * @param string $component The module to load for
-     * @param mixed $a This can either be a single variable that gets passed as extra
-     *         information for every string or it can be an array of mixed data where the
-     *         key for the data matches that of the identifier it is meant for.
-     *
-     */
-    public function strings_for_js($identifiers, $component, $a = null)
-    {
-    }
-    /**
-     * !!!!!!DEPRECATED!!!!!! please use js_init_call() for everything now.
-     *
-     * Make some data from PHP available to JavaScript code.
-     *
-     * For example, if you call
+     * Typical usage would be
      * <pre>
-     *      $PAGE->requires->data_for_js('mydata', array('name' => 'Moodle'));
-     * </pre>
-     * then in JavsScript mydata.name will be 'Moodle'.
-     *
-     * @deprecated
-     * @param string $variable the the name of the JavaScript variable to assign the data to.
-     *      Will probably work if you use a compound name like 'mybuttons.button[1]', but this
-     *      should be considered an experimental feature.
-     * @param mixed $data The data to pass to JavaScript. This will be escaped using json_encode,
-     *      so passing objects and arrays should work.
-     * @param bool $inhead initialise in head
-     * @return void
-     */
-    public function data_for_js($variable, $data, $inhead = false)
-    {
-    }
-    /**
-     * Creates a YUI event handler.
-     *
-     * @param mixed $selector standard YUI selector for elements, may be array or string, element id is in the form "#idvalue"
-     * @param string $event A valid DOM event (click, mousedown, change etc.)
-     * @param string $function The name of the function to call
-     * @param null|array $arguments An optional array of argument parameters to pass to the function
-     */
-    public function event_handler($selector, $event, $function, ?array $arguments = null)
-    {
-    }
-    /**
-     * Returns code needed for registering of event handlers.
-     * @return string JS code
-     */
-    protected function get_event_handler_code()
-    {
-    }
-    /**
-     * Get the inline JavaScript code that need to appear in a particular place.
-     * @param bool $ondomready
-     * @return string
-     */
-    protected function get_javascript_code($ondomready)
-    {
-    }
-    /**
-     * Returns js code to be executed when Y is available.
-     * @return string
-     */
-    protected function get_javascript_init_code()
-    {
-    }
-    /**
-     * Returns js code to load amd module loader, then insert inline script tags
-     * that contain require() calls using RequireJS.
-     * @return string
-     */
-    protected function get_amd_footercode()
-    {
-    }
-    /**
-     * Returns basic YUI3 CSS code.
-     *
-     * @return string
-     */
-    protected function get_yui3lib_headcss()
-    {
-    }
-    /**
-     * Returns basic YUI3 JS loading code.
-     *
-     * @return string
-     */
-    protected function get_yui3lib_headcode()
-    {
-    }
-    /**
-     * Returns html tags needed for inclusion of theme CSS.
-     *
-     * @return string
-     */
-    protected function get_css_code()
-    {
-    }
-    /**
-     * Adds extra modules specified after printing of page header.
-     *
-     * @return string
-     */
-    protected function get_extra_modules_code()
-    {
-    }
-    /**
-     * Generate any HTML that needs to go inside the <head> tag.
-     *
-     * Normally, this method is called automatically by the code that prints the
-     * <head> tag. You should not normally need to call it in your own code.
-     *
-     * @param moodle_page $page
-     * @param core_renderer $renderer
-     * @return string the HTML code to to inside the <head> tag.
-     */
-    public function get_head_code(moodle_page $page, core_renderer $renderer)
-    {
-    }
-    /**
-     * Generate any HTML that needs to go at the start of the <body> tag.
-     *
-     * Normally, this method is called automatically by the code that prints the
-     * <head> tag. You should not normally need to call it in your own code.
-     *
-     * @param renderer_base $renderer
-     * @return string the HTML code to go at the start of the <body> tag.
-     */
-    public function get_top_of_body_code(renderer_base $renderer)
-    {
-    }
-    /**
-     * Generate any HTML that needs to go at the end of the page.
-     *
-     * Normally, this method is called automatically by the code that prints the
-     * page footer. You should not normally need to call it in your own code.
-     *
-     * @return string the HTML code to to at the end of the page.
-     */
-    public function get_end_code()
-    {
-    }
-    /**
-     * Have we already output the code in the <head> tag?
-     *
-     * @return bool
-     */
-    public function is_head_done()
-    {
-    }
-    /**
-     * Have we already output the code at the start of the <body> tag?
-     *
-     * @return bool
-     */
-    public function is_top_of_body_done()
-    {
-    }
-    /**
-     * Should we generate a bit of content HTML that is only required once  on
-     * this page (e.g. the contents of the modchooser), now? Basically, we call
-     * {@see has_one_time_item_been_created()}, and if the thing has not already
-     * been output, we return true to tell the caller to generate it, and also
-     * call {@see set_one_time_item_created()} to record the fact that it is
-     * about to be generated.
-     *
-     * That is, a typical usage pattern (in a renderer method) is:
-     * <pre>
-     * if (!$this->page->requires->should_create_one_time_item_now($thing)) {
-     *     return '';
-     * }
-     * // Else generate it.
+     *     $PAGE->requires->js_call_amd('mod_forum/view', 'init');
      * </pre>
      *
-     * @param string $thing identifier for the bit of content. Should be of the form
-     *      frankenstyle_things, e.g. core_course_modchooser.
-     * @return bool if true, the caller should generate that bit of output now, otherwise don't.
+     * It also supports obsoleted coding style with/without YUI3 modules.
+     * <pre>
+     *     $PAGE->requires->js_init_call('M.mod_forum.init_view');
+     *     $PAGE->requires->css('/mod/mymod/userstyles.php?id='.$id); // not overridable via themes!
+     *     $PAGE->requires->js('/mod/mymod/script.js');
+     *     $PAGE->requires->js('/mod/mymod/small_but_urgent.js', true);
+     *     $PAGE->requires->js_function_call('init_mymod', array($data), true);
+     * </pre>
+     *
+     * There are some natural restrictions on some methods. For example, {@see css()}
+     * can only be called before the <head> tag is output. See the comments on the
+     * individual methods for details.
+     *
+     * @copyright 2009 Tim Hunt, 2010 Petr Skoda
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @since Moodle 2.0
+     * @package core
+     * @category output
      */
-    public function should_create_one_time_item_now($thing)
+    class page_requirements_manager
     {
+        /**
+         * @var array List of string available from JS
+         */
+        protected $stringsforjs = [];
+        /**
+         * @var array List of get_string $a parameters - used for validation only.
+         */
+        protected $stringsforjs_as = [];
+        // phpcs:ignore moodle.NamingConventions.ValidVariableName.MemberNameUnderscore
+        /**
+         * @var array List of JS variables to be initialised
+         */
+        protected $jsinitvariables = ['head' => [], 'footer' => []];
+        /**
+         * @var array Included JS scripts
+         */
+        protected $jsincludes = ['head' => [], 'footer' => []];
+        /**
+         * @var array Inline scripts using RequireJS module loading.
+         */
+        protected $amdjscode = [''];
+        /**
+         * @var array List of needed function calls
+         */
+        protected $jscalls = ['normal' => [], 'ondomready' => []];
+        /**
+         * @var array List of skip links, those are needed for accessibility reasons
+         */
+        protected $skiplinks = [];
+        /**
+         * @var array Javascript code used for initialisation of page, it should
+         * be relatively small
+         */
+        protected $jsinitcode = [];
+        /**
+         * @var array of moodle_url Theme sheets, initialised only from core_renderer
+         */
+        protected $cssthemeurls = [];
+        /**
+         * @var array of moodle_url List of custom theme sheets, these are strongly discouraged!
+         * Useful mostly only for CSS submitted by teachers that is not part of the theme.
+         */
+        protected $cssurls = [];
+        /**
+         * @var array List of requested event handlers
+         */
+        protected $eventhandlers = [];
+        /**
+         * @var array Extra modules
+         */
+        protected $extramodules = [];
+        /**
+         * @var array trackes the names of bits of HTML that are only required once
+         * per page. See {@see has_one_time_item_been_created()},
+         * {@see set_one_time_item_created()} and {@see should_create_one_time_item_now()}.
+         */
+        protected $onetimeitemsoutput = [];
+        /**
+         * @var bool Flag indicated head stuff already printed
+         */
+        protected $headdone = false;
+        /**
+         * @var bool Flag indicating top of body already printed
+         */
+        protected $topofbodydone = false;
+        /**
+         * @var stdClass YUI PHPLoader instance responsible for YUI3 loading from PHP only
+         */
+        protected $yui3loader;
+        /**
+         * @var yui default YUI loader configuration
+         */
+        protected $YUI_config;
+        // phpcs:ignore moodle.NamingConventions.ValidVariableName.MemberNameUnderscore
+        /**
+         * @var array $yuicssmodules
+         */
+        protected $yuicssmodules = [];
+        /**
+         * @var array Some config vars exposed in JS, please no secret stuff there
+         */
+        protected $M_cfg;
+        // phpcs:ignore moodle.NamingConventions.ValidVariableName.MemberNameUnderscore
+        /**
+         * @var array list of requested jQuery plugins
+         */
+        protected $jqueryplugins = [];
+        /**
+         * @var array list of jQuery plugin overrides
+         */
+        protected $jquerypluginoverrides = [];
+        /**
+         * Page requirements constructor.
+         */
+        public function __construct()
+        {
+        }
+        /**
+         * Return the safe config values that get set for javascript in "M.cfg".
+         *
+         * @since 2.9
+         * @param moodle_page $page The page to add JS to
+         * @param renderer_base $renderer The renderer to use
+         * @return array List of safe config values that are available to javascript.
+         */
+        public function get_config_for_javascript(moodle_page $page, renderer_base $renderer)
+        {
+        }
+        /**
+         * Return the base URL for the API.
+         *
+         * If the router has been fully configured on the web server then we can use the shortened route, otherwise the r.php.
+         *
+         * @return string
+         */
+        protected function get_api_base(): string
+        {
+        }
+        /**
+         * Initialise with the bits of JavaScript that every Moodle page should have.
+         *
+         * @param moodle_page $page
+         * @param core_renderer $renderer
+         */
+        protected function init_requirements_data(moodle_page $page, core_renderer $renderer)
+        {
+        }
+        /**
+         * Determine the correct JS Revision to use for this load.
+         *
+         * @return int the jsrev to use.
+         */
+        public function get_jsrev()
+        {
+        }
+        /**
+         * Determine the correct Template revision to use for this load.
+         *
+         * @return int the templaterev to use.
+         */
+        protected function get_templaterev()
+        {
+        }
+        /**
+         * Ensure that the specified JavaScript file is linked to from this page.
+         *
+         * NOTE: This function is to be used in RARE CASES ONLY, please store your JS in module.js file
+         * and use $PAGE->requires->js_init_call() instead or use /yui/ subdirectories for YUI modules.
+         *
+         * By default the link is put at the end of the page, since this gives best page-load performance.
+         *
+         * Even if a particular script is requested more than once, it will only be linked
+         * to once.
+         *
+         * @param string|moodle_url $url The path to the .js file, relative to $CFG->dirroot / $CFG->wwwroot.
+         *      For example '/mod/mymod/customscripts.js'; use moodle_url for external scripts
+         * @param bool $inhead initialise in head
+         */
+        public function js($url, $inhead = false)
+        {
+        }
+        /**
+         * Request inclusion of jQuery library in the page.
+         *
+         * NOTE: this should not be used in official Moodle distribution!
+         *
+         * @link https://moodledev.io/docs/guides/javascript/jquery
+         */
+        public function jquery()
+        {
+        }
+        /**
+         * Request inclusion of jQuery plugin.
+         *
+         * NOTE: this should not be used in official Moodle distribution!
+         *
+         * jQuery plugins are located in plugin/jquery/* subdirectory,
+         * plugin/jquery/plugins.php lists all available plugins.
+         *
+         * Included core plugins:
+         *   - jQuery UI
+         *
+         * Add-ons may include extra jQuery plugins in jquery/ directory,
+         * plugins.php file defines the mapping between plugin names and
+         * necessary page includes.
+         *
+         * Examples:
+         * <code>
+         *   // file: mod/xxx/view.php
+         *   $PAGE->requires->jquery();
+         *   $PAGE->requires->jquery_plugin('ui');
+         *   $PAGE->requires->jquery_plugin('ui-css');
+         * </code>
+         *
+         * <code>
+         *   // file: theme/yyy/lib.php
+         *   function theme_yyy_page_init(moodle_page $page) {
+         *       $page->requires->jquery();
+         *       $page->requires->jquery_plugin('ui');
+         *       $page->requires->jquery_plugin('ui-css');
+         *   }
+         * </code>
+         *
+         * <code>
+         *   // file: blocks/zzz/block_zzz.php
+         *   public function get_required_javascript() {
+         *       parent::get_required_javascript();
+         *       $this->page->requires->jquery();
+         *       $page->requires->jquery_plugin('ui');
+         *       $page->requires->jquery_plugin('ui-css');
+         *   }
+         * </code>
+         *
+         * {@link https://moodledev.io/docs/guides/javascript/jquery}
+         *
+         * @param string $plugin name of the jQuery plugin as defined in jquery/plugins.php
+         * @param string $component name of the component
+         * @return bool success
+         */
+        public function jquery_plugin($plugin, $component = 'core')
+        {
+        }
+        /**
+         * Request replacement of one jQuery plugin by another.
+         *
+         * This is useful when themes want to replace the jQuery UI theme,
+         * the problem is that theme can not prevent others from including the core ui-css plugin.
+         *
+         * Example:
+         *  1/ generate new jQuery UI theme and place it into theme/yourtheme/jquery/
+         *  2/ write theme/yourtheme/jquery/plugins.php
+         *  3/ init jQuery from theme
+         *
+         * <code>
+         *   // file theme/yourtheme/lib.php
+         *   function theme_yourtheme_page_init($page) {
+         *       $page->requires->jquery_plugin('yourtheme-ui-css', 'theme_yourtheme');
+         *       $page->requires->jquery_override_plugin('ui-css', 'yourtheme-ui-css');
+         *   }
+         * </code>
+         *
+         * This code prevents loading of standard 'ui-css' which my be requested by other plugins,
+         * the 'yourtheme-ui-css' gets loaded only if some other code requires jquery.
+         *
+         * @link https://moodledev.io/docs/guides/javascript/jquery
+         *
+         * @param string $oldplugin original plugin
+         * @param string $newplugin the replacement
+         */
+        public function jquery_override_plugin($oldplugin, $newplugin)
+        {
+        }
+        /**
+         * Return jQuery related markup for page start.
+         * @return string
+         */
+        protected function get_jquery_headcode()
+        {
+        }
+        /**
+         * Returns the actual url through which a JavaScript file is served.
+         *
+         * @param moodle_url|string $url full moodle url, or shortened path to script.
+         * @throws coding_exception if the given $url isn't a shortened url starting with / or a moodle_url instance.
+         * @return moodle_url
+         */
+        protected function js_fix_url($url)
+        {
+        }
+        /**
+         * Find out if JS module present and return details.
+         *
+         * @param string $component name of component in frankenstyle, ex: core_group, mod_forum
+         * @return array description of module or null if not found
+         */
+        protected function find_module($component)
+        {
+        }
+        /**
+         * Append YUI3 module to default YUI3 JS loader.
+         * The structure of module array is described at {@link http://developer.yahoo.com/yui/3/yui/}
+         *
+         * @param string|array $module name of module (details are autodetected), or full module specification as array
+         * @return void
+         */
+        public function js_module($module)
+        {
+        }
+        /**
+         * Returns true if the module has already been loaded.
+         *
+         * @param string|array $module
+         * @return bool True if the module has already been loaded
+         */
+        protected function js_module_loaded($module)
+        {
+        }
+        /**
+         * Ensure that the specified CSS file is linked to from this page.
+         *
+         * Because stylesheet links must go in the <head> part of the HTML, you must call
+         * this function before {@see get_head_code()} is called. That normally means before
+         * the call to print_header. If you call it when it is too late, an exception
+         * will be thrown.
+         *
+         * Even if a particular style sheet is requested more than once, it will only
+         * be linked to once.
+         *
+         * Please note use of this feature is strongly discouraged,
+         * it is suitable only for places where CSS is submitted directly by teachers.
+         * (Students must not be allowed to submit any external CSS because it may
+         * contain embedded javascript!). Example of correct use is mod/data.
+         *
+         * @param string $stylesheet The path to the .css file, relative to $CFG->wwwroot.
+         *   For example:
+         *      $PAGE->requires->css('mod/data/css.php?d='.$data->id);
+         */
+        public function css($stylesheet)
+        {
+        }
+        /**
+         * Add theme stylesheet to page - do not use from plugin code,
+         * this should be called only from the core renderer!
+         *
+         * @param moodle_url $stylesheet
+         * @return void
+         */
+        public function css_theme(moodle_url $stylesheet)
+        {
+        }
+        /**
+         * Ensure that a skip link to a given target is printed at the top of the <body>.
+         *
+         * You must call this function before {@see get_top_of_body_code()}, (if not, an exception
+         * will be thrown). That normally means you must call this before the call to print_header.
+         *
+         * If you ask for a particular skip link to be printed, it is then your responsibility
+         * to ensure that the appropriate <a name="..."> tag is printed in the body of the
+         * page, so that the skip link goes somewhere.
+         *
+         * Even if a particular skip link is requested more than once, only one copy of it will be output.
+         *
+         * @param string $target the name of anchor this link should go to. For example 'maincontent'.
+         * @param string $linktext The text to use for the skip link. Normally get_string('skipto', 'access', ...);
+         */
+        public function skip_link_to($target, $linktext)
+        {
+        }
+        /**
+         * !!!DEPRECATED!!! please use js_init_call() if possible
+         * Ensure that the specified JavaScript function is called from an inline script
+         * somewhere on this page.
+         *
+         * By default the call will be put in a script tag at the
+         * end of the page after initialising Y instance, since this gives best page-load
+         * performance and allows you to use YUI3 library.
+         *
+         * If you request that a particular function is called several times, then
+         * that is what will happen (unlike linking to a CSS or JS file, where only
+         * one link will be output).
+         *
+         * The main benefit of the method is the automatic encoding of all function parameters.
+         *
+         * @deprecated
+         *
+         * @param string $function the name of the JavaScritp function to call. Can
+         *      be a compound name like 'Y.Event.purgeElement'. Can also be
+         *      used to create and object by using a 'function name' like 'new user_selector'.
+         * @param null|array $arguments and array of arguments to be passed to the function.
+         *      When generating the function call, this will be escaped using json_encode,
+         *      so passing objects and arrays should work.
+         * @param bool $ondomready If tru the function is only called when the dom is
+         *      ready for manipulation.
+         * @param int $delay The delay before the function is called.
+         */
+        public function js_function_call($function, ?array $arguments = null, $ondomready = false, $delay = 0)
+        {
+        }
+        /**
+         * This function appends a block of code to the AMD specific javascript block executed
+         * in the page footer, just after loading the requirejs library.
+         *
+         * The code passed here can rely on AMD module loading, e.g. require('jquery', function($) {...});
+         *
+         * @param string $code The JS code to append.
+         */
+        public function js_amd_inline($code)
+        {
+        }
+        /**
+         * Load an AMD module and eventually call its method.
+         *
+         * This function creates a minimal inline JS snippet that requires an AMD module and eventually calls a single
+         * function from the module with given arguments. If it is called multiple times, it will be create multiple
+         * snippets.
+         *
+         * @param string $fullmodule The name of the AMD module to load, formatted as <component name>/<module name>.
+         * @param string $func Optional function from the module to call, defaults to just loading the AMD module.
+         * @param array $params The params to pass to the function (will be serialized into JSON).
+         */
+        public function js_call_amd($fullmodule, $func = null, $params = [])
+        {
+        }
+        /**
+         * Creates a JavaScript function call that requires one or more modules to be loaded.
+         *
+         * This function can be used to include all of the standard YUI module types within JavaScript:
+         *     - YUI3 modules    [node, event, io]
+         *     - YUI2 modules    [yui2-*]
+         *     - Moodle modules  [moodle-*]
+         *     - Gallery modules [gallery-*]
+         *
+         * Before writing new code that makes extensive use of YUI, you should consider it's replacement AMD/JQuery.
+         * @see js_call_amd()
+         *
+         * @param array|string $modules One or more modules
+         * @param string $function The function to call once modules have been loaded
+         * @param null|array $arguments An array of arguments to pass to the function
+         * @param null|string $galleryversion Deprecated: The gallery version to use
+         * @param bool $ondomready
+         */
+        public function yui_module($modules, $function, ?array $arguments = null, $galleryversion = null, $ondomready = false)
+        {
+        }
+        /**
+         * Set the CSS Modules to be included from YUI.
+         *
+         * @param array $modules The list of YUI CSS Modules to include.
+         */
+        public function set_yuicssmodules(array $modules = [])
+        {
+        }
+        /**
+         * Ensure that the specified JavaScript function is called from an inline script
+         * from page footer.
+         *
+         * @param string $function the name of the JavaScritp function to with init code,
+         *      usually something like 'M.mod_mymodule.init'
+         * @param null|array $extraarguments and array of arguments to be passed to the function.
+         *      The first argument is always the YUI3 Y instance with all required dependencies
+         *      already loaded.
+         * @param bool $ondomready wait for dom ready (helps with some IE problems when modifying DOM)
+         * @param null|array $module JS module specification array
+         */
+        public function js_init_call($function, ?array $extraarguments = null, $ondomready = false, ?array $module = null)
+        {
+        }
+        /**
+         * Add short static javascript code fragment to page footer.
+         * This is intended primarily for loading of js modules and initialising page layout.
+         * Ideally the JS code fragment should be stored in plugin renderer so that themes
+         * may override it.
+         *
+         * @param string $jscode
+         * @param bool $ondomready wait for dom ready (helps with some IE problems when modifying DOM)
+         * @param null|array $module JS module specification array
+         */
+        public function js_init_code($jscode, $ondomready = false, ?array $module = null)
+        {
+        }
+        /**
+         * Make a language string available to JavaScript.
+         *
+         * All the strings will be available in a M.str object in the global namespace.
+         * So, for example, after a call to $PAGE->requires->string_for_js('course', 'moodle');
+         * then the JavaScript variable M.str.moodle.course will be 'Course', or the
+         * equivalent in the current language.
+         *
+         * The arguments to this function are just like the arguments to get_string
+         * except that $component is not optional, and there are some aspects to consider
+         * when the string contains {$a} placeholder.
+         *
+         * If the string does not contain any {$a} placeholder, you can simply use
+         * M.str.component.identifier to obtain it. If you prefer, you can call
+         * M.util.get_string(identifier, component) to get the same result.
+         *
+         * If you need to use {$a} placeholders, there are two options. Either the
+         * placeholder should be substituted in PHP on server side or it should
+         * be substituted in Javascript at client side.
+         *
+         * To substitute the placeholder at server side, just provide the required
+         * value for the placeholder when you require the string. Because each string
+         * is only stored once in the JavaScript (based on $identifier and $module)
+         * you cannot get the same string with two different values of $a. If you try,
+         * an exception will be thrown. Once the placeholder is substituted, you can
+         * use M.str or M.util.get_string() as shown above:
+         *
+         *     // Require the string in PHP and replace the placeholder.
+         *     $PAGE->requires->string_for_js('fullnamedisplay', 'moodle', $USER);
+         *     // Use the result of the substitution in Javascript.
+         *     alert(M.str.moodle.fullnamedisplay);
+         *
+         * To substitute the placeholder at client side, use M.util.get_string()
+         * function. It implements the same logic as {@see get_string()}:
+         *
+         *     // Require the string in PHP but keep {$a} as it is.
+         *     $PAGE->requires->string_for_js('fullnamedisplay', 'moodle');
+         *     // Provide the values on the fly in Javascript.
+         *     user = { firstname : 'Harry', lastname : 'Potter' }
+         *     alert(M.util.get_string('fullnamedisplay', 'moodle', user);
+         *
+         * If you do need the same string expanded with different $a values in PHP
+         * on server side, then the solution is to put them in your own data structure
+         * (e.g. and array) that you pass to JavaScript with {@see data_for_js()}.
+         *
+         * @param string $identifier the desired string.
+         * @param string $component the language file to look in.
+         * @param mixed $a any extra data to add into the string (optional).
+         */
+        public function string_for_js($identifier, $component, $a = null)
+        {
+        }
+        /**
+         * Make an array of language strings available for JS.
+         *
+         * This function calls the above function {@see string_for_js()} for each requested
+         * string in the $identifiers array that is passed to the argument for a single module
+         * passed in $module.
+         *
+         * <code>
+         * $PAGE->requires->strings_for_js(array('one', 'two', 'three'), 'mymod', array('a', null, 3));
+         *
+         * // The above is identical to calling:
+         *
+         * $PAGE->requires->string_for_js('one', 'mymod', 'a');
+         * $PAGE->requires->string_for_js('two', 'mymod');
+         * $PAGE->requires->string_for_js('three', 'mymod', 3);
+         * </code>
+         *
+         * @param array $identifiers An array of desired strings
+         * @param string $component The module to load for
+         * @param mixed $a This can either be a single variable that gets passed as extra
+         *         information for every string or it can be an array of mixed data where the
+         *         key for the data matches that of the identifier it is meant for.
+         *
+         */
+        public function strings_for_js($identifiers, $component, $a = null)
+        {
+        }
+        /**
+         * !!!!!!DEPRECATED!!!!!! please use js_init_call() for everything now.
+         *
+         * Make some data from PHP available to JavaScript code.
+         *
+         * For example, if you call
+         * <pre>
+         *      $PAGE->requires->data_for_js('mydata', array('name' => 'Moodle'));
+         * </pre>
+         * then in JavsScript mydata.name will be 'Moodle'.
+         *
+         * @deprecated
+         * @param string $variable the the name of the JavaScript variable to assign the data to.
+         *      Will probably work if you use a compound name like 'mybuttons.button[1]', but this
+         *      should be considered an experimental feature.
+         * @param mixed $data The data to pass to JavaScript. This will be escaped using json_encode,
+         *      so passing objects and arrays should work.
+         * @param bool $inhead initialise in head
+         * @return void
+         */
+        public function data_for_js($variable, $data, $inhead = false)
+        {
+        }
+        /**
+         * Creates a YUI event handler.
+         *
+         * @param mixed $selector standard YUI selector for elements, may be array or string, element id is in the form "#idvalue"
+         * @param string $event A valid DOM event (click, mousedown, change etc.)
+         * @param string $function The name of the function to call
+         * @param null|array $arguments An optional array of argument parameters to pass to the function
+         */
+        public function event_handler($selector, $event, $function, ?array $arguments = null)
+        {
+        }
+        /**
+         * Returns code needed for registering of event handlers.
+         * @return string JS code
+         */
+        protected function get_event_handler_code()
+        {
+        }
+        /**
+         * Get the inline JavaScript code that need to appear in a particular place.
+         * @param bool $ondomready
+         * @return string
+         */
+        protected function get_javascript_code($ondomready)
+        {
+        }
+        /**
+         * Returns js code to be executed when Y is available.
+         * @return string
+         */
+        protected function get_javascript_init_code()
+        {
+        }
+        /**
+         * Returns js code to load amd module loader, then insert inline script tags
+         * that contain require() calls using RequireJS.
+         * @return string
+         */
+        protected function get_amd_footercode()
+        {
+        }
+        /**
+         * Returns basic YUI3 CSS code.
+         *
+         * @return string
+         */
+        protected function get_yui3lib_headcss()
+        {
+        }
+        /**
+         * Returns basic YUI3 JS loading code.
+         *
+         * @return string
+         */
+        protected function get_yui3lib_headcode()
+        {
+        }
+        /**
+         * Returns html tags needed for inclusion of theme CSS.
+         *
+         * @return string
+         */
+        protected function get_css_code()
+        {
+        }
+        /**
+         * Adds extra modules specified after printing of page header.
+         *
+         * @return string
+         */
+        protected function get_extra_modules_code()
+        {
+        }
+        /**
+         * Generate any HTML that needs to go inside the <head> tag.
+         *
+         * Normally, this method is called automatically by the code that prints the
+         * <head> tag. You should not normally need to call it in your own code.
+         *
+         * @param moodle_page $page
+         * @param core_renderer $renderer
+         * @return string the HTML code to to inside the <head> tag.
+         */
+        public function get_head_code(moodle_page $page, core_renderer $renderer)
+        {
+        }
+        /**
+         * Generate any HTML that needs to go at the start of the <body> tag.
+         *
+         * Normally, this method is called automatically by the code that prints the
+         * <head> tag. You should not normally need to call it in your own code.
+         *
+         * @param renderer_base $renderer
+         * @return string the HTML code to go at the start of the <body> tag.
+         */
+        public function get_top_of_body_code(renderer_base $renderer)
+        {
+        }
+        /**
+         * Generate any HTML that needs to go at the end of the page.
+         *
+         * Normally, this method is called automatically by the code that prints the
+         * page footer. You should not normally need to call it in your own code.
+         *
+         * @return string the HTML code to to at the end of the page.
+         */
+        public function get_end_code()
+        {
+        }
+        /**
+         * Have we already output the code in the <head> tag?
+         *
+         * @return bool
+         */
+        public function is_head_done()
+        {
+        }
+        /**
+         * Have we already output the code at the start of the <body> tag?
+         *
+         * @return bool
+         */
+        public function is_top_of_body_done()
+        {
+        }
+        /**
+         * Should we generate a bit of content HTML that is only required once  on
+         * this page (e.g. the contents of the modchooser), now? Basically, we call
+         * {@see has_one_time_item_been_created()}, and if the thing has not already
+         * been output, we return true to tell the caller to generate it, and also
+         * call {@see set_one_time_item_created()} to record the fact that it is
+         * about to be generated.
+         *
+         * That is, a typical usage pattern (in a renderer method) is:
+         * <pre>
+         * if (!$this->page->requires->should_create_one_time_item_now($thing)) {
+         *     return '';
+         * }
+         * // Else generate it.
+         * </pre>
+         *
+         * @param string $thing identifier for the bit of content. Should be of the form
+         *      frankenstyle_things, e.g. core_course_modchooser.
+         * @return bool if true, the caller should generate that bit of output now, otherwise don't.
+         */
+        public function should_create_one_time_item_now($thing)
+        {
+        }
+        /**
+         * Has a particular bit of HTML that is only required once  on this page
+         * (e.g. the contents of the modchooser) already been generated?
+         *
+         * Normally, you can use the {@see should_create_one_time_item_now()} helper
+         * method rather than calling this method directly.
+         *
+         * @param string $thing identifier for the bit of content. Should be of the form
+         *      frankenstyle_things, e.g. core_course_modchooser.
+         * @return bool whether that bit of output has been created.
+         */
+        public function has_one_time_item_been_created($thing)
+        {
+        }
+        /**
+         * Indicate that a particular bit of HTML that is only required once on this
+         * page (e.g. the contents of the modchooser) has been generated (or is about to be)?
+         *
+         * Normally, you can use the {@see should_create_one_time_item_now()} helper
+         * method rather than calling this method directly.
+         *
+         * @param string $thing identifier for the bit of content. Should be of the form
+         *      frankenstyle_things, e.g. core_course_modchooser.
+         */
+        public function set_one_time_item_created($thing)
+        {
+        }
     }
+}
+namespace {
     /**
-     * Has a particular bit of HTML that is only required once  on this page
-     * (e.g. the contents of the modchooser) already been generated?
-     *
-     * Normally, you can use the {@see should_create_one_time_item_now()} helper
-     * method rather than calling this method directly.
-     *
-     * @param string $thing identifier for the bit of content. Should be of the form
-     *      frankenstyle_things, e.g. core_course_modchooser.
-     * @return bool whether that bit of output has been created.
+     * Runtime class alias of \core\output\requirements\page_requirements_manager registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function has_one_time_item_been_created($thing)
-    {
-    }
-    /**
-     * Indicate that a particular bit of HTML that is only required once on this
-     * page (e.g. the contents of the modchooser) has been generated (or is about to be)?
-     *
-     * Normally, you can use the {@see should_create_one_time_item_now()} helper
-     * method rather than calling this method directly.
-     *
-     * @param string $thing identifier for the bit of content. Should be of the form
-     *      frankenstyle_things, e.g. core_course_modchooser.
-     */
-    public function set_one_time_item_created($thing)
+    class page_requirements_manager extends \core\output\requirements\page_requirements_manager
     {
     }
 }

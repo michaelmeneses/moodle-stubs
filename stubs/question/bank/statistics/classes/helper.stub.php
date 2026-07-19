@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_statistics;
 
+use core_question\statistics\questions\all_calculated_for_qubaid_condition;
+use core_component;
 /**
  * Helper for statistics
  *

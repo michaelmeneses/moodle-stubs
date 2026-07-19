@@ -29,6 +29,8 @@
  */
 namespace core\event;
 
+use core\event\base;
+use core_competency\plan;
 /**
  * Plan updated event class.
  *

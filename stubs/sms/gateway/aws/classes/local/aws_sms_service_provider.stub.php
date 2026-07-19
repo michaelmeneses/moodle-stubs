@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace smsgateway_aws\local;
 
+use core_sms\message_status;
+use stdClass;
 /**
  * AWS SMS service provider interface to provide a standard interface for different aws service providers like sns, sqs etc.
  *

@@ -29,6 +29,7 @@
  */
 namespace tiny_media\form;
 
+use html_writer;
 /**
  * Form allowing to edit files in one draft area.
  *

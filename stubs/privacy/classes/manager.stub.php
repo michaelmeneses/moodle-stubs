@@ -29,6 +29,15 @@
  */
 namespace core_privacy;
 
+use core_privacy\local\metadata\collection;
+use core_privacy\local\metadata\null_provider;
+use core_privacy\local\request\context_aware_provider;
+use core_privacy\local\request\contextlist_collection;
+use core_privacy\local\request\core_user_data_provider;
+use core_privacy\local\request\core_userlist_provider;
+use core_privacy\local\request\data_provider;
+use core_privacy\local\request\user_preference_provider;
+use core_privacy\local\metadata\provider as metadata_provider;
 /**
  * The core_privacy\manager class, providing a facade to describe, export and delete personal data across Moodle and its components.
  *

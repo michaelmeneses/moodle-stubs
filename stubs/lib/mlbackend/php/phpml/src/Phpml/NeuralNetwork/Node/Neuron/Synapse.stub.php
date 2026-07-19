@@ -8,6 +8,7 @@
  */
 namespace Phpml\NeuralNetwork\Node\Neuron;
 
+use Phpml\NeuralNetwork\Node;
 class Synapse
 {
     /**

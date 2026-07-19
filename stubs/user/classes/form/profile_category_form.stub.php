@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_user\form;
 
+use context;
+use core_form\dynamic_form;
+use moodle_url;
 /**
  * Modal form to edit profile category
  *

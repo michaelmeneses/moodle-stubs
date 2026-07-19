@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\task;
 
+use core\hook\task\after_failed_task_max_delay;
+use core_user;
+use stdClass;
 /**
  * Hook listener callbacks for tasks in core
  *

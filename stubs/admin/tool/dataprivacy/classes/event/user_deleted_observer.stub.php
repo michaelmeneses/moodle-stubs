@@ -29,6 +29,8 @@
  */
 namespace tool_dataprivacy\event;
 
+use tool_dataprivacy\api;
+use tool_dataprivacy\data_request;
 /**
  * Event observers supported by this module.
  *

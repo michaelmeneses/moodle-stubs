@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\form;
 
+use cm_info;
+use context;
+use context_module;
+use mod_quiz_mod_form;
+use moodle_url;
+use moodleform;
+use stdClass;
 /**
  * Form for editing quiz settings overrides.
  *

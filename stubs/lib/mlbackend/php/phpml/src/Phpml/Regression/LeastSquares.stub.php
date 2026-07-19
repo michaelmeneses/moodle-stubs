@@ -8,6 +8,8 @@
  */
 namespace Phpml\Regression;
 
+use Phpml\Helper\Predictable;
+use Phpml\Math\Matrix;
 class LeastSquares implements Regression
 {
     use Predictable;

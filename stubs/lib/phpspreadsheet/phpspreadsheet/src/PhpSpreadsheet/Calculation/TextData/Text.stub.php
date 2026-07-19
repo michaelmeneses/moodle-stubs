@@ -8,6 +8,10 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Calculation\TextData;
 
+use PhpOffice\PhpSpreadsheet\Calculation\ArrayEnabled;
+use PhpOffice\PhpSpreadsheet\Calculation\Calculation;
+use PhpOffice\PhpSpreadsheet\Calculation\Functions;
+use PhpOffice\PhpSpreadsheet\Calculation\Information\ErrorValue;
 class Text
 {
     use ArrayEnabled;

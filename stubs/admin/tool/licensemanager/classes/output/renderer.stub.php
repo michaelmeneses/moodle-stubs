@@ -29,6 +29,9 @@
  */
 namespace tool_licensemanager\output;
 
+use license_manager;
+use plugin_renderer_base;
+use tool_licensemanager\helper;
 /**
  * Renderer class for 'tool_licensemanager' component.
  *

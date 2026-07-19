@@ -8,6 +8,7 @@
  */
 namespace Aws\SageMakerFeatureStoreRuntime;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon SageMaker Feature Store Runtime** service.
  * @method \Aws\Result batchGetRecord(array $args = [])

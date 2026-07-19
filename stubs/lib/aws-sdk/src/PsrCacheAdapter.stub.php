@@ -8,6 +8,7 @@
  */
 namespace Aws;
 
+use Psr\Cache\CacheItemPoolInterface;
 class PsrCacheAdapter implements CacheInterface
 {
     /** @var CacheItemPoolInterface */

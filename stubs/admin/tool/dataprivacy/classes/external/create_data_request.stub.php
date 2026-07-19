@@ -22,6 +22,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_dataprivacy\external;
 
+use core_external\external_api;
+use core_external\external_function_parameters;
+use core_external\external_single_structure;
+use core_external\external_value;
+use core_external\external_warnings;
+use tool_dataprivacy\api;
+use core_user;
+use moodle_exception;
 /**
  * External function for creating a data request.
  *

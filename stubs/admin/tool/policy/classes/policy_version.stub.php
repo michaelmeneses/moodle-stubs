@@ -29,6 +29,7 @@
  */
 namespace tool_policy;
 
+use core\persistent;
 /**
  * Persistent model representing a single policy document version.
  *

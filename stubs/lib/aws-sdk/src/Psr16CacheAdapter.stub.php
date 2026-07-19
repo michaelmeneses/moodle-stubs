@@ -8,6 +8,7 @@
  */
 namespace Aws;
 
+use Psr\SimpleCache\CacheInterface as SimpleCacheInterface;
 class Psr16CacheAdapter implements CacheInterface
 {
     /** @var SimpleCacheInterface */

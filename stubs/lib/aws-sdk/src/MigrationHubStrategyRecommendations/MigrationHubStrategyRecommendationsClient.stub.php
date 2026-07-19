@@ -8,6 +8,7 @@
  */
 namespace Aws\MigrationHubStrategyRecommendations;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Migration Hub Strategy Recommendations** service.
  * @method \Aws\Result getApplicationComponentDetails(array $args = [])

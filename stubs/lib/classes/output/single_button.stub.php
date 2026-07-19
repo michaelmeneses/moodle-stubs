@@ -20,167 +20,180 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output;
-
-/**
- * Data structure representing a simple form with only one button.
- *
- * @copyright 2009 Petr Skoda
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @since Moodle 2.0
- * @package core
- * @category output
- */
-class single_button implements renderable
-{
+namespace core\output {
+    use core\output\actions\confirm_action;
+    use core\output\actions\component_action;
+    use moodle_url;
+    use stdClass;
     /**
-     * Possible button types. From boostrap.
-     */
-    const BUTTON_TYPES = [self::BUTTON_PRIMARY, self::BUTTON_SECONDARY, self::BUTTON_SUCCESS, self::BUTTON_DANGER, self::BUTTON_WARNING, self::BUTTON_INFO];
-    /**
-     * Possible button types - Primary.
-     */
-    const BUTTON_PRIMARY = 'primary';
-    /**
-     * Possible button types - Secondary.
-     */
-    const BUTTON_SECONDARY = 'secondary';
-    /**
-     * Possible button types - Danger.
-     */
-    const BUTTON_DANGER = 'danger';
-    /**
-     * Possible button types - Success.
-     */
-    const BUTTON_SUCCESS = 'success';
-    /**
-     * Possible button types - Warning.
-     */
-    const BUTTON_WARNING = 'warning';
-    /**
-     * Possible button types - Info.
-     */
-    const BUTTON_INFO = 'info';
-    /**
-     * @var moodle_url Target url
-     */
-    public $url;
-    /**
-     * @var string Button label
-     */
-    public $label;
-    /**
-     * @var string Form submit method post or get
-     */
-    public $method = 'post';
-    /**
-     * @var string Wrapping div class
-     */
-    public $class = 'singlebutton';
-    /**
-     * @var string Type of button (from defined types). Used for styling.
-     */
-    protected $type;
-    /**
-     * @var bool True if button is primary button. Used for styling.
-     * @deprecated since Moodle 4.2
-     */
-    private $primary = false;
-    /**
-     * @var bool True if button disabled, false if normal
-     */
-    public $disabled = false;
-    /**
-     * @var string Button tooltip
-     */
-    public $tooltip = null;
-    /**
-     * @var string Form id
-     */
-    public $formid;
-    /**
-     * @var array List of attached actions
-     */
-    public $actions = [];
-    /**
-     * @var array $params URL Params
-     */
-    public $params;
-    /**
-     * @var string Action id
-     */
-    public $actionid;
-    /**
-     * @var array
-     */
-    protected $attributes = [];
-    /**
-     * Constructor
+     * Data structure representing a simple form with only one button.
      *
-     * @param moodle_url $url
-     * @param string $label button text
-     * @param string $method get or post submit method
-     * @param string $type whether this is a primary button or another type, used for styling
-     * @param array $attributes Attributes for the HTML button tag
+     * @copyright 2009 Petr Skoda
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @since Moodle 2.0
+     * @package core
+     * @category output
      */
-    public function __construct(moodle_url $url, $label, $method = 'post', $type = self::BUTTON_SECONDARY, $attributes = [])
+    class single_button implements renderable
     {
+        /**
+         * Possible button types. From boostrap.
+         */
+        const BUTTON_TYPES = [self::BUTTON_PRIMARY, self::BUTTON_SECONDARY, self::BUTTON_SUCCESS, self::BUTTON_DANGER, self::BUTTON_WARNING, self::BUTTON_INFO];
+        /**
+         * Possible button types - Primary.
+         */
+        const BUTTON_PRIMARY = 'primary';
+        /**
+         * Possible button types - Secondary.
+         */
+        const BUTTON_SECONDARY = 'secondary';
+        /**
+         * Possible button types - Danger.
+         */
+        const BUTTON_DANGER = 'danger';
+        /**
+         * Possible button types - Success.
+         */
+        const BUTTON_SUCCESS = 'success';
+        /**
+         * Possible button types - Warning.
+         */
+        const BUTTON_WARNING = 'warning';
+        /**
+         * Possible button types - Info.
+         */
+        const BUTTON_INFO = 'info';
+        /**
+         * @var moodle_url Target url
+         */
+        public $url;
+        /**
+         * @var string Button label
+         */
+        public $label;
+        /**
+         * @var string Form submit method post or get
+         */
+        public $method = 'post';
+        /**
+         * @var string Wrapping div class
+         */
+        public $class = 'singlebutton';
+        /**
+         * @var string Type of button (from defined types). Used for styling.
+         */
+        protected $type;
+        /**
+         * @var bool True if button is primary button. Used for styling.
+         * @deprecated since Moodle 4.2
+         */
+        private $primary = false;
+        /**
+         * @var bool True if button disabled, false if normal
+         */
+        public $disabled = false;
+        /**
+         * @var string Button tooltip
+         */
+        public $tooltip = null;
+        /**
+         * @var string Form id
+         */
+        public $formid;
+        /**
+         * @var array List of attached actions
+         */
+        public $actions = [];
+        /**
+         * @var array $params URL Params
+         */
+        public $params;
+        /**
+         * @var string Action id
+         */
+        public $actionid;
+        /**
+         * @var array
+         */
+        protected $attributes = [];
+        /**
+         * Constructor
+         *
+         * @param moodle_url $url
+         * @param string $label button text
+         * @param string $method get or post submit method
+         * @param string $type whether this is a primary button or another type, used for styling
+         * @param array $attributes Attributes for the HTML button tag
+         */
+        public function __construct(moodle_url $url, $label, $method = 'post', $type = self::BUTTON_SECONDARY, $attributes = [])
+        {
+        }
+        /**
+         * Shortcut for adding a JS confirm dialog when the button is clicked.
+         * The message must be a yes/no question.
+         *
+         * @param string $confirmmessage The yes/no confirmation question. If "Yes" is clicked, the original action will occur.
+         */
+        public function add_confirm_action($confirmmessage)
+        {
+        }
+        /**
+         * Add action to the button.
+         * @param component_action $action
+         */
+        public function add_action(component_action $action)
+        {
+        }
+        /**
+         * Sets an attribute for the HTML button tag.
+         *
+         * @param  string $name  The attribute name
+         * @param  mixed  $value The value
+         * @return null
+         */
+        public function set_attribute($name, $value)
+        {
+        }
+        /**
+         * Magic setter method.
+         *
+         * This method manages access to some properties and will display deprecation message when accessing 'primary' property.
+         *
+         * @param string $name
+         * @param mixed $value
+         */
+        public function __set($name, $value)
+        {
+        }
+        /**
+         * Magic method getter.
+         *
+         * This method manages access to some properties and will display deprecation message when accessing 'primary' property.
+         *
+         * @param string $name
+         * @return mixed
+         */
+        public function __get($name)
+        {
+        }
+        /**
+         * Export data.
+         *
+         * @param renderer_base $output Renderer.
+         * @return stdClass
+         */
+        public function export_for_template(renderer_base $output)
+        {
+        }
     }
+}
+namespace {
     /**
-     * Shortcut for adding a JS confirm dialog when the button is clicked.
-     * The message must be a yes/no question.
-     *
-     * @param string $confirmmessage The yes/no confirmation question. If "Yes" is clicked, the original action will occur.
+     * Runtime class alias of \core\output\single_button registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function add_confirm_action($confirmmessage)
-    {
-    }
-    /**
-     * Add action to the button.
-     * @param component_action $action
-     */
-    public function add_action(component_action $action)
-    {
-    }
-    /**
-     * Sets an attribute for the HTML button tag.
-     *
-     * @param  string $name  The attribute name
-     * @param  mixed  $value The value
-     * @return null
-     */
-    public function set_attribute($name, $value)
-    {
-    }
-    /**
-     * Magic setter method.
-     *
-     * This method manages access to some properties and will display deprecation message when accessing 'primary' property.
-     *
-     * @param string $name
-     * @param mixed $value
-     */
-    public function __set($name, $value)
-    {
-    }
-    /**
-     * Magic method getter.
-     *
-     * This method manages access to some properties and will display deprecation message when accessing 'primary' property.
-     *
-     * @param string $name
-     * @return mixed
-     */
-    public function __get($name)
-    {
-    }
-    /**
-     * Export data.
-     *
-     * @param renderer_base $output Renderer.
-     * @return stdClass
-     */
-    public function export_for_template(renderer_base $output)
+    class single_button extends \core\output\single_button
     {
     }
 }

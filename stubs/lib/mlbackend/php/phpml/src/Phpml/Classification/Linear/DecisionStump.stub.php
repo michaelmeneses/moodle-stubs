@@ -8,6 +8,12 @@
  */
 namespace Phpml\Classification\Linear;
 
+use Phpml\Classification\DecisionTree;
+use Phpml\Classification\WeightedClassifier;
+use Phpml\Exception\InvalidArgumentException;
+use Phpml\Helper\OneVsRest;
+use Phpml\Helper\Predictable;
+use Phpml\Math\Comparison;
 class DecisionStump extends WeightedClassifier
 {
     use Predictable;

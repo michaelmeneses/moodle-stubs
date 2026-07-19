@@ -29,6 +29,7 @@
  */
 namespace core_calendar\external;
 
+use renderer_base;
 /**
  * Class for displaying a list of calendar events for a single course.
  *

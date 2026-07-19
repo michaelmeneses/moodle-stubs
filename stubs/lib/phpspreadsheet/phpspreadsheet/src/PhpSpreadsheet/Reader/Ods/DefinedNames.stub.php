@@ -8,6 +8,9 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Reader\Ods;
 
+use DOMElement;
+use PhpOffice\PhpSpreadsheet\DefinedName;
+use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
 class DefinedNames extends BaseLoader
 {
     public function read(DOMElement $workbookData): void

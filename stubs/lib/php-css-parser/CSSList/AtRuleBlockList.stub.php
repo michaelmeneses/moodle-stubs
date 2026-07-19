@@ -8,6 +8,8 @@
  */
 namespace Sabberworm\CSS\CSSList;
 
+use Sabberworm\CSS\OutputFormat;
+use Sabberworm\CSS\Property\AtRule;
 /**
  * A `BlockList` constructed by an unknown at-rule. `@media` rules are rendered into `AtRuleBlockList` objects.
  */

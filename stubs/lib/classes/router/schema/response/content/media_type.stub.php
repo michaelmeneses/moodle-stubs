@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\router\schema\response\content;
 
+use core\exception\coding_exception;
+use core\router\schema\example;
+use core\router\schema\openapi_base;
+use core\router\schema\objects\type_base;
+use core\router\schema\specification;
 /**
  * An OpenAPI MediaType.
  * https://swagger.io/specification/#media-type-object

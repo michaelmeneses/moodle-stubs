@@ -8,6 +8,9 @@
  */
 namespace Phpml\Metric;
 
+use Phpml\Exception\InvalidArgumentException;
+use Phpml\Math\Statistic\Correlation;
+use Phpml\Math\Statistic\Mean;
 final class Regression
 {
     public static function meanSquaredError(array $targets, array $predictions): float

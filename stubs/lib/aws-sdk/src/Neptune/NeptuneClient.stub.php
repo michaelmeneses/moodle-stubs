@@ -8,6 +8,8 @@
  */
 namespace Aws\Neptune;
 
+use Aws\AwsClient;
+use Aws\PresignUrlMiddleware;
 /**
  * This client is used to interact with the **Amazon Neptune** service.
  * @method \Aws\Result addRoleToDBCluster(array $args = [])

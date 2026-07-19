@@ -8,6 +8,18 @@
  */
 namespace OpenSpout\Reader\XLSX;
 
+use DOMElement;
+use OpenSpout\Common\Entity\Cell;
+use OpenSpout\Common\Entity\Row;
+use OpenSpout\Common\Exception\InvalidArgumentException;
+use OpenSpout\Common\Exception\IOException;
+use OpenSpout\Reader\Common\Manager\RowManager;
+use OpenSpout\Reader\Common\XMLProcessor;
+use OpenSpout\Reader\Exception\SharedStringNotFoundException;
+use OpenSpout\Reader\RowIteratorInterface;
+use OpenSpout\Reader\Wrapper\XMLReader;
+use OpenSpout\Reader\XLSX\Helper\CellHelper;
+use OpenSpout\Reader\XLSX\Helper\CellValueFormatter;
 final class RowIterator implements RowIteratorInterface
 {
     /**

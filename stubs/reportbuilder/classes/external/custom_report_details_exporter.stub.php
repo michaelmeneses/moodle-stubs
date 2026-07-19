@@ -8,6 +8,14 @@
  */
 namespace core_reportbuilder\external;
 
+use core_user;
+use renderer_base;
+use core\external\persistent_exporter;
+use core_reportbuilder\datasource;
+use core_reportbuilder\manager;
+use core_reportbuilder\local\models\report;
+use core_tag\external\{tag_item_exporter, util};
+use core_user\external\user_summary_exporter;
 /**
  * Custom report details exporter class
  *

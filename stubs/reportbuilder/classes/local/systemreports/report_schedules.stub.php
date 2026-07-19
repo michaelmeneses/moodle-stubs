@@ -8,6 +8,23 @@
  */
 namespace core_reportbuilder\local\systemreports;
 
+use context;
+use lang_string;
+use moodle_url;
+use pix_icon;
+use stdClass;
+use core_reportbuilder\permission;
+use core_reportbuilder\system_report;
+use core_reportbuilder\local\entities\user;
+use core_reportbuilder\local\filters\date;
+use core_reportbuilder\local\filters\text;
+use core_reportbuilder\local\helpers\format;
+use core_reportbuilder\local\models\report;
+use core_reportbuilder\local\models\schedule;
+use core_reportbuilder\local\report\action;
+use core_reportbuilder\local\report\column;
+use core_reportbuilder\local\report\filter;
+use core_reportbuilder\output\schedule_name_editable;
 /**
  * Report schedules list
  *

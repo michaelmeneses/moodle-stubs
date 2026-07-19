@@ -8,6 +8,8 @@
  */
 namespace Phpml\CrossValidation;
 
+use Phpml\Dataset\ArrayDataset;
+use Phpml\Dataset\Dataset;
 class StratifiedRandomSplit extends RandomSplit
 {
     protected function splitDataset(Dataset $dataset, float $testSize): void

@@ -31,6 +31,7 @@
  */
 namespace core_badges\output;
 
+use renderable;
 /**
  * Collection of badges used at the index.php page
  *

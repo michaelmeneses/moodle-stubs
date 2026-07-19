@@ -29,6 +29,10 @@
  */
 namespace tool_lp\output;
 
+use html_writer;
+use moodle_url;
+use table_sql;
+use core_competency\template;
 /**
  * Template plans table class.
  *

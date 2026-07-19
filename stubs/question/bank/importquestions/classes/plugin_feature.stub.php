@@ -30,6 +30,7 @@
  */
 namespace qbank_importquestions;
 
+use core_question\local\bank\navigation_node_base;
 /**
  * Class plugin_feature.
  *

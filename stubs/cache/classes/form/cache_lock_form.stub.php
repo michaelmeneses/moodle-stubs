@@ -20,52 +20,63 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core_cache\form;
-
-/**
- * Form to add a cache lock instance.
- *
- * All cache lock plugins that wish to have custom configuration should override
- * this form, and more explicitly the plugin_definition and plugin_validation methods.
- *
- * @package    core_cache
- * @category   cache
- * @copyright  2013 Sam Hemelryk
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class cache_lock_form extends moodleform
-{
+namespace core_cache\form {
+    use core_cache\config as cache_config;
+    use moodleform;
     /**
-     * Defines this form.
-     */
-    final public function definition()
-    {
-    }
-    /**
-     * Validates this form.
+     * Form to add a cache lock instance.
      *
-     * @param array $data
-     * @param array $files
-     * @return array
-     */
-    final public function validation($data, $files)
-    {
-    }
-    /**
-     * Plugin specific definition.
-     */
-    public function plugin_definition()
-    {
-    }
-    /**
-     * Plugin specific validation.
+     * All cache lock plugins that wish to have custom configuration should override
+     * this form, and more explicitly the plugin_definition and plugin_validation methods.
      *
-     * @param array $data
-     * @param array $files
-     * @param array $errors
-     * @return array
+     * @package    core_cache
+     * @category   cache
+     * @copyright  2013 Sam Hemelryk
+     * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function plugin_validation($data, $files, array $errors)
+    class cache_lock_form extends moodleform
+    {
+        /**
+         * Defines this form.
+         */
+        final public function definition()
+        {
+        }
+        /**
+         * Validates this form.
+         *
+         * @param array $data
+         * @param array $files
+         * @return array
+         */
+        final public function validation($data, $files)
+        {
+        }
+        /**
+         * Plugin specific definition.
+         */
+        public function plugin_definition()
+        {
+        }
+        /**
+         * Plugin specific validation.
+         *
+         * @param array $data
+         * @param array $files
+         * @param array $errors
+         * @return array
+         */
+        public function plugin_validation($data, $files, array $errors)
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \core_cache\form\cache_lock_form registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class cache_lock_form extends \core_cache\form\cache_lock_form
     {
     }
 }

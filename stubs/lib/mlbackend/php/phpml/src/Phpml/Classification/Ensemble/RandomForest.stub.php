@@ -8,6 +8,9 @@
  */
 namespace Phpml\Classification\Ensemble;
 
+use Phpml\Classification\Classifier;
+use Phpml\Classification\DecisionTree;
+use Phpml\Exception\InvalidArgumentException;
 class RandomForest extends Bagging
 {
     /**

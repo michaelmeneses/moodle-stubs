@@ -8,6 +8,11 @@
  */
 namespace Phpml\Classification;
 
+use Phpml\Exception\InvalidArgumentException;
+use Phpml\Helper\Predictable;
+use Phpml\Helper\Trainable;
+use Phpml\Math\Statistic\Mean;
+use Phpml\Math\Statistic\StandardDeviation;
 class NaiveBayes implements Classifier
 {
     use Trainable;

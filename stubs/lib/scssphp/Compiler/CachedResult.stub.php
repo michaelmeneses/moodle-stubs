@@ -17,6 +17,7 @@
  */
 namespace ScssPhp\ScssPhp\Compiler;
 
+use ScssPhp\ScssPhp\CompilationResult;
 /**
  * @internal
  */

@@ -8,6 +8,15 @@
  */
 namespace Phpml\Classification\Ensemble;
 
+use Phpml\Classification\Classifier;
+use Phpml\Classification\Linear\DecisionStump;
+use Phpml\Classification\WeightedClassifier;
+use Phpml\Exception\InvalidArgumentException;
+use Phpml\Helper\Predictable;
+use Phpml\Helper\Trainable;
+use Phpml\Math\Statistic\Mean;
+use Phpml\Math\Statistic\StandardDeviation;
+use ReflectionClass;
 class AdaBoost implements Classifier
 {
     use Predictable;

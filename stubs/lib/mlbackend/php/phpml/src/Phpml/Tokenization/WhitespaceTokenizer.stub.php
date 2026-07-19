@@ -8,6 +8,7 @@
  */
 namespace Phpml\Tokenization;
 
+use Phpml\Exception\InvalidArgumentException;
 class WhitespaceTokenizer implements Tokenizer
 {
     public function tokenize(string $text): array

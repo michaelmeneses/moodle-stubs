@@ -8,6 +8,13 @@
  */
 namespace Aws\Api\Serializer;
 
+use Aws\Api\MapShape;
+use Aws\Api\Service;
+use Aws\Api\Shape;
+use Aws\Api\StructureShape;
+use Aws\Api\ListShape;
+use Aws\Api\TimestampShape;
+use XMLWriter;
 /**
  * @internal Formats the XML body of a REST-XML services.
  */

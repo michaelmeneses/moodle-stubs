@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace report_themeusage\reportbuilder\local\entities;
 
+use core_reportbuilder\local\entities\base;
+use core_reportbuilder\local\report\column;
+use lang_string;
 /**
  * Theme entity.
  *

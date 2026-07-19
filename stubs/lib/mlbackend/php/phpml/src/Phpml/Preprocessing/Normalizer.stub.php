@@ -8,6 +8,9 @@
  */
 namespace Phpml\Preprocessing;
 
+use Phpml\Exception\NormalizerException;
+use Phpml\Math\Statistic\Mean;
+use Phpml\Math\Statistic\StandardDeviation;
 class Normalizer implements Preprocessor
 {
     public const NORM_L1 = 1;

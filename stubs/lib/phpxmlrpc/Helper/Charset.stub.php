@@ -8,6 +8,9 @@
  */
 namespace PhpXmlRpc\Helper;
 
+use PhpXmlRpc\Exception\ValueErrorException;
+use PhpXmlRpc\PhpXmlRpc;
+use PhpXmlRpc\Traits\DeprecationLogger;
 /**
  * @todo implement an interface
  */

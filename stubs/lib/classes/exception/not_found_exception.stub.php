@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\exception;
 
+use core\router\response\not_found_response;
 /**
  * An exception to describe the case where a requested item was not found.
  *

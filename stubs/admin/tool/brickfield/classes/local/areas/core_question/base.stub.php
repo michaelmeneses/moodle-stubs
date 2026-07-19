@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_brickfield\local\areas\core_question;
 
+use core\event\question_created;
+use core\event\question_updated;
+use tool_brickfield\area_base;
 /**
  * Base class for various question-related areas.
  *

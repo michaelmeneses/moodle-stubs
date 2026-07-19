@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_ai\aiactions\responses;
 
+use core\exception\coding_exception;
 /**
  * Action response base class.
  * Any method that processes an action must return an instance of this class.

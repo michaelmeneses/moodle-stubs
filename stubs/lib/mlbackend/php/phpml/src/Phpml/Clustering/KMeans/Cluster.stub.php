@@ -8,6 +8,9 @@
  */
 namespace Phpml\Clustering\KMeans;
 
+use IteratorAggregate;
+use LogicException;
+use SplObjectStorage;
 class Cluster extends Point implements IteratorAggregate
 {
     /**

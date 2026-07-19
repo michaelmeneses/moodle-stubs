@@ -20,27 +20,36 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output;
-
-/**
- * Data structure representing an emoticon image
- *
- * @copyright 2010 David Mudrak
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @since Moodle 2.0
- * @package core
- * @category output
- */
-class pix_emoticon extends pix_icon implements renderable
-{
+namespace core\output {
     /**
-     * Constructor
-     * @param string $pix short icon name
-     * @param string $alt alternative text
-     * @param string $component emoticon image provider
-     * @param array $attributes explicit HTML attributes
+     * Data structure representing an emoticon image
+     *
+     * @copyright 2010 David Mudrak
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @since Moodle 2.0
+     * @package core
+     * @category output
      */
-    public function __construct($pix, $alt, $component = 'moodle', array $attributes = [])
+    class pix_emoticon extends pix_icon implements renderable
+    {
+        /**
+         * Constructor
+         * @param string $pix short icon name
+         * @param string $alt alternative text
+         * @param string $component emoticon image provider
+         * @param array $attributes explicit HTML attributes
+         */
+        public function __construct($pix, $alt, $component = 'moodle', array $attributes = [])
+        {
+        }
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \core\output\pix_emoticon registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class pix_emoticon extends \core\output\pix_emoticon
     {
     }
 }

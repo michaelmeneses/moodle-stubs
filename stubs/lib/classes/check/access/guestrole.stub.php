@@ -31,6 +31,8 @@
  */
 namespace core\check\access;
 
+use core\check\check;
+use core\check\result;
 /**
  * Verifies sanity of guest role
  *

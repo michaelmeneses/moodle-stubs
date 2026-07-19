@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn\local\exceptions;
 
+use mod_bigbluebuttonbn\plugin;
 /**
  * Class bigbluebutton_exception generic exception. This is supposed to be recoverable.
  *

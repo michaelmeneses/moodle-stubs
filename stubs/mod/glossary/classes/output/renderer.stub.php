@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_glossary\output;
 
+use plugin_renderer_base;
 /**
  * Class actionbar - Display the action bar
  *

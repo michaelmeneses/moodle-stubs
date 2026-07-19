@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Chart;
 
+use PhpOffice\PhpSpreadsheet\Style\Font;
 class AxisText extends Properties
 {
     /** @var ?int */

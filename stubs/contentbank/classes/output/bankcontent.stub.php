@@ -22,6 +22,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_contentbank\output;
 
+use core\context\{course, coursecat};
+use core\context_helper;
+use core_contentbank\content;
+use core_contentbank\contentbank;
+use renderable;
+use templatable;
+use renderer_base;
+use stdClass;
 /**
  * Class containing data for bank content
  *

@@ -22,6 +22,15 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\router;
 
+use core\exception\invalid_parameter_exception;
+use core\exception\response_aware_exception;
+use core\router;
+use core\router\response\exception_response;
+use core\router\response\invalid_parameter_response;
+use core\router\schema\response\response_type;
+use Psr\Container\ContainerInterface;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ServerRequestInterface;
 /**
  * Controller Invoker for the Moodle Router.
  *

@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn\task;
 
+use core\task\adhoc_task;
+use mod_bigbluebuttonbn\recording;
 /**
  * Class containing the scheduled task for converting recordings for the BigBlueButton version 2.5 in Moodle 4.0.
  *

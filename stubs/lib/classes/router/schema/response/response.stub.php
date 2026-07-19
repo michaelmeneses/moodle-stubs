@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\router\schema\response;
 
+use core\exception\coding_exception;
+use core\router\schema\openapi_base;
+use core\router\schema\response\content\media_type;
+use core\router\schema\specification;
+use core\router\schema\response\content\payload_response_type;
+use Psr\Http\Message\ResponseInterface;
 /**
  * An OpenAPI Response.
  *

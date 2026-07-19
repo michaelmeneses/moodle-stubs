@@ -8,6 +8,8 @@
  */
 namespace Laravel\SerializableClosure;
 
+use Closure;
+use Laravel\SerializableClosure\Exceptions\PhpVersionNotSupportedException;
 class UnsignedSerializableClosure
 {
     /**

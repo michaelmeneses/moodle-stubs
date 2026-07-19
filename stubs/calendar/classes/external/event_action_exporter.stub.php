@@ -29,6 +29,10 @@
  */
 namespace core_calendar\external;
 
+use core\external\exporter;
+use core_calendar\local\event\entities\action_interface;
+use core_calendar\local\event\container;
+use renderer_base;
 /**
  * Class for displaying a calendar event's action.
  *

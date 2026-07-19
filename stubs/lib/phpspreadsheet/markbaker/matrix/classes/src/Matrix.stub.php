@@ -15,6 +15,9 @@
  */
 namespace Matrix;
 
+use Generator;
+use Matrix\Decomposition\LU;
+use Matrix\Decomposition\QR;
 /**
  * Matrix object.
  *

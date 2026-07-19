@@ -8,6 +8,13 @@
  */
 namespace Aws\S3;
 
+use Aws\CacheInterface;
+use Aws\CommandInterface;
+use Aws\LruArrayCache;
+use Aws\MultiRegionClient as BaseClient;
+use Aws\Exception\AwsException;
+use Aws\S3\Exception\PermanentRedirectException;
+use GuzzleHttp\Promise;
 /**
  * **Amazon Simple Storage Service** multi-region client.
  *

@@ -17,6 +17,8 @@
  */
 namespace MatthiasMullie\Minify;
 
+use MatthiasMullie\Minify\Exceptions\IOException;
+use Psr\Cache\CacheItemInterface;
 /**
  * Abstract minifier class.
  *

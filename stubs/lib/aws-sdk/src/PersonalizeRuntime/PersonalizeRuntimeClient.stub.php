@@ -8,6 +8,7 @@
  */
 namespace Aws\PersonalizeRuntime;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Personalize Runtime** service.
  * @method \Aws\Result getActionRecommendations(array $args = [])

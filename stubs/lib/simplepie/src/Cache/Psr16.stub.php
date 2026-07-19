@@ -49,6 +49,8 @@
  */
 namespace SimplePie\Cache;
 
+use Psr\SimpleCache\CacheInterface;
+use Psr\SimpleCache\InvalidArgumentException;
 /**
  * Caches data into a PSR-16 cache implementation
  *

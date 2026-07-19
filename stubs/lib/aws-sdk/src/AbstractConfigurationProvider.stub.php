@@ -8,6 +8,7 @@
  */
 namespace Aws;
 
+use GuzzleHttp\Promise;
 /**
  * A configuration provider is a function that returns a promise that is
  * fulfilled with a configuration object. This class provides base functionality

@@ -8,6 +8,7 @@
  */
 namespace ZipStream\Exception;
 
+use ZipStream\Exception;
 /**
  * This Exception gets invoked if a stream can't be read.
  */

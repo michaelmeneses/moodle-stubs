@@ -29,6 +29,9 @@
  */
 namespace tool_dataprivacy\output;
 
+use renderable;
+use renderer_base;
+use templatable;
 /**
  * Class containing the data registry compliance renderable
  *

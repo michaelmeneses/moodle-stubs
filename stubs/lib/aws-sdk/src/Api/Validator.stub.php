@@ -8,6 +8,7 @@
  */
 namespace Aws\Api;
 
+use Aws;
 /**
  * Validates a schema against a hash of input.
  */

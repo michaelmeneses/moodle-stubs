@@ -20,177 +20,189 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output;
-
-/**
- * Custom menu item
- *
- * This class is used to represent one item within a custom menu that may or may
- * not have children.
- *
- * @copyright 2010 Sam Hemelryk
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @since Moodle 2.0
- * @package core
- * @category output
- */
-class custom_menu_item implements renderable, templatable
-{
+namespace core\output {
+    use core\context\system as context_system;
+    use moodle_url;
+    use stdClass;
     /**
-     * @var string The text to show for the item
-     */
-    protected $text;
-    /**
-     * @var string A title to apply to the item. By default the text
-     */
-    protected $title;
-    /**
-     * @var int A sort order for the item, not necessary if you order things in
-     * the CFG var.
-     */
-    protected $sort;
-    /**
-     * @var array A array in which to store children this item has.
-     */
-    protected $children = [];
-    /**
-     * @var int A reference to the sort var of the last child that was added
-     */
-    protected $lastsort = 0;
-    /**
-     * Constructs the new custom menu item
+     * Custom menu item
      *
-     * @param string $text
-     * @param null|moodle_url $url A moodle url to apply as the link for this item [Optional]
-     * @param string $title A title to apply to this item [Optional]
-     * @param int $sort A sort or to use if we need to sort differently [Optional]
-     * @param null|custom_menu_item $parent A reference to the parent custom_menu_item this child
-     *        belongs to, only if the child has a parent. [Optional]
-     * @param array $attributes Array of other HTML attributes for the custom menu item.
+     * This class is used to represent one item within a custom menu that may or may
+     * not have children.
+     *
+     * @copyright 2010 Sam Hemelryk
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @since Moodle 2.0
+     * @package core
+     * @category output
      */
-    public function __construct(
-        $text,
-        /** @var moodle_url The link to give the icon if it has no children */
-        protected ?moodle_url $url = null,
-        $title = null,
-        $sort = null,
+    class custom_menu_item implements renderable, templatable
+    {
         /**
-         * @var custom_menu_item A reference to the parent for this item or NULL if
-         * it is a top level item
+         * @var string The text to show for the item
          */
-        protected ?custom_menu_item $parent = null,
-        /** @var array Array of other HTML attributes for the custom menu item. */
-        protected array $attributes = []
-    )
-    {
+        protected $text;
+        /**
+         * @var string A title to apply to the item. By default the text
+         */
+        protected $title;
+        /**
+         * @var int A sort order for the item, not necessary if you order things in
+         * the CFG var.
+         */
+        protected $sort;
+        /**
+         * @var array A array in which to store children this item has.
+         */
+        protected $children = [];
+        /**
+         * @var int A reference to the sort var of the last child that was added
+         */
+        protected $lastsort = 0;
+        /**
+         * Constructs the new custom menu item
+         *
+         * @param string $text
+         * @param null|moodle_url $url A moodle url to apply as the link for this item [Optional]
+         * @param string $title A title to apply to this item [Optional]
+         * @param int $sort A sort or to use if we need to sort differently [Optional]
+         * @param null|custom_menu_item $parent A reference to the parent custom_menu_item this child
+         *        belongs to, only if the child has a parent. [Optional]
+         * @param array $attributes Array of other HTML attributes for the custom menu item.
+         */
+        public function __construct(
+            $text,
+            /** @var moodle_url The link to give the icon if it has no children */
+            protected ?moodle_url $url = null,
+            $title = null,
+            $sort = null,
+            /**
+             * @var custom_menu_item A reference to the parent for this item or NULL if
+             * it is a top level item
+             */
+            protected ?custom_menu_item $parent = null,
+            /** @var array Array of other HTML attributes for the custom menu item. */
+            protected array $attributes = []
+        )
+        {
+        }
+        /**
+         * Adds a custom menu item as a child of this node given its properties.
+         *
+         * @param string $text
+         * @param null|moodle_url $url
+         * @param string $title
+         * @param int $sort
+         * @param array $attributes Array of other HTML attributes for the custom menu item.
+         * @return custom_menu_item
+         */
+        public function add($text, ?moodle_url $url = null, $title = null, $sort = null, $attributes = [])
+        {
+        }
+        /**
+         * Removes a custom menu item that is a child or descendant to the current menu.
+         *
+         * Returns true if child was found and removed.
+         *
+         * @param custom_menu_item $menuitem
+         * @return bool
+         */
+        public function remove_child(custom_menu_item $menuitem)
+        {
+        }
+        /**
+         * Returns the text for this item
+         * @return string
+         */
+        public function get_text()
+        {
+        }
+        /**
+         * Returns the url for this item
+         * @return moodle_url
+         */
+        public function get_url()
+        {
+        }
+        /**
+         * Returns the title for this item
+         * @return string
+         */
+        public function get_title()
+        {
+        }
+        /**
+         * Sorts and returns the children for this item
+         * @return array
+         */
+        public function get_children()
+        {
+        }
+        /**
+         * Gets the sort order for this child
+         * @return int
+         */
+        public function get_sort_order()
+        {
+        }
+        /**
+         * Gets the parent this child belong to
+         * @return custom_menu_item
+         */
+        public function get_parent()
+        {
+        }
+        /**
+         * Sorts the children this item has
+         */
+        public function sort()
+        {
+        }
+        /**
+         * Returns true if this item has any children
+         * @return bool
+         */
+        public function has_children()
+        {
+        }
+        /**
+         * Sets the text for the node
+         * @param string $text
+         */
+        public function set_text($text)
+        {
+        }
+        /**
+         * Sets the title for the node
+         * @param string $title
+         */
+        public function set_title($title)
+        {
+        }
+        /**
+         * Sets the url for the node
+         * @param moodle_url $url
+         */
+        public function set_url(moodle_url $url)
+        {
+        }
+        /**
+         * Export this data so it can be used as the context for a mustache template.
+         *
+         * @param renderer_base $output Used to do a final render of any components that need to be rendered for export.
+         * @return stdClass
+         */
+        public function export_for_template(renderer_base $output)
+        {
+        }
     }
+}
+namespace {
     /**
-     * Adds a custom menu item as a child of this node given its properties.
-     *
-     * @param string $text
-     * @param null|moodle_url $url
-     * @param string $title
-     * @param int $sort
-     * @param array $attributes Array of other HTML attributes for the custom menu item.
-     * @return custom_menu_item
+     * Runtime class alias of \core\output\custom_menu_item registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function add($text, ?moodle_url $url = null, $title = null, $sort = null, $attributes = [])
-    {
-    }
-    /**
-     * Removes a custom menu item that is a child or descendant to the current menu.
-     *
-     * Returns true if child was found and removed.
-     *
-     * @param custom_menu_item $menuitem
-     * @return bool
-     */
-    public function remove_child(custom_menu_item $menuitem)
-    {
-    }
-    /**
-     * Returns the text for this item
-     * @return string
-     */
-    public function get_text()
-    {
-    }
-    /**
-     * Returns the url for this item
-     * @return moodle_url
-     */
-    public function get_url()
-    {
-    }
-    /**
-     * Returns the title for this item
-     * @return string
-     */
-    public function get_title()
-    {
-    }
-    /**
-     * Sorts and returns the children for this item
-     * @return array
-     */
-    public function get_children()
-    {
-    }
-    /**
-     * Gets the sort order for this child
-     * @return int
-     */
-    public function get_sort_order()
-    {
-    }
-    /**
-     * Gets the parent this child belong to
-     * @return custom_menu_item
-     */
-    public function get_parent()
-    {
-    }
-    /**
-     * Sorts the children this item has
-     */
-    public function sort()
-    {
-    }
-    /**
-     * Returns true if this item has any children
-     * @return bool
-     */
-    public function has_children()
-    {
-    }
-    /**
-     * Sets the text for the node
-     * @param string $text
-     */
-    public function set_text($text)
-    {
-    }
-    /**
-     * Sets the title for the node
-     * @param string $title
-     */
-    public function set_title($title)
-    {
-    }
-    /**
-     * Sets the url for the node
-     * @param moodle_url $url
-     */
-    public function set_url(moodle_url $url)
-    {
-    }
-    /**
-     * Export this data so it can be used as the context for a mustache template.
-     *
-     * @param renderer_base $output Used to do a final render of any components that need to be rendered for export.
-     * @return stdClass
-     */
-    public function export_for_template(renderer_base $output)
+    class custom_menu_item extends \core\output\custom_menu_item
     {
     }
 }

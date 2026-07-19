@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_badges\output;
 
+use renderable;
+use renderer_base;
+use moodle_page;
+use navigation_node;
+use templatable;
 /**
  * Abstract class for the badges tertiary navigation. The class initialises the page and type class variables.
  *

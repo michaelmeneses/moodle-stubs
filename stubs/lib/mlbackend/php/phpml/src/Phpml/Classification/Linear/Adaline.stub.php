@@ -8,6 +8,7 @@
  */
 namespace Phpml\Classification\Linear;
 
+use Phpml\Exception\InvalidArgumentException;
 class Adaline extends Perceptron
 {
     /**

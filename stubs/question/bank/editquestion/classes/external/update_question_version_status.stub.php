@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_editquestion\external;
 
+use core_external\external_api;
+use core_external\external_function_parameters;
+use core_external\external_single_structure;
+use core_external\external_value;
+use qbank_editquestion\editquestion_helper;
+use question_bank;
 /**
  * Update question status external api.
  *

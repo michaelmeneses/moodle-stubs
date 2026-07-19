@@ -29,6 +29,7 @@
  */
 namespace tool_moodlenet\local;
 
+use core\antivirus\manager as avmanager;
 /**
  * The import_strategy_file class.
  *

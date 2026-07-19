@@ -30,6 +30,13 @@
  */
 namespace mod_bigbluebuttonbn\output;
 
+use mod_bigbluebuttonbn\instance;
+use mod_bigbluebuttonbn\local\exceptions\bigbluebutton_exception;
+use mod_bigbluebuttonbn\local\exceptions\meeting_join_exception;
+use mod_bigbluebuttonbn\local\exceptions\server_not_available_exception;
+use mod_bigbluebuttonbn\local\proxy\bigbluebutton_proxy;
+use mod_bigbluebuttonbn\logger;
+use mod_bigbluebuttonbn\meeting;
 /**
  * Mobile output class for bigbluebuttonbn
  *

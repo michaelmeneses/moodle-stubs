@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_data\local\exporter;
 
+use file_serving_exception;
+use moodle_exception;
+use zip_archive;
 /**
  * Exporter class for exporting data and - if needed - files as well in a zip archive.
  *

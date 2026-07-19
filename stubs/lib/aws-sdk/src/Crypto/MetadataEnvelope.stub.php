@@ -8,6 +8,11 @@
  */
 namespace Aws\Crypto;
 
+use Aws\HasDataTrait;
+use ArrayAccess;
+use IteratorAggregate;
+use InvalidArgumentException;
+use JsonSerializable;
 /**
  * Stores encryption metadata for reading and writing.
  *

@@ -8,6 +8,7 @@
  */
 namespace PhpXmlRpc\Traits;
 
+use PhpXmlRpc\PhpXmlRpc;
 trait DeprecationLogger
 {
     use LoggerAware;

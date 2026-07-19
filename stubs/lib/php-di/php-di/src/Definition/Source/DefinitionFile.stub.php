@@ -8,6 +8,7 @@
  */
 namespace DI\Definition\Source;
 
+use DI\Definition\Definition;
 /**
  * Reads DI definitions from a file returning a PHP array.
  *

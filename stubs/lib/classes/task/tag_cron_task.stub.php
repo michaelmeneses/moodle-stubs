@@ -29,6 +29,7 @@
  */
 namespace core\task;
 
+use core_tag_collection, core_tag_tag, core_tag_area, stdClass;
 /**
  * Simple task to run the tag cron.
  */

@@ -8,6 +8,7 @@
  */
 namespace Aws\SageMakerGeospatial;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon SageMaker geospatial capabilities** service.
  * @method \Aws\Result deleteEarthObservationJob(array $args = [])

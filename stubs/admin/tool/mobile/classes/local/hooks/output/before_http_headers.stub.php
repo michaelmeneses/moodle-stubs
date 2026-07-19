@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_mobile\local\hooks\output;
 
+use core\session\utility\cookie_helper;
 /**
  * Allows plugins to modify headers.
  *

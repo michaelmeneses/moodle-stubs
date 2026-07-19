@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace gradereport_singleview\local\screen;
 
+use gradereport_singleview;
 /**
  * The user search screen.
  *

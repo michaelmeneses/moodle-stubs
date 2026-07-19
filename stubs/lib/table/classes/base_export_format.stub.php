@@ -20,67 +20,77 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core_table;
-
-/**
- * The table base export format.
- *
- * @package   core_table
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class base_export_format
-{
+namespace core_table {
+    use flexible_table;
     /**
-     * @var flexible_table or child class reference pointing to table class object from which to export data.
-     */
-    public $table;
-    /**
-     * @var bool output started. Keeps track of whether any output has been started yet.
-     */
-    public $documentstarted = false;
-    /**
-     * Constructor.
+     * The table base export format.
      *
-     * @param flexible_table $table
+     * @package   core_table
+     * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
+     * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function __construct(&$table)
+    class base_export_format
     {
+        /**
+         * @var flexible_table or child class reference pointing to table class object from which to export data.
+         */
+        public $table;
+        /**
+         * @var bool output started. Keeps track of whether any output has been started yet.
+         */
+        public $documentstarted = false;
+        /**
+         * Constructor.
+         *
+         * @param flexible_table $table
+         */
+        public function __construct(&$table)
+        {
+        }
+        public function set_table(&$table)
+        {
+        }
+        public function add_data($row)
+        {
+        }
+        public function add_seperator()
+        {
+        }
+        public function document_started()
+        {
+        }
+        /**
+         * Format the text.
+         *
+         * Given text in a variety of format codings, this function returns
+         * the text as safe HTML or as plain text dependent on what is appropriate
+         * for the download format. The default removes all tags.
+         *
+         * @param string $text
+         * @param int $format
+         * @param null|array $options
+         * @param null|int $courseid
+         */
+        public function format_text($text, $format = FORMAT_MOODLE, $options = null, $courseid = null)
+        {
+        }
+        /**
+         * Format a row of data, removing HTML tags and entities from each of the cells
+         *
+         * @param array $row
+         * @return array
+         */
+        public function format_data(array $row): array
+        {
+        }
     }
-    public function set_table(&$table)
-    {
-    }
-    public function add_data($row)
-    {
-    }
-    public function add_seperator()
-    {
-    }
-    public function document_started()
-    {
-    }
+}
+namespace {
     /**
-     * Format the text.
-     *
-     * Given text in a variety of format codings, this function returns
-     * the text as safe HTML or as plain text dependent on what is appropriate
-     * for the download format. The default removes all tags.
-     *
-     * @param string $text
-     * @param int $format
-     * @param null|array $options
-     * @param null|int $courseid
+     * Runtime class alias of \core_table\base_export_format registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function format_text($text, $format = FORMAT_MOODLE, $options = null, $courseid = null)
-    {
-    }
-    /**
-     * Format a row of data, removing HTML tags and entities from each of the cells
-     *
-     * @param array $row
-     * @return array
-     */
-    public function format_data(array $row): array
+    class table_default_export_format_parent extends \core_table\base_export_format
     {
     }
 }

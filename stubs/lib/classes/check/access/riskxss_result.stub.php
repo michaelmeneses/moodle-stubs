@@ -34,6 +34,7 @@
  */
 namespace core\check\access;
 
+use core\check\result;
 /**
  * Lists all users with XSS risk
  *

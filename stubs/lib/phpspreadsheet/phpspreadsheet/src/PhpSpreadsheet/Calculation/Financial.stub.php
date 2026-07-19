@@ -8,6 +8,13 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Calculation;
 
+use PhpOffice\PhpSpreadsheet\Calculation\Financial\Amortization;
+use PhpOffice\PhpSpreadsheet\Calculation\Financial\Coupons;
+use PhpOffice\PhpSpreadsheet\Calculation\Financial\Depreciation;
+use PhpOffice\PhpSpreadsheet\Calculation\Financial\Dollar;
+use PhpOffice\PhpSpreadsheet\Calculation\Financial\InterestRate;
+use PhpOffice\PhpSpreadsheet\Calculation\Financial\Securities;
+use PhpOffice\PhpSpreadsheet\Calculation\Financial\TreasuryBill;
 /**
  * @deprecated 1.18.0
  */

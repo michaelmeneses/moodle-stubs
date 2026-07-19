@@ -8,6 +8,7 @@
  */
 namespace PhpXmlRpc\Traits;
 
+use PhpXmlRpc\Helper\Logger;
 trait LoggerAware
 {
     protected static $logger;

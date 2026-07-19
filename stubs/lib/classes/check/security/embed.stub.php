@@ -31,6 +31,8 @@
  */
 namespace core\check\security;
 
+use core\check\check;
+use core\check\result;
 /**
  * Verifies sloppy embedding - this should have been removed long ago!!
  *

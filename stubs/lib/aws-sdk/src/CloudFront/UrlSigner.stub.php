@@ -8,6 +8,9 @@
  */
 namespace Aws\CloudFront;
 
+use GuzzleHttp\Psr7;
+use GuzzleHttp\Psr7\Uri;
+use Psr\Http\Message\UriInterface;
 /**
  * Creates signed URLs for Amazon CloudFront resources.
  */

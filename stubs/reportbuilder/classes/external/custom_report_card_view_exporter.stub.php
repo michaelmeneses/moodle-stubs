@@ -8,6 +8,10 @@
  */
 namespace core_reportbuilder\external;
 
+use renderer_base;
+use core\external\exporter;
+use core_reportbuilder\datasource;
+use core_reportbuilder\form\card_view;
 /**
  * Custom report card view exporter class
  *

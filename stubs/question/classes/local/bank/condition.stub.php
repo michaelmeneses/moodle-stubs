@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_question\local\bank;
 
+use core\output\datafilter;
 /**
  * An abstract class for filtering/searching questions.
  *

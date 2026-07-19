@@ -8,6 +8,7 @@
  */
 namespace Aws\BillingConductor;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWSBillingConductor** service.
  * @method \Aws\Result associateAccounts(array $args = [])

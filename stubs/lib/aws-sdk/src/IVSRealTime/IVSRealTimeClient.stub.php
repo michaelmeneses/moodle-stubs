@@ -8,6 +8,7 @@
  */
 namespace Aws\IVSRealTime;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Interactive Video Service RealTime** service.
  * @method \Aws\Result createEncoderConfiguration(array $args = [])

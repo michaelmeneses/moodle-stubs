@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Shared;
 
+use PhpOffice\PhpSpreadsheet\Exception as PhpSpreadsheetException;
 class CodePage
 {
     public const DEFAULT_CODE_PAGE = 'CP1252';

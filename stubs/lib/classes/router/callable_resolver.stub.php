@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\router;
 
+use Invoker\Exception\NotCallableException;
+use Psr\Http\Server\MiddlewareInterface;
+use Psr\Http\Server\RequestHandlerInterface;
+use Slim\Interfaces\AdvancedCallableResolverInterface;
 // phpcs:disable moodle.NamingConventions.ValidVariableName.VariableNameLowerCase
 // phpcs:disable moodle.NamingConventions.ValidFunctionName.LowercaseMethod
 /**

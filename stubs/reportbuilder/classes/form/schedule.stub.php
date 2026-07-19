@@ -8,6 +8,18 @@
  */
 namespace core_reportbuilder\form;
 
+use context;
+use core_user;
+use html_writer;
+use moodle_url;
+use core\output\notification;
+use core_form\dynamic_form;
+use core_reportbuilder\manager;
+use core_reportbuilder\permission;
+use core_reportbuilder\local\helpers\audience;
+use core_reportbuilder\local\helpers\schedule as helper;
+use core_reportbuilder\local\models\schedule as model;
+use core_reportbuilder\local\report\base;
 /**
  * Schedule form
  *

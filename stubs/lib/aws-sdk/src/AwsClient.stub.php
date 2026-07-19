@@ -8,6 +8,17 @@
  */
 namespace Aws;
 
+use Aws\Api\ApiProvider;
+use Aws\Api\DocModel;
+use Aws\Api\Service;
+use Aws\Auth\AuthSelectionMiddleware;
+use Aws\Auth\AuthSchemeResolverInterface;
+use Aws\EndpointDiscovery\EndpointDiscoveryMiddleware;
+use Aws\EndpointV2\EndpointProviderV2;
+use Aws\EndpointV2\EndpointV2Middleware;
+use Aws\Exception\AwsException;
+use Aws\Signature\SignatureProvider;
+use GuzzleHttp\Psr7\Uri;
 /**
  * Default AWS client implementation
  */

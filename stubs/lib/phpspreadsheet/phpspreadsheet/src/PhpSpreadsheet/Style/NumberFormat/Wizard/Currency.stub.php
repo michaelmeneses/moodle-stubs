@@ -8,6 +8,8 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Style\NumberFormat\Wizard;
 
+use NumberFormatter;
+use PhpOffice\PhpSpreadsheet\Exception;
 class Currency extends Number
 {
     public const LEADING_SYMBOL = true;

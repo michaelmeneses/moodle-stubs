@@ -8,6 +8,9 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Shared;
 
+use PhpOffice\PhpSpreadsheet\Exception;
+use PhpOffice\PhpSpreadsheet\Reader\Exception as ReaderException;
+use ZipArchive;
 class File
 {
     /**

@@ -8,6 +8,7 @@
  */
 namespace Aws\Deadline;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWSDeadlineCloud** service.
  * @method \Aws\Result associateMemberToFarm(array $args = [])

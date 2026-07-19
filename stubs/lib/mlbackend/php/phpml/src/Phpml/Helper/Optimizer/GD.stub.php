@@ -8,6 +8,8 @@
  */
 namespace Phpml\Helper\Optimizer;
 
+use Closure;
+use Phpml\Exception\InvalidOperationException;
 /**
  * Batch version of Gradient Descent to optimize the weights
  * of a classifier given samples, targets and the objective function to minimize

@@ -29,6 +29,7 @@
  */
 namespace core_plagiarism\privacy;
 
+use core_privacy\local\metadata\collection;
 /**
  * Provider for the plagiarism API.
  *

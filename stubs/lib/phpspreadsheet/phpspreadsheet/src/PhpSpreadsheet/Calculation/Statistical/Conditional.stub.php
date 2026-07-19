@@ -8,6 +8,13 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Calculation\Statistical;
 
+use PhpOffice\PhpSpreadsheet\Calculation\Database\DAverage;
+use PhpOffice\PhpSpreadsheet\Calculation\Database\DCount;
+use PhpOffice\PhpSpreadsheet\Calculation\Database\DMax;
+use PhpOffice\PhpSpreadsheet\Calculation\Database\DMin;
+use PhpOffice\PhpSpreadsheet\Calculation\Database\DSum;
+use PhpOffice\PhpSpreadsheet\Calculation\Exception as CalcException;
+use PhpOffice\PhpSpreadsheet\Calculation\Functions;
 class Conditional
 {
     private const CONDITION_COLUMN_NAME = 'CONDITION';

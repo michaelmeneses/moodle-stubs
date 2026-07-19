@@ -8,6 +8,7 @@
  */
 namespace Aws\Macie2;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Macie 2** service.
  * @method \Aws\Result acceptInvitation(array $args = [])

@@ -8,6 +8,9 @@
  */
 namespace core_reportbuilder\event;
 
+use coding_exception;
+use core\event\base;
+use core_reportbuilder\local\models\report;
 /**
  * Report builder custom report deleted event class.
  *

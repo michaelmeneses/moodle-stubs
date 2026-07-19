@@ -29,6 +29,9 @@
  */
 namespace gradingform_guide\privacy;
 
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\transform;
+use core_privacy\local\request\writer;
 /**
  * Privacy class for requesting user data.
  *

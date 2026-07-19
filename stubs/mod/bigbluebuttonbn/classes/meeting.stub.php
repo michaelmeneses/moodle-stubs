@@ -22,6 +22,18 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn;
 
+use cache;
+use cache_store;
+use context_course;
+use core_tag_tag;
+use Exception;
+use Firebase\JWT\Key;
+use mod_bigbluebuttonbn\local\config;
+use mod_bigbluebuttonbn\local\exceptions\bigbluebutton_exception;
+use mod_bigbluebuttonbn\local\exceptions\meeting_join_exception;
+use mod_bigbluebuttonbn\local\helpers\roles;
+use mod_bigbluebuttonbn\local\proxy\bigbluebutton_proxy;
+use stdClass;
 /**
  * Class to describe a BBB Meeting.
  *

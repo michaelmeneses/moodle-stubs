@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Worksheet;
 
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
 /**
  * @implements \Iterator<int, Worksheet>
  */

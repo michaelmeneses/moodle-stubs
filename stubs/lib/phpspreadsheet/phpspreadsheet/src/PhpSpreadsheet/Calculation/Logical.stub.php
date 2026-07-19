@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Calculation;
 
+use PhpOffice\PhpSpreadsheet\Calculation\Logical\Boolean;
 /**
  * @deprecated 1.17.0
  */

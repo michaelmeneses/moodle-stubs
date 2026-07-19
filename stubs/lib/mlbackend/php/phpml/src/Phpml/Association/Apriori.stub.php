@@ -8,6 +8,8 @@
  */
 namespace Phpml\Association;
 
+use Phpml\Helper\Predictable;
+use Phpml\Helper\Trainable;
 class Apriori implements Associator
 {
     use Trainable;

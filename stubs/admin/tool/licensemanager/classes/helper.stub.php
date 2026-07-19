@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_licensemanager;
 
+use moodle_url;
 /**
  * License manager helper class.
  *

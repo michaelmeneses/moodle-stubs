@@ -8,6 +8,13 @@
  */
 namespace Aws\Credentials;
 
+use Aws\Exception\CredentialsException;
+use GuzzleHttp\Exception\ConnectException;
+use GuzzleHttp\Exception\GuzzleException;
+use GuzzleHttp\Psr7\Request;
+use GuzzleHttp\Promise;
+use GuzzleHttp\Promise\PromiseInterface;
+use Psr\Http\Message\ResponseInterface;
 /**
  * Credential provider that fetches container credentials with GET request.
  * container environment variables are used in constructing request URI.

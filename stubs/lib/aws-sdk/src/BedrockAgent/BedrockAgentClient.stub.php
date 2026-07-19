@@ -8,6 +8,7 @@
  */
 namespace Aws\BedrockAgent;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Agents for Amazon Bedrock** service.
  * @method \Aws\Result associateAgentKnowledgeBase(array $args = [])

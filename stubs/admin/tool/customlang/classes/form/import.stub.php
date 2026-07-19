@@ -29,6 +29,7 @@
  */
 namespace tool_customlang\form;
 
+use tool_customlang\local\importer;
 /**
  * Upload a zip/php of custom lang php files.
  *

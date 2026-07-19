@@ -29,6 +29,11 @@
  */
 namespace enrol_lti\output;
 
+use core\output\notification;
+use enrol_lti\local\ltiadvantage\repository\application_registration_repository;
+use enrol_lti\local\ltiadvantage\repository\deployment_repository;
+use Packback\Lti1p3\LtiMessageLaunch;
+use plugin_renderer_base;
 /**
  * Renderer class for LTI enrolment
  *

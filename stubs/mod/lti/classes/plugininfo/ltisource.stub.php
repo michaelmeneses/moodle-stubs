@@ -29,6 +29,7 @@
  */
 namespace mod_lti\plugininfo;
 
+use core\plugininfo\base;
 class ltisource extends base
 {
     /**

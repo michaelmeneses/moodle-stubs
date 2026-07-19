@@ -8,6 +8,9 @@
  */
 namespace Sabberworm\CSS;
 
+use Sabberworm\CSS\CSSList\Document;
+use Sabberworm\CSS\Parsing\ParserState;
+use Sabberworm\CSS\Parsing\SourceException;
 /**
  * This class parses CSS from text into a data structure.
  */

@@ -29,6 +29,9 @@
  */
 namespace mod_feedback\external;
 
+use core\external\exporter;
+use renderer_base;
+use core_files\external\stored_file_exporter;
 /**
  * Class for exporting a feedback item (question).
  *

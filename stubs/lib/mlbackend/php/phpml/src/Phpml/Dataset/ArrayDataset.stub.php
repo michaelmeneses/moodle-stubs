@@ -8,6 +8,7 @@
  */
 namespace Phpml\Dataset;
 
+use Phpml\Exception\InvalidArgumentException;
 class ArrayDataset implements Dataset
 {
     /**

@@ -8,6 +8,8 @@
  */
 namespace Phpml;
 
+use Phpml\Exception\FileException;
+use Phpml\Exception\SerializeException;
 class ModelManager
 {
     public function saveToFile(Estimator $estimator, string $filepath): void

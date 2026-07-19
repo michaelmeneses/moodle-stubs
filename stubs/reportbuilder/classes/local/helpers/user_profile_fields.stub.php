@@ -8,6 +8,12 @@
  */
 namespace core_reportbuilder\local\helpers;
 
+use core\lang_string;
+use core_text;
+use core_reportbuilder\local\filters\{boolean_select, date, select, text};
+use core_reportbuilder\local\report\{column, filter};
+use profile_field_base;
+use stdClass;
 /**
  * Helper class for user profile fields.
  *

@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tiny_h5p;
 
+use context;
+use editor_tiny\plugin;
+use editor_tiny\plugin_with_buttons;
+use editor_tiny\plugin_with_menuitems;
+use editor_tiny\plugin_with_configuration;
 /**
  * Tiny H5P plugin for Moodle.
  *

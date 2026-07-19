@@ -29,6 +29,7 @@
  */
 namespace core_tag\output;
 
+use context_system;
 /**
  * Class to display tag area enabled control
  *

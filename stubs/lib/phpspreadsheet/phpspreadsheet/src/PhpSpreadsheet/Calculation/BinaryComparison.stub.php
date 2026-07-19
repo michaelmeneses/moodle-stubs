@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Calculation;
 
+use PhpOffice\PhpSpreadsheet\Shared\StringHelper;
 class BinaryComparison
 {
     /**

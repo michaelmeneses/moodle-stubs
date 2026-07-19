@@ -8,6 +8,7 @@
  */
 namespace Aws\EventBridge;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon EventBridge** service.
  * @method \Aws\Result activateEventSource(array $args = [])

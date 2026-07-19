@@ -29,6 +29,7 @@
  */
 namespace block_starredcourses\output;
 
+use plugin_renderer_base;
 /**
  * Starred courses block renderer.
  *

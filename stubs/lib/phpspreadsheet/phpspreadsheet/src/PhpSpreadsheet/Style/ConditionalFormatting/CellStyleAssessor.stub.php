@@ -8,6 +8,9 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Style\ConditionalFormatting;
 
+use PhpOffice\PhpSpreadsheet\Cell\Cell;
+use PhpOffice\PhpSpreadsheet\Style\Conditional;
+use PhpOffice\PhpSpreadsheet\Style\Style;
 class CellStyleAssessor
 {
     /**

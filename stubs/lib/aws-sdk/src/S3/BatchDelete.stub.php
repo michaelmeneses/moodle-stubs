@@ -8,6 +8,11 @@
  */
 namespace Aws\S3;
 
+use Aws\AwsClientInterface;
+use Aws\S3\Exception\DeleteMultipleObjectsException;
+use GuzzleHttp\Promise;
+use GuzzleHttp\Promise\PromisorInterface;
+use GuzzleHttp\Promise\PromiseInterface;
 /**
  * Efficiently deletes many objects from a single Amazon S3 bucket using an
  * iterator that yields keys. Deletes are made using the DeleteObjects API

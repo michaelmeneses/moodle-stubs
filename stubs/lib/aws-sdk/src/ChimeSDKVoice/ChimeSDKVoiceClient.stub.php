@@ -8,6 +8,7 @@
  */
 namespace Aws\ChimeSDKVoice;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Chime SDK Voice** service.
  * @method \Aws\Result associatePhoneNumbersWithVoiceConnector(array $args = [])

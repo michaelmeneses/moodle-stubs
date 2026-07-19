@@ -29,6 +29,9 @@
  */
 namespace tool_lpimportcsv\form;
 
+use moodleform;
+use core_competency\api;
+use tool_lpimportcsv\framework_importer;
 /**
  * Import Competency framework form.
  *

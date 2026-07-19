@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_brickfield\task;
 
+use tool_brickfield\accessibility;
+use tool_brickfield\manager;
 /**
  * Task function to run checkid validation for accessibility checks.
  *

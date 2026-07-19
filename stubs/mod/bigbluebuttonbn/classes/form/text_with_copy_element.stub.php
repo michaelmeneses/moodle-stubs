@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn\form;
 
+use MoodleQuickForm_text;
 /**
  * Text type form element with a copy widget
  *

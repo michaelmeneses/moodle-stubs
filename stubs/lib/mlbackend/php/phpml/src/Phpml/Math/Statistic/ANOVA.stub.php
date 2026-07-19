@@ -8,6 +8,7 @@
  */
 namespace Phpml\Math\Statistic;
 
+use Phpml\Exception\InvalidArgumentException;
 /**
  * Analysis of variance
  * https://en.wikipedia.org/wiki/Analysis_of_variance

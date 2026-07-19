@@ -8,6 +8,8 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Reader\Ods;
 
+use DOMElement;
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
 abstract class BaseLoader
 {
     /**

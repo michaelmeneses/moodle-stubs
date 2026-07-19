@@ -20,54 +20,70 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output\action_menu;
-
-/**
- * An action menu action
- *
- * @package core
- * @category output
- * @copyright 2013 Sam Hemelryk
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class link extends action_link implements renderable
-{
+namespace core\output\action_menu {
+    use core\output\action_menu;
+    use core\output\action_link;
+    use core\output\pix_icon;
+    use core\output\renderable;
+    use core\output\renderer_base;
+    use moodle_url;
+    use stdClass;
     /**
-     * True if this is a primary action. False if not.
-     * @var bool
-     */
-    public $primary = true;
-    /**
-     * The action menu this link has been added to.
-     * @var action_menu
-     */
-    public $actionmenu = null;
-    /**
-     * The number of instances of this action menu link (and its subclasses).
+     * An action menu action
      *
-     * @var int
-     * @deprecated since Moodle 4.4.
+     * @package core
+     * @category output
+     * @copyright 2013 Sam Hemelryk
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    protected static $instance = 1;
-    /**
-     * Constructs the object.
-     *
-     * @param moodle_url $url The URL for the action.
-     * @param pix_icon|null $icon The icon to represent the action.
-     * @param string $text The text to represent the action.
-     * @param bool $primary Whether this is a primary action or not.
-     * @param array $attributes Any attribtues associated with the action.
-     */
-    public function __construct(moodle_url $url, ?pix_icon $icon, $text, $primary = true, array $attributes = [])
+    class link extends action_link implements renderable
     {
+        /**
+         * True if this is a primary action. False if not.
+         * @var bool
+         */
+        public $primary = true;
+        /**
+         * The action menu this link has been added to.
+         * @var action_menu
+         */
+        public $actionmenu = null;
+        /**
+         * The number of instances of this action menu link (and its subclasses).
+         *
+         * @var int
+         * @deprecated since Moodle 4.4.
+         */
+        protected static $instance = 1;
+        /**
+         * Constructs the object.
+         *
+         * @param moodle_url $url The URL for the action.
+         * @param pix_icon|null $icon The icon to represent the action.
+         * @param string $text The text to represent the action.
+         * @param bool $primary Whether this is a primary action or not.
+         * @param array $attributes Any attribtues associated with the action.
+         */
+        public function __construct(moodle_url $url, ?pix_icon $icon, $text, $primary = true, array $attributes = [])
+        {
+        }
+        /**
+         * Export for template.
+         *
+         * @param renderer_base $output The renderer.
+         * @return stdClass
+         */
+        public function export_for_template(renderer_base $output)
+        {
+        }
     }
+}
+namespace {
     /**
-     * Export for template.
-     *
-     * @param renderer_base $output The renderer.
-     * @return stdClass
+     * Runtime class alias of \core\output\action_menu\link registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function export_for_template(renderer_base $output)
+    class action_menu_link extends \core\output\action_menu\link
     {
     }
 }

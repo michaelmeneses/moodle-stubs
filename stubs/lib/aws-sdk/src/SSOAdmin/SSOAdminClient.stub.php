@@ -8,6 +8,7 @@
  */
 namespace Aws\SSOAdmin;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Single Sign-On Admin** service.
  * @method \Aws\Result attachCustomerManagedPolicyReferenceToPermissionSet(array $args = [])

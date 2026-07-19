@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_brickfield\output\checktyperesults;
 
+use core\chart_pie as chart_pie;
+use core\chart_series as chart_series;
+use tool_brickfield\accessibility;
+use tool_brickfield\local\tool\filter;
+use tool_brickfield\manager;
 /**
  * tool_brickfield/checktyperesults renderer
  *

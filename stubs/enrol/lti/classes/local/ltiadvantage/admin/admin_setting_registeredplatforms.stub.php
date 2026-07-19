@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace enrol_lti\local\ltiadvantage\admin;
 
+use enrol_lti\local\ltiadvantage\repository\application_registration_repository;
 /**
  * The admin_setting_registeredplatforms class, for rendering a table of platforms which have been registered.
  *

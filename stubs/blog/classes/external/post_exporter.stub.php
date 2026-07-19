@@ -29,6 +29,12 @@
  */
 namespace core_blog\external;
 
+use core\external\exporter;
+use core_external\util as external_util;
+use core_external\external_files;
+use renderer_base;
+use context_system;
+use core_tag\external\tag_item_exporter;
 /**
  * Class for exporting a blog post (entry).
  *

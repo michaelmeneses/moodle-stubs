@@ -8,6 +8,9 @@
  */
 namespace PhpXmlRpc;
 
+use PhpXmlRpc\Helper\XMLParser;
+use PhpXmlRpc\Traits\LoggerAware;
+use PhpXmlRpc\Traits\ParserAware;
 /**
  * A helper class to easily convert between Value objects and php native values.
  *

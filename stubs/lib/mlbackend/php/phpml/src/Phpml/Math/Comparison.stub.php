@@ -8,6 +8,7 @@
  */
 namespace Phpml\Math;
 
+use Phpml\Exception\InvalidArgumentException;
 class Comparison
 {
     /**

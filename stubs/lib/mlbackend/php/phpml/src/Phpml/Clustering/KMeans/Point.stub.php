@@ -8,6 +8,7 @@
  */
 namespace Phpml\Clustering\KMeans;
 
+use ArrayAccess;
 class Point implements ArrayAccess, \Countable
 {
     /**

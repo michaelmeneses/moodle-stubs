@@ -8,6 +8,7 @@
  */
 namespace Phpml\FeatureExtraction;
 
+use Phpml\Exception\InvalidArgumentException;
 class StopWords
 {
     /**

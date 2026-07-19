@@ -8,6 +8,11 @@
  */
 namespace IMSGlobal\LTI\ToolProvider;
 
+use IMSGlobal\LTI\ToolProvider\DataConnector\DataConnector;
+use IMSGlobal\LTI\ToolProvider\Service;
+use IMSGlobal\LTI\HTTPMessage;
+use IMSGlobal\LTI\OAuth;
+use stdClass;
 /**
  * Class to represent a tool consumer
  *

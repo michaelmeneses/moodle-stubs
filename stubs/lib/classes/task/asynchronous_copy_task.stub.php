@@ -30,6 +30,8 @@
  */
 namespace core\task;
 
+use async_helper;
+use cache_helper;
 /**
  * Adhoc task that performs asynchronous course copies.
  *

@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Style\NumberFormat\Wizard;
 
+use PhpOffice\PhpSpreadsheet\Exception;
 class Scientific extends NumberBase implements Wizard
 {
     /**

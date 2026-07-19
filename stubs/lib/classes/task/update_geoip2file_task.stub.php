@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\task;
 
+use core\http_client;
+use moodle_exception;
+use PharData;
 /**
  * Simple task to update the GeoIP database file.
  *

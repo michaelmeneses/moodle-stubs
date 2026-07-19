@@ -29,6 +29,7 @@
  */
 namespace dataformat_json;
 
+use core_text;
 /**
  * JSON data format writer
  *

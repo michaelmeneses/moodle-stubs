@@ -29,6 +29,13 @@
  */
 namespace core_auth\output;
 
+use context_system;
+use help_icon;
+use moodle_url;
+use renderable;
+use renderer_base;
+use stdClass;
+use templatable;
 /**
  * Login renderable class.
  *

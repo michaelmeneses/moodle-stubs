@@ -8,6 +8,16 @@
  */
 namespace Firebase\JWT;
 
+use ArrayAccess;
+use InvalidArgumentException;
+use LogicException;
+use OutOfBoundsException;
+use Psr\Cache\CacheItemInterface;
+use Psr\Cache\CacheItemPoolInterface;
+use Psr\Http\Client\ClientInterface;
+use Psr\Http\Message\RequestFactoryInterface;
+use RuntimeException;
+use UnexpectedValueException;
 /**
  * @implements ArrayAccess<string, Key>
  */

@@ -29,6 +29,7 @@
  */
 namespace block_recentlyaccessedcourses\output;
 
+use plugin_renderer_base;
 /**
  * Recently accessed courses block renderer
  *

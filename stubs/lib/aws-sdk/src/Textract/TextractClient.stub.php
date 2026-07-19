@@ -8,6 +8,7 @@
  */
 namespace Aws\Textract;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Textract** service.
  * @method \Aws\Result analyzeDocument(array $args = [])

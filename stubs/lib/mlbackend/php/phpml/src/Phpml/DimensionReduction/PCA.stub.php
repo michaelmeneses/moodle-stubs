@@ -8,6 +8,10 @@
  */
 namespace Phpml\DimensionReduction;
 
+use Phpml\Exception\InvalidArgumentException;
+use Phpml\Exception\InvalidOperationException;
+use Phpml\Math\Statistic\Covariance;
+use Phpml\Math\Statistic\Mean;
 class PCA extends EigenTransformerBase
 {
     /**

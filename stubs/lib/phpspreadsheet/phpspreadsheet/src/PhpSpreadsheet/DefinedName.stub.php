@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet;
 
+use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
 abstract class DefinedName
 {
     protected const REGEXP_IDENTIFY_FORMULA = '[^_\p{N}\p{L}:, \$\'!]';

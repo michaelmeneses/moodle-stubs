@@ -29,6 +29,8 @@
  */
 namespace core\task;
 
+use core\task\database_logger;
+use core\task\logmanager;
 /**
  * A task to cleanup log entries for tasks.
  *

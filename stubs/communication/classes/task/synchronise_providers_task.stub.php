@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_communication\task;
 
+use core\task\scheduled_task;
+use core_communication\api;
+use core_communication\processor;
 /**
  * Class synchronise_providers to add a task to synchronise the providers and execute the task to action the synchronisation.
  *

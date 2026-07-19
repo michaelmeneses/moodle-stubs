@@ -8,6 +8,10 @@
  */
 namespace Aws;
 
+use Aws\Endpoint\PartitionEndpointProvider;
+use Aws\Endpoint\PartitionInterface;
+use Aws\EndpointV2\EndpointProviderV2;
+use Aws\EndpointV2\EndpointDefinitionProvider;
 class MultiRegionClient implements AwsClientInterface
 {
     use AwsClientTrait;

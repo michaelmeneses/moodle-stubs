@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_comment;
 
+use core_question\local\bank\column_base;
+use question_bank;
 /**
  * A column to show the number of comments.
  *

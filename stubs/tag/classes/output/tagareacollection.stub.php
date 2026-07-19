@@ -29,6 +29,9 @@
  */
 namespace core_tag\output;
 
+use context_system;
+use lang_string;
+use core_tag_area;
 /**
  * Class to display collection select for the tag area
  *

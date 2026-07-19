@@ -8,6 +8,8 @@
  */
 namespace Phpml\CrossValidation;
 
+use Phpml\Dataset\Dataset;
+use Phpml\Exception\InvalidArgumentException;
 abstract class Split
 {
     /**

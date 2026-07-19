@@ -8,6 +8,11 @@
  */
 namespace core_badges\reportbuilder\datasource;
 
+use lang_string;
+use core_reportbuilder\datasource;
+use core_reportbuilder\local\entities\{course, user};
+use core_badges\reportbuilder\local\entities\{badge, badge_issued};
+use core_tag\reportbuilder\local\entities\tag;
 /**
  * Badges datasource
  *

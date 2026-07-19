@@ -29,6 +29,9 @@
  */
 namespace mod_forum\local\vaults;
 
+use mod_forum\local\container;
+use mod_forum\local\entities\forum as forum_entity;
+use mod_forum\local\entities\discussion as discussion_entity;
 /**
  * Discussion vault class.
  *

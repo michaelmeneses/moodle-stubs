@@ -8,6 +8,10 @@
  */
 namespace Aws;
 
+use Aws\Signature\SignatureV4;
+use Aws\Endpoint\EndpointProvider;
+use GuzzleHttp\Psr7\Uri;
+use Psr\Http\Message\RequestInterface;
 /**
  * @internal Adds computed values to service operations that need presigned url.
  */

@@ -31,6 +31,13 @@
  */
 namespace core_badges\output;
 
+use context_course;
+use context_system;
+use stdClass;
+use renderable;
+use core_badges\badge;
+use moodle_url;
+use renderer_base;
 /**
  * An issued badges for badge.php page
  *

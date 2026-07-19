@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_assign\task;
 
+use core\task\scheduled_task;
+use mod_assign\notification_helper;
 /**
  * Scheduled task to queue tasks for notifying about assignments that are now overdue.
  *

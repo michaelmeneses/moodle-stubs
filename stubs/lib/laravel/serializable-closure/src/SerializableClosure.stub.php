@@ -8,6 +8,11 @@
  */
 namespace Laravel\SerializableClosure;
 
+use Closure;
+use Laravel\SerializableClosure\Exceptions\InvalidSignatureException;
+use Laravel\SerializableClosure\Exceptions\PhpVersionNotSupportedException;
+use Laravel\SerializableClosure\Serializers\Signed;
+use Laravel\SerializableClosure\Signers\Hmac;
 class SerializableClosure
 {
     /**

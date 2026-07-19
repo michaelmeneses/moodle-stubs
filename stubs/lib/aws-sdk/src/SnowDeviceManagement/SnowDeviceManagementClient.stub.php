@@ -8,6 +8,7 @@
  */
 namespace Aws\SnowDeviceManagement;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Snow Device Management** service.
  * @method \Aws\Result cancelTask(array $args = [])

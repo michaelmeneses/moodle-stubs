@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_task\check;
 
+use action_link;
+use core\check\check;
+use core\check\result;
+use moodle_url;
 /**
  * Ad hoc queue checks
  *

@@ -8,6 +8,8 @@
  */
 namespace Phpml\Clustering;
 
+use Phpml\Math\Distance;
+use Phpml\Math\Distance\Euclidean;
 class DBSCAN implements Clusterer
 {
     private const NOISE = -1;

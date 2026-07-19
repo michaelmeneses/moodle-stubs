@@ -29,6 +29,22 @@
  */
 namespace mod_forum\local\factories;
 
+use mod_forum\local\entities\discussion as discussion_entity;
+use mod_forum\local\entities\forum as forum_entity;
+use mod_forum\local\entities\post as post_entity;
+use mod_forum\local\entities\post_read_receipt_collection as post_read_receipt_collection_entity;
+use mod_forum\local\factories\legacy_data_mapper as legacy_data_mapper_factory;
+use mod_forum\local\factories\manager as manager_factory;
+use mod_forum\local\factories\url as url_factory;
+use mod_forum\local\factories\vault as vault_factory;
+use mod_forum\local\exporters\forum as forum_exporter;
+use mod_forum\local\exporters\discussion as discussion_exporter;
+use mod_forum\local\exporters\discussion_summaries as discussion_summaries_exporter;
+use mod_forum\local\exporters\post as post_exporter;
+use mod_forum\local\exporters\posts as posts_exporter;
+use context;
+use rating;
+use stdClass;
 /**
  * The exporter factory class used to fetch an instance of the different exporter types.
  *

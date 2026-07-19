@@ -8,6 +8,7 @@
  */
 namespace Aws\NimbleStudio;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AmazonNimbleStudio** service.
  * @method \Aws\Result acceptEulas(array $args = [])

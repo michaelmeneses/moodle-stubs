@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output\local\dropdown;
 
+use core\output\choicelist;
 /**
  * Class to render a dropdown dialog element.
  *

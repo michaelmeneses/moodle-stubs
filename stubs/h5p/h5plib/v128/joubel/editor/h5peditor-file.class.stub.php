@@ -8,6 +8,7 @@
  */
 namespace Moodle;
 
+use stdClass;
 /**
  * Class
  */

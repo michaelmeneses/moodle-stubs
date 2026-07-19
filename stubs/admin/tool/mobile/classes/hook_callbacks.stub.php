@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_mobile;
 
+use core\session\utility\cookie_helper;
+use core\hook\output\extend_url;
+use html_writer;
+use moodle_url;
+use tool_mobile\local\hooks\before_extend_ios_app_banner;
 /**
  * Allows plugins to add any elements to the footer.
  *

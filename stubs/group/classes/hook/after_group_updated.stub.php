@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_group\hook;
 
+use stdClass;
 /**
  * Hook after group updates.
  *

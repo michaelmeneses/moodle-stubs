@@ -8,6 +8,11 @@
  */
 namespace core_reportbuilder\local\report;
 
+use lang_string;
+use moodle_exception;
+use core_reportbuilder\local\filters\base;
+use core_reportbuilder\local\helpers\{database, join_trait};
+use core_reportbuilder\local\models\filter as filter_model;
 /**
  * Class to represent a report filter
  *

@@ -29,6 +29,7 @@
  */
 namespace core_favourites\local\repository;
 
+use core_favourites\local\entity\favourite;
 /**
  * The favourite_repository interface, defining the basic CRUD operations for favourite type items within core_favourites.
  */

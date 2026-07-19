@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_statistics;
 
+use qbank_statistics\columns\facility_index;
+use qbank_statistics\columns\discrimination_index;
+use qbank_statistics\columns\discriminative_efficiency;
 /**
  * Class plugin_features is the entrypoint for the columns.
  *

@@ -8,6 +8,9 @@
  */
 namespace core_user\hook;
 
+use core\attribute\{label, tags};
+use core\lang_string;
+use core\url;
 /**
  * Hook to allow callbacks to extend the default homepage options
  *

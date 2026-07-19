@@ -8,6 +8,18 @@
  */
 namespace core_course\reportbuilder\local\entities;
 
+use context_coursecat;
+use context_helper;
+use html_writer;
+use lang_string;
+use moodle_url;
+use stdClass;
+use theme_config;
+use core_course_category;
+use core_reportbuilder\local\entities\base;
+use core_reportbuilder\local\filters\{category, select, text};
+use core_reportbuilder\local\report\column;
+use core_reportbuilder\local\report\filter;
 /**
  * Course category entity
  *

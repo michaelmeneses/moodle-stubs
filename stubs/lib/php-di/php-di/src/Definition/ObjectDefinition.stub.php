@@ -8,6 +8,11 @@
  */
 namespace DI\Definition;
 
+use DI\Definition\Dumper\ObjectDefinitionDumper;
+use DI\Definition\ObjectDefinition\MethodInjection;
+use DI\Definition\ObjectDefinition\PropertyInjection;
+use DI\Definition\Source\DefinitionArray;
+use ReflectionClass;
 /**
  * Defines how an object can be instantiated.
  *

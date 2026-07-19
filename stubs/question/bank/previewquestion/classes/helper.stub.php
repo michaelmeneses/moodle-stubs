@@ -22,6 +22,20 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_previewquestion;
 
+use action_menu;
+use comment;
+use context_module;
+use context;
+use core\plugininfo\qbank;
+use core_question\local\bank\edit_menu_column;
+use core_question\local\bank\view;
+use core_question\local\bank\question_edit_contexts;
+use moodle_url;
+use question_bank;
+use question_definition;
+use question_display_options;
+use question_engine;
+use stdClass;
 /**
  * Class helper contains all the helper functions.
  *

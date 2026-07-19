@@ -30,6 +30,13 @@
  */
 namespace mod_quiz\question\bank;
 
+use core\output\datafilter;
+use core_question\local\bank\column_base;
+use core_question\local\bank\condition;
+use core_question\local\bank\column_manager_base;
+use core_question\local\bank\question_version_status;
+use mod_quiz\question\bank\filter\custom_category_condition;
+use qbank_managecategories\category_condition;
 /**
  * Subclass to customise the view of the question bank for the quiz editing screen.
  *

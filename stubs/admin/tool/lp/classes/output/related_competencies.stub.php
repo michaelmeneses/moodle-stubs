@@ -29,6 +29,13 @@
  */
 namespace tool_lp\output;
 
+use renderable;
+use templatable;
+use renderer_base;
+use stdClass;
+use moodle_url;
+use core_competency\api;
+use core_competency\external\competency_exporter;
 /**
  * Class containing data for related competencies.
  *

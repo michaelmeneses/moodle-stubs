@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Calculation\Information;
 
+use PhpOffice\PhpSpreadsheet\Calculation\ArrayEnabled;
 class ErrorValue
 {
     use ArrayEnabled;

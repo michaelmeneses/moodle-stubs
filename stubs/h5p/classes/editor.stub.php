@@ -29,6 +29,13 @@
  */
 namespace core_h5p;
 
+use core_h5p\local\library\autoloader;
+use core_h5p\output\h5peditor as editor_renderer;
+use Moodle\H5PCore;
+use Moodle\H5peditor;
+use stdClass;
+use coding_exception;
+use MoodleQuickForm;
 /**
  * H5P editor class, for editing local H5P content.
  *

@@ -31,6 +31,7 @@
  */
 namespace core\check\environment;
 
+use core\check\result;
 /**
  * Verifies fatal misconfiguration of dataroot
  *

@@ -8,6 +8,11 @@
  */
 namespace Aws\S3;
 
+use Aws\Arn\Exception\InvalidArnException;
+use Aws\Arn\S3\AccessPointArn;
+use Aws\Arn\ArnParser;
+use GuzzleHttp\Psr7;
+use Psr\Http\Message\UriInterface;
 /**
  * Extracts a region, bucket, key, and and if a URI is in path-style
  */

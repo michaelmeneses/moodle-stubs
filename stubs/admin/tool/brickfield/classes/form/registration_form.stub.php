@@ -30,6 +30,14 @@
  */
 namespace tool_brickfield\form;
 
+use coding_exception;
+use dml_exception;
+use html_writer;
+use moodle_exception;
+use moodleform;
+use stdClass;
+use tool_brickfield\manager;
+use tool_brickfield\registration;
 /**
  * Class registration_form
  *

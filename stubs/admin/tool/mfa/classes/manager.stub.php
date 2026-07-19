@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_mfa;
 
+use dml_exception;
+use tool_mfa\plugininfo\factor;
 /**
  * MFA management class.
  *

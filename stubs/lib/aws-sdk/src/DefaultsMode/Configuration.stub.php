@@ -8,6 +8,7 @@
  */
 namespace Aws\DefaultsMode;
 
+use Aws\DefaultsMode\Exception\ConfigurationException;
 class Configuration implements ConfigurationInterface
 {
     private $mode;

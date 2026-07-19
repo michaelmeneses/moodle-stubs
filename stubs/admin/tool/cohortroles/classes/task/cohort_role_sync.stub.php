@@ -29,6 +29,8 @@
  */
 namespace tool_cohortroles\task;
 
+use core\task\scheduled_task;
+use tool_cohortroles\api;
 /**
  * Scheduled task for syncing cohort roles.
  *

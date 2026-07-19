@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_lti\reportbuilder\local\entities;
 
+use core_reportbuilder\local\filters\select;
+use core_reportbuilder\local\filters\text;
+use lang_string;
+use core_reportbuilder\local\entities\base;
+use core_reportbuilder\local\report\column;
+use core_reportbuilder\local\report\filter;
 /**
  * Course external tools entity class implementation.
  *

@@ -29,6 +29,9 @@
  */
 namespace core_privacy\output;
 
+use renderable;
+use renderer_base;
+use templatable;
 /**
  * Class containing the navigation renderable
  *

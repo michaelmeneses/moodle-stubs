@@ -29,6 +29,14 @@
  */
 namespace core_courseformat\output\local\content\cm;
 
+use action_menu;
+use action_menu_link;
+use cm_info;
+use core_courseformat\base as course_format;
+use core_courseformat\output\local\content\basecontrolmenu;
+use core_courseformat\output\local\courseformat_named_templatable;
+use section_info;
+use stdClass;
 /**
  * Base class to render a course module menu inside a course format.
  *

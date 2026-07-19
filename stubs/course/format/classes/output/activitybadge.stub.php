@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_courseformat\output;
 
+use cm_info;
+use core_courseformat\output\local\courseformat_named_templatable;
+use core\output\named_templatable;
+use renderer_base;
+use stdClass;
 /**
  * Base class to render an activity badge.
  *

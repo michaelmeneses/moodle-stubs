@@ -8,6 +8,8 @@
  */
 namespace core_reportbuilder\local\filters;
 
+use MoodleQuickForm;
+use core_reportbuilder\local\helpers\database;
 /**
  * Cohort selector filter class implementation
  *

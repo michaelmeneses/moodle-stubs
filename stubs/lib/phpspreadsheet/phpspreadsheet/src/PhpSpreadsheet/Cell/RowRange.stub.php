@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Cell;
 
+use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
 class RowRange implements AddressRange
 {
     /**

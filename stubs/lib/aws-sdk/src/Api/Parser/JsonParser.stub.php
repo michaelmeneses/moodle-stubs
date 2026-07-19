@@ -8,6 +8,8 @@
  */
 namespace Aws\Api\Parser;
 
+use Aws\Api\DateTimeResult;
+use Aws\Api\Shape;
 /**
  * @internal Implements standard JSON parsing.
  */

@@ -8,6 +8,8 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Chart;
 
+use PhpOffice\PhpSpreadsheet\Settings;
+use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
 class Chart
 {
     /**

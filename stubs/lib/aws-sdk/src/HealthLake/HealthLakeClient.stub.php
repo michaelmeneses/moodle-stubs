@@ -8,6 +8,7 @@
  */
 namespace Aws\HealthLake;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon HealthLake** service.
  * @method \Aws\Result createFHIRDatastore(array $args = [])

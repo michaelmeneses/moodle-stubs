@@ -8,6 +8,7 @@
  */
 namespace mod_assign;
 
+use core\activity_dates;
 /**
  * Class for fetching the important dates in mod_assign for a given module instance and a user.
  *

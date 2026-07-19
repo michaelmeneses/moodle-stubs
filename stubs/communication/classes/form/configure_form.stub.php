@@ -29,6 +29,8 @@
  */
 namespace core_communication\form;
 
+use core\context;
+use stdClass;
 /**
  * Defines the configure communication form.
  */

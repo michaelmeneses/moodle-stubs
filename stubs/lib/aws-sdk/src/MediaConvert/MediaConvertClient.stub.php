@@ -8,6 +8,7 @@
  */
 namespace Aws\MediaConvert;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Elemental MediaConvert** service.
  * @method \Aws\Result associateCertificate(array $args = [])
