@@ -8,6 +8,17 @@
  */
 namespace core_blog\reportbuilder\local\entities;
 
+use blog_entry_attachment;
+use context_system;
+use core_collator;
+use html_writer;
+use lang_string;
+use moodle_url;
+use stdClass;
+use core_reportbuilder\local\entities\base;
+use core_reportbuilder\local\filters\{boolean_select, date, select, text};
+use core_reportbuilder\local\helpers\format;
+use core_reportbuilder\local\report\{column, filter};
 /**
  * Blog entity
  *

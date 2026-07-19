@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace factor_sms;
 
+use moodle_url;
+use stdClass;
+use tool_mfa\local\factor\object_factor_base;
+use tool_mfa\local\secret_manager;
 /**
  * SMS Factor implementation.
  *

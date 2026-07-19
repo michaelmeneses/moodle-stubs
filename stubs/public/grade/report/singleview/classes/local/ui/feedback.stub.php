@@ -29,6 +29,7 @@
  */
 namespace gradereport_singleview\local\ui;
 
+use context_course;
 /**
  * Class used to render a feedback input box.
  *

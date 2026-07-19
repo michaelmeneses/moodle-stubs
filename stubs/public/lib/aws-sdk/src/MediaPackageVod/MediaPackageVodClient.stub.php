@@ -8,6 +8,7 @@
  */
 namespace Aws\MediaPackageVod;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Elemental MediaPackage VOD** service.
  * @method \Aws\Result configureLogs(array $args = [])

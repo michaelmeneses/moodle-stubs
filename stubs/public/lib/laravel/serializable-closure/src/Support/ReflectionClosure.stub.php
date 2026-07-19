@@ -8,6 +8,8 @@
  */
 namespace Laravel\SerializableClosure\Support;
 
+use Closure;
+use ReflectionFunction;
 class ReflectionClosure extends ReflectionFunction
 {
     protected $code;

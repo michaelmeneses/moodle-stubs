@@ -8,6 +8,7 @@
  */
 namespace Invoker\ParameterResolver;
 
+use ReflectionFunctionAbstract;
 /**
  * Dispatches the call to other resolvers until all parameters are resolved.
  *

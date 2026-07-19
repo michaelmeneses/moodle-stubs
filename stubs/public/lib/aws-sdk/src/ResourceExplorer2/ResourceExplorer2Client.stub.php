@@ -8,6 +8,7 @@
  */
 namespace Aws\ResourceExplorer2;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Resource Explorer** service.
  * @method \Aws\Result associateDefaultView(array $args = [])

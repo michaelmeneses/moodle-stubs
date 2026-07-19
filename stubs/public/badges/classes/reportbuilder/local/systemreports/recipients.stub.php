@@ -8,6 +8,12 @@
  */
 namespace core_badges\reportbuilder\local\systemreports;
 
+use core_badges\reportbuilder\local\entities\badge_issued;
+use core_reportbuilder\local\report\action;
+use core_reportbuilder\system_report;
+use lang_string;
+use moodle_url;
+use pix_icon;
 /**
  * Badge recipients system report class implementation
  *

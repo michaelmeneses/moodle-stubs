@@ -8,6 +8,8 @@
  */
 namespace libphonenumber\data;
 
+use libphonenumber\PhoneMetadata;
+use libphonenumber\PhoneNumberDesc;
 /**
  * @internal
  */

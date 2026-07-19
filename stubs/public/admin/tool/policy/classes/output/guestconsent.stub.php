@@ -30,6 +30,12 @@
  */
 namespace tool_policy\output;
 
+use moodle_url;
+use renderable;
+use renderer_base;
+use templatable;
+use tool_policy\api;
+use tool_policy\policy_version;
 /**
  * Renderer for the policies plugin.
  *

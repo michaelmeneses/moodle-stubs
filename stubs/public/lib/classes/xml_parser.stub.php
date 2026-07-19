@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core;
 
+use core\exception\xml_format_exception;
+use XMLParser;
 /**
  * Class for parsing xml files.
  *

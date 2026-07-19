@@ -22,6 +22,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\external;
 
+use external_function_parameters;
+use external_single_structure;
+use external_value;
+use external_api;
+use core_question\category_manager;
+use mod_quiz\question\bank\filter\custom_category_condition;
+use mod_quiz\quiz_settings;
+use mod_quiz\structure;
 /**
  * Add random questions to a quiz.
  *

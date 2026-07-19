@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet;
 
+use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
 class NamedFormula extends DefinedName
 {
     /**

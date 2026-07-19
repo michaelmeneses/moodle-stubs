@@ -8,6 +8,7 @@
  */
 namespace ZipStream\Zs;
 
+use ZipStream\PackField;
 /**
  * @internal
  */

@@ -8,6 +8,8 @@
  */
 namespace Aws\Auth\Exception;
 
+use Aws\HasMonitoringEventsTrait;
+use Aws\MonitoringEventsInterface;
 /**
  * Represents an error when attempting to resolve authentication.
  */

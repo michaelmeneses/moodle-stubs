@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace communication_matrix;
 
+use communication_matrix\local\command;
+use core\http_client;
+use DirectoryIterator;
+use Exception;
+use GuzzleHttp\Psr7\Response;
 /**
  * The abstract class for a versioned API client for Matrix.
  *

@@ -17,6 +17,13 @@
  */
 namespace ScssPhp\ScssPhp\Node;
 
+use ScssPhp\ScssPhp\Base\Range;
+use ScssPhp\ScssPhp\Compiler;
+use ScssPhp\ScssPhp\Exception\RangeException;
+use ScssPhp\ScssPhp\Exception\SassScriptException;
+use ScssPhp\ScssPhp\Node;
+use ScssPhp\ScssPhp\Type;
+use ScssPhp\ScssPhp\Util;
 /**
  * Dimension + optional units
  *

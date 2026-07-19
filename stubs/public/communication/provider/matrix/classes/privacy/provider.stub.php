@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace communication_matrix\privacy;
 
+use core_privacy\local\metadata\null_provider;
 /**
  * Privacy Subsystem for communication_matrix implementing null_provider.
  *

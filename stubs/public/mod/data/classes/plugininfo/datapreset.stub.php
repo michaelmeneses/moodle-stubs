@@ -29,6 +29,7 @@
  */
 namespace mod_data\plugininfo;
 
+use core\plugininfo\base;
 class datapreset extends base
 {
     public function is_uninstall_allowed()

@@ -8,6 +8,10 @@
  */
 namespace DI\Invoker;
 
+use Invoker\ParameterResolver\ParameterResolver;
+use Psr\Container\ContainerInterface;
+use ReflectionFunctionAbstract;
+use ReflectionNamedType;
 /**
  * Inject the container, the definition or any other service using type-hints.
  *

@@ -29,6 +29,14 @@
  */
 namespace mod_forum\local;
 
+use mod_forum\local\factories\renderer as renderer_factory;
+use mod_forum\local\factories\legacy_data_mapper as legacy_data_mapper_factory;
+use mod_forum\local\factories\entity as entity_factory;
+use mod_forum\local\factories\exporter as exporter_factory;
+use mod_forum\local\factories\manager as manager_factory;
+use mod_forum\local\factories\vault as vault_factory;
+use mod_forum\local\factories\builder as builder_factory;
+use mod_forum\local\factories\url as url_factory;
 /**
  * Container class.
  *

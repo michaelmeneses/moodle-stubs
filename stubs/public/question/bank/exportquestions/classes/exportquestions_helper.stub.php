@@ -32,6 +32,7 @@
  */
 namespace qbank_exportquestions;
 
+use moodle_url;
 /**
  * Class exportquestions_helper contains all the library functions.
  *

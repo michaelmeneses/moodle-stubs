@@ -29,6 +29,11 @@
  */
 namespace core\content\export;
 
+use context;
+use context_system;
+use moodle_url;
+use stdClass;
+use stored_file;
 /**
  * Zip writer wrapper.
  *

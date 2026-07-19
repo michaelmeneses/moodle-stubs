@@ -8,6 +8,8 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Worksheet;
 
+use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
+use PhpOffice\PhpSpreadsheet\Helper\Dimension as CssDimension;
 class ColumnDimension extends Dimension
 {
     /**

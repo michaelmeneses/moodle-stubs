@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_viewquestiontype;
 
+use core_question\local\bank\column_base;
 /**
  * A column with a type of question for each question with name q{questionid}.
  *

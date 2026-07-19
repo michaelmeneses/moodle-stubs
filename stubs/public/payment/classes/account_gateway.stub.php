@@ -29,6 +29,7 @@
  */
 namespace core_payment;
 
+use core\persistent;
 /**
  * Class account_gateway
  *

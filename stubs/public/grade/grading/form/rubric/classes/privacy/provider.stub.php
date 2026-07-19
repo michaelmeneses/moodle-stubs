@@ -29,6 +29,7 @@
  */
 namespace gradingform_rubric\privacy;
 
+use core_privacy\local\metadata\collection;
 /**
  * Privacy class for requesting user data.
  *

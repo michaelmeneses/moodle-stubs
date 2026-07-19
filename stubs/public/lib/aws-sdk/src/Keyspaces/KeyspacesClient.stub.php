@@ -8,6 +8,7 @@
  */
 namespace Aws\Keyspaces;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Keyspaces** service.
  * @method \Aws\Result createKeyspace(array $args = [])

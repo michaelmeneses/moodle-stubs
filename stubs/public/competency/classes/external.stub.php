@@ -29,6 +29,29 @@
  */
 namespace core_competency;
 
+use context_course;
+use context_module;
+use context_system;
+use context_user;
+use core_competency\external\competency_exporter;
+use core_competency\external\competency_framework_exporter;
+use core_competency\external\course_competency_exporter;
+use core_competency\external\course_module_competency_exporter;
+use core_competency\external\evidence_exporter;
+use core_competency\external\performance_helper;
+use core_competency\external\plan_exporter;
+use core_competency\external\template_exporter;
+use core_competency\external\user_competency_exporter;
+use core_competency\external\user_competency_plan_exporter;
+use core_competency\external\user_evidence_competency_exporter;
+use core_competency\external\user_evidence_exporter;
+use core_external\external_api;
+use core_external\external_function_parameters;
+use core_external\external_multiple_structure;
+use core_external\external_single_structure;
+use core_external\external_value;
+use grade_scale;
+use invalid_parameter_exception;
 /**
  * External API class.
  *

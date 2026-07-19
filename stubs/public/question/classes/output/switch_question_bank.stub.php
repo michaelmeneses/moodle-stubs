@@ -30,6 +30,9 @@
  */
 namespace core_question\output;
 
+use cm_info;
+use core_question\local\bank\question_bank_helper;
+use renderer_base;
 /**
  * Get the switch question bank rendered content. Displays lists of shared banks the viewing user has access to.
  */

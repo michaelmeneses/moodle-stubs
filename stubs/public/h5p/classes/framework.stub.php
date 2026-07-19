@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_h5p;
 
+use core_xapi\handler;
+use core_xapi\xapi_exception;
+use Moodle\H5PFrameworkInterface;
+use Moodle\H5PCore;
 // phpcs:disable moodle.NamingConventions.ValidFunctionName.LowercaseMethod
 /**
  * Moodle's implementation of the H5P framework interface.

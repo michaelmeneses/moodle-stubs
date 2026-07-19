@@ -8,6 +8,7 @@
  */
 namespace Aws\KinesisAnalyticsV2;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Kinesis Analytics** service.
  * @method \Aws\Result addApplicationCloudWatchLoggingOption(array $args = [])

@@ -8,6 +8,7 @@
  */
 namespace Aws\CloudControlApi;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Cloud Control API** service.
  * @method \Aws\Result cancelResourceRequest(array $args = [])

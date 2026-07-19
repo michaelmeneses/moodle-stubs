@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_courseformat\external;
 
+use core\external\exporter;
+use renderer_base;
 /**
  * The overviewitem data exporter for Webservice.
  *

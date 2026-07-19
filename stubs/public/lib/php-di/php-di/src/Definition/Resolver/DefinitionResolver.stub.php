@@ -8,6 +8,9 @@
  */
 namespace DI\Definition\Resolver;
 
+use DI\Definition\Definition;
+use DI\Definition\Exception\InvalidDefinition;
+use DI\DependencyException;
 /**
  * Resolves a definition to a value.
  *

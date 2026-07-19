@@ -20,17 +20,26 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output;
-
-/**
- * Interface marking other classes as suitable for renderer_base::render()
- *
- * @copyright 2010 Petr Skoda (skodak) info@skodak.org
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @package core
- * @category output
- */
-interface renderable
-{
-    // Intentionally empty.
+namespace core\output {
+    /**
+     * Interface marking other classes as suitable for renderer_base::render()
+     *
+     * @copyright 2010 Petr Skoda (skodak) info@skodak.org
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @package core
+     * @category output
+     */
+    interface renderable
+    {
+        // Intentionally empty.
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \core\output\renderable registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    interface renderable extends \core\output\renderable
+    {
+    }
 }

@@ -8,6 +8,19 @@
  */
 namespace core_course\reportbuilder\local\entities;
 
+use context_course;
+use core_course\reportbuilder\local\formatters\enrolment as enrolment_formatter;
+use core_reportbuilder\local\entities\base;
+use core_reportbuilder\local\filters\date;
+use core_reportbuilder\local\filters\select;
+use core_reportbuilder\local\helpers\database;
+use core_reportbuilder\local\helpers\format;
+use core_reportbuilder\local\report\column;
+use core_reportbuilder\local\report\filter;
+use core_user\output\status_field;
+use enrol_plugin;
+use lang_string;
+use stdClass;
 /**
  * Course enrolment entity implementation
  *

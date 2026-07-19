@@ -8,6 +8,12 @@
  */
 namespace Aws\Api\Parser;
 
+use Aws\Api\Service;
+use Aws\Api\StructureShape;
+use Aws\CommandInterface;
+use Aws\ResultInterface;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\StreamInterface;
 /**
  * @internal
  */

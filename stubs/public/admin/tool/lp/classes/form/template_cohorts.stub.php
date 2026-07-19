@@ -29,6 +29,7 @@
  */
 namespace tool_lp\form;
 
+use moodleform;
 /**
  * Template cohorts form class.
  *

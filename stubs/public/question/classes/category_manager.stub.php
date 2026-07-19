@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_question;
 
+use stdClass;
+use core\exception\moodle_exception;
+use core\context;
 /**
  * Category manager class, used for CRUD operations on question categories and related utility methods.
  *

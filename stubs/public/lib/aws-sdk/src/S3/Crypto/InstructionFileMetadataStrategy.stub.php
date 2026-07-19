@@ -8,6 +8,10 @@
  */
 namespace Aws\S3\Crypto;
 
+use Aws\Crypto\MetadataStrategyInterface;
+use Aws\Crypto\MetadataEnvelope;
+use Aws\Exception\CryptoException;
+use Aws\S3\S3Client;
 /**
  * Stores and reads encryption MetadataEnvelope information in a file on Amazon
  * S3.

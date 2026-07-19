@@ -8,6 +8,13 @@
  */
 namespace Sabberworm\CSS\CSSList;
 
+use Sabberworm\CSS\OutputFormat;
+use Sabberworm\CSS\Parsing\ParserState;
+use Sabberworm\CSS\Parsing\SourceException;
+use Sabberworm\CSS\Property\Selector;
+use Sabberworm\CSS\RuleSet\DeclarationBlock;
+use Sabberworm\CSS\RuleSet\RuleSet;
+use Sabberworm\CSS\Value\Value;
 /**
  * This class represents the root of a parsed CSS file. It contains all top-level CSS contents: mostly declaration
  * blocks, but also any at-rules encountered (`Import` and `Charset`).

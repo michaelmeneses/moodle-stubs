@@ -29,6 +29,11 @@
  */
 namespace block_myoverview\output;
 
+use core_competency\url;
+use renderable;
+use renderer_base;
+use templatable;
+use stdClass;
 /**
  * Class containing data for my overview block.
  *

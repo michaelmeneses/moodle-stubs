@@ -29,6 +29,8 @@
  */
 namespace mod_forum\local\data_mappers\legacy;
 
+use mod_forum\local\entities\post as post_entity;
+use stdClass;
 /**
  * Convert a post entity into an stdClass.
  *

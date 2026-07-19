@@ -8,6 +8,14 @@
  */
 namespace core_reportbuilder\local\helpers;
 
+use stdClass;
+use invalid_parameter_exception;
+use core\persistent;
+use core_reportbuilder\datasource;
+use core_reportbuilder\manager;
+use core_reportbuilder\table\{custom_report_table_view, system_report_table};
+use core_reportbuilder\local\models\{audience as audience_model, column, filter, report as report_model, schedule};
+use core_tag_tag;
 /**
  * Helper class for manipulating custom reports and their elements (columns, filters, conditions, etc)
  *

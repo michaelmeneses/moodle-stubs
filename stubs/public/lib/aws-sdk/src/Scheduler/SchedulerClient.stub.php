@@ -8,6 +8,7 @@
  */
 namespace Aws\Scheduler;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon EventBridge Scheduler** service.
  * @method \Aws\Result createSchedule(array $args = [])

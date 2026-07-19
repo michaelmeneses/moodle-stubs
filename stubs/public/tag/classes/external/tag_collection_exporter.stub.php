@@ -29,6 +29,7 @@
  */
 namespace core_tag\external;
 
+use core\external\exporter;
 /**
  * Contains related class for displaying information of a tag collection.
  *

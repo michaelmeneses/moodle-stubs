@@ -20,47 +20,56 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core_cache;
-
-/**
- * Cache Data Source.
- *
- * The cache data source interface can be implemented by any class within Moodle.
- * If implemented then the class can be reference in a cache definition and will be used to load information that cannot be
- * retrieved from the cache. As part of its retrieval that information will also be loaded into the cache.
- *
- * This allows developers to created a complete cache solution that can be used through code ensuring consistent cache
- * interaction and loading. Allowing them in turn to centralise code and help keeps things more easily maintainable.
- *
- * Can be implemented by any class.
- *
- * @package    core_cache
- * @category   cache
- * @copyright  2012 Sam Hemelryk
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-interface data_source_interface
-{
+namespace core_cache {
     /**
-     * Returns an instance of the data source class that the cache can use for loading data using the other methods
-     * specified by this interface.
+     * Cache Data Source.
      *
-     * @param definition $definition
-     * @return object
+     * The cache data source interface can be implemented by any class within Moodle.
+     * If implemented then the class can be reference in a cache definition and will be used to load information that cannot be
+     * retrieved from the cache. As part of its retrieval that information will also be loaded into the cache.
+     *
+     * This allows developers to created a complete cache solution that can be used through code ensuring consistent cache
+     * interaction and loading. Allowing them in turn to centralise code and help keeps things more easily maintainable.
+     *
+     * Can be implemented by any class.
+     *
+     * @package    core_cache
+     * @category   cache
+     * @copyright  2012 Sam Hemelryk
+     * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public static function get_instance_for_cache(definition $definition);
+    interface data_source_interface
+    {
+        /**
+         * Returns an instance of the data source class that the cache can use for loading data using the other methods
+         * specified by this interface.
+         *
+         * @param definition $definition
+         * @return object
+         */
+        public static function get_instance_for_cache(definition $definition);
+        /**
+         * Loads the data for the key provided ready formatted for caching.
+         *
+         * @param string|int $key The key to load.
+         * @return mixed What ever data should be returned, or false if it can't be loaded.
+         */
+        public function load_for_cache($key);
+        /**
+         * Loads several keys for the cache.
+         *
+         * @param array $keys An array of keys each of which will be string|int.
+         * @return array An array of matching data items.
+         */
+        public function load_many_for_cache(array $keys);
+    }
+}
+namespace {
     /**
-     * Loads the data for the key provided ready formatted for caching.
-     *
-     * @param string|int $key The key to load.
-     * @return mixed What ever data should be returned, or false if it can't be loaded.
+     * Runtime class alias of \core_cache\data_source_interface registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function load_for_cache($key);
-    /**
-     * Loads several keys for the cache.
-     *
-     * @param array $keys An array of keys each of which will be string|int.
-     * @return array An array of matching data items.
-     */
-    public function load_many_for_cache(array $keys);
+    interface cache_data_source extends \core_cache\data_source_interface
+    {
+    }
 }

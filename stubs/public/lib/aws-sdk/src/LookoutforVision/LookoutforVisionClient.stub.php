@@ -8,6 +8,7 @@
  */
 namespace Aws\LookoutforVision;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Lookout for Vision** service.
  * @method \Aws\Result createDataset(array $args = [])

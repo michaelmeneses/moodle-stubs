@@ -8,6 +8,8 @@
  */
 namespace Aws\S3\UseArnRegion;
 
+use Aws;
+use Aws\S3\UseArnRegion\Exception\ConfigurationException;
 class Configuration implements ConfigurationInterface
 {
     private $useArnRegion;

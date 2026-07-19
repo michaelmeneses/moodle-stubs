@@ -8,6 +8,13 @@
  */
 namespace core_blog\reportbuilder\datasource;
 
+use lang_string;
+use core_reportbuilder\datasource;
+use core_reportbuilder\local\entities\{course, user};
+use core_blog\reportbuilder\local\entities\blog;
+use core_files\reportbuilder\local\entities\file;
+use core_comment\reportbuilder\local\entities\comment;
+use core_tag\reportbuilder\local\entities\tag;
 /**
  * Blogs datasource
  *

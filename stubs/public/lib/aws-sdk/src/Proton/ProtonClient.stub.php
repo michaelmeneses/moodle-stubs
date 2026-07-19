@@ -8,6 +8,7 @@
  */
 namespace Aws\Proton;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Proton** service.
  * @method \Aws\Result acceptEnvironmentAccountConnection(array $args = [])

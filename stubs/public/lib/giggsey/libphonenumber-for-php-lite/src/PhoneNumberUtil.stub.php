@@ -8,6 +8,9 @@
  */
 namespace libphonenumber;
 
+use InvalidArgumentException;
+use RuntimeException;
+use TypeError;
 /**
  * Utility for international phone numbers. Functionality includes formatting, parsing and
  * validation.

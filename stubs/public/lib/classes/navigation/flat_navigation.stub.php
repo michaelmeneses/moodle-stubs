@@ -20,46 +20,59 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\navigation;
-
-/**
- * Class used to generate a collection of navigation nodes most closely related
- * to the current page.
- *
- * @deprecated since Moodle 4.0 - do not use any more. Leverage secondary/tertiary navigation concepts
- * @package core
- * @copyright 2016 Damyon Wiese
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-#[\core\attribute\deprecated(since: '4.0', reason: 'Do not use this class any more. Leverage secondary/tertiary navigation concepts.')]
-class flat_navigation extends navigation_node_collection
-{
-    /** @var moodle_page the moodle page that the navigation belongs to */
-    protected $page;
+namespace core\navigation {
+    use core\context\course as context_course;
+    use core\context_helper;
+    use core\url;
+    use moodle_page;
     /**
-     * Constructor.
+     * Class used to generate a collection of navigation nodes most closely related
+     * to the current page.
      *
-     * @param moodle_page $page
+     * @deprecated since Moodle 4.0 - do not use any more. Leverage secondary/tertiary navigation concepts
+     * @package core
+     * @copyright 2016 Damyon Wiese
+     * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function __construct(moodle_page &$page)
+    #[\core\attribute\deprecated(since: '4.0', reason: 'Do not use this class any more. Leverage secondary/tertiary navigation concepts.')]
+    class flat_navigation extends navigation_node_collection
     {
+        /** @var moodle_page the moodle page that the navigation belongs to */
+        protected $page;
+        /**
+         * Constructor.
+         *
+         * @param moodle_page $page
+         */
+        public function __construct(moodle_page &$page)
+        {
+        }
+        /**
+         * Build the list of navigation nodes based on the current navigation and settings trees.
+         *
+         */
+        public function initialise()
+        {
+        }
+        /**
+         * Override the parent so we can set a label for this collection if it has not been set yet.
+         *
+         * @param navigation_node $node Node to add
+         * @param string $beforekey If specified, adds before a node with this key,
+         *   otherwise adds at end
+         * @return navigation_node Added node
+         */
+        public function add(navigation_node $node, $beforekey = null)
+        {
+        }
     }
+}
+namespace {
     /**
-     * Build the list of navigation nodes based on the current navigation and settings trees.
-     *
+     * Runtime class alias of \core\navigation\flat_navigation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function initialise()
-    {
-    }
-    /**
-     * Override the parent so we can set a label for this collection if it has not been set yet.
-     *
-     * @param navigation_node $node Node to add
-     * @param string $beforekey If specified, adds before a node with this key,
-     *   otherwise adds at end
-     * @return navigation_node Added node
-     */
-    public function add(navigation_node $node, $beforekey = null)
+    class flat_navigation extends \core\navigation\flat_navigation
     {
     }
 }

@@ -29,6 +29,12 @@
  */
 namespace mod_assign\output;
 
+use templatable;
+use renderable;
+use moodle_url;
+use help_icon;
+use single_button;
+use stdClass;
 /**
  * Output the user submission actionbar for this activity.
  *

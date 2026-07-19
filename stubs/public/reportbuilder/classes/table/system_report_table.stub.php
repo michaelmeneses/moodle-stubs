@@ -8,6 +8,15 @@
  */
 namespace core_reportbuilder\table;
 
+use action_menu;
+use action_menu_filler;
+use core_table\local\filter\filterset;
+use html_writer;
+use moodle_exception;
+use stdClass;
+use core_reportbuilder\{manager, system_report};
+use core_reportbuilder\local\models\report;
+use core_reportbuilder\local\report\column;
 /**
  * System report dynamic table class
  *

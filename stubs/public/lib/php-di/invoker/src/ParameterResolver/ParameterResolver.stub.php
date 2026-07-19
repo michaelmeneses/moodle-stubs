@@ -8,6 +8,7 @@
  */
 namespace Invoker\ParameterResolver;
 
+use ReflectionFunctionAbstract;
 /**
  * Resolves the parameters to use to call the callable.
  */

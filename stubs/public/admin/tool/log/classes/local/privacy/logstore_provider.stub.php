@@ -30,6 +30,9 @@
  */
 namespace tool_log\local\privacy;
 
+use context;
+use core_privacy\local\request\contextlist;
+use core_privacy\local\request\approved_contextlist;
 /**
  * Logstore provider interface.
  *

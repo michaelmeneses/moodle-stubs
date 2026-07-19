@@ -8,6 +8,7 @@
  */
 namespace Aws\CodeBuild;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS CodeBuild** service.
  * @method \Aws\Result batchDeleteBuilds(array $args = [])

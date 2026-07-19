@@ -8,6 +8,20 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Helper;
 
+use PhpOffice\PhpSpreadsheet\Chart\Chart;
+use PhpOffice\PhpSpreadsheet\Chart\Renderer\MtJpGraphRenderer;
+use PhpOffice\PhpSpreadsheet\IOFactory;
+use PhpOffice\PhpSpreadsheet\Settings;
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
+use PhpOffice\PhpSpreadsheet\Writer\IWriter;
+use RecursiveDirectoryIterator;
+use RecursiveIteratorIterator;
+use RecursiveRegexIterator;
+use ReflectionClass;
+use RegexIterator;
+use RuntimeException;
+use Throwable;
 /**
  * Helper class to be used in sample code.
  */

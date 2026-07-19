@@ -8,6 +8,8 @@
  */
 namespace Aws;
 
+use GuzzleHttp\Psr7;
+use Psr\Http\Message\RequestInterface;
 /**
  * Used to compress request payloads if the service/operation support it.
  *

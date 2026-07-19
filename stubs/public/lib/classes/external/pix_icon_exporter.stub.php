@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\external;
 
+use core\output\pix_icon;
 /**
  * Class pix_icon_exporter
  *

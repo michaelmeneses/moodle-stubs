@@ -29,6 +29,13 @@
  */
 namespace auth_oauth2\output;
 
+use plugin_renderer_base;
+use html_table;
+use html_table_cell;
+use html_table_row;
+use html_writer;
+use auth_oauth2\linked_login;
+use moodle_url;
 /**
  * Implements the plugin renderer
  *

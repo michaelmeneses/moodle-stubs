@@ -20,89 +20,100 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output;
-
-/**
- * Custom menu class
- *
- * This class is used to operate a custom menu that can be rendered for the page.
- * The custom menu is built using $CFG->custommenuitems and is a structured collection
- * of custom_menu_item nodes that can be rendered by the core renderer.
- *
- * To configure the custom menu:
- *     Settings: Administration > Appearance > Advanced theme settings
- *
- * @copyright 2010 Sam Hemelryk
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @since Moodle 2.0
- * @package core
- * @category output
- */
-class custom_menu extends custom_menu_item
-{
+namespace core\output {
+    use core\exception\moodle_exception;
+    use moodle_url;
     /**
-     * @var string The language we should render for, null disables multilang support.
-     */
-    protected $currentlanguage = null;
-    /**
-     * Creates the custom menu
+     * Custom menu class
      *
-     * @param string $definition the menu items definition in syntax required by {@see convert_text_to_menu_nodes()}
-     * @param string $currentlanguage the current language code, null disables multilang support
+     * This class is used to operate a custom menu that can be rendered for the page.
+     * The custom menu is built using $CFG->custommenuitems and is a structured collection
+     * of custom_menu_item nodes that can be rendered by the core renderer.
+     *
+     * To configure the custom menu:
+     *     Settings: Administration > Appearance > Advanced theme settings
+     *
+     * @copyright 2010 Sam Hemelryk
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @since Moodle 2.0
+     * @package core
+     * @category output
      */
-    public function __construct($definition = '', $currentlanguage = null)
+    class custom_menu extends custom_menu_item
     {
+        /**
+         * @var string The language we should render for, null disables multilang support.
+         */
+        protected $currentlanguage = null;
+        /**
+         * Creates the custom menu
+         *
+         * @param string $definition the menu items definition in syntax required by {@see convert_text_to_menu_nodes()}
+         * @param string $currentlanguage the current language code, null disables multilang support
+         */
+        public function __construct($definition = '', $currentlanguage = null)
+        {
+        }
+        /**
+         * Overrides the children of this custom menu. Useful when getting children
+         * from $CFG->custommenuitems
+         *
+         * @param array $children
+         */
+        public function override_children(array $children)
+        {
+        }
+        /**
+         * Converts a string into a structured array of custom_menu_items which can
+         * then be added to a custom menu.
+         *
+         * Structure:
+         *     text|url|title|langs
+         * The number of hyphens at the start determines the depth of the item. The
+         * languages are optional, comma separated list of languages the line is for.
+         *
+         * Example structure:
+         *     First level first item|http://www.moodle.com/
+         *     -Second level first item|http://www.moodle.com/partners/
+         *     -Second level second item|http://www.moodle.com/hq/
+         *     --Third level first item|http://www.moodle.com/jobs/
+         *     -Second level third item|http://www.moodle.com/development/
+         *     First level second item|http://www.moodle.com/feedback/
+         *     First level third item
+         *     English only|http://moodle.com|English only item|en
+         *     German only|http://moodle.de|Deutsch|de,de_du,de_kids
+         *
+         *
+         * @static
+         * @param string $text the menu items definition
+         * @param string $language the language code, null disables multilang support
+         * @return array
+         */
+        public static function convert_text_to_menu_nodes($text, $language = null)
+        {
+        }
+        /**
+         * Sorts two custom menu items
+         *
+         * This function is designed to be used with the usort method
+         *     usort($this->children, array('custom_menu','sort_custom_menu_items'));
+         *
+         * @static
+         * @param custom_menu_item $itema
+         * @param custom_menu_item $itemb
+         * @return int
+         */
+        public static function sort_custom_menu_items(custom_menu_item $itema, custom_menu_item $itemb)
+        {
+        }
     }
+}
+namespace {
     /**
-     * Overrides the children of this custom menu. Useful when getting children
-     * from $CFG->custommenuitems
-     *
-     * @param array $children
+     * Runtime class alias of \core\output\custom_menu registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function override_children(array $children)
-    {
-    }
-    /**
-     * Converts a string into a structured array of custom_menu_items which can
-     * then be added to a custom menu.
-     *
-     * Structure:
-     *     text|url|title|langs
-     * The number of hyphens at the start determines the depth of the item. The
-     * languages are optional, comma separated list of languages the line is for.
-     *
-     * Example structure:
-     *     First level first item|http://www.moodle.com/
-     *     -Second level first item|http://www.moodle.com/partners/
-     *     -Second level second item|http://www.moodle.com/hq/
-     *     --Third level first item|http://www.moodle.com/jobs/
-     *     -Second level third item|http://www.moodle.com/development/
-     *     First level second item|http://www.moodle.com/feedback/
-     *     First level third item
-     *     English only|http://moodle.com|English only item|en
-     *     German only|http://moodle.de|Deutsch|de,de_du,de_kids
-     *
-     *
-     * @static
-     * @param string $text the menu items definition
-     * @param string $language the language code, null disables multilang support
-     * @return array
-     */
-    public static function convert_text_to_menu_nodes($text, $language = null)
-    {
-    }
-    /**
-     * Sorts two custom menu items
-     *
-     * This function is designed to be used with the usort method
-     *     usort($this->children, array('custom_menu','sort_custom_menu_items'));
-     *
-     * @static
-     * @param custom_menu_item $itema
-     * @param custom_menu_item $itemb
-     * @return int
-     */
-    public static function sort_custom_menu_items(custom_menu_item $itema, custom_menu_item $itemb)
+    class custom_menu extends \core\output\custom_menu
     {
     }
 }

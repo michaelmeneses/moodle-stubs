@@ -8,6 +8,7 @@
  */
 namespace tool_cohortroles;
 
+use core\event\user_deleted;
 /**
  * Plugin event observer callbacks
  *

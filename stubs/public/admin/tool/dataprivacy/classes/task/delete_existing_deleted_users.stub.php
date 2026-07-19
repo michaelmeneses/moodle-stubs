@@ -29,6 +29,9 @@
  */
 namespace tool_dataprivacy\task;
 
+use core\task\scheduled_task;
+use tool_dataprivacy\api;
+use tool_dataprivacy\data_request;
 /**
  * Scheduled task to create delete data request for pre-existing deleted users.
  *

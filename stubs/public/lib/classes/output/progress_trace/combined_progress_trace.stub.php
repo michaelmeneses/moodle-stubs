@@ -20,34 +20,44 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output\progress_trace;
-
-/**
- * Special type of trace that can be used for redirecting to multiple other traces.
- *
- * @copyright Petr Skoda {@link http://skodak.org}
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @package core
- */
-class combined_progress_trace extends progress_trace
-{
+namespace core\output\progress_trace {
+    use core\output\progress_trace;
     /**
-     * Constructs a new instance.
+     * Special type of trace that can be used for redirecting to multiple other traces.
      *
-     * @param array $traces multiple traces
+     * @copyright Petr Skoda {@link http://skodak.org}
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @package core
      */
-    public function __construct(
-        /** @var progress_trace[] The list of traces */
-        protected array $traces
-    )
+    class combined_progress_trace extends progress_trace
     {
+        /**
+         * Constructs a new instance.
+         *
+         * @param array $traces multiple traces
+         */
+        public function __construct(
+            /** @var progress_trace[] The list of traces */
+            protected array $traces
+        )
+        {
+        }
+        #[\Override]
+        public function output(string $message, int $depth = 0): void
+        {
+        }
+        #[\Override]
+        public function finished(): void
+        {
+        }
     }
-    #[\Override]
-    public function output(string $message, int $depth = 0): void
-    {
-    }
-    #[\Override]
-    public function finished(): void
+}
+namespace {
+    /**
+     * Runtime class alias of \core\output\progress_trace\combined_progress_trace registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class combined_progress_trace extends \core\output\progress_trace\combined_progress_trace
     {
     }
 }

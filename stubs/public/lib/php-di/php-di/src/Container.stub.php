@@ -8,6 +8,30 @@
  */
 namespace DI;
 
+use DI\Definition\Definition;
+use DI\Definition\Exception\InvalidDefinition;
+use DI\Definition\FactoryDefinition;
+use DI\Definition\Helper\DefinitionHelper;
+use DI\Definition\InstanceDefinition;
+use DI\Definition\ObjectDefinition;
+use DI\Definition\Resolver\DefinitionResolver;
+use DI\Definition\Resolver\ResolverDispatcher;
+use DI\Definition\Source\DefinitionArray;
+use DI\Definition\Source\MutableDefinitionSource;
+use DI\Definition\Source\ReflectionBasedAutowiring;
+use DI\Definition\Source\SourceChain;
+use DI\Definition\ValueDefinition;
+use DI\Invoker\DefinitionParameterResolver;
+use DI\Proxy\ProxyFactory;
+use InvalidArgumentException;
+use Invoker\Invoker;
+use Invoker\InvokerInterface;
+use Invoker\ParameterResolver\AssociativeArrayResolver;
+use Invoker\ParameterResolver\Container\TypeHintContainerResolver;
+use Invoker\ParameterResolver\DefaultValueResolver;
+use Invoker\ParameterResolver\NumericArrayResolver;
+use Invoker\ParameterResolver\ResolverChain;
+use Psr\Container\ContainerInterface;
 /**
  * Dependency Injection Container.
  *

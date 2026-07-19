@@ -29,6 +29,10 @@
  */
 namespace mod_workshop\external;
 
+use core\external\exporter;
+use renderer_base;
+use core_external\util as external_util;
+use core_external\external_files;
 /**
  * Class for exporting assessment data.
  *

@@ -22,6 +22,18 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_courseformat\output\local\overview;
 
+use core\url;
+use stdClass;
+use core\output\pix_icon;
+use core\output\externable;
+use core\output\renderable;
+use core\output\action_link;
+use core\output\renderer_base;
+use core\output\named_templatable;
+use core\external\action_link_exporter;
+use core\output\local\properties\button;
+use core\output\actions\component_action;
+use core_courseformat\external\overviewaction_exporter;
 /**
  * Data structure describing html link with a buble and special action attached.
  *

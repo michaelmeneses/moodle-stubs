@@ -8,6 +8,7 @@
  */
 namespace Aws\LakeFormation;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Lake Formation** service.
  * @method \Aws\Result addLFTagsToResource(array $args = [])

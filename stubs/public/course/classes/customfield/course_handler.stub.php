@@ -29,6 +29,7 @@
  */
 namespace core_course\customfield;
 
+use core_customfield\field_controller;
 /**
  * Course handler for custom fields
  *

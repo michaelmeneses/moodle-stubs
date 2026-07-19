@@ -33,6 +33,14 @@
  */
 namespace core_calendar\local\event;
 
+use core_calendar\action_factory;
+use core_calendar\local\event\data_access\event_vault;
+use core_calendar\local\event\entities\action_event;
+use core_calendar\local\event\entities\action_event_interface;
+use core_calendar\local\event\entities\event_interface;
+use core_calendar\local\event\factories\event_factory;
+use core_calendar\local\event\mappers\event_mapper;
+use core_calendar\local\event\strategies\raw_event_retrieval_strategy;
 /**
  * Core container.
  *

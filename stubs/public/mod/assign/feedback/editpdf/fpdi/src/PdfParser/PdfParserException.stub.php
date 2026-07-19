@@ -15,6 +15,7 @@
  */
 namespace setasign\Fpdi\PdfParser;
 
+use setasign\Fpdi\FpdiException;
 /**
  * Exception for the pdf parser class
  */

@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_assign\output;
 
+use templatable;
+use renderable;
+use moodle_url;
 /**
  * Output the actionbar for this activity.
  *

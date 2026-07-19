@@ -8,6 +8,9 @@
  */
 namespace Packback\Lti1p3;
 
+use Packback\Lti1p3\Interfaces\ILtiRegistration;
+use Packback\Lti1p3\Interfaces\ILtiServiceConnector;
+use Packback\Lti1p3\Interfaces\IServiceRequest;
 abstract class LtiAbstractService
 {
     public function __construct(private ILtiServiceConnector $serviceConnector, private ILtiRegistration $registration, private array $serviceData)

@@ -8,6 +8,7 @@
  */
 namespace mod_forum;
 
+use core\activity_dates;
 /**
  * Class for fetching the important dates in mod_forum for a given module instance and a user.
  *

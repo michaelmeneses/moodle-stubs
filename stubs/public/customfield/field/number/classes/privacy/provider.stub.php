@@ -8,6 +8,11 @@
  */
 namespace customfield_number\privacy;
 
+use core_customfield\data_controller;
+use core_customfield\privacy\customfield_provider;
+use core_privacy\local\metadata\null_provider;
+use core_privacy\local\request\writer;
+use stdClass;
 /**
  * Plugin privacy provider
  *

@@ -8,6 +8,7 @@
  */
 namespace Aws\SecurityHub;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS SecurityHub** service.
  * @method \Aws\Result acceptAdministratorInvitation(array $args = [])

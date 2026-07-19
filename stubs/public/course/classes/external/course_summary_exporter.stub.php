@@ -29,6 +29,8 @@
  */
 namespace core_course\external;
 
+use renderer_base;
+use moodle_url;
 /**
  * Class for exporting a course summary from an stdClass.
  *

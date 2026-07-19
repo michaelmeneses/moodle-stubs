@@ -8,6 +8,7 @@
  */
 namespace OpenSpout\Reader\XLSX\Manager\SharedStringsCaching;
 
+use OpenSpout\Reader\Exception\SharedStringNotFoundException;
 /**
  * @internal
  */

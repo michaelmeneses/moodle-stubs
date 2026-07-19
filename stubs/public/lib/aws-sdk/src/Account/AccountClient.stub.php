@@ -8,6 +8,7 @@
  */
 namespace Aws\Account;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Account** service.
  * @method \Aws\Result acceptPrimaryEmailUpdate(array $args = [])

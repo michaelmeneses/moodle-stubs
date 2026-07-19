@@ -20,255 +20,284 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\navigation;
-
-/**
- * Class used to manage the settings option for the current page
- *
- * This class is used to manage the settings options in a tree format (recursively)
- * and was created initially for use with the settings blocks.
- *
- * @package   core
- * @category  navigation
- * @copyright 2009 Sam Hemelryk
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class settings_navigation extends navigation_node
-{
-    /** @var context the current context */
-    protected $context;
-    /** @var moodle_page the moodle page that the navigation belongs to */
-    protected $page;
-    /** @var string contains administration section navigation_nodes */
-    protected $adminsection;
-    /** @var bool A switch to see if the navigation node is initialised */
-    protected $initialised = false;
-    /** @var array An array of users that the nodes can extend for. */
-    protected $userstoextendfor = [];
-    /** @var navigation_cache **/
-    protected $cache;
+namespace core\navigation {
+    use admin_category;
+    use admin_externalpage;
+    use admin_settingpage;
+    use core\component;
+    use core\context;
+    use core\context\course as context_course;
+    use core\context\system as context_system;
+    use core\context\user as context_user;
+    use core\context_helper;
+    use core\exception\coding_exception;
+    use core\output\action_link;
+    use core\output\pix_icon;
+    use core\url;
+    use core\moodlenet\utilities;
+    use core_contentbank\contentbank;
+    use core_plugin_manager;
+    use dml_missing_record_exception;
+    use moodle_page;
+    use part_of_admin_tree;
+    use repository;
     /**
-     * Sets up the object with basic settings and preparse it for use
+     * Class used to manage the settings option for the current page
      *
-     * @param moodle_page $page
+     * This class is used to manage the settings options in a tree format (recursively)
+     * and was created initially for use with the settings blocks.
+     *
+     * @package   core
+     * @category  navigation
+     * @copyright 2009 Sam Hemelryk
+     * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function __construct(moodle_page &$page)
+    class settings_navigation extends navigation_node
     {
+        /** @var context the current context */
+        protected $context;
+        /** @var moodle_page the moodle page that the navigation belongs to */
+        protected $page;
+        /** @var string contains administration section navigation_nodes */
+        protected $adminsection;
+        /** @var bool A switch to see if the navigation node is initialised */
+        protected $initialised = false;
+        /** @var array An array of users that the nodes can extend for. */
+        protected $userstoextendfor = [];
+        /** @var navigation_cache **/
+        protected $cache;
+        /**
+         * Sets up the object with basic settings and preparse it for use
+         *
+         * @param moodle_page $page
+         */
+        public function __construct(moodle_page &$page)
+        {
+        }
+        /**
+         * Initialise the settings navigation based on the current context
+         *
+         * This function initialises the settings navigation tree for a given context
+         * by calling supporting functions to generate major parts of the tree.
+         *
+         */
+        public function initialise()
+        {
+        }
+        /**
+         * Override the parent function so that we can add preceeding hr's and set a
+         * root node class against all first level element
+         *
+         * It does this by first calling the parent's add method {@link navigation_node::add()}
+         * and then proceeds to use the key to set class and hr
+         *
+         * @param string $text text to be used for the link.
+         * @param string|url $url url for the new node
+         * @param int $type the type of node navigation_node::TYPE_*
+         * @param string $shorttext
+         * @param string|int $key a key to access the node by.
+         * @param pix_icon $icon An icon that appears next to the node.
+         * @return navigation_node with the new node added to it.
+         */
+        #[\Override]
+        public function add($text, $url = null, $type = null, $shorttext = null, $key = null, ?pix_icon $icon = null)
+        {
+        }
+        /**
+         * This function allows the user to add something to the start of the settings
+         * navigation, which means it will be at the top of the settings navigation block
+         *
+         * @param string $text text to be used for the link.
+         * @param string|url $url url for the new node
+         * @param int $type the type of node navigation_node::TYPE_*
+         * @param string $shorttext
+         * @param string|int $key a key to access the node by.
+         * @param pix_icon $icon An icon that appears next to the node.
+         * @return navigation_node $node with the new node added to it.
+         */
+        public function prepend($text, $url = null, $type = null, $shorttext = null, $key = null, ?pix_icon $icon = null)
+        {
+        }
+        /**
+         * Does this page require loading of full admin tree or is
+         * it enough rely on AJAX?
+         *
+         * @return bool
+         */
+        protected function is_admin_tree_needed()
+        {
+        }
+        /**
+         * Load the site administration tree
+         *
+         * This function loads the site administration tree by using the lib/adminlib library functions
+         *
+         * @param navigation_node $referencebranch A reference to a branch in the settings
+         *      navigation tree
+         * @param part_of_admin_tree $adminbranch The branch to add, if null generate the admin
+         *      tree and start at the beginning
+         * @return mixed A key to access the admin tree by
+         */
+        protected function load_administration_settings(?navigation_node $referencebranch = null, ?part_of_admin_tree $adminbranch = null)
+        {
+        }
+        /**
+         * This function recursivily scans nodes until it finds the active node or there
+         * are no more nodes.
+         * @param navigation_node $node
+         */
+        protected function scan_for_active_node(navigation_node $node)
+        {
+        }
+        /**
+         * Gets a navigation node given an array of keys that represent the path to
+         * the desired node.
+         *
+         * @param array $path
+         * @return navigation_node|false
+         */
+        protected function get_by_path(array $path)
+        {
+        }
+        /**
+         * This function loads the course settings that are available for the user
+         *
+         * @param bool $forceopen If set to true the course node will be forced open
+         * @return navigation_node|false
+         */
+        protected function load_course_settings($forceopen = false)
+        {
+        }
+        /**
+         * Get the moodle_page object associated to the current settings navigation.
+         *
+         * @return moodle_page
+         */
+        public function get_page(): moodle_page
+        {
+        }
+        /**
+         * This function calls the module function to inject module settings into the
+         * settings navigation tree.
+         *
+         * This only gets called if there is a corrosponding function in the modules
+         * lib file.
+         *
+         * For examples mod/forum/lib.php {@link forum_extend_settings_navigation()}
+         *
+         * @return navigation_node|false
+         */
+        protected function load_module_settings()
+        {
+        }
+        /**
+         * Loads the user settings block of the settings nav
+         *
+         * This function is simply works out the userid and whether we need to load
+         * just the current users profile settings, or the current user and the user the
+         * current user is viewing.
+         *
+         * This function has some very ugly code to work out the user, if anyone has
+         * any bright ideas please feel free to intervene.
+         *
+         * @param int $courseid The course id of the current course
+         * @return navigation_node|false
+         */
+        protected function load_user_settings($courseid = SITEID)
+        {
+        }
+        /**
+         * Extends the settings navigation for the given user.
+         *
+         * Note: This method gets called automatically if you call
+         * $PAGE->navigation->extend_for_user($userid)
+         *
+         * @param int $userid
+         */
+        public function extend_for_user($userid)
+        {
+        }
+        /**
+         * This function gets called by {@link settings_navigation::load_user_settings()} and actually works out
+         * what can be shown/done
+         *
+         * @param int $courseid The current course' id
+         * @param int $userid The user id to load for
+         * @param string $gstitle The string to pass to get_string for the branch title
+         * @return navigation_node|false
+         */
+        protected function generate_user_settings($courseid, $userid, $gstitle = 'usercurrentsettings')
+        {
+        }
+        /**
+         * Loads block specific settings in the navigation.
+         *
+         * @return navigation_node
+         */
+        protected function load_block_settings()
+        {
+        }
+        /**
+         * Loads category specific settings in the navigation
+         *
+         * @return navigation_node
+         */
+        protected function load_category_settings()
+        {
+        }
+        /**
+         * Determine whether the user is assuming another role
+         *
+         * This function checks to see if the user is assuming another role by means of
+         * role switching. In doing this we compare each RSW key (context path) against
+         * the current context path. This ensures that we can provide the switching
+         * options against both the course and any page shown under the course.
+         *
+         * @return bool|int The role(int) if the user is in another role, false otherwise
+         */
+        protected function in_alternative_role()
+        {
+        }
+        /**
+         * This function loads all of the front page settings into the settings navigation.
+         * This function is called when the user is on the front page, or $COURSE==$SITE
+         * @param bool $forceopen (optional)
+         * @return navigation_node
+         */
+        protected function load_front_page_settings($forceopen = false)
+        {
+        }
+        /**
+         * This function gives local plugins an opportunity to modify the settings navigation.
+         */
+        protected function load_local_plugin_settings()
+        {
+        }
+        /**
+         * This function marks the cache as volatile so it is cleared during shutdown
+         */
+        public function clear_cache()
+        {
+        }
+        /**
+         * Checks to see if there are child nodes available in the specific user's preference node.
+         * If so, then they have the appropriate permissions view this user's preferences.
+         *
+         * @since Moodle 2.9.3
+         * @param int $userid The user's ID.
+         * @return bool True if child nodes exist to view, otherwise false.
+         */
+        public function can_view_user_preferences($userid)
+        {
+        }
     }
+}
+namespace {
     /**
-     * Initialise the settings navigation based on the current context
-     *
-     * This function initialises the settings navigation tree for a given context
-     * by calling supporting functions to generate major parts of the tree.
-     *
+     * Runtime class alias of \core\navigation\settings_navigation registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function initialise()
-    {
-    }
-    /**
-     * Override the parent function so that we can add preceeding hr's and set a
-     * root node class against all first level element
-     *
-     * It does this by first calling the parent's add method {@link navigation_node::add()}
-     * and then proceeds to use the key to set class and hr
-     *
-     * @param string $text text to be used for the link.
-     * @param string|url $url url for the new node
-     * @param int $type the type of node navigation_node::TYPE_*
-     * @param string $shorttext
-     * @param string|int $key a key to access the node by.
-     * @param pix_icon $icon An icon that appears next to the node.
-     * @return navigation_node with the new node added to it.
-     */
-    #[\Override]
-    public function add($text, $url = null, $type = null, $shorttext = null, $key = null, ?pix_icon $icon = null)
-    {
-    }
-    /**
-     * This function allows the user to add something to the start of the settings
-     * navigation, which means it will be at the top of the settings navigation block
-     *
-     * @param string $text text to be used for the link.
-     * @param string|url $url url for the new node
-     * @param int $type the type of node navigation_node::TYPE_*
-     * @param string $shorttext
-     * @param string|int $key a key to access the node by.
-     * @param pix_icon $icon An icon that appears next to the node.
-     * @return navigation_node $node with the new node added to it.
-     */
-    public function prepend($text, $url = null, $type = null, $shorttext = null, $key = null, ?pix_icon $icon = null)
-    {
-    }
-    /**
-     * Does this page require loading of full admin tree or is
-     * it enough rely on AJAX?
-     *
-     * @return bool
-     */
-    protected function is_admin_tree_needed()
-    {
-    }
-    /**
-     * Load the site administration tree
-     *
-     * This function loads the site administration tree by using the lib/adminlib library functions
-     *
-     * @param navigation_node $referencebranch A reference to a branch in the settings
-     *      navigation tree
-     * @param part_of_admin_tree $adminbranch The branch to add, if null generate the admin
-     *      tree and start at the beginning
-     * @return mixed A key to access the admin tree by
-     */
-    protected function load_administration_settings(?navigation_node $referencebranch = null, ?part_of_admin_tree $adminbranch = null)
-    {
-    }
-    /**
-     * This function recursivily scans nodes until it finds the active node or there
-     * are no more nodes.
-     * @param navigation_node $node
-     */
-    protected function scan_for_active_node(navigation_node $node)
-    {
-    }
-    /**
-     * Gets a navigation node given an array of keys that represent the path to
-     * the desired node.
-     *
-     * @param array $path
-     * @return navigation_node|false
-     */
-    protected function get_by_path(array $path)
-    {
-    }
-    /**
-     * This function loads the course settings that are available for the user
-     *
-     * @param bool $forceopen If set to true the course node will be forced open
-     * @return navigation_node|false
-     */
-    protected function load_course_settings($forceopen = false)
-    {
-    }
-    /**
-     * Get the moodle_page object associated to the current settings navigation.
-     *
-     * @return moodle_page
-     */
-    public function get_page(): moodle_page
-    {
-    }
-    /**
-     * This function calls the module function to inject module settings into the
-     * settings navigation tree.
-     *
-     * This only gets called if there is a corrosponding function in the modules
-     * lib file.
-     *
-     * For examples mod/forum/lib.php {@link forum_extend_settings_navigation()}
-     *
-     * @return navigation_node|false
-     */
-    protected function load_module_settings()
-    {
-    }
-    /**
-     * Loads the user settings block of the settings nav
-     *
-     * This function is simply works out the userid and whether we need to load
-     * just the current users profile settings, or the current user and the user the
-     * current user is viewing.
-     *
-     * This function has some very ugly code to work out the user, if anyone has
-     * any bright ideas please feel free to intervene.
-     *
-     * @param int $courseid The course id of the current course
-     * @return navigation_node|false
-     */
-    protected function load_user_settings($courseid = SITEID)
-    {
-    }
-    /**
-     * Extends the settings navigation for the given user.
-     *
-     * Note: This method gets called automatically if you call
-     * $PAGE->navigation->extend_for_user($userid)
-     *
-     * @param int $userid
-     */
-    public function extend_for_user($userid)
-    {
-    }
-    /**
-     * This function gets called by {@link settings_navigation::load_user_settings()} and actually works out
-     * what can be shown/done
-     *
-     * @param int $courseid The current course' id
-     * @param int $userid The user id to load for
-     * @param string $gstitle The string to pass to get_string for the branch title
-     * @return navigation_node|false
-     */
-    protected function generate_user_settings($courseid, $userid, $gstitle = 'usercurrentsettings')
-    {
-    }
-    /**
-     * Loads block specific settings in the navigation.
-     *
-     * @return navigation_node
-     */
-    protected function load_block_settings()
-    {
-    }
-    /**
-     * Loads category specific settings in the navigation
-     *
-     * @return navigation_node
-     */
-    protected function load_category_settings()
-    {
-    }
-    /**
-     * Determine whether the user is assuming another role
-     *
-     * This function checks to see if the user is assuming another role by means of
-     * role switching. In doing this we compare each RSW key (context path) against
-     * the current context path. This ensures that we can provide the switching
-     * options against both the course and any page shown under the course.
-     *
-     * @return bool|int The role(int) if the user is in another role, false otherwise
-     */
-    protected function in_alternative_role()
-    {
-    }
-    /**
-     * This function loads all of the front page settings into the settings navigation.
-     * This function is called when the user is on the front page, or $COURSE==$SITE
-     * @param bool $forceopen (optional)
-     * @return navigation_node
-     */
-    protected function load_front_page_settings($forceopen = false)
-    {
-    }
-    /**
-     * This function gives local plugins an opportunity to modify the settings navigation.
-     */
-    protected function load_local_plugin_settings()
-    {
-    }
-    /**
-     * This function marks the cache as volatile so it is cleared during shutdown
-     */
-    public function clear_cache()
-    {
-    }
-    /**
-     * Checks to see if there are child nodes available in the specific user's preference node.
-     * If so, then they have the appropriate permissions view this user's preferences.
-     *
-     * @since Moodle 2.9.3
-     * @param int $userid The user's ID.
-     * @return bool True if child nodes exist to view, otherwise false.
-     */
-    public function can_view_user_preferences($userid)
+    class settings_navigation extends \core\navigation\settings_navigation
     {
     }
 }

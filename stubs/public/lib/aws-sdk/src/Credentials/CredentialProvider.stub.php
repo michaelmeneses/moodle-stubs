@@ -8,6 +8,12 @@
  */
 namespace Aws\Credentials;
 
+use Aws;
+use Aws\Api\DateTimeResult;
+use Aws\CacheInterface;
+use Aws\Exception\CredentialsException;
+use Aws\Sts\StsClient;
+use GuzzleHttp\Promise;
 /**
  * Credential providers are functions that accept no arguments and return a
  * promise that is fulfilled with an {@see \Aws\Credentials\CredentialsInterface}

@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace factor_webauthn;
 
+use lbuchs\WebAuthn\Binary\ByteBuffer;
+use lbuchs\WebAuthn\WebAuthn;
+use lbuchs\WebAuthn\WebAuthnException;
+use stdClass;
+use tool_mfa\local\factor\object_factor_base;
 /**
  * WebAuthn factor class.
  *

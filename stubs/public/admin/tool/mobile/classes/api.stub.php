@@ -30,6 +30,15 @@
  */
 namespace tool_mobile;
 
+use core_component;
+use core_plugin_manager;
+use context_system;
+use moodle_url;
+use moodle_exception;
+use lang_string;
+use curl;
+use core_qrcode;
+use stdClass;
 /**
  * API exposed by tool_mobile, to be used mostly by external functions and the plugin settings.
  *

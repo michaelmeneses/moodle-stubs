@@ -8,6 +8,14 @@
  */
 namespace mod_forum\grades;
 
+use coding_exception;
+use context;
+use core_grades\component_gradeitem;
+use core_grades\local\gradeitem as gradeitem;
+use mod_forum\local\container as forum_container;
+use mod_forum\local\entities\forum as forum_entity;
+use required_capability_exception;
+use stdClass;
 /**
  * Grade item storage for mod_forum.
  *

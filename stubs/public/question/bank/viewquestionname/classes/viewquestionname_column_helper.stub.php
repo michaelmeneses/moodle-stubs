@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_viewquestionname;
 
+use core_question\local\bank\column_base;
 /**
  * A column type for the name of the question name.
  *

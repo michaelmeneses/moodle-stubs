@@ -8,6 +8,14 @@
  */
 namespace core_reportbuilder\customfield;
 
+use core\context;
+use core\context\system;
+use core\exception\coding_exception;
+use core\url;
+use core_customfield\field_controller;
+use core_reportbuilder\local\models\report;
+use core_reportbuilder\manager;
+use core_reportbuilder\permission;
 /**
  * Report handler for custom fields
  *

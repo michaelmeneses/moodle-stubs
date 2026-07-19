@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_forum\courseformat;
 
+use cm_info;
+use core\url;
+use core_calendar\output\humandate;
+use core\output\local\properties\text_align;
+use core_courseformat\local\overview\overviewitem;
+use core_courseformat\output\local\overview\overviewaction;
 /**
  * Forum overview integration.
  *

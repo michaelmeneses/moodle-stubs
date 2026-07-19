@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_usertours\local\filter;
 
+use context;
+use tool_usertours\tour;
 /**
  * Access date filter. Used to determine if USER should see a tour based on a particular access date.
  *

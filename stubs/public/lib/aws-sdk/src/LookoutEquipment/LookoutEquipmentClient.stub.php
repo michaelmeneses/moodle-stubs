@@ -8,6 +8,7 @@
  */
 namespace Aws\LookoutEquipment;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Lookout for Equipment** service.
  * @method \Aws\Result createDataset(array $args = [])

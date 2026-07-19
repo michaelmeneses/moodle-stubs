@@ -20,41 +20,51 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\navigation;
-
-/**
- * Subclass of navigation_node allowing different rendering for the breadcrumbs
- * in particular adding extra metadata for search engine robots to leverage.
- *
- * @package   core
- * @category  navigation
- * @copyright 2015 Brendan Heywood
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class breadcrumb_navigation_node extends navigation_node
-{
-    /** @var $last boolean A flag indicating this is the last item in the list of breadcrumbs. */
-    private $last = false;
+namespace core\navigation {
+    use core\exception\coding_exception;
     /**
-     * A proxy constructor
+     * Subclass of navigation_node allowing different rendering for the breadcrumbs
+     * in particular adding extra metadata for search engine robots to leverage.
      *
-     * @param mixed $navnode A navigation_node or an array
+     * @package   core
+     * @category  navigation
+     * @copyright 2015 Brendan Heywood
+     * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function __construct($navnode)
+    class breadcrumb_navigation_node extends navigation_node
     {
+        /** @var $last boolean A flag indicating this is the last item in the list of breadcrumbs. */
+        private $last = false;
+        /**
+         * A proxy constructor
+         *
+         * @param mixed $navnode A navigation_node or an array
+         */
+        public function __construct($navnode)
+        {
+        }
+        /**
+         * Getter for "last"
+         * @return boolean
+         */
+        public function is_last()
+        {
+        }
+        /**
+         * Setter for "last"
+         * @param $val boolean
+         */
+        public function set_last($val)
+        {
+        }
     }
+}
+namespace {
     /**
-     * Getter for "last"
-     * @return boolean
+     * Runtime class alias of \core\navigation\breadcrumb_navigation_node registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function is_last()
-    {
-    }
-    /**
-     * Setter for "last"
-     * @param $val boolean
-     */
-    public function set_last($val)
+    class breadcrumb_navigation_node extends \core\navigation\breadcrumb_navigation_node
     {
     }
 }

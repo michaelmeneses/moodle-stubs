@@ -8,6 +8,7 @@
  */
 namespace IMSGlobal\LTI\ToolProvider;
 
+use IMSGlobal\LTI\OAuth;
 /**
  * Class to represent an OAuth datastore
  *

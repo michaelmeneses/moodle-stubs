@@ -8,6 +8,14 @@
  */
 namespace core_cohort\reportbuilder\local\entities;
 
+use stdClass;
+use theme_config;
+use core\{context, context_helper};
+use core\lang_string;
+use core_reportbuilder\local\entities\base;
+use core_reportbuilder\local\filters\{boolean_select, cohort as cohort_filter, date, select, text};
+use core_reportbuilder\local\helpers\{custom_fields, format};
+use core_reportbuilder\local\report\{column, filter};
 /**
  * Cohort entity
  *

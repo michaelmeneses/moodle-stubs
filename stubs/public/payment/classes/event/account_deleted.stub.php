@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_payment\event;
 
+use core\event\base;
+use core_payment\account;
 /**
  * Class account_deleted
  *

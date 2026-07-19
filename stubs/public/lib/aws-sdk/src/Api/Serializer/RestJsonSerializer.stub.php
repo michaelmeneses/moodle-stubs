@@ -8,6 +8,8 @@
  */
 namespace Aws\Api\Serializer;
 
+use Aws\Api\Service;
+use Aws\Api\StructureShape;
 /**
  * Serializes requests for the REST-JSON protocol.
  * @internal

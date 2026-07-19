@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_feedback;
 
+use cm_info;
+use stdClass;
 /**
  * Class manager for feedback
  *

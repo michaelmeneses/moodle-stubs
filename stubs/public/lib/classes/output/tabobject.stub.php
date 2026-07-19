@@ -20,83 +20,93 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output;
-
-/**
- * Stores one tab
- *
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @package core
- * @copyright Marina Glancy
- */
-class tabobject implements renderable, templatable
-{
-    /** @var string unique id of the tab in this tree, it is used to find selected and/or inactive tabs */
-    public $id;
-    /** @var moodle_url|string link */
-    public $link;
-    /** @var string text on the tab */
-    public $text;
-    /** @var string title under the link, by defaul equals to text */
-    public $title;
-    /** @var bool whether to display a link under the tab name when it's selected */
-    public $linkedwhenselected = false;
-    /** @var bool whether the tab is inactive */
-    public $inactive = false;
-    /** @var bool indicates that this tab's child is selected */
-    public $activated = false;
-    /** @var bool indicates that this tab is selected */
-    public $selected = false;
-    /** @var array stores children tabobjects */
-    public $subtree = [];
-    /** @var int level of tab in the tree, 0 for root (instance of tabtree), 1 for the first row of tabs */
-    public $level = 1;
+namespace core\output {
+    use moodle_url;
     /**
-     * Constructor
+     * Stores one tab
      *
-     * @param string $id unique id of the tab in this tree, it is used to find selected and/or inactive tabs
-     * @param string|moodle_url $link
-     * @param string $text text on the tab
-     * @param string $title title under the link, by defaul equals to text
-     * @param bool $linkedwhenselected whether to display a link under the tab name when it's selected
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @package core
+     * @copyright Marina Glancy
      */
-    public function __construct($id, $link = null, $text = '', $title = '', $linkedwhenselected = false)
+    class tabobject implements renderable, templatable
     {
+        /** @var string unique id of the tab in this tree, it is used to find selected and/or inactive tabs */
+        public $id;
+        /** @var moodle_url|string link */
+        public $link;
+        /** @var string text on the tab */
+        public $text;
+        /** @var string title under the link, by defaul equals to text */
+        public $title;
+        /** @var bool whether to display a link under the tab name when it's selected */
+        public $linkedwhenselected = false;
+        /** @var bool whether the tab is inactive */
+        public $inactive = false;
+        /** @var bool indicates that this tab's child is selected */
+        public $activated = false;
+        /** @var bool indicates that this tab is selected */
+        public $selected = false;
+        /** @var array stores children tabobjects */
+        public $subtree = [];
+        /** @var int level of tab in the tree, 0 for root (instance of tabtree), 1 for the first row of tabs */
+        public $level = 1;
+        /**
+         * Constructor
+         *
+         * @param string $id unique id of the tab in this tree, it is used to find selected and/or inactive tabs
+         * @param string|moodle_url $link
+         * @param string $text text on the tab
+         * @param string $title title under the link, by defaul equals to text
+         * @param bool $linkedwhenselected whether to display a link under the tab name when it's selected
+         */
+        public function __construct($id, $link = null, $text = '', $title = '', $linkedwhenselected = false)
+        {
+        }
+        /**
+         * Travels through tree and finds the tab to mark as selected, all parents are automatically marked as activated
+         *
+         * @param string $selected the id of the selected tab (whatever row it's on),
+         *    if null marks all tabs as unselected
+         * @return bool whether this tab is selected or contains selected tab in its subtree
+         */
+        protected function set_selected($selected)
+        {
+        }
+        /**
+         * Travels through tree and finds a tab with specified id
+         *
+         * @param string $id
+         * @return tabtree|null
+         */
+        public function find($id)
+        {
+        }
+        /**
+         * Allows to mark each tab's level in the tree before rendering.
+         *
+         * @param int $level
+         */
+        protected function set_level($level)
+        {
+        }
+        /**
+         * Export for template.
+         *
+         * @param renderer_base $output Renderer.
+         * @return object
+         */
+        public function export_for_template(renderer_base $output)
+        {
+        }
     }
+}
+namespace {
     /**
-     * Travels through tree and finds the tab to mark as selected, all parents are automatically marked as activated
-     *
-     * @param string $selected the id of the selected tab (whatever row it's on),
-     *    if null marks all tabs as unselected
-     * @return bool whether this tab is selected or contains selected tab in its subtree
+     * Runtime class alias of \core\output\tabobject registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    protected function set_selected($selected)
-    {
-    }
-    /**
-     * Travels through tree and finds a tab with specified id
-     *
-     * @param string $id
-     * @return tabtree|null
-     */
-    public function find($id)
-    {
-    }
-    /**
-     * Allows to mark each tab's level in the tree before rendering.
-     *
-     * @param int $level
-     */
-    protected function set_level($level)
-    {
-    }
-    /**
-     * Export for template.
-     *
-     * @param renderer_base $output Renderer.
-     * @return object
-     */
-    public function export_for_template(renderer_base $output)
+    class tabobject extends \core\output\tabobject
     {
     }
 }

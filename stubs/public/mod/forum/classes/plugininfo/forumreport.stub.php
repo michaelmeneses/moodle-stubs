@@ -29,6 +29,7 @@
  */
 namespace mod_forum\plugininfo;
 
+use core\plugininfo\base;
 /**
  * Forum report subplugin info class.
  *

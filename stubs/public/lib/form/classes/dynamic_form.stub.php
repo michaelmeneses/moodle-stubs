@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_form;
 
+use context;
+use core_external\external_api;
+use moodle_url;
 /**
  * Class modal
  *

@@ -20,150 +20,160 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core_cache;
-
-/**
- * The cache loader class used when the Cache has been disabled.
- *
- * @package core_cache
- * @copyright  2012 Sam Hemelryk
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class disabled_cache extends cache implements loader_with_locking_interface
-{
+namespace core_cache {
+    use core\exception\coding_exception;
     /**
-     * Constructs the cache.
+     * The cache loader class used when the Cache has been disabled.
      *
-     * @param definition $definition
-     * @param store $store
-     * @param null $loader Unused.
+     * @package core_cache
+     * @copyright  2012 Sam Hemelryk
+     * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public function __construct(definition $definition, store $store, $loader = null)
+    class disabled_cache extends cache implements loader_with_locking_interface
     {
+        /**
+         * Constructs the cache.
+         *
+         * @param definition $definition
+         * @param store $store
+         * @param null $loader Unused.
+         */
+        public function __construct(definition $definition, store $store, $loader = null)
+        {
+        }
+        /**
+         * Gets a key from the cache.
+         *
+         * @param int|string $key
+         * @param int $requiredversion Minimum required version of the data or cache::VERSION_NONE
+         * @param int $strictness Unused.
+         * @param mixed &$actualversion If specified, will be set to the actual version number retrieved
+         * @return bool
+         */
+        protected function get_implementation($key, int $requiredversion, int $strictness, &$actualversion = null)
+        {
+        }
+        /**
+         * Gets many keys at once from the cache.
+         *
+         * @param array $keys
+         * @param int $strictness Unused.
+         * @return array
+         */
+        public function get_many(array $keys, $strictness = IGNORE_MISSING)
+        {
+        }
+        /**
+         * Sets a key value pair in the cache.
+         *
+         * @param int|string $key Unused.
+         * @param int $version Unused.
+         * @param mixed $data Unused.
+         * @param bool $setparents Unused.
+         * @return bool
+         */
+        protected function set_implementation($key, int $version, $data, bool $setparents = true): bool
+        {
+        }
+        /**
+         * Sets many key value pairs in the cache at once.
+         *
+         * @param array $keyvaluearray Unused.
+         * @return int
+         */
+        public function set_many(array $keyvaluearray)
+        {
+        }
+        /**
+         * Deletes an item from the cache.
+         *
+         * @param int|string $key Unused.
+         * @param bool $recurse Unused.
+         * @return bool
+         */
+        public function delete($key, $recurse = true)
+        {
+        }
+        /**
+         * Deletes many items at once from the cache.
+         *
+         * @param array $keys Unused.
+         * @param bool $recurse Unused.
+         * @return int
+         */
+        public function delete_many(array $keys, $recurse = true)
+        {
+        }
+        /**
+         * Checks if the cache has the requested key.
+         *
+         * @param int|string $key Unused.
+         * @param bool $tryloadifpossible Unused.
+         * @return bool
+         */
+        public function has($key, $tryloadifpossible = false)
+        {
+        }
+        /**
+         * Checks if the cache has all of the requested keys.
+         * @param array $keys Unused.
+         * @return bool
+         */
+        public function has_all(array $keys)
+        {
+        }
+        /**
+         * Checks if the cache has any of the requested keys.
+         *
+         * @param array $keys Unused.
+         * @return bool
+         */
+        public function has_any(array $keys)
+        {
+        }
+        /**
+         * Purges all items from the cache.
+         *
+         * @return bool
+         */
+        public function purge()
+        {
+        }
+        /**
+         * Pretend that we got a lock to avoid errors.
+         *
+         * @param int|string $key
+         * @return bool
+         */
+        public function acquire_lock($key): bool
+        {
+        }
+        /**
+         * Pretend that we released a lock to avoid errors.
+         *
+         * @param int|string $key
+         * @return bool
+         */
+        public function release_lock($key): bool
+        {
+        }
+        /**
+         * Pretend that we have a lock to avoid errors.
+         *
+         * @param int|string $key
+         * @return bool
+         */
+        public function check_lock_state($key): bool
+        {
+        }
     }
+}
+namespace {
     /**
-     * Gets a key from the cache.
-     *
-     * @param int|string $key
-     * @param int $requiredversion Minimum required version of the data or cache::VERSION_NONE
-     * @param int $strictness Unused.
-     * @param mixed &$actualversion If specified, will be set to the actual version number retrieved
-     * @return bool
+     * Runtime class alias of \core_cache\disabled_cache registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    protected function get_implementation($key, int $requiredversion, int $strictness, &$actualversion = null)
-    {
-    }
-    /**
-     * Gets many keys at once from the cache.
-     *
-     * @param array $keys
-     * @param int $strictness Unused.
-     * @return array
-     */
-    public function get_many(array $keys, $strictness = IGNORE_MISSING)
-    {
-    }
-    /**
-     * Sets a key value pair in the cache.
-     *
-     * @param int|string $key Unused.
-     * @param int $version Unused.
-     * @param mixed $data Unused.
-     * @param bool $setparents Unused.
-     * @return bool
-     */
-    protected function set_implementation($key, int $version, $data, bool $setparents = true): bool
-    {
-    }
-    /**
-     * Sets many key value pairs in the cache at once.
-     *
-     * @param array $keyvaluearray Unused.
-     * @return int
-     */
-    public function set_many(array $keyvaluearray)
-    {
-    }
-    /**
-     * Deletes an item from the cache.
-     *
-     * @param int|string $key Unused.
-     * @param bool $recurse Unused.
-     * @return bool
-     */
-    public function delete($key, $recurse = true)
-    {
-    }
-    /**
-     * Deletes many items at once from the cache.
-     *
-     * @param array $keys Unused.
-     * @param bool $recurse Unused.
-     * @return int
-     */
-    public function delete_many(array $keys, $recurse = true)
-    {
-    }
-    /**
-     * Checks if the cache has the requested key.
-     *
-     * @param int|string $key Unused.
-     * @param bool $tryloadifpossible Unused.
-     * @return bool
-     */
-    public function has($key, $tryloadifpossible = false)
-    {
-    }
-    /**
-     * Checks if the cache has all of the requested keys.
-     * @param array $keys Unused.
-     * @return bool
-     */
-    public function has_all(array $keys)
-    {
-    }
-    /**
-     * Checks if the cache has any of the requested keys.
-     *
-     * @param array $keys Unused.
-     * @return bool
-     */
-    public function has_any(array $keys)
-    {
-    }
-    /**
-     * Purges all items from the cache.
-     *
-     * @return bool
-     */
-    public function purge()
-    {
-    }
-    /**
-     * Pretend that we got a lock to avoid errors.
-     *
-     * @param int|string $key
-     * @return bool
-     */
-    public function acquire_lock($key): bool
-    {
-    }
-    /**
-     * Pretend that we released a lock to avoid errors.
-     *
-     * @param int|string $key
-     * @return bool
-     */
-    public function release_lock($key): bool
-    {
-    }
-    /**
-     * Pretend that we have a lock to avoid errors.
-     *
-     * @param int|string $key
-     * @return bool
-     */
-    public function check_lock_state($key): bool
+    class cache_disabled extends \core_cache\disabled_cache
     {
     }
 }

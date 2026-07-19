@@ -8,6 +8,7 @@
  */
 namespace Aws\DevOpsGuru;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon DevOps Guru** service.
  * @method \Aws\Result addNotificationChannel(array $args = [])

@@ -8,6 +8,7 @@
  */
 namespace Aws\EMRContainers;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon EMR Containers** service.
  * @method \Aws\Result cancelJobRun(array $args = [])

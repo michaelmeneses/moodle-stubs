@@ -29,6 +29,7 @@
  */
 namespace format_topics\privacy;
 
+use core_privacy\local\metadata\null_provider;
 /**
  * Privacy Subsystem for Topics course format implementing null_provider.
  *

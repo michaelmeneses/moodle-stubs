@@ -8,6 +8,10 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Calculation\DateTimeExcel;
 
+use DateTime;
+use PhpOffice\PhpSpreadsheet\Calculation\ArrayEnabled;
+use PhpOffice\PhpSpreadsheet\Calculation\Exception;
+use PhpOffice\PhpSpreadsheet\Calculation\Functions;
 class WorkDay
 {
     use ArrayEnabled;

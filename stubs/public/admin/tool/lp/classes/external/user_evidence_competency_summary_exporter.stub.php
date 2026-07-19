@@ -29,6 +29,10 @@
  */
 namespace tool_lp\external;
 
+use moodle_url;
+use renderer_base;
+use core_competency\external\competency_exporter;
+use core_competency\external\user_competency_exporter;
 /**
  * Class for exporting user evidence competency data.
  *

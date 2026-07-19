@@ -8,6 +8,8 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Calculation\Token;
 
+use PhpOffice\PhpSpreadsheet\Calculation\Calculation;
+use PhpOffice\PhpSpreadsheet\Calculation\Engine\BranchPruner;
 class Stack
 {
     private BranchPruner $branchPruner;

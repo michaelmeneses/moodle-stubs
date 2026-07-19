@@ -29,6 +29,7 @@
  */
 namespace core_webservice;
 
+use moodleform;
 /**
  * Form allowing to filter displayed tokens.
  *

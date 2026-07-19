@@ -8,6 +8,7 @@
  */
 namespace Aws\PrivateNetworks;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Private 5G** service.
  * @method \Aws\Result acknowledgeOrderReceipt(array $args = [])

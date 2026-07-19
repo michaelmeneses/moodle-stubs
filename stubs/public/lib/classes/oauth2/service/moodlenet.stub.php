@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\oauth2\service;
 
+use core\http_client;
+use core\oauth2\discovery\auth_server_config_reader;
+use core\oauth2\endpoint;
+use core\oauth2\issuer;
+use GuzzleHttp\Psr7\Request;
 /**
  * MoodleNet OAuth 2 configuration.
  *

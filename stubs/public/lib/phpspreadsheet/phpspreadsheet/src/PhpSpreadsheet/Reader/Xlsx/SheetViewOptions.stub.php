@@ -8,6 +8,8 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Reader\Xlsx;
 
+use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
+use SimpleXMLElement;
 class SheetViewOptions extends BaseParserClass
 {
     private Worksheet $worksheet;

@@ -8,6 +8,7 @@
  */
 namespace Aws\CustomerProfiles;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Amazon Connect Customer Profiles** service.
  * @method \Aws\Result addProfileKey(array $args = [])

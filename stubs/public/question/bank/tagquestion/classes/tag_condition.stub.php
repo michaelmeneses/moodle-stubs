@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_tagquestion;
 
+use core\output\datafilter;
+use core_question\local\bank\condition;
+use core_tag_tag;
+use restore_questions_activity_structure_step;
+use stdClass;
 /**
  * Question bank search class to allow searching/filtering by tags on a question.
  *

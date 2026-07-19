@@ -22,6 +22,19 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\local\reports;
 
+use coding_exception;
+use context_module;
+use html_writer;
+use mod_quiz\quiz_attempt;
+use mod_quiz\quiz_settings;
+use moodle_url;
+use popup_action;
+use question_state;
+use qubaid_condition;
+use qubaid_join;
+use qubaid_list;
+use question_engine_data_mapper;
+use stdClass;
 /**
  * Base class for the table used by a {@see attempts_report}.
  *

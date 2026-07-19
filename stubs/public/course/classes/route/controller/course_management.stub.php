@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_course\route\controller;
 
+use core\router\route;
+use core\router\require_login;
+use navigation_node;
+use Psr\Http\Message\ResponseInterface;
 /**
  * Course Management.
  *

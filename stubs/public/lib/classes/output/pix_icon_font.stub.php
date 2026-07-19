@@ -20,53 +20,62 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output;
-
-/**
- * Data structure representing an icon font.
- *
- * @copyright 2016 Damyon Wiese
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @package core
- * @category output
- */
-class pix_icon_font implements templatable
-{
+namespace core\output {
     /**
-     * @var pix_icon $pixicon The original icon.
-     */
-    private $pixicon = null;
-    /**
-     * @var string $key The mapped key.
-     */
-    private $key;
-    /**
-     * @var bool $mapped The icon could not be mapped.
-     */
-    private $mapped;
-    /**
-     * Constructor
+     * Data structure representing an icon font.
      *
-     * @param pix_icon $pixicon The original icon
+     * @copyright 2016 Damyon Wiese
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @package core
+     * @category output
      */
-    public function __construct(pix_icon $pixicon)
+    class pix_icon_font implements templatable
     {
+        /**
+         * @var pix_icon $pixicon The original icon.
+         */
+        private $pixicon = null;
+        /**
+         * @var string $key The mapped key.
+         */
+        private $key;
+        /**
+         * @var bool $mapped The icon could not be mapped.
+         */
+        private $mapped;
+        /**
+         * Constructor
+         *
+         * @param pix_icon $pixicon The original icon
+         */
+        public function __construct(pix_icon $pixicon)
+        {
+        }
+        /**
+         * Return true if this pix_icon was successfully mapped to an icon font.
+         *
+         * @return bool
+         */
+        public function is_mapped()
+        {
+        }
+        /**
+         * Export this data so it can be used as the context for a mustache template.
+         *
+         * @param renderer_base $output Used to do a final render of any components that need to be rendered for export.
+         * @return array
+         */
+        public function export_for_template(renderer_base $output)
+        {
+        }
     }
+}
+namespace {
     /**
-     * Return true if this pix_icon was successfully mapped to an icon font.
-     *
-     * @return bool
+     * Runtime class alias of \core\output\pix_icon_font registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function is_mapped()
-    {
-    }
-    /**
-     * Export this data so it can be used as the context for a mustache template.
-     *
-     * @param renderer_base $output Used to do a final render of any components that need to be rendered for export.
-     * @return array
-     */
-    public function export_for_template(renderer_base $output)
+    class pix_icon_font extends \core\output\pix_icon_font
     {
     }
 }

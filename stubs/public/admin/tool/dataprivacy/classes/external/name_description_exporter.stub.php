@@ -29,6 +29,7 @@
  */
 namespace tool_dataprivacy\external;
 
+use core\external\exporter;
 /**
  * Class that exports an object containing a name and a description.
  *

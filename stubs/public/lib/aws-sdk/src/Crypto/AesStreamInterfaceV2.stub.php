@@ -8,6 +8,7 @@
  */
 namespace Aws\Crypto;
 
+use Psr\Http\Message\StreamInterface;
 interface AesStreamInterfaceV2 extends StreamInterface
 {
     /**

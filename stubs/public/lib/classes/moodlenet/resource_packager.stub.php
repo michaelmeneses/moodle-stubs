@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\moodlenet;
 
+use backup_controller;
+use backup_root_task;
+use cm_info;
+use core\context\user;
+use stdClass;
+use stored_file;
 /**
  * Base packager to prepare appropriate backup of a resource to share to MoodleNet.
  *

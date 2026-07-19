@@ -8,6 +8,12 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Calculation\Internal;
 
+use PhpOffice\PhpSpreadsheet\Calculation\Calculation;
+use PhpOffice\PhpSpreadsheet\Calculation\Functions;
+use PhpOffice\PhpSpreadsheet\Calculation\Information\ExcelError;
+use PhpOffice\PhpSpreadsheet\Cell\Cell;
+use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
+use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
 class ExcelArrayPseudoFunctions
 {
     public static function single(string $cellReference, Cell $cell): mixed

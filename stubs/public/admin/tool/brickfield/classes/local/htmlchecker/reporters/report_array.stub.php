@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_brickfield\local\htmlchecker\reporters;
 
+use tool_brickfield\local\htmlchecker\brickfield_accessibility_reporter;
 /**
  * An array reporter that simply returns an unformatted and nested PHP array of tests and report objects
  *

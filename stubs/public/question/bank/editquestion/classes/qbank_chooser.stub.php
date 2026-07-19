@@ -29,6 +29,13 @@
  */
 namespace qbank_editquestion;
 
+use context;
+use context_course;
+use core\output\chooser_section;
+use lang_string;
+use moodle_url;
+use question_bank;
+use stdClass;
 /**
  * The qbank_chooser renderable class.
  *

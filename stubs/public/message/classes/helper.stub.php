@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_message;
 
+use core\{clock, di};
+use DOMDocument;
+use stdClass;
 /**
  * Helper class for the message area.
  *

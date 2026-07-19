@@ -29,6 +29,10 @@
  */
 namespace qtype_multichoice\privacy;
 
+use core_privacy\local\metadata\collection;
+use core_privacy\local\request\transform;
+use core_privacy\local\request\user_preference_provider;
+use core_privacy\local\request\writer;
 /**
  * Privacy Subsystem for qtype_multichoice implementing user_preference_provider.
  *

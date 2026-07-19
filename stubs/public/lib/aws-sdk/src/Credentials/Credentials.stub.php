@@ -8,6 +8,7 @@
  */
 namespace Aws\Credentials;
 
+use Aws\Identity\AwsCredentialIdentity;
 /**
  * Basic implementation of the AWS Credentials interface that allows callers to
  * pass in the AWS Access Key and AWS Secret Access Key in the constructor.

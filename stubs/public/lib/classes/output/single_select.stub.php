@@ -20,136 +20,149 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output;
-
-/**
- * Simple form with just one select field that gets submitted automatically.
- *
- * If JS not enabled small go button is printed too.
- *
- * @copyright 2009 Petr Skoda
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @since Moodle 2.0
- * @package core
- * @category output
- */
-class single_select implements renderable, templatable
-{
+namespace core\output {
+    use core\exception\coding_exception;
+    use core\output\actions\component_action;
+    use moodle_url;
+    use stdClass;
     /**
-     * @var moodle_url Target url - includes hidden fields
-     */
-    public $url;
-    /**
-     * @var string Name of the select element.
-     */
-    public $name;
-    /**
-     * @var array $options associative array value=>label ex.: array(1=>'One, 2=>Two)
-     *     it is also possible to specify optgroup as complex label array ex.:
-     *         array(array('Odd'=>array(1=>'One', 3=>'Three)), array('Even'=>array(2=>'Two')))
-     *         array(1=>'One', '--1uniquekey'=>array('More'=>array(2=>'Two', 3=>'Three')))
-     */
-    public $options;
-    /**
-     * @var string Selected option
-     */
-    public $selected;
-    /**
-     * @var array Nothing selected
-     */
-    public $nothing;
-    /**
-     * @var array Extra select field attributes
-     */
-    public $attributes = [];
-    /**
-     * @var string Button label
-     */
-    public $label = '';
-    /**
-     * @var array Button label's attributes
-     */
-    public $labelattributes = [];
-    /**
-     * @var string Form submit method post or get
-     */
-    public $method = 'get';
-    /**
-     * @var string Wrapping div class
-     */
-    public $class = 'singleselect';
-    /**
-     * @var bool True if button disabled, false if normal
-     */
-    public $disabled = false;
-    /**
-     * @var string Button tooltip
-     */
-    public $tooltip = null;
-    /**
-     * @var string Form id
-     */
-    public $formid = null;
-    /**
-     * @var help_icon The help icon for this element.
-     */
-    public $helpicon = null;
-    /** @var component_action[] component action. */
-    public $actions = [];
-    /**
-     * Constructor
-     * @param moodle_url $url form action target, includes hidden fields
-     * @param string $name name of selection field - the changing parameter in url
-     * @param array $options list of options
-     * @param string $selected selected element
-     * @param ?array $nothing
-     * @param string $formid
-     */
-    public function __construct(moodle_url $url, $name, array $options, $selected = '', $nothing = ['' => 'choosedots'], $formid = null)
-    {
-    }
-    /**
-     * Shortcut for adding a JS confirm dialog when the button is clicked.
-     * The message must be a yes/no question.
+     * Simple form with just one select field that gets submitted automatically.
      *
-     * @param string $confirmmessage The yes/no confirmation question. If "Yes" is clicked, the original action will occur.
-     */
-    public function add_confirm_action($confirmmessage)
-    {
-    }
-    /**
-     * Add action to the button.
+     * If JS not enabled small go button is printed too.
      *
-     * @param component_action $action
+     * @copyright 2009 Petr Skoda
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @since Moodle 2.0
+     * @package core
+     * @category output
      */
-    public function add_action(component_action $action)
+    class single_select implements renderable, templatable
     {
+        /**
+         * @var moodle_url Target url - includes hidden fields
+         */
+        public $url;
+        /**
+         * @var string Name of the select element.
+         */
+        public $name;
+        /**
+         * @var array $options associative array value=>label ex.: array(1=>'One, 2=>Two)
+         *     it is also possible to specify optgroup as complex label array ex.:
+         *         array(array('Odd'=>array(1=>'One', 3=>'Three)), array('Even'=>array(2=>'Two')))
+         *         array(1=>'One', '--1uniquekey'=>array('More'=>array(2=>'Two', 3=>'Three')))
+         */
+        public $options;
+        /**
+         * @var string Selected option
+         */
+        public $selected;
+        /**
+         * @var array Nothing selected
+         */
+        public $nothing;
+        /**
+         * @var array Extra select field attributes
+         */
+        public $attributes = [];
+        /**
+         * @var string Button label
+         */
+        public $label = '';
+        /**
+         * @var array Button label's attributes
+         */
+        public $labelattributes = [];
+        /**
+         * @var string Form submit method post or get
+         */
+        public $method = 'get';
+        /**
+         * @var string Wrapping div class
+         */
+        public $class = 'singleselect';
+        /**
+         * @var bool True if button disabled, false if normal
+         */
+        public $disabled = false;
+        /**
+         * @var string Button tooltip
+         */
+        public $tooltip = null;
+        /**
+         * @var string Form id
+         */
+        public $formid = null;
+        /**
+         * @var help_icon The help icon for this element.
+         */
+        public $helpicon = null;
+        /** @var component_action[] component action. */
+        public $actions = [];
+        /**
+         * Constructor
+         * @param moodle_url $url form action target, includes hidden fields
+         * @param string $name name of selection field - the changing parameter in url
+         * @param array $options list of options
+         * @param string $selected selected element
+         * @param ?array $nothing
+         * @param string $formid
+         */
+        public function __construct(moodle_url $url, $name, array $options, $selected = '', $nothing = ['' => 'choosedots'], $formid = null)
+        {
+        }
+        /**
+         * Shortcut for adding a JS confirm dialog when the button is clicked.
+         * The message must be a yes/no question.
+         *
+         * @param string $confirmmessage The yes/no confirmation question. If "Yes" is clicked, the original action will occur.
+         */
+        public function add_confirm_action($confirmmessage)
+        {
+        }
+        /**
+         * Add action to the button.
+         *
+         * @param component_action $action
+         */
+        public function add_action(component_action $action)
+        {
+        }
+        /**
+         * Adds help icon.
+         *
+         * @param string $identifier The keyword that defines a help page
+         * @param string $component
+         */
+        public function set_help_icon($identifier, $component = 'moodle')
+        {
+        }
+        /**
+         * Sets select's label
+         *
+         * @param string $label
+         * @param array $attributes (optional)
+         */
+        public function set_label($label, $attributes = [])
+        {
+        }
+        /**
+         * Export data.
+         *
+         * @param renderer_base $output Renderer.
+         * @return stdClass
+         */
+        public function export_for_template(renderer_base $output)
+        {
+        }
     }
+}
+namespace {
     /**
-     * Adds help icon.
-     *
-     * @param string $identifier The keyword that defines a help page
-     * @param string $component
+     * Runtime class alias of \core\output\single_select registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function set_help_icon($identifier, $component = 'moodle')
-    {
-    }
-    /**
-     * Sets select's label
-     *
-     * @param string $label
-     * @param array $attributes (optional)
-     */
-    public function set_label($label, $attributes = [])
-    {
-    }
-    /**
-     * Export data.
-     *
-     * @param renderer_base $output Renderer.
-     * @return stdClass
-     */
-    public function export_for_template(renderer_base $output)
+    class single_select extends \core\output\single_select
     {
     }
 }

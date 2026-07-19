@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_courseformat\output\local\overview;
 
+use core\output\externable;
+use core\output\local\dropdown\dialog;
+use core\output\local\properties\button;
+use core_courseformat\external\overviewdialog_exporter;
+use stdClass;
 /**
  * Class to render an overview dialog element.
  *

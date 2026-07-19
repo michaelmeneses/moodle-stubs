@@ -8,6 +8,12 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Calculation\Statistical\Averages;
 
+use PhpOffice\PhpSpreadsheet\Calculation\Functions;
+use PhpOffice\PhpSpreadsheet\Calculation\Information\ExcelError;
+use PhpOffice\PhpSpreadsheet\Calculation\MathTrig;
+use PhpOffice\PhpSpreadsheet\Calculation\Statistical\Averages;
+use PhpOffice\PhpSpreadsheet\Calculation\Statistical\Counts;
+use PhpOffice\PhpSpreadsheet\Calculation\Statistical\Minimum;
 class Mean
 {
     /**

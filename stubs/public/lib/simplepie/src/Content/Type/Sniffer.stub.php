@@ -47,76 +47,85 @@
  * @link http://simplepie.org/ SimplePie
  * @license http://www.opensource.org/licenses/bsd-license.php BSD License
  */
-namespace SimplePie\Content\Type;
-
-/**
- * Content-type sniffing
- *
- * Based on the rules in http://tools.ietf.org/html/draft-abarth-mime-sniff-06
- *
- * This is used since we can't always trust Content-Type headers, and is based
- * upon the HTML5 parsing rules.
- *
- *
- * This class can be overloaded with {@see \SimplePie\SimplePie::set_content_type_sniffer_class()}
- *
- * @package SimplePie
- * @subpackage HTTP
- */
-class Sniffer
-{
+namespace SimplePie\Content\Type {
     /**
-     * File object
+     * Content-type sniffing
      *
-     * @var \SimplePie\File
-     */
-    public $file;
-    /**
-     * Create an instance of the class with the input file
+     * Based on the rules in http://tools.ietf.org/html/draft-abarth-mime-sniff-06
      *
-     * @param Sniffer $file Input file
+     * This is used since we can't always trust Content-Type headers, and is based
+     * upon the HTML5 parsing rules.
+     *
+     *
+     * This class can be overloaded with {@see \SimplePie\SimplePie::set_content_type_sniffer_class()}
+     *
+     * @package SimplePie
+     * @subpackage HTTP
      */
-    public function __construct($file)
+    class Sniffer
     {
+        /**
+         * File object
+         *
+         * @var \SimplePie\File
+         */
+        public $file;
+        /**
+         * Create an instance of the class with the input file
+         *
+         * @param Sniffer $file Input file
+         */
+        public function __construct($file)
+        {
+        }
+        /**
+         * Get the Content-Type of the specified file
+         *
+         * @return string Actual Content-Type
+         */
+        public function get_type()
+        {
+        }
+        /**
+         * Sniff text or binary
+         *
+         * @return string Actual Content-Type
+         */
+        public function text_or_binary()
+        {
+        }
+        /**
+         * Sniff unknown
+         *
+         * @return string Actual Content-Type
+         */
+        public function unknown()
+        {
+        }
+        /**
+         * Sniff images
+         *
+         * @return string Actual Content-Type
+         */
+        public function image()
+        {
+        }
+        /**
+         * Sniff HTML
+         *
+         * @return string Actual Content-Type
+         */
+        public function feed_or_html()
+        {
+        }
     }
+}
+namespace {
     /**
-     * Get the Content-Type of the specified file
-     *
-     * @return string Actual Content-Type
+     * Runtime class alias of \SimplePie\Content\Type\Sniffer registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function get_type()
-    {
-    }
-    /**
-     * Sniff text or binary
-     *
-     * @return string Actual Content-Type
-     */
-    public function text_or_binary()
-    {
-    }
-    /**
-     * Sniff unknown
-     *
-     * @return string Actual Content-Type
-     */
-    public function unknown()
-    {
-    }
-    /**
-     * Sniff images
-     *
-     * @return string Actual Content-Type
-     */
-    public function image()
-    {
-    }
-    /**
-     * Sniff HTML
-     *
-     * @return string Actual Content-Type
-     */
-    public function feed_or_html()
+    class SimplePie_Content_Type_Sniffer extends \SimplePie\Content\Type\Sniffer
     {
     }
 }

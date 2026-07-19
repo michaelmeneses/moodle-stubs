@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\router\schema;
 
+use coding_exception;
+use core\param;
+use core\router\schema\objects\type_base;
+use core\router\schema\response\response;
+use stdClass;
 /**
  * A generic part of the OpenAPI Schema object.
  *

@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core;
 
+use coding_exception;
+use invalid_parameter_exception;
+use lang_string;
+use ReflectionMethod;
+use stdClass;
 /**
  * Abstract class for core objects saved to the DB.
  *

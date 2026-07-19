@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output\action_menu;
 
+use core\output\action_link;
+use core\output\pix_icon;
+use core\output\renderable;
+use stdClass;
 /**
  * Interface to a subpanel implementation.
  *
@@ -59,4 +63,13 @@ class subpanel extends action_link implements renderable
     public function export_for_template(\renderer_base $output): stdClass
     {
     }
+}
+namespace core\output\local\action_menu;
+
+/**
+ * Runtime class alias of \core\output\action_menu\subpanel registered by the original source,
+ * re-emitted as a declaration so static analysers can resolve the name.
+ */
+class subpanel extends \core\output\action_menu\subpanel
+{
 }

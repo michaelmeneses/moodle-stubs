@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_xapi;
 
+use core_xapi\local\state;
 /**
  * The state store manager.
  *

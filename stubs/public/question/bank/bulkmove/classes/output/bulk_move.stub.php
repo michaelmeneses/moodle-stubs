@@ -30,6 +30,12 @@
  */
 namespace qbank_bulkmove\output;
 
+use cm_info;
+use core_question\local\bank\question_bank_helper;
+use core_question\output\question_category_selector;
+use moodle_url;
+use renderer_base;
+use single_button;
 /**
  * Output class to create a modal template with selects for question banks, question categories, and a move button.
  */

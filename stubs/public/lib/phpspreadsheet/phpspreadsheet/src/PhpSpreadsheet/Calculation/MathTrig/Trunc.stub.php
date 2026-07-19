@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Calculation\MathTrig;
 
+use PhpOffice\PhpSpreadsheet\Calculation\ArrayEnabled;
 class Trunc
 {
     use ArrayEnabled;

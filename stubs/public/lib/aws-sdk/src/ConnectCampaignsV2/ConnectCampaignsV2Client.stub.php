@@ -8,6 +8,7 @@
  */
 namespace Aws\ConnectCampaignsV2;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AmazonConnectCampaignServiceV2** service.
  * @method \Aws\Result createCampaign(array $args = [])

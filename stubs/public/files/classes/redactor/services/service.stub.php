@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_files\redactor\services;
 
+use stored_file;
 /**
  * The interface of the redaction service outlines the necessary methods for each redaction blueprint.
  *

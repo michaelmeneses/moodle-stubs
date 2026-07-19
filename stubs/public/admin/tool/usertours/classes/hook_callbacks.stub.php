@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_usertours;
 
+use core\hook\output\before_footer_html_generation;
 /**
  * Hook callbacks for usertours.
  *

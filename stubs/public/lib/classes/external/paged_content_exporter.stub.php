@@ -29,6 +29,7 @@
  */
 namespace core\external;
 
+use renderer_base;
 /**
  * Paged Content exporter.
  *

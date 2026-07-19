@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_tagquestion\event;
 
+use core\context;
+use core\event\question_deleted;
 /**
  * Event observer for question deletion
  *

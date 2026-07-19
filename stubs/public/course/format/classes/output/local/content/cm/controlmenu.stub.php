@@ -29,6 +29,20 @@
  */
 namespace core_courseformat\output\local\content\cm;
 
+use cm_info;
+use core\context\module as context_module;
+use core\output\action_menu;
+use core\output\action_menu\link;
+use core\output\action_menu\link_secondary;
+use core\output\action_menu\subpanel;
+use core\output\pix_icon;
+use core\output\renderer_base;
+use core_courseformat\base as course_format;
+use core_courseformat\output\local\content\basecontrolmenu;
+use core_courseformat\sectiondelegate;
+use core\url;
+use section_info;
+use stdClass;
 /**
  * Base class to render a course module menu inside a course format.
  *

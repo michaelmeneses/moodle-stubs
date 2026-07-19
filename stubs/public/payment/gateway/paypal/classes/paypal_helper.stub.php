@@ -29,6 +29,7 @@
  */
 namespace paygw_paypal;
 
+use curl;
 class paypal_helper
 {
     /**

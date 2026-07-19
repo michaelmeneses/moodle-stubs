@@ -30,6 +30,7 @@
  */
 namespace quizaccess_seb;
 
+use moodle_url;
 /**
  * Generate the links to open/download the Safe Exam Browser with correct settings.
  *

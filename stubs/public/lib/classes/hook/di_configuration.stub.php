@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\hook;
 
+use DI\ContainerBuilder;
+use DI\Definition;
+use core\attribute\label;
 /**
  * Allow for init-time configuration of the Dependency Injection container.
  *

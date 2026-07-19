@@ -29,6 +29,10 @@
  */
 namespace core_group\output;
 
+use renderable;
+use renderer_base;
+use stdClass;
+use templatable;
 /**
  * Group index page class.
  *

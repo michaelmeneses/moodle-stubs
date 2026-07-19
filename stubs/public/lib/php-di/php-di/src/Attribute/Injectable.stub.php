@@ -8,6 +8,7 @@
  */
 namespace DI\Attribute;
 
+use Attribute;
 /**
  * "Injectable" attribute.
  *

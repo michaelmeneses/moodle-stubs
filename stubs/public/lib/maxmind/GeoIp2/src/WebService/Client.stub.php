@@ -8,6 +8,20 @@
  */
 namespace GeoIp2\WebService;
 
+use GeoIp2\Exception\AddressNotFoundException;
+use GeoIp2\Exception\AuthenticationException;
+use GeoIp2\Exception\GeoIp2Exception;
+use GeoIp2\Exception\HttpException;
+use GeoIp2\Exception\InvalidRequestException;
+use GeoIp2\Exception\OutOfQueriesException;
+use GeoIp2\Model\City;
+use GeoIp2\Model\Country;
+use GeoIp2\Model\Insights;
+use GeoIp2\ProviderInterface;
+use MaxMind\Exception\InsufficientFundsException;
+use MaxMind\Exception\IpAddressNotFoundException;
+use MaxMind\Exception\WebServiceException;
+use MaxMind\WebService\Client as WsClient;
 /**
  * This class provides a client API for all the GeoIP2 web services.
  * The services are Country, City Plus, and Insights. Each service returns

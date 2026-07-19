@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn\task;
 
+use html_writer;
 /**
  * Class containing the adhoc task to send a recording ready notification.
  *

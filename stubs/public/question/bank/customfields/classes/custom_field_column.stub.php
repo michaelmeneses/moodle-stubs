@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_customfields;
 
+use core_question\local\bank\column_base;
+use core_question\local\bank\view;
+use qbank_customfields\customfield\question_handler;
 /**
  * A column type for the name of the question creator.
  *

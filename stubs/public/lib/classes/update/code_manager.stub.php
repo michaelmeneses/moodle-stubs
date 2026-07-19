@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\update;
 
+use core_collator;
+use core_component;
+use coding_exception;
+use moodle_exception;
+use SplFileInfo;
+use RecursiveDirectoryIterator;
+use RecursiveIteratorIterator;
 /**
  * General purpose class managing the plugins source code files deployment
  *

@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Worksheet\Table;
 
+use PhpOffice\PhpSpreadsheet\Worksheet\Table;
 class TableStyle
 {
     const TABLE_STYLE_NONE = '';

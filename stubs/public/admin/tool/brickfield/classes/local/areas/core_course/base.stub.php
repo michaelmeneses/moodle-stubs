@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_brickfield\local\areas\core_course;
 
+use core\event\course_created;
+use core\event\course_updated;
+use core\event\course_restored;
+use tool_brickfield\area_base;
 /**
  * Base class for various course-related areas
  *

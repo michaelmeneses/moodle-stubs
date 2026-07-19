@@ -29,6 +29,8 @@
  */
 namespace core_calendar\local\event\mappers;
 
+use core_calendar\event;
+use core_calendar\local\event\entities\event_interface;
 /**
  * Interface for an event mapper class
  *

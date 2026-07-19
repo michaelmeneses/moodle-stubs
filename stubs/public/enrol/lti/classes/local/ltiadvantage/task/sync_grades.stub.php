@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace enrol_lti\local\ltiadvantage\task;
 
+use core\task\scheduled_task;
+use enrol_lti\helper;
 /**
  * LTI Advantage task responsible for pushing grades to tool platforms.
  *

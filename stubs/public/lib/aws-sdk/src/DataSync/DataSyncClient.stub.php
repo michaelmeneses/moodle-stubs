@@ -8,6 +8,7 @@
  */
 namespace Aws\DataSync;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS DataSync** service.
  * @method \Aws\Result addStorageSystem(array $args = [])

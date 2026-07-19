@@ -17,6 +17,10 @@
  */
 namespace MatthiasMullie\Minify;
 
+use MatthiasMullie\Minify\Exceptions\FileImportException;
+use MatthiasMullie\Minify\Exceptions\PatternMatchException;
+use MatthiasMullie\PathConverter\Converter;
+use MatthiasMullie\PathConverter\ConverterInterface;
 /**
  * CSS minifier.
  *

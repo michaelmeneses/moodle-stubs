@@ -8,6 +8,10 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Calculation\Financial\Securities;
 
+use PhpOffice\PhpSpreadsheet\Calculation\DateTimeExcel\YearFrac;
+use PhpOffice\PhpSpreadsheet\Calculation\Exception;
+use PhpOffice\PhpSpreadsheet\Calculation\Financial\Constants as FinancialConstants;
+use PhpOffice\PhpSpreadsheet\Calculation\Functions;
 class AccruedInterest
 {
     public const ACCRINT_CALCMODE_ISSUE_TO_SETTLEMENT = true;

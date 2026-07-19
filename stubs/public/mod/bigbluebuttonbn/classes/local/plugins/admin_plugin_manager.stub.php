@@ -22,6 +22,15 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn\local\plugins;
 
+use cache_helper;
+use context_system;
+use core_component;
+use core_plugin_manager;
+use flexible_table;
+use html_writer;
+use mod_bigbluebuttonbn\extension;
+use moodle_url;
+use pix_icon;
 /**
  * Class that handles the display and configuration of the list of extension plugins.
  *

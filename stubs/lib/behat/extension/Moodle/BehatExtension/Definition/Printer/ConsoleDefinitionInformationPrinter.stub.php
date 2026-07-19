@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace Moodle\BehatExtension\Definition\Printer;
 
+use Behat\Behat\Definition\Printer\ConsoleDefinitionPrinter;
+use Behat\Behat\Definition\Printer\UnusedDefinitionPrinter;
+use Behat\Testwork\Suite\Suite;
 // phpcs:disable moodle.NamingConventions.ValidFunctionName.LowercaseMethod
 /**
  * Moodle console definition information printer.

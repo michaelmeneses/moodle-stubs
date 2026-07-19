@@ -29,6 +29,7 @@
  */
 namespace tool_moodlenet\local;
 
+use core_course\dndupload_handler;
 /**
  * The import_handler_registry class.
  *

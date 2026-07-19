@@ -8,6 +8,20 @@
  */
 namespace core_course\reportbuilder\datasource;
 
+use core_cohort\reportbuilder\local\entities\cohort;
+use core_course\reportbuilder\local\entities\course_category;
+use core_course\reportbuilder\local\entities\access;
+use core_course\reportbuilder\local\entities\completion;
+use core_course\reportbuilder\local\entities\enrolment;
+use core_enrol\reportbuilder\local\entities\enrol;
+use core_group\reportbuilder\local\entities\group;
+use core_reportbuilder\datasource;
+use core_reportbuilder\local\entities\course;
+use core_reportbuilder\local\entities\user;
+use core_reportbuilder\local\filters\select;
+use core_reportbuilder\local\helpers\database;
+use core_role\reportbuilder\local\entities\role;
+use core_user\output\status_field;
 /**
  * Course participants datasource
  *

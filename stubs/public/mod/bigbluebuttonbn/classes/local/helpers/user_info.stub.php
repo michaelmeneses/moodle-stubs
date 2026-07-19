@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn\local\helpers;
 
+use cm_info;
+use mod_bigbluebuttonbn\instance;
+use mod_bigbluebuttonbn\logger;
+use stdClass;
 /**
  * Utility class for all user information
  *

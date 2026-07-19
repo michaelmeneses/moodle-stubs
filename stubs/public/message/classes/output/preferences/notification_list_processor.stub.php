@@ -29,6 +29,8 @@
  */
 namespace core_message\output\preferences;
 
+use renderable;
+use templatable;
 /**
  * Class to create context for a notification component on the message preferences page.
  *

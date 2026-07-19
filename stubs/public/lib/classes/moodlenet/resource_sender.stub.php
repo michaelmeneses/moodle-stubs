@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\moodlenet;
 
+use core\oauth2\client;
+use moodle_exception;
+use stdClass;
+use stored_file;
 /**
  * API for sharing Moodle LMS resources to MoodleNet instances.
  *

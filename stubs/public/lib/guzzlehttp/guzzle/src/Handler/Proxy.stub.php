@@ -8,6 +8,9 @@
  */
 namespace GuzzleHttp\Handler;
 
+use GuzzleHttp\Promise\PromiseInterface;
+use GuzzleHttp\RequestOptions;
+use Psr\Http\Message\RequestInterface;
 /**
  * Provides basic proxies for handlers.
  *

@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_quiz\hook;
 
+use core\attribute;
+use mod_quiz\structure;
 /**
  * The quiz structure has been modified
  *

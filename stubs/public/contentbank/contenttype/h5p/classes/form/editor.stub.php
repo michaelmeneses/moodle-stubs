@@ -29,6 +29,14 @@
  */
 namespace contenttype_h5p\form;
 
+use contenttype_h5p\content;
+use contenttype_h5p\contenttype;
+use core_contentbank\form\edit_content;
+use core_h5p\api;
+use core_h5p\editor as h5peditor;
+use core_h5p\factory;
+use core_h5p\helper;
+use stdClass;
 /**
  * Defines the form for editing an H5P content.
  *

@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_adminpresets\local\setting;
 
+use admin_setting;
+use moodle_exception;
+use stdClass;
 /**
  * Admin tool presets plugin to load some settings.
  *

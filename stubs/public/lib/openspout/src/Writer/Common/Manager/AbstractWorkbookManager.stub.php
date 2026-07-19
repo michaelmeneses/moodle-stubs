@@ -8,6 +8,18 @@
  */
 namespace OpenSpout\Writer\Common\Manager;
 
+use OpenSpout\Common\Entity\Row;
+use OpenSpout\Common\Exception\InvalidArgumentException;
+use OpenSpout\Common\Exception\IOException;
+use OpenSpout\Common\Helper\StringHelper;
+use OpenSpout\Writer\Common\AbstractOptions;
+use OpenSpout\Writer\Common\Entity\Sheet;
+use OpenSpout\Writer\Common\Entity\Workbook;
+use OpenSpout\Writer\Common\Entity\Worksheet;
+use OpenSpout\Writer\Common\Helper\FileSystemWithRootFolderHelperInterface;
+use OpenSpout\Writer\Common\Manager\Style\StyleManagerInterface;
+use OpenSpout\Writer\Common\Manager\Style\StyleMerger;
+use OpenSpout\Writer\Exception\SheetNotFoundException;
 /**
  * @internal
  */

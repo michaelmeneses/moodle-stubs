@@ -20,15 +20,24 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core_comment;
-
-/**
- * Comment exception class
- *
- * @package   core
- * @copyright 2010 Dongsheng Cai {@link http://dongsheng.org}
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class comment_exception extends \moodle_exception
-{
+namespace core_comment {
+    /**
+     * Comment exception class
+     *
+     * @package   core
+     * @copyright 2010 Dongsheng Cai {@link http://dongsheng.org}
+     * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     */
+    class comment_exception extends \moodle_exception
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \core_comment\comment_exception registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class comment_exception extends \core_comment\comment_exception
+    {
+    }
 }

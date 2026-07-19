@@ -29,6 +29,8 @@
  */
 namespace gradereport_singleview\local\ui;
 
+use context_course;
+use stdClass;
 /**
  * UI element representing the finalgrade column.
  *

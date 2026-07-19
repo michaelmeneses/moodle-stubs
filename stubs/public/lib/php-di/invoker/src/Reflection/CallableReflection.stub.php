@@ -8,6 +8,12 @@
  */
 namespace Invoker\Reflection;
 
+use Closure;
+use Invoker\Exception\NotCallableException;
+use ReflectionException;
+use ReflectionFunction;
+use ReflectionFunctionAbstract;
+use ReflectionMethod;
 /**
  * Create a reflection object from a callable or a callable-like.
  *

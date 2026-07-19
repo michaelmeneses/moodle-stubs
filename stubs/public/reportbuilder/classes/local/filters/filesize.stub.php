@@ -8,6 +8,9 @@
  */
 namespace core_reportbuilder\local\filters;
 
+use core_reportbuilder\local\helpers\database;
+use lang_string;
+use MoodleQuickForm;
 /**
  * Filesize report filter
  *

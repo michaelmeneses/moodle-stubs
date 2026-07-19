@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\progress;
 
+use core\output\stored_progress_bar;
 /**
  * Progress handler which updates a stored progress bar.
  *

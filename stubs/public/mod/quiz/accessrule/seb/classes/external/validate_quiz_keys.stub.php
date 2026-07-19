@@ -22,6 +22,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace quizaccess_seb\external;
 
+use core_external\external_api;
+use core_external\external_function_parameters;
+use core_external\external_single_structure;
+use core_external\external_value;
+use invalid_parameter_exception;
+use mod_quiz\quiz_settings;
+use quizaccess_seb\event\access_prevented;
+use quizaccess_seb\seb_access_manager;
 /**
  * Validate browser exam key and config key.
  *

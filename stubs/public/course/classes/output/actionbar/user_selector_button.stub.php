@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_course\output\actionbar;
 
+use core\output\named_templatable;
+use core\output\renderable;
+use core\output\renderer_base;
+use core\url;
+use stdClass;
 /**
  * Renderable class for the user_selector_button.
  *

@@ -29,6 +29,7 @@
  */
 namespace core_calendar\external;
 
+use core\external\exporter;
 /**
  * Class for normalising the date data.
  *

@@ -8,6 +8,8 @@
  */
 namespace core_customfield\event;
 
+use context;
+use core_customfield\shared;
 /**
  * Custom field shared category usage enabled event class.
  *

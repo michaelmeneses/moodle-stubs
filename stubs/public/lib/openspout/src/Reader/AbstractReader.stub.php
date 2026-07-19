@@ -8,6 +8,9 @@
  */
 namespace OpenSpout\Reader;
 
+use OpenSpout\Common\Exception\IOException;
+use OpenSpout\Reader\Exception\ReaderException;
+use OpenSpout\Reader\Exception\ReaderNotOpenedException;
 /**
  * @template T of SheetIteratorInterface
  *

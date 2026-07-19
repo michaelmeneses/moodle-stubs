@@ -8,6 +8,8 @@
  */
 namespace OTPHP;
 
+use DateTimeImmutable;
+use Psr\Clock\ClockInterface;
 /**
  * @internal
  */

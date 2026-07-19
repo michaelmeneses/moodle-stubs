@@ -29,6 +29,8 @@
  */
 namespace mod_quiz\privacy;
 
+use core_privacy\local\request\contextlist;
+use core_privacy\local\request\approved_contextlist;
 /**
  * The quizaccess_provider interface provides the expected interface for all 'quizaccess' quizaccesss.
  *

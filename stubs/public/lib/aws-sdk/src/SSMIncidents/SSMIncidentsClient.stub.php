@@ -8,6 +8,7 @@
  */
 namespace Aws\SSMIncidents;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **AWS Systems Manager Incident Manager** service.
  * @method \Aws\Result batchGetIncidentFindings(array $args = [])

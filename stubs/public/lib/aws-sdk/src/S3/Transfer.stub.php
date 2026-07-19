@@ -8,6 +8,14 @@
  */
 namespace Aws\S3;
 
+use Aws;
+use Aws\CommandInterface;
+use Aws\Exception\AwsException;
+use Aws\MetricsBuilder;
+use GuzzleHttp\Promise;
+use GuzzleHttp\Promise\PromiseInterface;
+use GuzzleHttp\Promise\PromisorInterface;
+use Iterator;
 /**
  * Transfers files from the local filesystem to S3 or from S3 to the local
  * filesystem.

@@ -8,6 +8,8 @@
  */
 namespace Aws\Signature;
 
+use Aws\Credentials\CredentialsInterface;
+use Psr\Http\Message\RequestInterface;
 /**
  * Interface used to provide interchangeable strategies for signing requests
  * using the various AWS signature protocols.

@@ -31,6 +31,9 @@
  */
 namespace core\check\access;
 
+use context;
+use stdClass;
+use core\check\result;
 /**
  * Lists all roles that have the ability to backup user data, as well as users
  *

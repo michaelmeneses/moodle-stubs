@@ -8,6 +8,7 @@
  */
 namespace Aws\Crypto;
 
+use Aws\Exception\CryptoException;
 abstract class MaterialsProviderV3 implements MaterialsProviderInterfaceV3
 {
     private static array $supportedKeySizes = [256 => true];

@@ -29,6 +29,8 @@
  */
 namespace fileconverter_unoconv;
 
+use stored_file;
+use core_files\conversion;
 /**
  * Class for converting files between different formats using unoconv.
  *

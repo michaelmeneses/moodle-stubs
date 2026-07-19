@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\external;
 
+use core\output\action_link;
 /**
  * Class action_link_exporter
  *

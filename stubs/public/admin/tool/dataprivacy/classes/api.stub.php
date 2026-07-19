@@ -29,6 +29,24 @@
  */
 namespace tool_dataprivacy;
 
+use coding_exception;
+use context_helper;
+use context_system;
+use core\invalid_persistent_exception;
+use core\message\message;
+use core\task\manager;
+use core_privacy\local\request\approved_contextlist;
+use core_privacy\local\request\contextlist_collection;
+use core_user;
+use dml_exception;
+use moodle_exception;
+use moodle_url;
+use required_capability_exception;
+use stdClass;
+use tool_dataprivacy\external\data_request_exporter;
+use tool_dataprivacy\local\helper;
+use tool_dataprivacy\task\initiate_data_request_task;
+use tool_dataprivacy\task\process_data_request_task;
 /**
  * Class containing helper methods for processing data requests.
  *

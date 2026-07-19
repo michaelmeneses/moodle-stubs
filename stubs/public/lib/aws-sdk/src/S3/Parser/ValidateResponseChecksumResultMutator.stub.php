@@ -8,6 +8,12 @@
  */
 namespace Aws\S3\Parser;
 
+use Aws\Api\Service;
+use Aws\CommandInterface;
+use Aws\ResultInterface;
+use Aws\S3\CalculatesChecksumTrait;
+use Aws\S3\Exception\S3Exception;
+use Psr\Http\Message\ResponseInterface;
 /**
  * A custom s3 result mutator that validates the response checksums.
  *

@@ -8,6 +8,13 @@
  */
 namespace core_reportbuilder;
 
+use coding_exception;
+use core_reportbuilder\local\helpers\report;
+use core_reportbuilder\local\models\column as column_model;
+use core_reportbuilder\local\models\filter as filter_model;
+use core_reportbuilder\local\report\base;
+use core_reportbuilder\local\report\column;
+use core_reportbuilder\local\report\filter;
 /**
  * Class datasource
  *

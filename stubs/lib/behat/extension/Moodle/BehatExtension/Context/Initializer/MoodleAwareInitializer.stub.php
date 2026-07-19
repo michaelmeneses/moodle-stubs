@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace Moodle\BehatExtension\Context\Initializer;
 
+use Behat\Behat\Context\Context;
+use Behat\Behat\Context\Initializer\ContextInitializer;
+use Moodle\BehatExtension\Context\MoodleContext;
 // phpcs:disable moodle.NamingConventions.ValidFunctionName.LowercaseMethod
 /**
  * MoodleContext initializer

@@ -8,6 +8,7 @@
  */
 namespace Aws\Inspector2;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Inspector2** service.
  * @method \Aws\Result associateMember(array $args = [])

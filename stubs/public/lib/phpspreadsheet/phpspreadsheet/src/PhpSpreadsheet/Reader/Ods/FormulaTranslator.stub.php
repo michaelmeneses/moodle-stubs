@@ -8,6 +8,7 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Reader\Ods;
 
+use PhpOffice\PhpSpreadsheet\Calculation\Calculation;
 class FormulaTranslator
 {
     private static function replaceQuotedPeriod(string $value): string

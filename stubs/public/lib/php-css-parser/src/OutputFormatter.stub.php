@@ -8,6 +8,8 @@
  */
 namespace Sabberworm\CSS;
 
+use Sabberworm\CSS\Comment\Commentable;
+use Sabberworm\CSS\Parsing\OutputException;
 class OutputFormatter
 {
     /**

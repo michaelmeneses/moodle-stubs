@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace smsgateway_aws;
 
+use core_sms\hook\after_sms_gateway_form_hook;
 /**
  * Hook listener for aws sms gateway.
  *

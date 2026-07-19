@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_enrol\reportbuilder\local\entities;
 
+use enrol_plugin;
+use lang_string;
+use stdClass;
+use core_reportbuilder\local\entities\base;
+use core_reportbuilder\local\filters\{boolean_select, date, duration, select, text};
+use core_reportbuilder\local\helpers\format;
+use core_reportbuilder\local\report\{column, filter};
 /**
  * Enrolment method entity
  *

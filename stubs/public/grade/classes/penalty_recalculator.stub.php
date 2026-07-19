@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_grades;
 
+use core\context;
 /**
  * Abstract class for defining the interface between the core penalty system and activity plugins.
  * Activity plugins must override this class and implement their own recalculate_penalty method.

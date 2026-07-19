@@ -50,6 +50,9 @@
  */
 namespace CFPropertyList;
 
+use DOMDocument;
+use Iterator;
+use ArrayAccess;
 /**
  * @example   example-create-02.php Using CFTypeDetector
  * @example   example-create-03.php Using CFTypeDetector with CFDate and CFData

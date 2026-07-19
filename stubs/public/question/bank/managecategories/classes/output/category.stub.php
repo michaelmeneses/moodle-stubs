@@ -22,6 +22,18 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_managecategories\output;
 
+use action_menu;
+use action_menu_link;
+use context;
+use core\plugininfo\qbank;
+use core_question\category_manager;
+use moodle_url;
+use pix_icon;
+use qbank_managecategories\helper;
+use renderable;
+use renderer_base;
+use stdClass;
+use templatable;
 /**
  * Output component for a single category
  *

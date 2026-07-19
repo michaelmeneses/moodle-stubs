@@ -29,6 +29,23 @@
  */
 namespace tool_dataprivacy;
 
+use context_helper;
+use context_system;
+use context_user;
+use core\notification;
+use core_user;
+use core_external\external_api;
+use core_external\external_function_parameters;
+use core_external\external_multiple_structure;
+use core_external\external_single_structure;
+use core_external\external_value;
+use core_external\external_warnings;
+use moodle_exception;
+use required_capability_exception;
+use tool_dataprivacy\external\category_exporter;
+use tool_dataprivacy\external\data_request_exporter;
+use tool_dataprivacy\external\purpose_exporter;
+use tool_dataprivacy\output\data_registry_page;
 /**
  * Class external.
  *

@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_data\local\exporter;
 
+use context;
+use context_system;
 /**
  * Utility class for exporting data from a mod_data instance.
  *

@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace tool_brickfield\local\tool;
 
+use tool_brickfield\accessibility;
+use tool_brickfield\manager;
 /**
  * Class filter.
  *

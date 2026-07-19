@@ -8,6 +8,7 @@
  */
 namespace Invoker\ParameterResolver;
 
+use ReflectionFunctionAbstract;
 /**
  * Simply returns all the values of the $providedParameters array that are
  * indexed by the parameter position (i.e. a number).

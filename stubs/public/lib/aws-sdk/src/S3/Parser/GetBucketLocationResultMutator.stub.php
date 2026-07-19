@@ -8,6 +8,9 @@
  */
 namespace Aws\S3\Parser;
 
+use Aws\CommandInterface;
+use Aws\ResultInterface;
+use Psr\Http\Message\ResponseInterface;
 /**
  * A custom mutator for a GetBucketLocation request, which
  * extract the bucket location value and injects it into the

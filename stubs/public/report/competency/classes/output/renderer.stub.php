@@ -29,6 +29,8 @@
  */
 namespace report_competency\output;
 
+use plugin_renderer_base;
+use renderable;
 /**
  * Renderer class for competency breakdown report
  *

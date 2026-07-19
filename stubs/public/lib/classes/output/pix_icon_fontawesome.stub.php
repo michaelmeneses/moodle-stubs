@@ -20,16 +20,25 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core\output;
-
-/**
- * Data structure representing an icon subtype.
- *
- * @copyright 2016 Damyon Wiese
- * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @package core
- * @category output
- */
-class pix_icon_fontawesome extends pix_icon_font
-{
+namespace core\output {
+    /**
+     * Data structure representing an icon subtype.
+     *
+     * @copyright 2016 Damyon Wiese
+     * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+     * @package core
+     * @category output
+     */
+    class pix_icon_fontawesome extends pix_icon_font
+    {
+    }
+}
+namespace {
+    /**
+     * Runtime class alias of \core\output\pix_icon_fontawesome registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
+     */
+    class pix_icon_fontawesome extends \core\output\pix_icon_fontawesome
+    {
+    }
 }

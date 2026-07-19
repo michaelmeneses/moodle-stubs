@@ -8,6 +8,48 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Reader;
 
+use PhpOffice\PhpSpreadsheet\Calculation\Information\ExcelError;
+use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
+use PhpOffice\PhpSpreadsheet\Cell\DataType;
+use PhpOffice\PhpSpreadsheet\Cell\Hyperlink;
+use PhpOffice\PhpSpreadsheet\Comment;
+use PhpOffice\PhpSpreadsheet\DefinedName;
+use PhpOffice\PhpSpreadsheet\Reader\Security\XmlScanner;
+use PhpOffice\PhpSpreadsheet\Reader\Xlsx\AutoFilter;
+use PhpOffice\PhpSpreadsheet\Reader\Xlsx\Chart;
+use PhpOffice\PhpSpreadsheet\Reader\Xlsx\ColumnAndRowAttributes;
+use PhpOffice\PhpSpreadsheet\Reader\Xlsx\ConditionalStyles;
+use PhpOffice\PhpSpreadsheet\Reader\Xlsx\DataValidations;
+use PhpOffice\PhpSpreadsheet\Reader\Xlsx\Hyperlinks;
+use PhpOffice\PhpSpreadsheet\Reader\Xlsx\Namespaces;
+use PhpOffice\PhpSpreadsheet\Reader\Xlsx\PageSetup;
+use PhpOffice\PhpSpreadsheet\Reader\Xlsx\Properties as PropertyReader;
+use PhpOffice\PhpSpreadsheet\Reader\Xlsx\SharedFormula;
+use PhpOffice\PhpSpreadsheet\Reader\Xlsx\SheetViewOptions;
+use PhpOffice\PhpSpreadsheet\Reader\Xlsx\SheetViews;
+use PhpOffice\PhpSpreadsheet\Reader\Xlsx\Styles;
+use PhpOffice\PhpSpreadsheet\Reader\Xlsx\TableReader;
+use PhpOffice\PhpSpreadsheet\Reader\Xlsx\Theme;
+use PhpOffice\PhpSpreadsheet\Reader\Xlsx\WorkbookView;
+use PhpOffice\PhpSpreadsheet\ReferenceHelper;
+use PhpOffice\PhpSpreadsheet\RichText\RichText;
+use PhpOffice\PhpSpreadsheet\Shared\Date;
+use PhpOffice\PhpSpreadsheet\Shared\Drawing;
+use PhpOffice\PhpSpreadsheet\Shared\File;
+use PhpOffice\PhpSpreadsheet\Shared\Font;
+use PhpOffice\PhpSpreadsheet\Shared\StringHelper;
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\PhpSpreadsheet\Style\Color;
+use PhpOffice\PhpSpreadsheet\Style\Font as StyleFont;
+use PhpOffice\PhpSpreadsheet\Style\NumberFormat;
+use PhpOffice\PhpSpreadsheet\Style\Style;
+use PhpOffice\PhpSpreadsheet\Worksheet\HeaderFooterDrawing;
+use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
+use SimpleXMLElement;
+use Stringable;
+use Throwable;
+use XMLReader;
+use ZipArchive;
 class Xlsx extends BaseReader
 {
     const INITIAL_FILE = '_rels/.rels';

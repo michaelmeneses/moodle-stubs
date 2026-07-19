@@ -22,6 +22,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_badges\event;
 
+use core\event\badge_awarded;
+use core\event\cohort_member_added;
+use core\event\competency_evidence_created;
+use core\event\course_completed;
+use core\event\course_module_completion_updated;
+use core\event\user_updated;
+use core_badges\badge;
 /**
  * Event observer for badges.
  *

@@ -29,6 +29,10 @@
  */
 namespace core_calendar\external;
 
+use core_calendar\local\event\container;
+use core_calendar\output\humantimeperiod;
+use renderer_base;
+use core\url;
 /**
  * Class for displaying a calendar event.
  *

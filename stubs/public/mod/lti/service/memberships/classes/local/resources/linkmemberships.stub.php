@@ -30,6 +30,9 @@
  */
 namespace ltiservice_memberships\local\resources;
 
+use mod_lti\local\ltiservice\resource_base;
+use ltiservice_memberships\local\service\memberships;
+use core_availability\info_module;
 /**
  * A resource implementing Link Memberships.
  * The link membership is no longer defined in the published

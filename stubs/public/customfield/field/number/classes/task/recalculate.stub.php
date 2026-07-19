@@ -22,6 +22,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace customfield_number\task;
 
+use core\task\adhoc_task;
+use core_customfield\customfield\shared_handler;
+use core_customfield\field_controller;
+use customfield_number\provider_base;
 /**
  * Recalculates data for the given number field with a provider
  *

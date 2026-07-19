@@ -8,6 +8,12 @@
  */
 namespace PhpOffice\PhpSpreadsheet\Calculation\LookupRef;
 
+use PhpOffice\PhpSpreadsheet\Calculation\Calculation;
+use PhpOffice\PhpSpreadsheet\Calculation\Exception;
+use PhpOffice\PhpSpreadsheet\Calculation\Functions;
+use PhpOffice\PhpSpreadsheet\Calculation\Information\ExcelError;
+use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
+use PhpOffice\PhpSpreadsheet\Shared\StringHelper;
 class Sort extends LookupRefValidations
 {
     public const ORDER_ASCENDING = 1;

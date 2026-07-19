@@ -22,6 +22,8 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\moodlenet;
 
+use moodle_exception;
+use stdClass;
 /**
  * Record the sharing of content to MoodleNet.
  *

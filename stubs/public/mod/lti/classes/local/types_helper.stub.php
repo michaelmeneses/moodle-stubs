@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_lti\local;
 
+use core\context\course;
 /**
  * Helper class specifically dealing with LTI types (preconfigured tools).
  *

@@ -29,6 +29,7 @@
  */
 namespace repository_contentbank;
 
+use repository_contentbank\browser\contentbank_browser;
 /**
  * Helper class for content bank files repository.
  *

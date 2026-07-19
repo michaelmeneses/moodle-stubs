@@ -22,6 +22,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core\output;
 
+use core\context;
+use core\external\exporter;
+use core_external\external_single_structure;
 /**
  * Interface marking other classes exportable for external services.
  *

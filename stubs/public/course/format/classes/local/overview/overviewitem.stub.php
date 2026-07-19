@@ -22,6 +22,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_courseformat\local\overview;
 
+use core_courseformat\external\overviewitem_exporter;
+use core\output\renderable;
+use core\output\renderer_base;
+use core\output\local\properties\text_align;
+use core\output\externable;
+use stdClass;
 /**
  * Class overviewitem
  *

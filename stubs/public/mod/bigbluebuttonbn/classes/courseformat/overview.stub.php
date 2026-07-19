@@ -22,6 +22,17 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace mod_bigbluebuttonbn\courseformat;
 
+use core_calendar\output\humandate;
+use cm_info;
+use core_courseformat\local\overview\overviewitem;
+use core\output\action_link;
+use core\output\local\properties\text_align;
+use core\output\local\properties\button;
+use core\url;
+use mod_bigbluebuttonbn\dates;
+use mod_bigbluebuttonbn\instance;
+use mod_bigbluebuttonbn\local\proxy\bigbluebutton_proxy;
+use mod_bigbluebuttonbn\recording;
 /**
  * bigbluebuttonbn overview integration.
  *

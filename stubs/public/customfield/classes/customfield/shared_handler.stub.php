@@ -8,6 +8,11 @@
  */
 namespace core_customfield\customfield;
 
+use core\context;
+use core\context\system;
+use core\exception\coding_exception;
+use core\url;
+use core_customfield\field_controller;
 /**
  * Shared handler for custom fields
  *

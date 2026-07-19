@@ -29,6 +29,10 @@
  */
 namespace core_files\local\archive_writer;
 
+use ZipStream\ZipStream;
+use core_files\archive_writer;
+use core_files\local\archive_writer\file_writer_interface as file_writer_interface;
+use core_files\local\archive_writer\stream_writer_interface as stream_writer_interface;
 /**
  * Class used for creating ZIP archives.
  *

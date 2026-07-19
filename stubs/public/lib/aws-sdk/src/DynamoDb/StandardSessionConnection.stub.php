@@ -8,6 +8,7 @@
  */
 namespace Aws\DynamoDb;
 
+use Aws\DynamoDb\Exception\DynamoDbException;
 /**
  * The standard connection performs the read and write operations to DynamoDB.
  */

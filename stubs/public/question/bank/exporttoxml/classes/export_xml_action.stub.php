@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace qbank_exporttoxml;
 
+use core_question\local\bank\question_action_base;
 /**
  * Question bank column export the question in Moodle XML format.
  *

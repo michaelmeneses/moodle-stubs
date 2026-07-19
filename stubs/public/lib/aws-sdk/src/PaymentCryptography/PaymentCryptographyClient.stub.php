@@ -8,6 +8,7 @@
  */
 namespace Aws\PaymentCryptography;
 
+use Aws\AwsClient;
 /**
  * This client is used to interact with the **Payment Cryptography Control Plane** service.
  * @method \Aws\Result createAlias(array $args = [])

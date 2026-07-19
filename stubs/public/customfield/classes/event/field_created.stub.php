@@ -29,6 +29,7 @@
  */
 namespace core_customfield\event;
 
+use core_customfield\field_controller;
 /**
  * Custom field created event class.
  *

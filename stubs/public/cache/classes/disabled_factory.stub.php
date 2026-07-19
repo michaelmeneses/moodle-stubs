@@ -20,113 +20,124 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-namespace core_cache;
-
-/**
- * The cache factory class used when the Cache has been disabled.
- *
- * @package core_cache
- * @copyright  2012 Sam Hemelryk
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class disabled_factory extends factory
-{
-    /** @var array Array of temporary caches in use. */
-    protected static $tempcaches = [];
+namespace core_cache {
+    use cachestore_static;
+    use core\exception\coding_exception;
     /**
-     * Returns an instance of the factory method.
+     * The cache factory class used when the Cache has been disabled.
      *
-     * @param bool $forcereload Unused.
-     * @return factory
-     * @throws coding_exception
+     * @package core_cache
+     * @copyright  2012 Sam Hemelryk
+     * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
      */
-    public static function instance($forcereload = false)
+    class disabled_factory extends factory
     {
+        /** @var array Array of temporary caches in use. */
+        protected static $tempcaches = [];
+        /**
+         * Returns an instance of the factory method.
+         *
+         * @param bool $forcereload Unused.
+         * @return factory
+         * @throws coding_exception
+         */
+        public static function instance($forcereload = false)
+        {
+        }
+        /**
+         * Creates a definition instance or returns the existing one if it has already been created.
+         *
+         * @param string $component
+         * @param string $area
+         * @param string $unused Used to be datasourceaggregate but that was removed and this is now unused.
+         * @return definition
+         */
+        public function create_definition($component, $area, $unused = null)
+        {
+        }
+        /**
+         * Common public method to create a cache instance given a definition.
+         *
+         * @param definition $definition
+         * @return application_cache|session_cache|store
+         * @throws coding_exception
+         */
+        public function create_cache(definition $definition)
+        {
+        }
+        /**
+         * Creates a cache object given the parameters for a definition.
+         *
+         * @param string $component
+         * @param string $area
+         * @param array $identifiers
+         * @param string $unused Used to be datasourceaggregate but that was removed and this is now unused.
+         * @return application_cache|session_cache|request_cache
+         */
+        public function create_cache_from_definition($component, $area, array $identifiers = [], $unused = null)
+        {
+        }
+        /**
+         * Removes all temporary caches.
+         *
+         * Don't call this directly - used by {@see \core_cache\allow_temporary_caches}.
+         */
+        public static function clear_temporary_caches(): void
+        {
+        }
+        /**
+         * Creates an ad-hoc cache from the given param.
+         *
+         * @param int $mode
+         * @param string $component
+         * @param string $area
+         * @param array $identifiers
+         * @param array $options An array of options, available options are:
+         *   - simplekeys : Set to true if the keys you will use are a-zA-Z0-9_
+         *   - simpledata : Set to true if the type of the data you are going to store is scalar, or an array of scalar vars
+         *   - staticacceleration : If set to true the cache will hold onto all data passing through it.
+         *   - staticaccelerationsize : Sets the max size of the static acceleration array.
+         * @return application_cache|session_cache|request_cache
+         */
+        public function create_cache_from_params($mode, $component, $area, array $identifiers = [], array $options = [])
+        {
+        }
+        /**
+         * Creates a store instance given its name and configuration.
+         *
+         * @param string $name Unused.
+         * @param array $details Unused.
+         * @param definition $definition
+         * @return boolean|store
+         */
+        public function create_store_from_config($name, array $details, definition $definition)
+        {
+        }
+        /**
+         * Creates a cache config instance with the ability to write if required.
+         *
+         * @param bool $writer Unused.
+         * @return disabled_config|config_writer
+         */
+        public function create_config_instance($writer = false)
+        {
+        }
+        /**
+         * Returns true if the cache API has been disabled.
+         *
+         * @return bool
+         */
+        public function is_disabled()
+        {
+        }
     }
+}
+namespace {
     /**
-     * Creates a definition instance or returns the existing one if it has already been created.
-     *
-     * @param string $component
-     * @param string $area
-     * @param string $unused Used to be datasourceaggregate but that was removed and this is now unused.
-     * @return definition
+     * Runtime class alias of \core_cache\disabled_factory registered by the original source,
+     * re-emitted as a declaration so static analysers can resolve the name.
      */
-    public function create_definition($component, $area, $unused = null)
-    {
-    }
-    /**
-     * Common public method to create a cache instance given a definition.
-     *
-     * @param definition $definition
-     * @return application_cache|session_cache|store
-     * @throws coding_exception
-     */
-    public function create_cache(definition $definition)
-    {
-    }
-    /**
-     * Creates a cache object given the parameters for a definition.
-     *
-     * @param string $component
-     * @param string $area
-     * @param array $identifiers
-     * @param string $unused Used to be datasourceaggregate but that was removed and this is now unused.
-     * @return application_cache|session_cache|request_cache
-     */
-    public function create_cache_from_definition($component, $area, array $identifiers = [], $unused = null)
-    {
-    }
-    /**
-     * Removes all temporary caches.
-     *
-     * Don't call this directly - used by {@see \core_cache\allow_temporary_caches}.
-     */
-    public static function clear_temporary_caches(): void
-    {
-    }
-    /**
-     * Creates an ad-hoc cache from the given param.
-     *
-     * @param int $mode
-     * @param string $component
-     * @param string $area
-     * @param array $identifiers
-     * @param array $options An array of options, available options are:
-     *   - simplekeys : Set to true if the keys you will use are a-zA-Z0-9_
-     *   - simpledata : Set to true if the type of the data you are going to store is scalar, or an array of scalar vars
-     *   - staticacceleration : If set to true the cache will hold onto all data passing through it.
-     *   - staticaccelerationsize : Sets the max size of the static acceleration array.
-     * @return application_cache|session_cache|request_cache
-     */
-    public function create_cache_from_params($mode, $component, $area, array $identifiers = [], array $options = [])
-    {
-    }
-    /**
-     * Creates a store instance given its name and configuration.
-     *
-     * @param string $name Unused.
-     * @param array $details Unused.
-     * @param definition $definition
-     * @return boolean|store
-     */
-    public function create_store_from_config($name, array $details, definition $definition)
-    {
-    }
-    /**
-     * Creates a cache config instance with the ability to write if required.
-     *
-     * @param bool $writer Unused.
-     * @return disabled_config|config_writer
-     */
-    public function create_config_instance($writer = false)
-    {
-    }
-    /**
-     * Returns true if the cache API has been disabled.
-     *
-     * @return bool
-     */
-    public function is_disabled()
+    class cache_factory_disabled extends \core_cache\disabled_factory
     {
     }
 }

@@ -22,6 +22,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace filter_mediaplugin;
 
+use core\context;
+use core\url;
+use core_media_manager;
+use core_media_player_native;
+use moodle_page;
 /**
  * Automatic media embedding filter class.
  *
