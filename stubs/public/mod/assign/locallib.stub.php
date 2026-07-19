@@ -1444,9 +1444,10 @@ class assign
      * Calculate penalised grade and deducted mark.
      *
      * @param stdClass $grade The grade object
+     * @param grade_grade|null $usergraderecord Optional pre-fetched grade_grade for the user.
      * @return array [$penalisedgrade, $deductedmark] the penalised grade and the deducted mark
      */
-    public function calculate_penalised_grade(stdClass $grade): array
+    public function calculate_penalised_grade(stdClass $grade, ?\grade_grade $usergraderecord = null): array
     {
     }
     /**

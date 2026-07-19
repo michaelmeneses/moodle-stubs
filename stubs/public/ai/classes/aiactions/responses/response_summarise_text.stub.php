@@ -22,6 +22,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 namespace core_ai\aiactions\responses;
 
+use core_ai\helper;
 /**
  * Summarise text action response class.
  *
